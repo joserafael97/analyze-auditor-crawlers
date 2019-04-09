@@ -1,0 +1,40 @@
+---
+title: "REPLACE ME"
+output:
+    html_document:
+    df_print: paged
+theme: sandstone
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse) # 
+library(jsonlite) # Ler dados json
+library(dplyr) # 
+library(here)
+library(ggplot2)
+source(here::here("code/lib.R"))
+theme_set(theme_bw())
+```
+
+## Lendo os dados
+
+```{r read}
+
+here::here()
+resultados_avaliacoes = read_avaliacoes('Esperança') 
+gararito = read_gabaritos('Esperança') 
+data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
+```
+```{r}
+precisao <- data %>% 
+    group_by(municipio, criterio, item) %>% 
+    mutate(acertou = 
+               dplyr::if_else(
+                   encontrado_turmalina == encontrado 
+                   & grepl(local_encontrado, local_encontrado_turmalina),
+                   TRUE, FALSE
+                   )
+           )  
+```
+
+

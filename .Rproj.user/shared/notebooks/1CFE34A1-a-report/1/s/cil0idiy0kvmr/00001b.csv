@@ -1,0 +1,26 @@
+"0","here::here()"
+"1","[1]"
+"1"," ""/home/joserafael/workspace/CDD/avaliacao-portais-transparencia"""
+"1","
+"
+"0","resultados_avaliacoes = read_avaliacoes('Esperança') "
+"2","Parsed with column specification:
+cols(
+  item = col_character(),
+  municipio = col_character(),
+  criterio = col_character(),
+  encontrado_turmalina = col_logical(),
+  local_encontrado_turmalina = col_character()
+)
+"
+"0","gararito = read_gabaritos('Esperança') "
+"2","Parsed with column specification:
+cols(
+  municipio = col_character(),
+  criterio = col_character(),
+  item = col_character(),
+  encontrado = col_logical(),
+  local_encontrado = col_character()
+)
+"
+"0","data<-full_join(gararito, resultados_avaliacoes, by=c(""municipio"", ""item"", ""criterio""))"

@@ -1,0 +1,170 @@
+municipio,criterio,item,encontrado,local_encontrado
+Esperança,DespesaOrcamentariaItem,acao,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?
+Esperança,DespesaOrcamentariaItem,categoria_economica,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?
+Esperança,DespesaOrcamentariaItem,elemento,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?
+Esperança,DespesaOrcamentariaItem,emp_cnpj_cpf,TRUE,http://www.transparenciaativa.com.br/DespesaPorFavorecido.aspx
+Esperança,DespesaOrcamentariaItem,emp_data,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,emp_indicacao_licitacao,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,emp_numero,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,emp_valor,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,funcao,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,lic_data_pag_ultima,FALSE,
+Esperança,DespesaOrcamentariaItem,lic_modalidade,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?
+Esperança,DespesaOrcamentariaItem,lic_num_contrato,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?
+Esperança,DespesaOrcamentariaItem,lic_numero,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,lic_obj_servico,FALSE,
+Esperança,DespesaOrcamentariaItem,modalidade,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?
+Esperança,DespesaOrcamentariaItem,natureza_despesa,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,orgao_or_uni_orcamentaria,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx
+Esperança,DespesaOrcamentariaItem,programa,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,sub_elemento,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?
+Esperança,DespesaOrcamentariaItem,sub_funcao,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,valor_fixado,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,valor_liquidado,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,DespesaOrcamentariaItem,valor_pago,TRUE,http://www.transparenciaativa.com.br/DespesaPorElemento.aspx
+Esperança,DespesaOrcamentariaItem,nome,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+Esperança,ReceitaOrcamentariaItem,alinea,FALSE,NA
+Esperança,ReceitaOrcamentariaItem,uni_gestora,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
+Esperança,ReceitaOrcamentariaItem,arrecadacao,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
+Esperança,ReceitaOrcamentariaItem,cat_economica,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
+Esperança,ReceitaOrcamentariaItem,especie,FALSE,NA
+Esperança,ReceitaOrcamentariaItem,lancado,TRUE,NA
+Esperança,ReceitaOrcamentariaItem,origem,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx
+Esperança,ReceitaOrcamentariaItem,previsao,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx
+Esperança,ReceitaOrcamentariaItem,rubrica,FALSE,NA
+Esperança,ReceitaOrcamentariaItem,sub_alinea,FALSE,NA
+Santa Rita,DespesaOrcamentariaItem,acao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,emp_cnpj_cpf,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,emp_data,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,emp_indicacao_licitacao,FALSE,NA
+Santa Rita,DespesaOrcamentariaItem,emp_numero,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,emp_valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,lic_data_pag_ultima,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,lic_modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,lic_num_contrato,FALSE,NA
+Santa Rita,DespesaOrcamentariaItem,lic_numero,FALSE,NA
+Santa Rita,DespesaOrcamentariaItem,lic_obj_servico,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,natureza_despesa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,orgao_or_uni_orcamentaria,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,programa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,sub_elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,sub_funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,valor_fixado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,valor_liquidado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,nome,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,DespesaOrcamentariaItem,valor_pago,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml
+Santa Rita,ReceitaOrcamentariaItem,uni_gestora,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml
+Santa Rita,ReceitaOrcamentariaItem,alinea,FALSE,NA
+Santa Rita,ReceitaOrcamentariaItem,arrecadacao,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml
+Santa Rita,ReceitaOrcamentariaItem,cat_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml
+Santa Rita,ReceitaOrcamentariaItem,especie,FALSE,NA
+Santa Rita,ReceitaOrcamentariaItem,lancado,FALSE,NA
+Santa Rita,ReceitaOrcamentariaItem,origem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml
+Santa Rita,ReceitaOrcamentariaItem,previsao,FALSE,NA
+Santa Rita,ReceitaOrcamentariaItem,rubrica,FALSE,NA
+Santa Rita,ReceitaOrcamentariaItem,sub_alinea,FALSE,NA
+Campina Grande,DespesaOrcamentariaItem,acao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,categoria_economica,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,elemento,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,emp_cnpj_cpf,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,emp_data,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,emp_indicacao_licitacao,FALSE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,emp_numero,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,emp_valor,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,funcao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,lic_data_pag_ultima,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,lic_modalidade,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,lic_num_contrato,FALSE,NA
+Campina Grande,DespesaOrcamentariaItem,lic_numero,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,lic_obj_servico,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,modalidade,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,natureza_despesa,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,orgao_or_uni_orcamentaria,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,programa,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,sub_elemento,FALSE,NA
+Campina Grande,DespesaOrcamentariaItem,sub_funcao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,valor_fixado,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,valor_liquidado,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,valor_pago,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,DespesaOrcamentariaItem,nome,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/
+Campina Grande,ReceitaOrcamentariaItem,uni_gestora,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/
+Campina Grande,ReceitaOrcamentariaItem,alinea,FALSE,NA
+Campina Grande,ReceitaOrcamentariaItem,arrecadacao,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/
+Campina Grande,ReceitaOrcamentariaItem,cat_economica,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/
+Campina Grande,ReceitaOrcamentariaItem,especie,FALSE,NA
+Campina Grande,ReceitaOrcamentariaItem,lancado,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/
+Campina Grande,ReceitaOrcamentariaItem,origem,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/
+Campina Grande,ReceitaOrcamentariaItem,previsao,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/
+Campina Grande,ReceitaOrcamentariaItem,rubrica,FALSE,NA
+Campina Grande,ReceitaOrcamentariaItem,sub_alinea,FALSE,NA
+Ouro Velho,DespesaOrcamentariaItem,acao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,categoria_economica,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,elemento,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,emp_cnpj_cpf,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,emp_data,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,emp_indicacao_licitacao,FALSE,NA
+Ouro Velho,DespesaOrcamentariaItem,emp_numero,FALSE,NA
+Ouro Velho,DespesaOrcamentariaItem,emp_valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,funcao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,lic_data_pag_ultima,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,lic_modalidade,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,lic_num_contrato,FALSE,NA
+Ouro Velho,DespesaOrcamentariaItem,lic_numero,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,lic_obj_servico,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,modalidade,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,natureza_despesa,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,orgao_or_uni_orcamentaria,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,programa,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,sub_elemento,FALSE,NA
+Ouro Velho,DespesaOrcamentariaItem,sub_funcao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,valor_fixado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,valor_liquidado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,valor_pago,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,DespesaOrcamentariaItem,nome,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,ReceitaOrcamentariaItem,uni_gestora,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,ReceitaOrcamentariaItem,alinea,FALSE,NA
+Ouro Velho,ReceitaOrcamentariaItem,arrecadacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,ReceitaOrcamentariaItem,cat_economica,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,ReceitaOrcamentariaItem,especie,FALSE,NA
+Ouro Velho,ReceitaOrcamentariaItem,lancado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,ReceitaOrcamentariaItem,origem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,ReceitaOrcamentariaItem,previsao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Ouro Velho,ReceitaOrcamentariaItem,rubrica,FALSE,NA
+Ouro Velho,ReceitaOrcamentariaItem,sub_alinea,FALSE,NA
+Arara,DespesaOrcamentariaItem,acao,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,categoria_economica,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,elemento,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,emp_cnpj_cpf,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,emp_data,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,emp_indicacao_licitacao,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,emp_numero,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,emp_valor,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,funcao,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,lic_data_pag_ultima,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,lic_modalidade,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,lic_num_contrato,FALSE,NA
+Arara,DespesaOrcamentariaItem,lic_numero,FALSE,NA
+Arara,DespesaOrcamentariaItem,lic_obj_servico,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,modalidade,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,natureza_despesa,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,orgao_or_uni_orcamentaria,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,programa,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,sub_elemento,FALSE,NA
+Arara,DespesaOrcamentariaItem,sub_funcao,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,valor_fixado,FALSE,NA
+Arara,DespesaOrcamentariaItem,valor_liquidado,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,DespesaOrcamentariaItem,valor_pago,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&isModal=False
+Arara,ReceitaOrcamentariaItem,uni_gestora,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
+Arara,ReceitaOrcamentariaItem,alinea,FALSE,NA
+Arara,ReceitaOrcamentariaItem,arrecadacao,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
+Arara,ReceitaOrcamentariaItem,cat_economica,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
+Arara,ReceitaOrcamentariaItem,especie,FALSE,NA
+Arara,ReceitaOrcamentariaItem,lancado,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
+Arara,ReceitaOrcamentariaItem,origem,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
+Arara,ReceitaOrcamentariaItem,previsao,FALSE,NA
+Arara,ReceitaOrcamentariaItem,rubrica,FALSE,NA
+Arara,ReceitaOrcamentariaItem,sub_alinea,FALSE,NA
