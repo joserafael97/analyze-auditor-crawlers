@@ -1,7 +1,0 @@
-"0","library(tidyverse) # "
-"0","library(jsonlite) # Ler dados json"
-"0","library(dplyr) # "
-"0","library(here)"
-"0","library(ggplot2)"
-"0","source(here::here(""code/lib.R""))"
-"0","theme_set(theme_bw())"

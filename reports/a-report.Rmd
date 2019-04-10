@@ -19,22 +19,23 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-
-here::here()
 resultados_avaliacoes = read_avaliacoes('Esperança') 
 gararito = read_gabaritos('Esperança') 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
 ```
+
+
 ```{r}
+data[is.na(data)] <- ""
+
 precisao <- data %>% 
     group_by(municipio, criterio, item) %>% 
-    mutate(acertou = 
-               dplyr::if_else(
-                   encontrado_turmalina == encontrado 
-                   & grepl(local_encontrado, local_encontrado_turmalina),
-                   TRUE, FALSE
-                   )
-           )  
+    mutate(acertou = encontrado_turmalina == encontrado & grepl(local_encontrado, local_encontrado_turmalina))
+```
+
+```{r}
+TP <-  sum(precisao$acertou)
+FN <- sum(precisao$acertou == FALSE)
 ```
 
 

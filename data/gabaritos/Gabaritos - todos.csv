@@ -28,7 +28,7 @@ Esperança,ReceitaOrcamentariaItem,uni_gestora,TRUE,http://www.transparenciaativ
 Esperança,ReceitaOrcamentariaItem,arrecadacao,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
 Esperança,ReceitaOrcamentariaItem,cat_economica,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
 Esperança,ReceitaOrcamentariaItem,especie,FALSE,NA
-Esperança,ReceitaOrcamentariaItem,lancado,TRUE,NA
+Esperança,ReceitaOrcamentariaItem,lancado,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx
 Esperança,ReceitaOrcamentariaItem,origem,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx
 Esperança,ReceitaOrcamentariaItem,previsao,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx
 Esperança,ReceitaOrcamentariaItem,rubrica,FALSE,NA
