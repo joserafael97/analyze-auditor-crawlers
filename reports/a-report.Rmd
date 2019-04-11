@@ -19,9 +19,13 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-resultados_avaliacoes = read_avaliacoes('Esperança') 
-gararito = read_gabaritos('Esperança') 
+resultados_avaliacoes = read_avaliacoes()
+gararito = read_gabaritos() 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
+
+data %>% 
+    group_by(item, criterio) %>% 
+    summarise(num = count(municipio == 'Esperança'))
 ```
 
 
@@ -30,12 +34,46 @@ data[is.na(data)] <- ""
 
 precisao <- data %>% 
     group_by(municipio, criterio, item) %>% 
-    mutate(acertou = encontrado_turmalina == encontrado & grepl(local_encontrado, local_encontrado_turmalina))
+    mutate(
+           
+           tp = encontrado_turmalina == TRUE 
+           & encontrado_turmalina == encontrado 
+           & (grepl(local_encontrado, local_encontrado_turmalina) |
+                  grepl(local_encontrado_2, local_encontrado_turmalina)),
+           
+           fn =  encontrado_turmalina == FALSE 
+           & encontrado == TRUE,
+           
+           fp = encontrado_turmalina == TRUE 
+           & encontrado == FALSE
+          )
 ```
 
+Quantificando métricas
 ```{r}
-TP <-  sum(precisao$acertou)
-FN <- sum(precisao$acertou == FALSE)
+tp <-  sum(precisao$tp)
+fn <- sum(precisao$fn)
+fp <- sum(precisao$fp)
 ```
+
+
+Recall
+
+```{r}
+recall <- tp/(tp+fn)
+recall
+```
+
+Precision
+
+```{r}
+precision <- tp/(tp+fp)
+precision
+```
+F1-score
+```{r}
+(2*(recall*precision))/(recall+precision)
+```
+
 
 
