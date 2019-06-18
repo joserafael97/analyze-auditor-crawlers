@@ -2,9 +2,12 @@ library(tidyverse) #
 library(jsonlite) # Ler dados json
 library(dplyr) # 
 library(here)
+library(tidyr)
 
-avaliacoes <- fromJSON("http://127.0.0.1:5000/avaliacao/ultima/detalhe/item")
+avaliacoes <- fromJSON("http://localhost:5000/api/v1/evaluation/Esperan%C3%A7a", flatten = TRUE)[[1]][[1]]
 
+d = avaliacoes %>% 
+    unnest(itens)    
 
 avaliacoes = avaliacoes %>% 
     group_by(item = item_abreviado, municipio, criterio) %>% 
