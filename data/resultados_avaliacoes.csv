@@ -1,171 +1,61 @@
-item,municipio,criterio,encontrado_turmalina,local_encontrado_turmalina
-acao,Arara,DespesaOrcamentariaItem,FALSE,
-acao,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-acao,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-acao,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-acao,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-alinea,Arara,ReceitaOrcamentariaItem,FALSE,
-alinea,Campina Grande,ReceitaOrcamentariaItem,FALSE,
-alinea,Esperança,ReceitaOrcamentariaItem,FALSE,
-alinea,Ouro Velho,ReceitaOrcamentariaItem,FALSE,
-alinea,Santa Rita,ReceitaOrcamentariaItem,FALSE,
-arrecadacao,Arara,ReceitaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Prevista?e=201012&isModal=False
-arrecadacao,Campina Grande,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-arrecadacao,Esperança,ReceitaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
-arrecadacao,Ouro Velho,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-arrecadacao,Santa Rita,ReceitaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml
-cat_economica,Arara,ReceitaOrcamentariaItem,FALSE,
-cat_economica,Campina Grande,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-cat_economica,Esperança,ReceitaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx?receita=11130311
-cat_economica,Ouro Velho,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/views_control/index.php?cidade=O5w=&uf=PB
-cat_economica,Santa Rita,ReceitaOrcamentariaItem,FALSE,
-categoria_economica,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Liquidacao?e=201012&ctx=201012
-categoria_economica,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-categoria_economica,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-categoria_economica,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-categoria_economica,Santa Rita,DespesaOrcamentariaItem,FALSE,
-elemento,Arara,DespesaOrcamentariaItem,FALSE,
-elemento,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-elemento,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-elemento,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-elemento,Santa Rita,DespesaOrcamentariaItem,FALSE,
-emp_cnpj_cpf,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Restos?e=201012&Tab=5&isModal=false&ctx=201012
-emp_cnpj_cpf,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_cnpj_cpf,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-emp_cnpj_cpf,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_cnpj_cpf,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-emp_data,Arara,DespesaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=False
-emp_data,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_data,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-emp_data,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_data,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-emp_indicacao_licitacao,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-emp_indicacao_licitacao,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_indicacao_licitacao,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-emp_indicacao_licitacao,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_indicacao_licitacao,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-emp_numero,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Restos?e=201012&Tab=5&isModal=false&ctx=201012
-emp_numero,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_numero,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-emp_numero,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_numero,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-emp_valor,Arara,DespesaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=False
-emp_valor,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_valor,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-emp_valor,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-emp_valor,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-especie,Arara,ReceitaOrcamentariaItem,FALSE,
-especie,Campina Grande,ReceitaOrcamentariaItem,FALSE,
-especie,Esperança,ReceitaOrcamentariaItem,FALSE,
-especie,Ouro Velho,ReceitaOrcamentariaItem,FALSE,
-especie,Santa Rita,ReceitaOrcamentariaItem,FALSE,
-funcao,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-funcao,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-funcao,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-funcao,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-funcao,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-lancado,Arara,ReceitaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=False
-lancado,Campina Grande,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lancado,Esperança,ReceitaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx?receita=11130311
-lancado,Ouro Velho,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lancado,Santa Rita,ReceitaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/relatorio/previsao.xhtml
-lic_data_pag_ultima,Arara,DespesaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=False
-lic_data_pag_ultima,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_data_pag_ultima,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-lic_data_pag_ultima,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_data_pag_ultima,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-lic_modalidade,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-lic_modalidade,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_modalidade,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-lic_modalidade,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_modalidade,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-lic_num_contrato,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-lic_num_contrato,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_num_contrato,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-lic_num_contrato,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_num_contrato,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-lic_numero,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-lic_numero,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_numero,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-lic_numero,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_numero,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-lic_obj_servico,Arara,DespesaOrcamentariaItem,FALSE,
-lic_obj_servico,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_obj_servico,Esperança,DespesaOrcamentariaItem,FALSE,
-lic_obj_servico,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-lic_obj_servico,Santa Rita,DespesaOrcamentariaItem,FALSE,
-modalidade,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-modalidade,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-modalidade,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-modalidade,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-modalidade,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-natureza_despesa,Arara,DespesaOrcamentariaItem,FALSE,
-natureza_despesa,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-natureza_despesa,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-natureza_despesa,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-natureza_despesa,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-nome,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-nome,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-nome,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-nome,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-nome,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-orgao_or_uni_orcamentaria,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Liquidacao?e=201012&ctx=201012
-orgao_or_uni_orcamentaria,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-orgao_or_uni_orcamentaria,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-orgao_or_uni_orcamentaria,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-orgao_or_uni_orcamentaria,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-origem,Arara,ReceitaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Prevista?e=201012&isModal=False
-origem,Campina Grande,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-origem,Esperança,ReceitaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
-origem,Ouro Velho,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-origem,Santa Rita,ReceitaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml
-previsao,Arara,ReceitaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/?e=201012
-previsao,Campina Grande,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-previsao,Esperança,ReceitaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
-previsao,Ouro Velho,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-previsao,Santa Rita,ReceitaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/relatorio/previsao.xhtml
-programa,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Restos?e=201012&Tab=5&isModal=false&ctx=201012
-programa,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-programa,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-programa,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-programa,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-rubrica,Arara,ReceitaOrcamentariaItem,FALSE,
-rubrica,Campina Grande,ReceitaOrcamentariaItem,FALSE,
-rubrica,Esperança,ReceitaOrcamentariaItem,FALSE,
-rubrica,Ouro Velho,ReceitaOrcamentariaItem,FALSE,
-rubrica,Santa Rita,ReceitaOrcamentariaItem,FALSE,
-sub_alinea,Arara,ReceitaOrcamentariaItem,FALSE,
-sub_alinea,Campina Grande,ReceitaOrcamentariaItem,FALSE,
-sub_alinea,Esperança,ReceitaOrcamentariaItem,FALSE,
-sub_alinea,Ouro Velho,ReceitaOrcamentariaItem,FALSE,
-sub_alinea,Santa Rita,ReceitaOrcamentariaItem,FALSE,
-sub_elemento,Arara,DespesaOrcamentariaItem,FALSE,
-sub_elemento,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-sub_elemento,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=1042
-sub_elemento,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-sub_elemento,Santa Rita,DespesaOrcamentariaItem,FALSE,
-sub_funcao,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-sub_funcao,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-sub_funcao,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-sub_funcao,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-sub_funcao,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-uni_gestora,Arara,ReceitaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Prevista?e=201012&isModal=False
-uni_gestora,Campina Grande,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-uni_gestora,Esperança,ReceitaOrcamentariaItem,FALSE,
-uni_gestora,Ouro Velho,ReceitaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-uni_gestora,Santa Rita,ReceitaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml
-valor_fixado,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Liquidacao?e=201012&ctx=201012
-valor_fixado,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-valor_fixado,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-valor_fixado,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-valor_fixado,Santa Rita,DespesaOrcamentariaItem,FALSE,
-valor_liquidado,Arara,DespesaOrcamentariaItem,TRUE,https://transparencia.elmar.inf.br/Contab/Despesas/Liquidacao?e=201012&ctx=201012
-valor_liquidado,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-valor_liquidado,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-valor_liquidado,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-valor_liquidado,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
-valor_pago,Arara,DespesaOrcamentariaItem,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=False
-valor_pago,Campina Grande,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-valor_pago,Esperança,DespesaOrcamentariaItem,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-valor_pago,Ouro Velho,DespesaOrcamentariaItem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-valor_pago,Santa Rita,DespesaOrcamentariaItem,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml
+item,municipio,criterio,valid,found,pathSought
+acao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+alinea,Esperança,Receita Orçamentária,FALSE,FALSE,
+arrecadacao,Esperança,Receita Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
+aviso,Esperança,Licitação,FALSE,FALSE,
+cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
+cat_economica,Esperança,Receita Orçamentária,FALSE,FALSE,
+categoria_economica,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
+cnpj_cpf,Esperança,Licitação,FALSE,FALSE,
+codigo,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
+codigo,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx
+cpf,Esperança,Quadro Pessoal,FALSE,FALSE,
+data_publicacao_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+data_realizacao,Esperança,Licitação,FALSE,FALSE,
+edital,Esperança,Licitação,FALSE,FALSE,
+elemento,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
+emp_cnpj_cpf,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
+emp_data,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+emp_indicacao_licitacao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+emp_numero,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+emp_valor,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+especie,Esperança,Receita Orçamentária,FALSE,FALSE,
+funcao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+integra,Esperança,Licitação,FALSE,FALSE,
+lancado,Esperança,Receita Orçamentária,FALSE,FALSE,
+lic_data_pag_ultima,Esperança,Despesa Orçamentária,FALSE,FALSE,
+licitado,Esperança,Licitação,FALSE,FALSE,
+lic_modalidade,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
+lic_num_contrato,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
+lic_numero,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+lic_obj_servico,Esperança,Despesa Orçamentária,FALSE,FALSE,
+modalidade,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
+modalidade_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+natureza_despesa,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
+nome,Esperança,Quadro Pessoal,FALSE,FALSE,
+nomenclatura,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+nomenclatura,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+nome_perdedores,Esperança,Licitação,FALSE,TRUE,http://www.transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012011&&Tipo=02
+nome_vencedores,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
+numero_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+objeto_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+orgao_or_uni_orcamentaria,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+origem,Esperança,Receita Orçamentária,FALSE,FALSE,
+pregao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+previsao,Esperança,Receita Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
+programa,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+rubrica,Esperança,Receita Orçamentária,FALSE,FALSE,
+salario_cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
+setor_interessado,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+sub_alinea,Esperança,Receita Orçamentária,FALSE,FALSE,
+sub_elemento,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
+sub_funcao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+termo_ratificacao,Esperança,Licitação,FALSE,FALSE,
+tipo_cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
+uni_gestora,Esperança,Receita Orçamentária,FALSE,FALSE,
+valor,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+valor,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+valor,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
+valor_fixado,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+valor_liquidado,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+valor_pago,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx

@@ -19,8 +19,8 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-resultados_avaliacoes = read_avaliacoes()
-gararito = read_gabaritos() 
+resultados_avaliacoes = read_avaliacoes('Esperança')
+gararito = read_gabaritos('Esperança') 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
 
 data %>% 
@@ -36,15 +36,17 @@ precisao <- data %>%
     group_by(municipio, criterio, item) %>% 
     mutate(
            
-           tp = encontrado_turmalina == TRUE 
-           & encontrado_turmalina == encontrado 
-           & (grepl(local_encontrado, local_encontrado_turmalina) |
-                  grepl(local_encontrado_2, local_encontrado_turmalina)),
+           #verifica se a avaliação foi acertiva
+           tp = valid == TRUE 
+           & valid == encontrado 
+           #valida se no gabarito e na avaliação o item foi encontrado na mesma url 
+           & (grepl(local_encontrado, pathSought) |
+                  grepl(local_encontrado_2, pathSought)),
            
-           fn =  encontrado_turmalina == FALSE 
+           fn =  valid == FALSE 
            & encontrado == TRUE,
            
-           fp = encontrado_turmalina == TRUE 
+           fp = valid == TRUE 
            & encontrado == FALSE
           )
 ```
