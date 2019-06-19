@@ -6,7 +6,7 @@ library(tidyr)
 library(readr)
 
 
-avaliacoes <- fromJSON("http://localhost:5000/api/v1/evaluation/Esperan%C3%A7a", flatten = TRUE)
+avaliacoes <- fromJSON("http://localhost:5000/api/v1/evaluation", flatten = TRUE)
 
 avaliacoes <- avaliacoes %>% 
     unnest(criterions) %>%

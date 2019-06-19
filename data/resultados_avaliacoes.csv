@@ -1,61 +1,61 @@
 item,municipio,criterio,valid,found,pathSought
-acao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-alinea,Esperança,Receita Orçamentária,FALSE,FALSE,
-arrecadacao,Esperança,Receita Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
-aviso,Esperança,Licitação,FALSE,FALSE,
-cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
-cat_economica,Esperança,Receita Orçamentária,FALSE,FALSE,
-categoria_economica,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
-cnpj_cpf,Esperança,Licitação,FALSE,FALSE,
-codigo,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-codigo,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx
-cpf,Esperança,Quadro Pessoal,FALSE,FALSE,
-data_publicacao_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-data_realizacao,Esperança,Licitação,FALSE,FALSE,
-edital,Esperança,Licitação,FALSE,FALSE,
-elemento,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
-emp_cnpj_cpf,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
-emp_data,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-emp_indicacao_licitacao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-emp_numero,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-emp_valor,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-especie,Esperança,Receita Orçamentária,FALSE,FALSE,
-funcao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-integra,Esperança,Licitação,FALSE,FALSE,
-lancado,Esperança,Receita Orçamentária,FALSE,FALSE,
-lic_data_pag_ultima,Esperança,Despesa Orçamentária,FALSE,FALSE,
-licitado,Esperança,Licitação,FALSE,FALSE,
-lic_modalidade,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
-lic_num_contrato,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
-lic_numero,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-lic_obj_servico,Esperança,Despesa Orçamentária,FALSE,FALSE,
-modalidade,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
-modalidade_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-natureza_despesa,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-nome,Esperança,Quadro Pessoal,FALSE,FALSE,
-nomenclatura,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-nomenclatura,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-nome_perdedores,Esperança,Licitação,FALSE,TRUE,http://www.transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012011&&Tipo=02
-nome_vencedores,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-numero_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-objeto_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-orgao_or_uni_orcamentaria,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-origem,Esperança,Receita Orçamentária,FALSE,FALSE,
-pregao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-previsao,Esperança,Receita Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
-programa,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-rubrica,Esperança,Receita Orçamentária,FALSE,FALSE,
-salario_cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
-setor_interessado,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-sub_alinea,Esperança,Receita Orçamentária,FALSE,FALSE,
-sub_elemento,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2230
-sub_funcao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-termo_ratificacao,Esperança,Licitação,FALSE,FALSE,
-tipo_cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
-uni_gestora,Esperança,Receita Orçamentária,FALSE,FALSE,
-valor,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-valor,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-valor,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-valor_fixado,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-valor_liquidado,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-valor_pago,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+acao,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=101095&isModal=False
+alinea,João Pessoa,Receita Orçamentária,FALSE,FALSE,
+arrecadacao,João Pessoa,Receita Orçamentária,FALSE,FALSE,https://transparencia.joaopessoa.pb.gov.br/#/receitas/receitas-arrecadacao
+aviso,João Pessoa,Licitação,FALSE,FALSE,
+cargo,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal
+cat_economica,João Pessoa,Receita Orçamentária,FALSE,FALSE,
+categoria_economica,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=101095&isModal=False
+cnpj_cpf,João Pessoa,Licitação,FALSE,FALSE,
+codigo,João Pessoa,Despesa Extra Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/SubEmpenhos?e=101095&Tab=3&isModal=false&ctx=101095
+codigo,João Pessoa,Receita Extra Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/
+cpf,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal
+data_publicacao_licitacao,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+data_realizacao,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=101095&ctx=101095
+edital,João Pessoa,Licitação,FALSE,FALSE,
+elemento,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=101095&isModal=False
+emp_cnpj_cpf,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=101095&Tab=2&isModal=false&ctx=101095
+emp_data,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+emp_indicacao_licitacao,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=101095&Tab=2&isModal=false&ctx=101095
+emp_numero,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=101095&isModal=False
+emp_valor,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+especie,João Pessoa,Receita Orçamentária,FALSE,FALSE,
+funcao,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=101095&Tab=2&isModal=false&ctx=101095
+integra,João Pessoa,Licitação,FALSE,FALSE,
+lancado,João Pessoa,Receita Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+lic_data_pag_ultima,João Pessoa,Despesa Orçamentária,FALSE,FALSE,
+licitado,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=101095&ctx=101095
+lic_modalidade,João Pessoa,Despesa Orçamentária,FALSE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento
+lic_num_contrato,João Pessoa,Despesa Orçamentária,FALSE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/
+lic_numero,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=101095&Tab=2&isModal=false&ctx=101095
+lic_obj_servico,João Pessoa,Despesa Orçamentária,FALSE,FALSE,
+modalidade,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=101095&Tab=2&isModal=false&ctx=101095
+modalidade_licitacao,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=101095&ctx=101095
+natureza_despesa,João Pessoa,Despesa Orçamentária,FALSE,FALSE,
+nome,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+nome,João Pessoa,Quadro Pessoal,FALSE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal
+nomenclatura,João Pessoa,Despesa Extra Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-extraorcamentarias
+nomenclatura,João Pessoa,Receita Extra Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+nome_perdedores,João Pessoa,Licitação,FALSE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/licitacoes
+nome_vencedores,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=101095&ctx=101095
+numero_licitacao,João Pessoa,Licitação,FALSE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/licitacoes
+objeto_licitacao,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=101095&ctx=101095
+origem,João Pessoa,Receita Orçamentária,FALSE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/receitas/receitas-detalhamento
+pregao,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=101095&ctx=101095
+previsao,João Pessoa,Receita Orçamentária,FALSE,FALSE,https://transparencia.joaopessoa.pb.gov.br/#/receitas/receitas-arrecadacao
+programa,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=101095&isModal=False
+rubrica,João Pessoa,Receita Orçamentária,FALSE,FALSE,
+salario_cargo,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal
+setor_interessado,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+sub_alinea,João Pessoa,Receita Orçamentária,FALSE,FALSE,
+sub_elemento,João Pessoa,Despesa Orçamentária,FALSE,FALSE,
+sub_funcao,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=101095&Tab=2&isModal=false&ctx=101095
+termo_ratificacao,João Pessoa,Licitação,FALSE,FALSE,
+tipo_cargo,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal
+uni_gestora,João Pessoa,Receita Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+valor,João Pessoa,Despesa Extra Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-extraorcamentarias
+valor,João Pessoa,Licitação,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+valor,João Pessoa,Receita Extra Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False
+valor_fixado,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento
+valor_liquidado,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento
+valor_pago,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento
