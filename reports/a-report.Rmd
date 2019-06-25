@@ -19,8 +19,8 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-resultados_avaliacoes = read_avaliacoes('João Pessoa')
-gararito = read_gabaritos('João Pessoa') 
+resultados_avaliacoes = read_avaliacoes('Esperança')
+gararito = read_gabaritos('Esperança') 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
 
 ```
@@ -53,6 +53,15 @@ Quantificando métricas
 tp <-  sum(precisao$tp)
 fn <- sum(precisao$fn)
 fp <- sum(precisao$fp)
+```
+
+```{r}
+precisao %>% 
+    group_by(criterio, municipio) %>%
+    summarize(true_positive = sum(tp == TRUE), total_itens = n()) %>%
+    ggplot() + 
+    geom_bar(aes(x=criterio, y=true_positive), fill="#DD8888",stat="identity") + 
+    geom_smooth(y=total_itens, color = "blue",size = 0.8)
 ```
 
 
