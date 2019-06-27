@@ -6,7 +6,7 @@ library(tidyr)
 library(readr)
 
 
-avaliacoes <- data.frame(fromJSON("http://localhost:5000/api/v1/evaluation/Campina%20Grande/last", flatten = TRUE))
+avaliacoes <- data.frame(fromJSON("http://localhost:5000/api/v1/evaluation/Esperança/last", flatten = TRUE))
 
 
 avaliacoes <- avaliacoes %>% 

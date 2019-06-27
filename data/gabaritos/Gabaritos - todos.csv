@@ -155,9 +155,9 @@ Campina Grande,Receita Orçamentária,origem,TRUE,http://transparencia.campinagr
 Campina Grande,Receita Orçamentária,previsao,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
 Campina Grande,Receita Orçamentária,rubrica,FALSE,NA,
 Campina Grande,Receita Orçamentária,sub_alinea,FALSE,NA,
-Campina Grande,Despesa Extra Orçamentária,valor,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Extra Orçamentária,codigo,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Extra Orçamentária,nomenclatura,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Despesa Extra Orçamentária,valor,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
+Campina Grande,Despesa Extra Orçamentária,codigo,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
+Campina Grande,Despesa Extra Orçamentária,nomenclatura,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
 Campina Grande,Receita Extra Orçamentária,valor,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
 Campina Grande,Receita Extra Orçamentária,codigo,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
 Campina Grande,Receita Extra Orçamentária,nomenclatura,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/

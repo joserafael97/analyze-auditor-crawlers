@@ -1,61 +1,62 @@
 item,municipio,criterio,valid,found,pathSought
-acao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-arrecadacao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-aviso,Campina Grande,Licitação,FALSE,FALSE,
-cargo,Campina Grande,Quadro Pessoal,FALSE,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores
-categoria_economica,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-categoria_economica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-cnpj_cpf,Campina Grande,Licitação,FALSE,FALSE,
-codigo,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
-codigo,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
-cpf,Campina Grande,Quadro Pessoal,FALSE,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores
-data_publicacao_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-data_realizacao,Campina Grande,Licitação,FALSE,FALSE,
-edital,Campina Grande,Licitação,FALSE,FALSE,
-elemento,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-emp_cnpj_cpf,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-emp_data,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-emp_indicacao_licitacao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-emp_numero,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-emp_valor,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-especie,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-funcao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-integra,Campina Grande,Licitação,FALSE,FALSE,
-lancado,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-lic_data_pag_ultima,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-licitado,Campina Grande,Licitação,FALSE,FALSE,
-lic_modalidade,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-lic_num_contrato,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-lic_numero,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-lic_obj_servico,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-modalidade,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-modalidade_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-natureza_despesa,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-nome,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-nome,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-nomenclatura,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
-nomenclatura,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
-nome_perdedores,Campina Grande,Licitação,FALSE,FALSE,
-nome_vencedores,Campina Grande,Licitação,FALSE,FALSE,
-numero_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-objeto_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-origem,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-pregao,Campina Grande,Licitação,FALSE,FALSE,
-previsao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-programa,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-rubrica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-salario_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-setor_interessado,Campina Grande,Licitação,FALSE,FALSE,
-sub_alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-sub_elemento,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-sub_funcao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-termo_ratificacao,Campina Grande,Licitação,FALSE,FALSE,
-tipo_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-uni_gestora,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-valor,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
-valor,Campina Grande,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=LicitacaoV2/Licitacoes.php&urlorigem=
-valor,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
-valor_fixado,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-valor_liquidado,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-valor_pago,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+acao,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+alinea,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+arrecadacao,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+aviso,Ouro Velho,Licitação,FALSE,FALSE,
+cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,
+categoria_economica,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+categoria_economica,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+cnpj_cpf,Ouro Velho,Licitação,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+codigo,Ouro Velho,Despesa Extra Orçamentária,FALSE,FALSE,
+codigo,Ouro Velho,Receita Extra Orçamentária,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+cpf,Ouro Velho,Quadro Pessoal,FALSE,FALSE,
+data_publicacao_licitacao,Ouro Velho,Licitação,FALSE,FALSE,
+data_realizacao,Ouro Velho,Licitação,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+edital,Ouro Velho,Licitação,FALSE,FALSE,
+elemento,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+emp_cnpj_cpf,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+emp_data,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+emp_indicacao_licitacao,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+emp_numero,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+emp_valor,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+especie,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+funcao,Ouro Velho,Despesa Orçamentária,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+integra,Ouro Velho,Licitação,FALSE,FALSE,
+lancado,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+lic_data_pag_ultima,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+licitado,Ouro Velho,Licitação,FALSE,FALSE,
+lic_modalidade,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+lic_num_contrato,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+lic_numero,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+lic_obj_servico,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+modalidade,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+modalidade_licitacao,Ouro Velho,Licitação,FALSE,FALSE,
+natureza_despesa,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+nome,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+nome,Ouro Velho,Quadro Pessoal,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php
+nomenclatura,Ouro Velho,Despesa Extra Orçamentária,FALSE,FALSE,
+nomenclatura,Ouro Velho,Receita Extra Orçamentária,FALSE,FALSE,
+nome_perdedores,Ouro Velho,Licitação,FALSE,FALSE,
+nome_vencedores,Ouro Velho,Licitação,FALSE,FALSE,
+numero_licitacao,Ouro Velho,Licitação,FALSE,FALSE,
+objeto_licitacao,Ouro Velho,Licitação,FALSE,FALSE,
+orgao_or_uni_orcamentaria,Ouro Velho,Despesa Orçamentária,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+origem,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+pregao,Ouro Velho,Licitação,FALSE,FALSE,
+previsao,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+programa,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+rubrica,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+salario_cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,
+setor_interessado,Ouro Velho,Licitação,FALSE,FALSE,
+sub_alinea,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+sub_elemento,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+sub_funcao,Ouro Velho,Despesa Orçamentária,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+termo_ratificacao,Ouro Velho,Licitação,FALSE,FALSE,
+tipo_cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,
+uni_gestora,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
+valor,Ouro Velho,Despesa Extra Orçamentária,FALSE,FALSE,
+valor,Ouro Velho,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+valor,Ouro Velho,Receita Extra Orçamentária,FALSE,FALSE,
+valor_fixado,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+valor_liquidado,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+valor_pago,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,

@@ -19,8 +19,8 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-resultados_avaliacoes = read_avaliacoes('Campina Grande')
-gararito = read_gabaritos('Campina Grande') 
+resultados_avaliacoes = read_avaliacoes('Esperança')
+gararito = read_gabaritos('Esperança') 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
 
 ```
@@ -56,11 +56,27 @@ fp <- sum(precisao$fp)
 ```
 
 ```{r}
+ precisao %>% 
+    group_by(criterio, municipio) %>%
+    summarize(total_fn = sum(fn == TRUE), total_itens = n()) %>%
+    ggplot() + 
+    geom_bar(aes(x=criterio, y=total_fn), fill="#DD8888",stat="identity")
+
+
 precisao %>% 
     group_by(criterio, municipio) %>%
-    summarize(true_positive = sum(tp == TRUE), total_itens = n()) %>%
+    summarize(total_fp = sum(fp == TRUE), total_itens = n()) %>%
     ggplot() + 
-    geom_bar(aes(x=criterio, y=true_positive), fill="#DD8888",stat="identity") 
+    geom_bar(aes(x=criterio, y=total_fp), fill="#DD8888",stat="identity") 
+```
+
+```{r}
+precisao %>% filter(fp == TRUE)
+```
+
+```{r}
+precisao %>% filter(fn == TRUE)
+
 ```
 
 
