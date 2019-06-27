@@ -19,8 +19,8 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-resultados_avaliacoes = read_avaliacoes('Esperança')
-gararito = read_gabaritos('Esperança') 
+resultados_avaliacoes = read_avaliacoes('Campina Grande')
+gararito = read_gabaritos('Campina Grande') 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
 
 ```
@@ -60,8 +60,7 @@ precisao %>%
     group_by(criterio, municipio) %>%
     summarize(true_positive = sum(tp == TRUE), total_itens = n()) %>%
     ggplot() + 
-    geom_bar(aes(x=criterio, y=true_positive), fill="#DD8888",stat="identity") + 
-    geom_smooth(y=total_itens, color = "blue",size = 0.8)
+    geom_bar(aes(x=criterio, y=true_positive), fill="#DD8888",stat="identity") 
 ```
 
 

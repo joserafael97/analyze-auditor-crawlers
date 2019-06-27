@@ -26,7 +26,7 @@ Esperança,Despesa Orçamentária,nome,TRUE,http://www.transparenciaativa.com.br
 Esperança,Receita Orçamentária,alinea,FALSE,NA,
 Esperança,Receita Orçamentária,uni_gestora,FALSE,NA,
 Esperança,Receita Orçamentária,arrecadacao,TRUE,NA,
-Esperança,Receita Orçamentária,cat_economica,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx,
+Esperança,Receita Orçamentária,categoria_economica,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx,
 Esperança,Receita Orçamentária,especie,FALSE,,
 Esperança,Receita Orçamentária,lancado,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx,
 Esperança,Receita Orçamentária,origem,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx,
@@ -87,7 +87,7 @@ Santa Rita,Despesa  Orçamentária,valor_pago,TRUE,http://siteseticons.com.br/po
 Santa Rita,Receita Orçamentária,uni_gestora,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
 Santa Rita,Receita Orçamentária,alinea,FALSE,,
 Santa Rita,Receita Orçamentária,arrecadacao,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
-Santa Rita,Receita Orçamentária,cat_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
+Santa Rita,Receita Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
 Santa Rita,Receita Orçamentária,especie,FALSE,,
 Santa Rita,Receita Orçamentária,lancado,FALSE,,
 Santa Rita,Receita Orçamentária,origem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
@@ -121,30 +121,30 @@ Santa Rita,Licitação,termo_ratificacao,FALSE,,
 Santa Rita,Licitação,pregao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
 Santa Rita,Licitação,aviso,FALSE,,
 Santa Rita,Licitação,licitado,FALSE,,
-Campina Grande,Despesa Orçamentária,acao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,cat_economica,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,elemento,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,emp_data,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,emp_indicao_licitacao,FALSE,,
-Campina Grande,Despesa Orçamentária,emp_numero,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,emp_valor,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,funcao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,lic_modalidade,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Despesa Orçamentária,acao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,categoria_economica,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,elemento,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_data,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_indicacao_licitacao,FALSE,,
+Campina Grande,Despesa Orçamentária,emp_numero,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_valor,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,funcao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,lic_modalidade,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
 Campina Grande,Despesa Orçamentária,lic_num_contrato,FALSE,NA,
-Campina Grande,Despesa Orçamentária,lic_numero,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,lic_obj_servico,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,modalidade,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,natureza_despesa,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,programa,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Despesa Orçamentária,lic_numero,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,lic_obj_servico,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,modalidade,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,natureza_despesa,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,programa,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
 Campina Grande,Despesa Orçamentária,sub_elemento,FALSE,NA,
-Campina Grande,Despesa Orçamentária,sub_funcao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,valor_fixado,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,valor_liquidado,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,valor_pago,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Despesa Orçamentária,nome,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Despesa Orçamentária,sub_funcao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,valor_fixado,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,valor_liquidado,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,valor_pago,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,nome,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
 Campina Grande,Receita Orçamentária,uni_gestora,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
 Campina Grande,Receita Orçamentária,alinea,FALSE,NA,
 Campina Grande,Receita Orçamentária,arrecadacao,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
@@ -209,7 +209,7 @@ Ouro Velho,Despesa Orçamentária,nome,TRUE,http://portaldatransparencia.publics
 Ouro Velho,Receita Orçamentária,uni_gestora,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
 Ouro Velho,Receita Orçamentária,alinea,FALSE,,
 Ouro Velho,Receita Orçamentária,arrecadacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
-Ouro Velho,Receita Orçamentária,cat_economica,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Ouro Velho,Receita Orçamentária,categoria_economica,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
 Ouro Velho,Receita Orçamentária,especie,FALSE,,
 Ouro Velho,Receita Orçamentária,lancado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
 Ouro Velho,Receita Orçamentária,origem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
@@ -270,7 +270,7 @@ Arara,Despesa Orçamentária,nome,TRUE,http://transparencia.elmar.inf.br/Contab/
 Arara,Receita Orçamentária,uni_gestora,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,
 Arara,Receita Orçamentária,alinea,FALSE,,
 Arara,Receita Orçamentária,arrecadacao,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,
-Arara,Receita Orçamentária,cat_economica,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,
+Arara,Receita Orçamentária,categoria_economica,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,
 Arara,Receita Orçamentária,especie,FALSE,,
 Arara,Receita Orçamentária,lancado,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,
 Arara,Receita Orçamentária,origem,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,
@@ -331,7 +331,7 @@ João Pessoa,Despesa Orçamentária,nome,TRUE,https://transparencia.joaopessoa.p
 João Pessoa,Receita Orçamentária,uni_gestora,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/receitas/receitas-detalhamento,https://transparencia.joaopessoa.pb.gov.br/#/receitas/receitas-quadro-geral
 João Pessoa,Receita Orçamentária,alinea,FALSE,,
 João Pessoa,Receita Orçamentária,arrecadacao,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/receitas/receitas-quadro-geral,
-João Pessoa,Receita Orçamentária,cat_economica,FALSE,,
+João Pessoa,Receita Orçamentária,categoria_economica,FALSE,,
 João Pessoa,Receita Orçamentária,especie,FALSE,,
 João Pessoa,Receita Orçamentária,lancado,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/receitas/receitas-detalhamento,
 João Pessoa,Receita Orçamentária,origem,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/receitas/receitas-detalhamento,

@@ -1,61 +1,61 @@
 item,municipio,criterio,valid,found,pathSought
-acao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-alinea,Esperança,Receita Orçamentária,FALSE,FALSE,
-arrecadacao,Esperança,Receita Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
-aviso,Esperança,Licitação,FALSE,FALSE,
-cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
-cat_economica,Esperança,Receita Orçamentária,FALSE,FALSE,
-categoria_economica,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=7001099
-cnpj_cpf,Esperança,Licitação,FALSE,FALSE,
-codigo,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-codigo,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-cpf,Esperança,Quadro Pessoal,FALSE,FALSE,
-data_publicacao_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-data_realizacao,Esperança,Licitação,FALSE,FALSE,
-edital,Esperança,Licitação,FALSE,FALSE,
-elemento,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=7001099
-emp_cnpj_cpf,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=7001099
-emp_data,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-emp_indicacao_licitacao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-emp_numero,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-emp_valor,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-especie,Esperança,Receita Orçamentária,FALSE,FALSE,
-funcao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-integra,Esperança,Licitação,FALSE,FALSE,
-lancado,Esperança,Receita Orçamentária,FALSE,FALSE,
-lic_data_pag_ultima,Esperança,Despesa Orçamentária,FALSE,FALSE,
-licitado,Esperança,Licitação,FALSE,FALSE,
-lic_modalidade,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=7001099
-lic_num_contrato,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=7001099
-lic_numero,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-lic_obj_servico,Esperança,Despesa Orçamentária,FALSE,FALSE,
-modalidade,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=7001099
-modalidade_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-natureza_despesa,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx
-nome,Esperança,Quadro Pessoal,FALSE,FALSE,
-nomenclatura,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-nomenclatura,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-nome_perdedores,Esperança,Licitação,FALSE,TRUE,http://www.transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012011&&Tipo=02
-nome_vencedores,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-numero_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-objeto_licitacao,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-orgao_or_uni_orcamentaria,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-origem,Esperança,Receita Orçamentária,FALSE,FALSE,
-pregao,Esperança,Licitação,FALSE,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx
-previsao,Esperança,Receita Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx
-programa,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-rubrica,Esperança,Receita Orçamentária,FALSE,FALSE,
-salario_cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
-setor_interessado,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaPorOrgao.aspx
-sub_alinea,Esperança,Receita Orçamentária,FALSE,FALSE,
-sub_elemento,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=7001099
-sub_funcao,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-termo_ratificacao,Esperança,Licitação,FALSE,FALSE,
-tipo_cargo,Esperança,Quadro Pessoal,FALSE,FALSE,
-uni_gestora,Esperança,Receita Orçamentária,FALSE,FALSE,
-valor,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-valor,Esperança,Licitação,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-valor,Esperança,Receita Extra Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx
-valor_fixado,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-valor_liquidado,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
-valor_pago,Esperança,Despesa Orçamentária,TRUE,TRUE,http://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx
+acao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+arrecadacao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+aviso,Campina Grande,Licitação,FALSE,FALSE,
+cargo,Campina Grande,Quadro Pessoal,FALSE,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores
+categoria_economica,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+categoria_economica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+cnpj_cpf,Campina Grande,Licitação,FALSE,FALSE,
+codigo,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+codigo,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
+cpf,Campina Grande,Quadro Pessoal,FALSE,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores
+data_publicacao_licitacao,Campina Grande,Licitação,FALSE,FALSE,
+data_realizacao,Campina Grande,Licitação,FALSE,FALSE,
+edital,Campina Grande,Licitação,FALSE,FALSE,
+elemento,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+emp_cnpj_cpf,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+emp_data,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+emp_indicacao_licitacao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+emp_numero,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+emp_valor,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+especie,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+funcao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+integra,Campina Grande,Licitação,FALSE,FALSE,
+lancado,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+lic_data_pag_ultima,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+licitado,Campina Grande,Licitação,FALSE,FALSE,
+lic_modalidade,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+lic_num_contrato,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+lic_numero,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+lic_obj_servico,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+modalidade,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+modalidade_licitacao,Campina Grande,Licitação,FALSE,FALSE,
+natureza_despesa,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+nome,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+nome,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+nomenclatura,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+nomenclatura,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
+nome_perdedores,Campina Grande,Licitação,FALSE,FALSE,
+nome_vencedores,Campina Grande,Licitação,FALSE,FALSE,
+numero_licitacao,Campina Grande,Licitação,FALSE,FALSE,
+objeto_licitacao,Campina Grande,Licitação,FALSE,FALSE,
+origem,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+pregao,Campina Grande,Licitação,FALSE,FALSE,
+previsao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+programa,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+rubrica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+salario_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+setor_interessado,Campina Grande,Licitação,FALSE,FALSE,
+sub_alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+sub_elemento,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+sub_funcao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+termo_ratificacao,Campina Grande,Licitação,FALSE,FALSE,
+tipo_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+uni_gestora,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+valor,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+valor,Campina Grande,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=LicitacaoV2/Licitacoes.php&urlorigem=
+valor,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
+valor_fixado,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+valor_liquidado,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+valor_pago,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
