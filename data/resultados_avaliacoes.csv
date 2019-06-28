@@ -1,62 +1,62 @@
 item,municipio,criterio,valid,found,pathSought
-acao,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-alinea,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-arrecadacao,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-aviso,Ouro Velho,Licitação,FALSE,FALSE,
-cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,
-categoria_economica,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-categoria_economica,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-cnpj_cpf,Ouro Velho,Licitação,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-codigo,Ouro Velho,Despesa Extra Orçamentária,FALSE,FALSE,
-codigo,Ouro Velho,Receita Extra Orçamentária,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-cpf,Ouro Velho,Quadro Pessoal,FALSE,FALSE,
-data_publicacao_licitacao,Ouro Velho,Licitação,FALSE,FALSE,
-data_realizacao,Ouro Velho,Licitação,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-edital,Ouro Velho,Licitação,FALSE,FALSE,
-elemento,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-emp_cnpj_cpf,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-emp_data,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-emp_indicacao_licitacao,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-emp_numero,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-emp_valor,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-especie,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-funcao,Ouro Velho,Despesa Orçamentária,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-integra,Ouro Velho,Licitação,FALSE,FALSE,
-lancado,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-lic_data_pag_ultima,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-licitado,Ouro Velho,Licitação,FALSE,FALSE,
-lic_modalidade,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-lic_num_contrato,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-lic_numero,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-lic_obj_servico,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-modalidade,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-modalidade_licitacao,Ouro Velho,Licitação,FALSE,FALSE,
-natureza_despesa,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-nome,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-nome,Ouro Velho,Quadro Pessoal,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php
-nomenclatura,Ouro Velho,Despesa Extra Orçamentária,FALSE,FALSE,
-nomenclatura,Ouro Velho,Receita Extra Orçamentária,FALSE,FALSE,
-nome_perdedores,Ouro Velho,Licitação,FALSE,FALSE,
-nome_vencedores,Ouro Velho,Licitação,FALSE,FALSE,
-numero_licitacao,Ouro Velho,Licitação,FALSE,FALSE,
-objeto_licitacao,Ouro Velho,Licitação,FALSE,FALSE,
-orgao_or_uni_orcamentaria,Ouro Velho,Despesa Orçamentária,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-origem,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-pregao,Ouro Velho,Licitação,FALSE,FALSE,
-previsao,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-programa,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-rubrica,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-salario_cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,
-setor_interessado,Ouro Velho,Licitação,FALSE,FALSE,
-sub_alinea,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-sub_elemento,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-sub_funcao,Ouro Velho,Despesa Orçamentária,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
-termo_ratificacao,Ouro Velho,Licitação,FALSE,FALSE,
-tipo_cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,
-uni_gestora,Ouro Velho,Receita Orçamentária,FALSE,FALSE,
-valor,Ouro Velho,Despesa Extra Orçamentária,FALSE,FALSE,
-valor,Ouro Velho,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-valor,Ouro Velho,Receita Extra Orçamentária,FALSE,FALSE,
-valor_fixado,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-valor_liquidado,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
-valor_pago,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,
+acao,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
+alinea,Arara,Receita Orçamentária,FALSE,FALSE,
+arrecadacao,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
+aviso,Arara,Licitação,FALSE,FALSE,
+cargo,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
+categoria_economica,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
+categoria_economica,Arara,Receita Orçamentária,FALSE,FALSE,
+cnpj_cpf,Arara,Licitação,FALSE,FALSE,
+codigo,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/SubEmpenhos?e=201012&Tab=3&isModal=false&ctx=201012
+codigo,Arara,Receita Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012
+cpf,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
+data_publicacao_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+data_realizacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+edital,Arara,Licitação,FALSE,FALSE,
+elemento,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
+emp_cnpj_cpf,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
+emp_data,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+emp_indicacao_licitacao,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+emp_numero,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
+emp_valor,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+especie,Arara,Receita Orçamentária,FALSE,FALSE,
+funcao,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+integra,Arara,Licitação,FALSE,FALSE,
+lancado,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+lic_data_pag_ultima,Arara,Despesa Orçamentária,FALSE,FALSE,
+licitado,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+lic_modalidade,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+lic_num_contrato,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Pagamentos?e=201012&Tab=6&isModal=false&ctx=201012
+lic_numero,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+lic_obj_servico,Arara,Despesa Orçamentária,FALSE,FALSE,
+modalidade,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+modalidade_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+natureza_despesa,Arara,Despesa Orçamentária,FALSE,FALSE,
+nome,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Restos?e=201012&Tab=5&isModal=false&ctx=201012
+nome,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
+nomenclatura,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=false&ctx=201012
+nomenclatura,Arara,Receita Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
+nome_perdedores,Arara,Licitação,FALSE,FALSE,
+nome_vencedores,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+numero_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+objeto_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+orgao_or_uni_orcamentaria,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
+origem,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
+pregao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+previsao,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/?e=201012
+programa,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
+rubrica,Arara,Receita Orçamentária,FALSE,FALSE,
+salario_cargo,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Pagamentos?e=201012&Tab=6&isModal=false&ctx=201012
+setor_interessado,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+sub_alinea,Arara,Receita Orçamentária,FALSE,FALSE,
+sub_elemento,Arara,Despesa Orçamentária,FALSE,FALSE,
+sub_funcao,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+termo_ratificacao,Arara,Licitação,FALSE,FALSE,
+tipo_cargo,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
+uni_gestora,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+valor,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
+valor,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
+valor,Arara,Receita Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012
+valor_fixado,Arara,Despesa Orçamentária,FALSE,FALSE,
+valor_liquidado,Arara,Despesa Orçamentária,FALSE,FALSE,
+valor_pago,Arara,Despesa Orçamentária,FALSE,FALSE,

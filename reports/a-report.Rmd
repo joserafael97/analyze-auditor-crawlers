@@ -19,8 +19,8 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-resultados_avaliacoes = read_avaliacoes('Esperança')
-gararito = read_gabaritos('Esperança') 
+resultados_avaliacoes = read_avaliacoes('Campina Grande')
+gararito = read_gabaritos('Campina Grande') 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
 
 ```
