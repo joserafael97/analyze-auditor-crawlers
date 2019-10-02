@@ -6,12 +6,13 @@ library(tidyr)
 library(readr)
 
 
-avaliacoes <- data.frame(fromJSON("http://localhost:5000/api/v1/evaluation/Campina%20Grande/last", flatten = TRUE))
+avaliacoes <- data.frame(fromJSON("http://localhost:5000/api/v1/evaluation/last", flatten = TRUE))
 
 
 avaliacoes <- avaliacoes %>% 
-    unnest(criterions.itens) %>%
-    group_by(item = name, municipio = county, criterio = criterions.name) %>% 
+    unnest(criterions) %>%
+    unnest(itens) %>%
+    group_by(item = name1, municipio = county, criterio = name) %>% 
     summarise(
         valid, 
         found,

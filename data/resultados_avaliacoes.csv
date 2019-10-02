@@ -1,62 +1,62 @@
 item,municipio,criterio,valid,found,pathSought
-acao,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
-alinea,Arara,Receita Orçamentária,FALSE,FALSE,
-arrecadacao,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
-aviso,Arara,Licitação,FALSE,FALSE,
-cargo,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
-categoria_economica,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
-categoria_economica,Arara,Receita Orçamentária,FALSE,FALSE,
-cnpj_cpf,Arara,Licitação,FALSE,FALSE,
-codigo,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/SubEmpenhos?e=201012&Tab=3&isModal=false&ctx=201012
-codigo,Arara,Receita Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012
-cpf,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
-data_publicacao_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-data_realizacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-edital,Arara,Licitação,FALSE,FALSE,
-elemento,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
-emp_cnpj_cpf,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
-emp_data,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-emp_indicacao_licitacao,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-emp_numero,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
-emp_valor,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-especie,Arara,Receita Orçamentária,FALSE,FALSE,
-funcao,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-integra,Arara,Licitação,FALSE,FALSE,
-lancado,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-lic_data_pag_ultima,Arara,Despesa Orçamentária,FALSE,FALSE,
-licitado,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-lic_modalidade,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-lic_num_contrato,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Pagamentos?e=201012&Tab=6&isModal=false&ctx=201012
-lic_numero,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-lic_obj_servico,Arara,Despesa Orçamentária,FALSE,FALSE,
-modalidade,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-modalidade_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-natureza_despesa,Arara,Despesa Orçamentária,FALSE,FALSE,
-nome,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Restos?e=201012&Tab=5&isModal=false&ctx=201012
-nome,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
-nomenclatura,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=false&ctx=201012
-nomenclatura,Arara,Receita Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
-nome_perdedores,Arara,Licitação,FALSE,FALSE,
-nome_vencedores,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-numero_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-objeto_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-orgao_or_uni_orcamentaria,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
-origem,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012
-pregao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-previsao,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/?e=201012
-programa,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012
-rubrica,Arara,Receita Orçamentária,FALSE,FALSE,
-salario_cargo,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Pagamentos?e=201012&Tab=6&isModal=false&ctx=201012
-setor_interessado,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-sub_alinea,Arara,Receita Orçamentária,FALSE,FALSE,
-sub_elemento,Arara,Despesa Orçamentária,FALSE,FALSE,
-sub_funcao,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-termo_ratificacao,Arara,Licitação,FALSE,FALSE,
-tipo_cargo,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012
-uni_gestora,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-valor,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012
-valor,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012
-valor,Arara,Receita Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012
-valor_fixado,Arara,Despesa Orçamentária,FALSE,FALSE,
-valor_liquidado,Arara,Despesa Orçamentária,FALSE,FALSE,
-valor_pago,Arara,Despesa Orçamentária,FALSE,FALSE,
+acao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+arrecadacao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+aviso,Campina Grande,Licitação,FALSE,FALSE,
+cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+categoria_economica,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+categoria_economica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+cnpj_cpf,Campina Grande,Licitação,FALSE,FALSE,
+codigo,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+codigo,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
+cpf,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+data_publicacao_licitacao,Campina Grande,Licitação,FALSE,FALSE,
+data_realizacao,Campina Grande,Licitação,FALSE,FALSE,
+edital,Campina Grande,Licitação,FALSE,FALSE,
+elemento,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+emp_cnpj_cpf,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+emp_data,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+emp_indicacao_licitacao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+emp_numero,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+emp_valor,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+especie,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+funcao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+integra,Campina Grande,Licitação,FALSE,FALSE,
+lancado,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+lic_data_pag_ultima,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+lic_modalidade,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+lic_num_contrato,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+lic_numero,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+lic_obj_servico,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+licitado,Campina Grande,Licitação,FALSE,FALSE,
+modalidade,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+modalidade_licitacao,Campina Grande,Licitação,FALSE,FALSE,
+natureza_despesa,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+nome,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+nome,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+nome_perdedores,Campina Grande,Licitação,FALSE,FALSE,
+nome_vencedores,Campina Grande,Licitação,FALSE,FALSE,
+nomenclatura,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+nomenclatura,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
+numero_licitacao,Campina Grande,Licitação,FALSE,FALSE,
+objeto_licitacao,Campina Grande,Licitação,FALSE,FALSE,
+orgao_or_uni_orcamentaria,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+origem,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+pregao,Campina Grande,Licitação,FALSE,FALSE,
+previsao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+programa,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+rubrica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+salario_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+setor_interessado,Campina Grande,Licitação,FALSE,FALSE,
+sub_alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+sub_elemento,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+sub_funcao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+termo_ratificacao,Campina Grande,Licitação,FALSE,FALSE,
+tipo_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+uni_gestora,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+valor,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+valor,Campina Grande,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=LicitacaoV2/Licitacoes.php&urlorigem=
+valor,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
+valor_fixado,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+valor_liquidado,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+valor_pago,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
