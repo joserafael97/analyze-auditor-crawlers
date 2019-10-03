@@ -1,62 +1,92 @@
 item,municipio,criterio,valid,found,pathSought
-acao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+acao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+acao,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
 alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
 arrecadacao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
 aviso,Campina Grande,Licitação,FALSE,FALSE,
 cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-categoria_economica,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+categoria_economica,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
 categoria_economica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
+categoria_economica,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
 cnpj_cpf,Campina Grande,Licitação,FALSE,FALSE,
-codigo,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+codigo,Campina Grande,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php
 codigo,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
+codigo,Santa Rita,Despesa Extra Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml
+codigo,Santa Rita,Receita Extra Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml
 cpf,Campina Grande,Quadro Pessoal,FALSE,FALSE,
 data_publicacao_licitacao,Campina Grande,Licitação,FALSE,FALSE,
 data_realizacao,Campina Grande,Licitação,FALSE,FALSE,
 edital,Campina Grande,Licitação,FALSE,FALSE,
-elemento,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_cnpj_cpf,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_data,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_indicacao_licitacao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_numero,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_valor,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+elemento,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+elemento,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
+emp_cnpj_cpf,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+emp_cnpj_cpf,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
+emp_data,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+emp_data,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
+emp_indicacao_licitacao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+emp_indicacao_licitacao,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
+emp_numero,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+emp_numero,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
+emp_valor,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+emp_valor,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
 especie,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-funcao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+funcao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+funcao,Santa Rita,Despesa Orçamentária,FALSE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
 integra,Campina Grande,Licitação,FALSE,FALSE,
 lancado,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-lic_data_pag_ultima,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-lic_modalidade,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-lic_num_contrato,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-lic_numero,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+lic_data_pag_ultima,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+lic_data_pag_ultima,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
+lic_modalidade,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+lic_modalidade,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
+lic_num_contrato,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+lic_num_contrato,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
+lic_numero,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+lic_numero,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
 lic_obj_servico,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+lic_obj_servico,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
 licitado,Campina Grande,Licitação,FALSE,FALSE,
-modalidade,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+modalidade,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+modalidade,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
 modalidade_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-natureza_despesa,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-nome,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+natureza_despesa,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+natureza_despesa,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
+nome,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
 nome,Campina Grande,Quadro Pessoal,FALSE,FALSE,
+nome,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
 nome_perdedores,Campina Grande,Licitação,FALSE,FALSE,
 nome_vencedores,Campina Grande,Licitação,FALSE,FALSE,
-nomenclatura,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+nomenclatura,Campina Grande,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php
 nomenclatura,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
+nomenclatura,Santa Rita,Despesa Extra Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml
+nomenclatura,Santa Rita,Receita Extra Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml
 numero_licitacao,Campina Grande,Licitação,FALSE,FALSE,
 objeto_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-orgao_or_uni_orcamentaria,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+orgao_or_uni_orcamentaria,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+orgao_or_uni_orcamentaria,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
 origem,Campina Grande,Receita Orçamentária,FALSE,FALSE,
 pregao,Campina Grande,Licitação,FALSE,FALSE,
 previsao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-programa,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+programa,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+programa,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
 rubrica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
 salario_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
 setor_interessado,Campina Grande,Licitação,FALSE,FALSE,
 sub_alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-sub_elemento,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-sub_funcao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+sub_elemento,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+sub_elemento,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
+sub_funcao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+sub_funcao,Santa Rita,Despesa Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/servicos.xhtml
 termo_ratificacao,Campina Grande,Licitação,FALSE,FALSE,
 tipo_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
 uni_gestora,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-valor,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
+valor,Campina Grande,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php
 valor,Campina Grande,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=LicitacaoV2/Licitacoes.php&urlorigem=
 valor,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
-valor_fixado,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-valor_liquidado,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-valor_pago,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+valor,Santa Rita,Despesa Extra Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml
+valor,Santa Rita,Receita Extra Orçamentária,TRUE,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml
+valor_fixado,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+valor_fixado,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
+valor_liquidado,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+valor_liquidado,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
+valor_pago,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php
+valor_pago,Santa Rita,Despesa Orçamentária,FALSE,FALSE,
