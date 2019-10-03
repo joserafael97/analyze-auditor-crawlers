@@ -19,8 +19,8 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-resultados_avaliacoes = read_avaliacoes('Campina Grande')
-gararito = read_gabaritos('Campina Grande') 
+resultados_avaliacoes = read_avaliacoes('João Pessoa')
+gararito = read_gabaritos('João Pessoa') 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
 
 ```
@@ -53,6 +53,9 @@ Quantificando métricas
 tp <-  sum(precisao$tp)
 fn <- sum(precisao$fn)
 fp <- sum(precisao$fp)
+median_duration_min <- median(resultados_avaliacoes$durationMin)
+median_duration <- median(resultados_avaliacoes$duration)
+
 ```
 
 ```{r}

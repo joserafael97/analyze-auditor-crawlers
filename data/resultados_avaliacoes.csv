@@ -1,62 +1,351 @@
-item,municipio,criterio,valid,found,pathSought
-acao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-arrecadacao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-aviso,Campina Grande,Licitação,FALSE,FALSE,
-cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-categoria_economica,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-categoria_economica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-cnpj_cpf,Campina Grande,Licitação,FALSE,FALSE,
-codigo,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
-codigo,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
-cpf,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-data_publicacao_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-data_realizacao,Campina Grande,Licitação,FALSE,FALSE,
-edital,Campina Grande,Licitação,FALSE,FALSE,
-elemento,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_cnpj_cpf,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_data,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_indicacao_licitacao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_numero,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-emp_valor,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-especie,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-funcao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-integra,Campina Grande,Licitação,FALSE,FALSE,
-lancado,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-lic_data_pag_ultima,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-lic_modalidade,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-lic_num_contrato,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-lic_numero,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-lic_obj_servico,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-licitado,Campina Grande,Licitação,FALSE,FALSE,
-modalidade,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-modalidade_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-natureza_despesa,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-nome,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-nome,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-nome_perdedores,Campina Grande,Licitação,FALSE,FALSE,
-nome_vencedores,Campina Grande,Licitação,FALSE,FALSE,
-nomenclatura,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
-nomenclatura,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
-numero_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-objeto_licitacao,Campina Grande,Licitação,FALSE,FALSE,
-orgao_or_uni_orcamentaria,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-origem,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-pregao,Campina Grande,Licitação,FALSE,FALSE,
-previsao,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-programa,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-rubrica,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-salario_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-setor_interessado,Campina Grande,Licitação,FALSE,FALSE,
-sub_alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-sub_elemento,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-sub_funcao,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-termo_ratificacao,Campina Grande,Licitação,FALSE,FALSE,
-tipo_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,
-uni_gestora,Campina Grande,Receita Orçamentária,FALSE,FALSE,
-valor,Campina Grande,Despesa Extra Orçamentária,FALSE,FALSE,
-valor,Campina Grande,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=LicitacaoV2/Licitacoes.php&urlorigem=
-valor,Campina Grande,Receita Extra Orçamentária,FALSE,FALSE,
-valor_fixado,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-valor_liquidado,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
-valor_pago,Campina Grande,Despesa Orçamentária,FALSE,FALSE,
+item,municipio,criterio,valid,found,pathSought,durationMin,duration
+acao,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+acao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+acao,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+acao,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Fixada?e=101095&Tab=1&isModal=false&ctx=101095,24,1497909
+acao,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+acao,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+alinea,Arara,Receita Orçamentária,FALSE,FALSE,,12,747939
+alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+alinea,Esperança,Receita Orçamentária,FALSE,FALSE,,4,285661
+alinea,João Pessoa,Receita Orçamentária,FALSE,FALSE,,43,2619003
+alinea,Ouro Velho,Receita Orçamentária,FALSE,FALSE,,12,759526
+alinea,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+arrecadacao,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,12,747939
+arrecadacao,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+arrecadacao,Esperança,Receita Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/Receita2018.aspx,4,285661
+arrecadacao,João Pessoa,Receita Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/,43,2619003
+arrecadacao,Ouro Velho,Receita Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,12,759526
+arrecadacao,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+aviso,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+aviso,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+aviso,Esperança,Licitação,FALSE,FALSE,,4,262709
+aviso,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+aviso,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+cargo,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012,13,839486
+cargo,Campina Grande,Quadro Pessoal,FALSE,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,5,328598
+cargo,Esperança,Quadro Pessoal,FALSE,FALSE,,1,67990
+cargo,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/QuadroFuncional?e=101095&Tab=2&isModal=false&ctx=101095,10,649502
+cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,,6,385105
+cargo,Santa Rita,Quadro Pessoal,FALSE,FALSE,,2,171397
+categoria_economica,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+categoria_economica,Arara,Receita Orçamentária,FALSE,FALSE,,12,747939
+categoria_economica,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+categoria_economica,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+categoria_economica,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=3001398,5,300004
+categoria_economica,Esperança,Receita Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/DetalhesReceita.aspx?receita=11130311,4,285661
+categoria_economica,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Fixada?e=101095&Tab=1&isModal=false&ctx=101095,24,1497909
+categoria_economica,João Pessoa,Receita Orçamentária,FALSE,FALSE,,43,2619003
+categoria_economica,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+categoria_economica,Ouro Velho,Receita Orçamentária,FALSE,FALSE,,12,759526
+categoria_economica,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+categoria_economica,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+cnpj_cpf,Arara,Licitação,FALSE,FALSE,,7,428934
+cnpj_cpf,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+cnpj_cpf,Esperança,Licitação,TRUE,TRUE,https://www.transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012011&&Tipo=02,4,262709
+cnpj_cpf,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+cnpj_cpf,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+codigo,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,3,190674
+codigo,Arara,Receita Extra Orçamentária,FALSE,FALSE,,6,399682
+codigo,Campina Grande,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,10,656045
+codigo,Campina Grande,Receita Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,6,398762
+codigo,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx,4,248061
+codigo,Esperança,Receita Extra Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,2,143027
+codigo,João Pessoa,Despesa Extra Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Extra?e=101095&Tab=4&isModal=false&ctx=101095,18,1119226
+codigo,João Pessoa,Receita Extra Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/,2,121034
+codigo,Ouro Velho,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,14,895978
+codigo,Ouro Velho,Receita Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,8,525218
+codigo,Santa Rita,Despesa Extra Orçamentária,FALSE,FALSE,,2,170509
+codigo,Santa Rita,Receita Extra Orçamentária,FALSE,FALSE,,2,168438
+cpf,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012,13,839486
+cpf,Campina Grande,Quadro Pessoal,FALSE,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,5,328598
+cpf,Esperança,Quadro Pessoal,FALSE,FALSE,,1,67990
+cpf,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/QuadroFuncional?e=101095&Tab=2&isModal=false&ctx=101095,10,649502
+cpf,Ouro Velho,Quadro Pessoal,FALSE,FALSE,,6,385105
+cpf,Santa Rita,Quadro Pessoal,FALSE,FALSE,,2,171397
+data_publicacao_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+data_publicacao_licitacao,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+data_publicacao_licitacao,Esperança,Licitação,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,4,262709
+data_publicacao_licitacao,Ouro Velho,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,23,1411212
+data_publicacao_licitacao,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+data_realizacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+data_realizacao,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+data_realizacao,Esperança,Licitação,FALSE,FALSE,,4,262709
+data_realizacao,Ouro Velho,Licitação,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,23,1411212
+data_realizacao,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+edital,Arara,Licitação,FALSE,FALSE,,7,428934
+edital,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+edital,Esperança,Licitação,FALSE,FALSE,,4,262709
+edital,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+edital,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+elemento,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+elemento,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+elemento,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=3001398,5,300004
+elemento,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+elemento,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+elemento,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+emp_cnpj_cpf,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+emp_cnpj_cpf,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+emp_cnpj_cpf,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=3001398,5,300004
+emp_cnpj_cpf,João Pessoa,Despesa Orçamentária,FALSE,FALSE,,24,1497909
+emp_cnpj_cpf,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+emp_cnpj_cpf,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+emp_data,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,8,488718
+emp_data,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+emp_data,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+emp_data,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False,24,1497909
+emp_data,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+emp_data,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+emp_indicacao_licitacao,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+emp_indicacao_licitacao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+emp_indicacao_licitacao,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,5,300004
+emp_indicacao_licitacao,João Pessoa,Despesa Orçamentária,FALSE,FALSE,,24,1497909
+emp_indicacao_licitacao,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+emp_indicacao_licitacao,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+emp_numero,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+emp_numero,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+emp_numero,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+emp_numero,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/licitacoes-previstas?previstas=true,24,1497909
+emp_numero,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+emp_numero,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+emp_valor,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,8,488718
+emp_valor,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+emp_valor,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+emp_valor,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/licitacoes?data_inicial=2019-01-01&data_final=2019-12-31,24,1497909
+emp_valor,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+emp_valor,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+especie,Arara,Receita Orçamentária,FALSE,FALSE,,12,747939
+especie,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+especie,Esperança,Receita Orçamentária,FALSE,FALSE,,4,285661
+especie,João Pessoa,Receita Orçamentária,FALSE,FALSE,,43,2619003
+especie,Ouro Velho,Receita Orçamentária,FALSE,FALSE,,12,759526
+especie,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+funcao,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+funcao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,10,656539
+funcao,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+funcao,João Pessoa,Despesa Orçamentária,FALSE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+funcao,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,12,728049
+funcao,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+integra,Arara,Licitação,FALSE,FALSE,,7,428934
+integra,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+integra,Esperança,Licitação,FALSE,FALSE,,4,262709
+integra,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+integra,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+lancado,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,12,747939
+lancado,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+lancado,Esperança,Receita Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,285661
+lancado,João Pessoa,Receita Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False,43,2619003
+lancado,Ouro Velho,Receita Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,12,759526
+lancado,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+lic_data_pag_ultima,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+lic_data_pag_ultima,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+lic_data_pag_ultima,Esperança,Despesa Orçamentária,FALSE,FALSE,,5,300004
+lic_data_pag_ultima,João Pessoa,Despesa Orçamentária,FALSE,FALSE,,24,1497909
+lic_data_pag_ultima,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+lic_data_pag_ultima,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+licitado,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+licitado,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+licitado,Esperança,Licitação,FALSE,FALSE,,4,262709
+licitado,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+licitado,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+lic_modalidade,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+lic_modalidade,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+lic_modalidade,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=3001398,5,300004
+lic_modalidade,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+lic_modalidade,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+lic_modalidade,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+lic_num_contrato,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+lic_num_contrato,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+lic_num_contrato,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=3001398,5,300004
+lic_num_contrato,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/licitacoes-previstas?previstas=true,24,1497909
+lic_num_contrato,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+lic_num_contrato,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+lic_numero,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+lic_numero,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+lic_numero,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,5,300004
+lic_numero,João Pessoa,Despesa Orçamentária,FALSE,FALSE,,24,1497909
+lic_numero,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+lic_numero,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+lic_obj_servico,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+lic_obj_servico,Campina Grande,Despesa Orçamentária,FALSE,FALSE,,10,656539
+lic_obj_servico,Esperança,Despesa Orçamentária,FALSE,FALSE,,5,300004
+lic_obj_servico,João Pessoa,Despesa Orçamentária,FALSE,FALSE,,24,1497909
+lic_obj_servico,Ouro Velho,Despesa Orçamentária,FALSE,FALSE,,12,728049
+lic_obj_servico,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+modalidade,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+modalidade,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+modalidade,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=3001398,5,300004
+modalidade,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+modalidade,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+modalidade,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+modalidade_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+modalidade_licitacao,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+modalidade_licitacao,Esperança,Licitação,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,262709
+modalidade_licitacao,Ouro Velho,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,23,1411212
+modalidade_licitacao,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+natureza_despesa,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+natureza_despesa,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+natureza_despesa,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,5,300004
+natureza_despesa,João Pessoa,Despesa Orçamentária,FALSE,FALSE,,24,1497909
+natureza_despesa,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+natureza_despesa,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+nome,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,8,488718
+nome,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012,13,839486
+nome,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+nome,Campina Grande,Quadro Pessoal,FALSE,FALSE,,5,328598
+nome,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+nome,Esperança,Quadro Pessoal,FALSE,FALSE,,1,67990
+nome,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+nome,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/QuadroFuncional?e=101095&Tab=2&isModal=false&ctx=101095,10,649502
+nome,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+nome,Ouro Velho,Quadro Pessoal,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,6,385105
+nome,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+nome,Santa Rita,Quadro Pessoal,FALSE,FALSE,,2,171397
+nomenclatura,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,3,190674
+nomenclatura,Arara,Receita Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Prevista?e=201012&Tab=1&isModal=false&ctx=201012,6,399682
+nomenclatura,Campina Grande,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,10,656045
+nomenclatura,Campina Grande,Receita Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,6,398762
+nomenclatura,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,248061
+nomenclatura,Esperança,Receita Extra Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/Receita2018.aspx,2,143027
+nomenclatura,João Pessoa,Despesa Extra Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-extraorcamentarias,18,1119226
+nomenclatura,João Pessoa,Receita Extra Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False,2,121034
+nomenclatura,Ouro Velho,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,14,895978
+nomenclatura,Ouro Velho,Receita Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,8,525218
+nomenclatura,Santa Rita,Despesa Extra Orçamentária,FALSE,FALSE,,2,170509
+nomenclatura,Santa Rita,Receita Extra Orçamentária,FALSE,FALSE,,2,168438
+nome_perdedores,Arara,Licitação,FALSE,FALSE,,7,428934
+nome_perdedores,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+nome_perdedores,Esperança,Licitação,FALSE,TRUE,https://www.transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012011&&Tipo=02,4,262709
+nome_perdedores,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+nome_perdedores,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+nome_vencedores,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+nome_vencedores,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+nome_vencedores,Esperança,Licitação,FALSE,TRUE,https://www.transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012011&&Tipo=02,4,262709
+nome_vencedores,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+nome_vencedores,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+numero_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+numero_licitacao,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+numero_licitacao,Esperança,Licitação,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,262709
+numero_licitacao,Ouro Velho,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,23,1411212
+numero_licitacao,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+objeto_licitacao,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+objeto_licitacao,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+objeto_licitacao,Esperança,Licitação,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,262709
+objeto_licitacao,Ouro Velho,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,23,1411212
+objeto_licitacao,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+orgao_or_uni_orcamentaria,Arara,Despesa Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,8,488718
+orgao_or_uni_orcamentaria,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+orgao_or_uni_orcamentaria,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+orgao_or_uni_orcamentaria,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False,24,1497909
+orgao_or_uni_orcamentaria,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+orgao_or_uni_orcamentaria,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+origem,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,12,747939
+origem,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+origem,Esperança,Receita Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,285661
+origem,João Pessoa,Receita Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False,43,2619003
+origem,Ouro Velho,Receita Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,12,759526
+origem,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+pregao,Arara,Licitação,FALSE,FALSE,,7,428934
+pregao,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+pregao,Esperança,Licitação,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,262709
+pregao,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+pregao,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+previsao,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/?e=201012,12,747939
+previsao,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+previsao,Esperança,Receita Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/Receita2018.aspx,4,285661
+previsao,João Pessoa,Receita Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/,43,2619003
+previsao,Ouro Velho,Receita Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,12,759526
+previsao,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+programa,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+programa,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+programa,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+programa,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+programa,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+programa,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+rubrica,Arara,Receita Orçamentária,FALSE,FALSE,,12,747939
+rubrica,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+rubrica,Esperança,Receita Orçamentária,FALSE,FALSE,,4,285661
+rubrica,João Pessoa,Receita Orçamentária,FALSE,FALSE,,43,2619003
+rubrica,Ouro Velho,Receita Orçamentária,FALSE,FALSE,,12,759526
+rubrica,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+salario_cargo,Arara,Quadro Pessoal,FALSE,FALSE,,13,839486
+salario_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,,5,328598
+salario_cargo,Esperança,Quadro Pessoal,FALSE,FALSE,,1,67990
+salario_cargo,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal,10,649502
+salario_cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,,6,385105
+salario_cargo,Santa Rita,Quadro Pessoal,FALSE,FALSE,,2,171397
+setor_interessado,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+setor_interessado,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+setor_interessado,Esperança,Licitação,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,4,262709
+setor_interessado,Ouro Velho,Licitação,FALSE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,23,1411212
+setor_interessado,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+sub_alinea,Arara,Receita Orçamentária,FALSE,FALSE,,12,747939
+sub_alinea,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+sub_alinea,Esperança,Receita Orçamentária,FALSE,FALSE,,4,285661
+sub_alinea,João Pessoa,Receita Orçamentária,FALSE,FALSE,,43,2619003
+sub_alinea,Ouro Velho,Receita Orçamentária,FALSE,FALSE,,12,759526
+sub_alinea,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+sub_elemento,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+sub_elemento,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+sub_elemento,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=3001398,5,300004
+sub_elemento,João Pessoa,Despesa Orçamentária,FALSE,FALSE,,24,1497909
+sub_elemento,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+sub_elemento,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+sub_funcao,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+sub_funcao,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+sub_funcao,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+sub_funcao,João Pessoa,Despesa Orçamentária,FALSE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+sub_funcao,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+sub_funcao,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+termo_ratificacao,Arara,Licitação,FALSE,FALSE,,7,428934
+termo_ratificacao,Campina Grande,Licitação,FALSE,FALSE,,11,680030
+termo_ratificacao,Esperança,Licitação,FALSE,FALSE,,4,262709
+termo_ratificacao,Ouro Velho,Licitação,FALSE,FALSE,,23,1411212
+termo_ratificacao,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+tipo_cargo,Arara,Quadro Pessoal,TRUE,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012,13,839486
+tipo_cargo,Campina Grande,Quadro Pessoal,FALSE,FALSE,,5,328598
+tipo_cargo,Esperança,Quadro Pessoal,FALSE,FALSE,,1,67990
+tipo_cargo,João Pessoa,Quadro Pessoal,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/QuadroFuncional?e=101095&Tab=2&isModal=false&ctx=101095,10,649502
+tipo_cargo,Ouro Velho,Quadro Pessoal,FALSE,FALSE,,6,385105
+tipo_cargo,Santa Rita,Quadro Pessoal,FALSE,FALSE,,2,171397
+uni_gestora,Arara,Receita Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,12,747939
+uni_gestora,Campina Grande,Receita Orçamentária,FALSE,FALSE,,9,571630
+uni_gestora,Esperança,Receita Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,4,285661
+uni_gestora,João Pessoa,Receita Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False,43,2619003
+uni_gestora,Ouro Velho,Receita Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,12,759526
+uni_gestora,Santa Rita,Receita Orçamentária,FALSE,FALSE,,2,171169
+valor,Arara,Despesa Extra Orçamentária,TRUE,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,3,190674
+valor,Arara,Licitação,TRUE,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,7,428934
+valor,Arara,Receita Extra Orçamentária,FALSE,FALSE,,6,399682
+valor,Campina Grande,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,10,656045
+valor,Campina Grande,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=LicitacaoV2/Licitacoes.php&urlorigem=,11,680030
+valor,Campina Grande,Receita Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,6,398762
+valor,Esperança,Despesa Extra Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,248061
+valor,Esperança,Licitação,TRUE,TRUE,https://www.transparenciaativa.com.br/Licitacoes.aspx,4,262709
+valor,Esperança,Receita Extra Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/ReceitaSTN.aspx?Entidade=175&Ano=2017,2,143027
+valor,João Pessoa,Despesa Extra Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-extraorcamentarias,18,1119226
+valor,João Pessoa,Receita Extra Orçamentária,TRUE,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=101095&Tab=3&tabs=off&isModal=False,2,121034
+valor,Ouro Velho,Despesa Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,14,895978
+valor,Ouro Velho,Licitação,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,23,1411212
+valor,Ouro Velho,Receita Extra Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,8,525218
+valor,Santa Rita,Despesa Extra Orçamentária,FALSE,FALSE,,2,170509
+valor,Santa Rita,Licitação,FALSE,FALSE,,2,173643
+valor,Santa Rita,Receita Extra Orçamentária,FALSE,FALSE,,2,168438
+valor_fixado,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+valor_fixado,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+valor_fixado,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+valor_fixado,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+valor_fixado,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+valor_fixado,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+valor_liquidado,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+valor_liquidado,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+valor_liquidado,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+valor_liquidado,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+valor_liquidado,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+valor_liquidado,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852
+valor_pago,Arara,Despesa Orçamentária,FALSE,FALSE,,8,488718
+valor_pago,Campina Grande,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,10,656539
+valor_pago,Esperança,Despesa Orçamentária,TRUE,TRUE,https://www.transparenciaativa.com.br/EmpenhosPorFuncional.aspx,5,300004
+valor_pago,João Pessoa,Despesa Orçamentária,TRUE,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/despesas/despesas-detalhamento,24,1497909
+valor_pago,Ouro Velho,Despesa Orçamentária,TRUE,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,12,728049
+valor_pago,Santa Rita,Despesa Orçamentária,FALSE,FALSE,,2,172852

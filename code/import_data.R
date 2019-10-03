@@ -6,17 +6,26 @@ library(tidyr)
 library(readr)
 
 
-avaliacoes <- data.frame(fromJSON("http://localhost:5000/api/v1/evaluation/last", flatten = TRUE))
-
+avaliacoes <- data.frame(fromJSON("http://localhost:5000/api/v1/evaluation/bandit/last", flatten = TRUE))
+avaliacoes$duration <- NULL
+avaliacoes$durationMin <- NULL
 
 avaliacoes <- avaliacoes %>% 
-    unnest(criterions) %>%
+    unnest(criterions)
+
+avaliacoes$`__v` <- NULL
+avaliacoes$`_id` <- NULL
+
+avaliacoes <- avaliacoes %>% 
+    rename(criterio = name) %>% 
     unnest(itens) %>%
-    group_by(item = name1, municipio = county, criterio = name) %>% 
+    group_by(item = name, municipio = county, criterio) %>% 
     summarise(
         valid, 
         found,
-        pathSought
+        pathSought,
+        durationMin,
+        duration
     )
     
 
