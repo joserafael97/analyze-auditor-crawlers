@@ -19,10 +19,9 @@ theme_set(theme_bw())
 ## Lendo os dados
 
 ```{r read}
-resultados_avaliacoes = read_avaliacoes('Ouro Velho')
-gararito = read_gabaritos('Ouro Velho') 
+resultados_avaliacoes = read_avaliacoes()
+gararito = read_gabaritos() 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
-
 ```
 
 
@@ -49,57 +48,51 @@ precisao <- data %>%
 ```
 
 Quantificando métricas
-```{r}
-tp <-  sum(precisao$tp)
-fn <- sum(precisao$fn)
-fp <- sum(precisao$fp)
-median_duration_min <- median(resultados_avaliacoes$durationMin)
-median_duration <- median(resultados_avaliacoes$duration)
 
+```{r}
+
+metricas_result <- precisao %>% 
+    group_by(municipio) %>% 
+    summarise(
+        tp_total = sum(tp), 
+        fn_total = sum(fn),
+        fp_total = sum(fp),
+        
+        #cálculo das métricas 
+        recall = tp_total/(tp_total + fn_total),
+        precision =  tp_total/(tp_total + fp_total),
+        f1_score = (2*(recall*precision))/(recall+precision),
+        
+        #tempo das avaliações
+        median_duration_min = median(durationMin),
+        median_duration = median(duration),
+        max_duration = max(duration),
+        max_durationMin = max(durationMin),
+
+    )
+
+metricas_result
 ```
+
+
+Vamos analisar onde ocorreu as divergências entre o gabarito e o resultado do crawler
+
 
 ```{r}
  precisao %>% 
     group_by(criterio, municipio) %>%
     summarize(total_fn = sum(fn == TRUE), total_itens = n()) %>%
     ggplot() + 
-    geom_bar(aes(x=criterio, y=total_fn), fill="#DD8888",stat="identity")
+    geom_bar(aes(x=criterio, y=total_fn), fill="#DD8888",stat="identity")+
+    facet_grid(municipio ~ .)
 
 
 precisao %>% 
     group_by(criterio, municipio) %>%
     summarize(total_fp = sum(fp == TRUE), total_itens = n()) %>%
     ggplot() + 
-    geom_bar(aes(x=criterio, y=total_fp), fill="#DD8888",stat="identity") 
+    geom_bar(aes(x=criterio, y=total_fp), fill="#DD8888",stat="identity") + 
+    facet_grid(municipio ~ .)
 ```
-
-```{r}
-precisao %>% filter(fp == TRUE)
-```
-
-```{r}
-precisao %>% filter(fn == TRUE)
-
-```
-
-
-Recall
-
-```{r}
-recall <- tp/(tp+fn)
-recall
-```
-
-Precision
-
-```{r}
-precision <- tp/(tp+fp)
-precision
-```
-F1-score
-```{r}
-(2*(recall*precision))/(recall+precision)
-```
-
 
 
