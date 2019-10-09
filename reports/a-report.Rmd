@@ -29,7 +29,7 @@ data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "crit
 data[is.na(data)] <- ""
 
 precisao <- data %>% 
-    group_by(municipio, criterio, item) %>% 
+    group_by(municipio, criterio, item, aproach, date) %>% 
     mutate(
            
            #verifica se a avaliação foi acertiva
@@ -52,7 +52,7 @@ Quantificando métricas
 ```{r}
 
 metricas_result <- precisao %>% 
-    group_by(municipio) %>% 
+    group_by(municipio, aproach, date) %>% 
     summarise(
         tp_total = sum(tp), 
         fn_total = sum(fn),
@@ -68,7 +68,8 @@ metricas_result <- precisao %>%
         median_duration = median(duration),
         max_duration = max(duration),
         max_durationMin = max(durationMin),
-
+        median_num_access_node = median(contNodeNumberAccess),
+        max_num_access_node = max(contNodeNumberAccess)
     )
 
 metricas_result
