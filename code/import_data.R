@@ -8,7 +8,7 @@ library(lubridate)
 
 avaliacoes_dataset <- readr::read_csv(here::here("data/resultados_avaliacoes.csv"))
     
-avaliacoes <- data.frame(fromJSON("http://localhost:5000/api/v1/evaluation/bandit/last", flatten = TRUE))
+avaliacoes <- data.frame(fromJSON("http://localhost:5000/api/v1/evaluation", flatten = TRUE))
 
 avaliacoes$duration <- NULL
 avaliacoes$durationMin <- NULL

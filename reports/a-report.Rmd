@@ -22,11 +22,29 @@ theme_set(theme_bw())
 resultados_avaliacoes = read_avaliacoes()
 gararito = read_gabaritos() 
 data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
+empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
+fornecedores <- readr::read_csv(here::here("data/empresas.csv"))
 ```
+
+##Combinações diferentes 
+
+```{r}
+empresas_portais[is.na(empresas_portais)] <- ""
+
+
+empresas_portais %>%
+    group_by(fornecedor) %>%
+    summarise(num_municipios_atendidos = n())
+```
+Existem 51 combinações diferentes entre os fornecedores. A Publicsoft sozinha (Sem contar combinações) é a empresa que mais atende municípios (56) 
+
+```{r}
+fornecedores
+```
+Existem 23 empresas fornecedoras de portais de transparência na Paraíba.
 
 
 ```{r}
-data[is.na(data)] <- ""
 
 precisao <- data %>% 
     group_by(municipio, criterio, item, aproach, date) %>% 
