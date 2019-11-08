@@ -20,8 +20,12 @@ theme_set(theme_bw())
 
 ```{r read}
 resultados_avaliacoes = read_avaliacoes()
-gararito = read_gabaritos() 
-data<-full_join(gararito, resultados_avaliacoes, by=c("municipio", "item", "criterio"))
+resultados_avaliacoes[is.na(resultados_avaliacoes)] <- ""
+
+gararito = read_gabaritos()
+gararito[is.na(gararito)] <- ""
+
+data<-full_join(resultados_avaliacoes, gararito, by=c("municipio", "item", "criterio"))
 empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 fornecedores <- readr::read_csv(here::here("data/empresas.csv"))
 ```
@@ -34,9 +38,11 @@ empresas_portais[is.na(empresas_portais)] <- ""
 
 empresas_portais %>%
     group_by(fornecedor) %>%
-    summarise(num_municipios_atendidos = n())
+    summarise(num_municipios_atendidos = n()) %>%
+    arrange(desc(num_municipios_atendidos))
+    
 ```
-Existem 51 combinações diferentes entre os fornecedores. A Publicsoft sozinha (Sem contar combinações) é a empresa que mais atende municípios (56) 
+Existem 48 combinações diferentes entre os fornecedores. A Publicsoft sozinha (Sem contar combinações) é a empresa que mais atende municípios (56) 
 
 ```{r}
 fornecedores
@@ -91,6 +97,14 @@ metricas_result <- precisao %>%
     )
 
 metricas_result
+
+metricas_result$tp_total <- NULL
+metricas_result$fp_total <- NULL
+metricas_result$fn_total <- NULL
+metricas_result$median_duration <- NULL
+metricas_result$max_duration <- NULL
+
+metricas_result
 ```
 
 
@@ -112,6 +126,12 @@ precisao %>%
     ggplot() + 
     geom_bar(aes(x=criterio, y=total_fp), fill="#DD8888",stat="identity") + 
     facet_grid(municipio ~ .)
+```
+
+
+```{r}
+precisao %>% filter(municipio == "Arara", tp == FALSE, encontrado == TRUE) 
+
 ```
 
 

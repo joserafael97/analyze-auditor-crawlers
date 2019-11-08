@@ -33,9 +33,9 @@ Esperança,Receita Orçamentária,origem,TRUE,http://www.transparenciaativa.com.
 Esperança,Receita Orçamentária,previsao,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx,
 Esperança,Receita Orçamentária,rubrica,FALSE,http://www.transparenciaativa.com.br/Receita2018.aspx,
 Esperança,Receita Orçamentária,sub_alinea,FALSE,NA,
-Esperança,Despesa Extra Orçamentária,valor,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx,
-Esperança,Despesa Extra Orçamentária,codigo,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx,
-Esperança,Despesa Extra Orçamentária,nomenclatura,TRUE,http://www.transparenciaativa.com.br/DespesaExtraDetalhada.aspx,
+Esperança,Despesa Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,
+Esperança,Despesa Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,
+Esperança,Despesa Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,
 Esperança,Receita Extra Orçamentária,valor,TRUE,http://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,
 Esperança,Receita Extra Orçamentária,codigo,TRUE,http://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,
 Esperança,Receita Extra Orçamentária,nomenclatura,TRUE,http://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,
@@ -121,56 +121,56 @@ Santa Rita,Licitação,termo_ratificacao,FALSE,,
 Santa Rita,Licitação,pregao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
 Santa Rita,Licitação,aviso,FALSE,,
 Santa Rita,Licitação,licitado,FALSE,,
-Campina Grande,Despesa Orçamentária,acao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,categoria_economica,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,elemento,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,emp_data,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,emp_numero,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,emp_valor,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,funcao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,lic_modalidade,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,lic_num_contrato,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,lic_numero,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,lic_obj_servico,FALSE,,
-Campina Grande,Despesa Orçamentária,modalidade,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,natureza_despesa,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,programa,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,sub_elemento,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,sub_funcao,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,valor_fixado,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,valor_liquidado,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,valor_pago,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Despesa Orçamentária,nome,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
-Campina Grande,Receita Orçamentária,uni_gestora,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Despesa Orçamentária,acao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,categoria_economica,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,elemento,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_data,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_numero,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,emp_valor,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,funcao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,lic_modalidade,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,lic_num_contrato,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,lic_numero,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,lic_obj_servico,FALSE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,
+Campina Grande,Despesa Orçamentária,modalidade,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,natureza_despesa,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,programa,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,sub_elemento,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,sub_funcao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,valor_fixado,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,valor_liquidado,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,valor_pago,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Despesa Orçamentária,nome,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php
+Campina Grande,Receita Orçamentária,uni_gestora,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
 Campina Grande,Receita Orçamentária,alinea,FALSE,NA,
-Campina Grande,Receita Orçamentária,arrecadacao,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Receita Orçamentária,arrecadacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
 Campina Grande,Receita Orçamentária,categoria_economica,FALSE,,
 Campina Grande,Receita Orçamentária,especie,FALSE,NA,
-Campina Grande,Receita Orçamentária,lancado,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Receita Orçamentária,origem,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Receita Orçamentária,previsao,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Receita Orçamentária,lancado,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Receita Orçamentária,origem,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Receita Orçamentária,previsao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
 Campina Grande,Receita Orçamentária,rubrica,FALSE,NA,
 Campina Grande,Receita Orçamentária,sub_alinea,FALSE,NA,
-Campina Grande,Despesa Extra Orçamentária,valor,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
-Campina Grande,Despesa Extra Orçamentária,codigo,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
-Campina Grande,Despesa Extra Orçamentária,nomenclatura,TRUE,http://transparencia.campinagrande.pb.gov.br/despesas/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
-Campina Grande,Receita Extra Orçamentária,valor,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Receita Extra Orçamentária,codigo,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Receita Extra Orçamentária,nomenclatura,TRUE,http://transparencia.campinagrande.pb.gov.br/receitas/,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
-Campina Grande,Quadro Pessoal,nome,FALSE,,
-Campina Grande,Quadro Pessoal,cpf,FALSE,,
-Campina Grande,Quadro Pessoal,cargo,FALSE,,
-Campina Grande,Quadro Pessoal,tipo_cargo,FALSE,,
-Campina Grande,Quadro Pessoal,salario_cargo,FALSE,,
-Campina Grande,Licitação,numero_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php
-Campina Grande,Licitação,objeto_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php
-Campina Grande,Licitação,modalidade_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,http://transparencia.campinagrande.pb.gov.br/licitacoes/
-Campina Grande,Licitação,data_publicacao_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php
-Campina Grande,Licitação,valor,TRUE,http://transparencia.campinagrande.pb.gov.br/licitacoes/,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php
+Campina Grande,Despesa Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
+Campina Grande,Despesa Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
+Campina Grande,Despesa Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpDespesasExtrasOrc.php
+Campina Grande,Receita Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Receita Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Receita Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/
+Campina Grande,Quadro Pessoal,nome,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,
+Campina Grande,Quadro Pessoal,cpf,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,
+Campina Grande,Quadro Pessoal,cargo,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,
+Campina Grande,Quadro Pessoal,tipo_cargo,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,
+Campina Grande,Quadro Pessoal,salario_cargo,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,
+Campina Grande,Licitação,numero_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views
+Campina Grande,Licitação,objeto_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views
+Campina Grande,Licitação,modalidade_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views
+Campina Grande,Licitação,data_publicacao_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views
+Campina Grande,Licitação,valor,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views
 Campina Grande,Licitação,cnpj_cpf,FALSE,,
 Campina Grande,Licitação,edital,FALSE,,
 Campina Grande,Licitação,nome_vencedores,FALSE,,
@@ -365,3 +365,552 @@ João Pessoa,Licitação,termo_ratificacao,FALSE,,
 João Pessoa,Licitação,pregao,FALSE,,
 João Pessoa,Licitação,aviso,FALSE,,
 João Pessoa,Licitação,licitado,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/licitacoes,
+Curral de Cima,Despesa Orçamentária,acao,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,categoria_economica,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,elemento,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,emp_data,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,emp_numero,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,emp_valor,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,funcao,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,lic_modalidade,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,lic_num_contrato,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,lic_numero,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,lic_obj_servico,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,modalidade,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,natureza_despesa,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,programa,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,sub_elemento,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,sub_funcao,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,valor_fixado,FALSE,,
+Curral de Cima,Despesa Orçamentária,valor_liquidado,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,valor_pago,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Orçamentária,nome,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Receita Orçamentária,uni_gestora,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Receitas,http://transparencia.curraldecima.pb.gov.br/receitas/
+Curral de Cima,Receita Orçamentária,alinea,FALSE,,
+Curral de Cima,Receita Orçamentária,arrecadacao,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Receitas,http://transparencia.curraldecima.pb.gov.br/receitas/
+Curral de Cima,Receita Orçamentária,categoria_economica,FALSE,,
+Curral de Cima,Receita Orçamentária,especie,FALSE,,
+Curral de Cima,Receita Orçamentária,lancado,FALSE,,
+Curral de Cima,Receita Orçamentária,origem,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Receitas,http://transparencia.curraldecima.pb.gov.br/receitas/
+Curral de Cima,Receita Orçamentária,previsao,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Receitas,http://transparencia.curraldecima.pb.gov.br/receitas/
+Curral de Cima,Receita Orçamentária,rubrica,FALSE,,
+Curral de Cima,Receita Orçamentária,sub_alinea,FALSE,,
+Curral de Cima,Despesa Extra Orçamentária,valor,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Extra Orçamentária,codigo,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Despesa Extra Orçamentária,nomenclatura,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Despesas,http://transparencia.curraldecima.pb.gov.br/despesas/
+Curral de Cima,Receita Extra Orçamentária,valor,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Receitas,http://transparencia.curraldecima.pb.gov.br/receitas/
+Curral de Cima,Receita Extra Orçamentária,codigo,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Receitas,http://transparencia.curraldecima.pb.gov.br/receitas/
+Curral de Cima,Receita Extra Orçamentária,nomenclatura,TRUE,http://transparencia.elmartecnologia.com.br/Contab/Receitas,http://transparencia.curraldecima.pb.gov.br/receitas/
+Curral de Cima,Quadro Pessoal,nome,TRUE,http://transparencia.elmartecnologia.com.br/FolhaPag,http://transparencia.curraldecima.pb.gov.br/folha-pessoal/
+Curral de Cima,Quadro Pessoal,cpf,TRUE,http://transparencia.elmartecnologia.com.br/FolhaPag,http://transparencia.curraldecima.pb.gov.br/folha-pessoal/
+Curral de Cima,Quadro Pessoal,cargo,TRUE,http://transparencia.elmartecnologia.com.br/FolhaPag,http://transparencia.curraldecima.pb.gov.br/folha-pessoal/
+Curral de Cima,Quadro Pessoal,tipo_cargo,TRUE,http://transparencia.elmartecnologia.com.br/FolhaPag,http://transparencia.curraldecima.pb.gov.br/folha-pessoal/
+Curral de Cima,Quadro Pessoal,salario_cargo,FALSE,,
+Curral de Cima,Licitação,numero_licitacao,FALSE,,
+Curral de Cima,Licitação,objeto_licitacao,FALSE,,
+Curral de Cima,Licitação,modalidade_licitacao,FALSE,,
+Curral de Cima,Licitação,data_publicacao_licitacao,FALSE,,
+Curral de Cima,Licitação,valor,FALSE,,
+Curral de Cima,Licitação,cnpj_cpf,FALSE,,
+Curral de Cima,Licitação,edital,FALSE,,
+Curral de Cima,Licitação,nome_vencedores,FALSE,,
+Curral de Cima,Licitação,nome_perdedores,FALSE,,
+Curral de Cima,Licitação,data_realizacao,FALSE,,
+Curral de Cima,Licitação,setor_interessado,FALSE,,
+Curral de Cima,Licitação,integra,FALSE,,
+Curral de Cima,Licitação,termo_ratificacao,FALSE,,
+Curral de Cima,Licitação,pregao,FALSE,,
+Curral de Cima,Licitação,aviso,FALSE,,
+Curral de Cima,Licitação,licitado,FALSE,,
+Bom Sucesso,Despesa Orçamentária,acao,FALSE,,
+Bom Sucesso,Despesa Orçamentária,categoria_economica,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,elemento,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,emp_cnpj_cpf,FALSE,,
+Bom Sucesso,Despesa Orçamentária,emp_data,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,emp_numero,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,emp_valor,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,funcao,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,lic_modalidade,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,lic_num_contrato,FALSE,,
+Bom Sucesso,Despesa Orçamentária,lic_numero,FALSE,,
+Bom Sucesso,Despesa Orçamentária,lic_obj_servico,FALSE,,
+Bom Sucesso,Despesa Orçamentária,modalidade,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,natureza_despesa,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,programa,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,sub_elemento,FALSE,,
+Bom Sucesso,Despesa Orçamentária,sub_funcao,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,valor_fixado,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,valor_liquidado,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,valor_pago,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Despesa Orçamentária,nome,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_NotaEmpenho,
+Bom Sucesso,Receita Orçamentária,uni_gestora,FALSE,,
+Bom Sucesso,Receita Orçamentária,alinea,FALSE,,
+Bom Sucesso,Receita Orçamentária,arrecadacao,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkReceitaOrcamentaria,
+Bom Sucesso,Receita Orçamentária,categoria_economica,FALSE,,
+Bom Sucesso,Receita Orçamentária,especie,FALSE,,
+Bom Sucesso,Receita Orçamentária,lancado,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkReceitaOrcamentaria,
+Bom Sucesso,Receita Orçamentária,origem,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkReceitaOrcamentaria,
+Bom Sucesso,Receita Orçamentária,previsao,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkReceitaOrcamentaria,
+Bom Sucesso,Receita Orçamentária,rubrica,FALSE,,
+Bom Sucesso,Receita Orçamentária,sub_alinea,FALSE,,
+Bom Sucesso,Despesa Extra Orçamentária,valor,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_ExtraOrcamentaria,
+Bom Sucesso,Despesa Extra Orçamentária,codigo,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_ExtraOrcamentaria,
+Bom Sucesso,Despesa Extra Orçamentária,nomenclatura,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkDespesasPor_ExtraOrcamentaria,
+Bom Sucesso,Receita Extra Orçamentária,valor,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkReceitaExtraOrcamentaria,
+Bom Sucesso,Receita Extra Orçamentária,codigo,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkReceitaExtraOrcamentaria,
+Bom Sucesso,Receita Extra Orçamentária,nomenclatura,TRUE,http://191.253.90.19:5656/pmbomsucesso/Default.aspx?AcessoIndividual=lnkReceitaExtraOrcamentaria,
+Bom Sucesso,Quadro Pessoal,nome,TRUE,http://bomsucesso.pb.gov.br/folha-de-pagamento/,
+Bom Sucesso,Quadro Pessoal,cpf,TRUE,http://bomsucesso.pb.gov.br/folha-de-pagamento/,
+Bom Sucesso,Quadro Pessoal,cargo,TRUE,http://bomsucesso.pb.gov.br/folha-de-pagamento/,
+Bom Sucesso,Quadro Pessoal,tipo_cargo,TRUE,http://bomsucesso.pb.gov.br/folha-de-pagamento/,
+Bom Sucesso,Quadro Pessoal,salario_cargo,TRUE,http://bomsucesso.pb.gov.br/folha-de-pagamento/,
+Bom Sucesso,Licitação,numero_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,
+Bom Sucesso,Licitação,objeto_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Sucesso,Licitação,modalidade_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Sucesso,Licitação,data_publicacao_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Sucesso,Licitação,valor,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Sucesso,Licitação,cnpj_cpf,FALSE,,
+Bom Sucesso,Licitação,edital,FALSE,,
+Bom Sucesso,Licitação,nome_vencedores,FALSE,,
+Bom Sucesso,Licitação,nome_perdedores,FALSE,,
+Bom Sucesso,Licitação,data_realizacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Sucesso,Licitação,setor_interessado,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Sucesso,Licitação,integra,FALSE,,
+Bom Sucesso,Licitação,termo_ratificacao,FALSE,,
+Bom Sucesso,Licitação,pregao,FALSE,,
+Bom Sucesso,Licitação,aviso,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Sucesso,Licitação,licitado,FALSE,,
+Pedra Lavrada,Despesa Orçamentária,acao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,categoria_economica,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,elemento,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,emp_cnpj_cpf,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,emp_data,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,emp_numero,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,emp_valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,funcao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,lic_data_pag_ultima,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,lic_modalidade,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,lic_num_contrato,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,lic_numero,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,lic_obj_servico,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,modalidade,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,natureza_despesa,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,programa,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,sub_elemento,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,sub_funcao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,valor_fixado,FALSE,,
+Pedra Lavrada,Despesa Orçamentária,valor_liquidado,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,valor_pago,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Despesa Orçamentária,nome,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-fixada
+Pedra Lavrada,Receita Orçamentária,uni_gestora,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,http://portaldatransparencia.lhsystem.com.br/PMPL/receitas/receitas
+Pedra Lavrada,Receita Orçamentária,alinea,FALSE,,
+Pedra Lavrada,Receita Orçamentária,arrecadacao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,http://portaldatransparencia.lhsystem.com.br/PMPL/receitas/receitas
+Pedra Lavrada,Receita Orçamentária,categoria_economica,FALSE,,
+Pedra Lavrada,Receita Orçamentária,especie,FALSE,,
+Pedra Lavrada,Receita Orçamentária,lancado,FALSE,,
+Pedra Lavrada,Receita Orçamentária,origem,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,http://portaldatransparencia.lhsystem.com.br/PMPL/receitas/receitas
+Pedra Lavrada,Receita Orçamentária,previsao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,http://portaldatransparencia.lhsystem.com.br/PMPL/receitas/receitas
+Pedra Lavrada,Receita Orçamentária,rubrica,FALSE,,
+Pedra Lavrada,Receita Orçamentária,sub_alinea,FALSE,,
+Pedra Lavrada,Despesa Extra Orçamentária,valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-extra-orcamentaria
+Pedra Lavrada,Despesa Extra Orçamentária,codigo,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-extra-orcamentaria
+Pedra Lavrada,Despesa Extra Orçamentária,nomenclatura,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,http://portaldatransparencia.lhsystem.com.br/PMPL/despesas/despesa-extra-orcamentaria
+Pedra Lavrada,Receita Extra Orçamentária,valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,http://portaldatransparencia.lhsystem.com.br/PMPL/receitas/receitas-extra-orcamentarias
+Pedra Lavrada,Receita Extra Orçamentária,codigo,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,http://portaldatransparencia.lhsystem.com.br/PMPL/receitas/receitas-extra-orcamentarias
+Pedra Lavrada,Receita Extra Orçamentária,nomenclatura,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,http://portaldatransparencia.lhsystem.com.br/PMPL/receitas/receitas-extra-orcamentarias
+Pedra Lavrada,Quadro Pessoal,nome,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/pessoal,
+Pedra Lavrada,Quadro Pessoal,cpf,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/pessoal,
+Pedra Lavrada,Quadro Pessoal,cargo,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/pessoal,
+Pedra Lavrada,Quadro Pessoal,tipo_cargo,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/pessoal,
+Pedra Lavrada,Quadro Pessoal,salario_cargo,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/pessoal,
+Pedra Lavrada,Licitação,numero_licitacao,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,objeto_licitacao,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,modalidade_licitacao,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,data_publicacao_licitacao,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,valor,FALSE,,
+Pedra Lavrada,Licitação,cnpj_cpf,FALSE,,
+Pedra Lavrada,Licitação,edital,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,nome_vencedores,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,nome_perdedores,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,data_realizacao,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,setor_interessado,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,
+Pedra Lavrada,Licitação,integra,FALSE,,
+Pedra Lavrada,Licitação,termo_ratificacao,FALSE,,
+Pedra Lavrada,Licitação,pregao,FALSE,,
+Pedra Lavrada,Licitação,aviso,FALSE,,
+Pedra Lavrada,Licitação,licitado,FALSE,,
+Belém do Brejo do Cruz,Despesa Orçamentária,acao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,categoria_economica,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,elemento,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,emp_data,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,emp_numero,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,emp_valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,funcao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,lic_modalidade,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,lic_num_contrato,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,lic_numero,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,lic_obj_servico,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,modalidade,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,natureza_despesa,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,programa,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,sub_elemento,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,sub_funcao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,valor_fixado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,valor_liquidado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,valor_pago,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Orçamentária,nome,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Orçamentária,uni_gestora,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Orçamentária,alinea,FALSE,,
+Belém do Brejo do Cruz,Receita Orçamentária,arrecadacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Orçamentária,categoria_economica,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Orçamentária,especie,FALSE,,
+Belém do Brejo do Cruz,Receita Orçamentária,lancado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Orçamentária,origem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Orçamentária,previsao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Orçamentária,rubrica,FALSE,,
+Belém do Brejo do Cruz,Receita Orçamentária,sub_alinea,FALSE,,
+Belém do Brejo do Cruz,Despesa Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Despesa Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Receita Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Quadro Pessoal,nome,FALSE,,
+Belém do Brejo do Cruz,Quadro Pessoal,cpf,FALSE,,
+Belém do Brejo do Cruz,Quadro Pessoal,cargo,FALSE,,
+Belém do Brejo do Cruz,Quadro Pessoal,tipo_cargo,FALSE,,
+Belém do Brejo do Cruz,Quadro Pessoal,salario_cargo,FALSE,,
+Belém do Brejo do Cruz,Licitação,numero_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Licitação,objeto_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Licitação,modalidade_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Licitação,data_publicacao_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Licitação,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Licitação,cnpj_cpf,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
+Belém do Brejo do Cruz,Licitação,edital,FALSE,,
+Belém do Brejo do Cruz,Licitação,nome_vencedores,FALSE,,
+Belém do Brejo do Cruz,Licitação,nome_perdedores,FALSE,,
+Belém do Brejo do Cruz,Licitação,data_realizacao,FALSE,,
+Belém do Brejo do Cruz,Licitação,setor_interessado,FALSE,,
+Belém do Brejo do Cruz,Licitação,integra,FALSE,,
+Belém do Brejo do Cruz,Licitação,termo_ratificacao,FALSE,,
+Belém do Brejo do Cruz,Licitação,pregao,FALSE,,
+Belém do Brejo do Cruz,Licitação,aviso,FALSE,,
+Belém do Brejo do Cruz,Licitação,licitado,FALSE,,
+Gado Bravo,Despesa Orçamentária,acao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,categoria_economica,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,elemento,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,emp_data,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,emp_numero,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,emp_valor,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,funcao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,lic_modalidade,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,lic_num_contrato,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,lic_numero,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,lic_obj_servico,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,modalidade,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,natureza_despesa,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,programa,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,sub_elemento,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,sub_funcao,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,valor_fixado,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,valor_liquidado,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,valor_pago,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Orçamentária,nome,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,uni_gestora,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,alinea,FALSE,,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,arrecadacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,categoria_economica,FALSE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,especie,FALSE,,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,lancado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,origem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,previsao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Orçamentária,rubrica,FALSE,,
+Gado Bravo,Receita Orçamentária,sub_alinea,FALSE,,
+Gado Bravo,Despesa Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpDespesasExtrasOrc.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpDespesasExtrasOrc.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Despesa Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpDespesasExtrasOrc.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuiasReceitaExtra.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuiasReceitaExtra.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Receita Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuiasReceitaExtra.php&urlorigem=http://www.gadobravo.pb.gov.br/transparencia/#frameContent
+Gado Bravo,Quadro Pessoal,nome,FALSE,,
+Gado Bravo,Quadro Pessoal,cpf,FALSE,,
+Gado Bravo,Quadro Pessoal,cargo,FALSE,,
+Gado Bravo,Quadro Pessoal,tipo_cargo,FALSE,,
+Gado Bravo,Quadro Pessoal,salario_cargo,FALSE,,
+Gado Bravo,Licitação,numero_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,objeto_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,modalidade_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,data_publicacao_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,valor,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,cnpj_cpf,FALSE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,edital,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,nome_vencedores,FALSE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,nome_perdedores,FALSE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,data_realizacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,setor_interessado,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,integra,FALSE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,termo_ratificacao,FALSE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,pregao,FALSE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,aviso,FALSE,http://transparencia.elmar.inf.br/Licitacao,
+Gado Bravo,Licitação,licitado,FALSE,http://transparencia.elmar.inf.br/Licitacao,
+Itabaiana,Despesa Orçamentária,acao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,categoria_economica,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,elemento,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,emp_cnpj_cpf,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,emp_data,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,emp_numero,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,emp_valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,funcao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,lic_data_pag_ultima,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,lic_modalidade,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,lic_num_contrato,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,lic_numero,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,lic_obj_servico,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,modalidade,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,natureza_despesa,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,programa,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,sub_elemento,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,sub_funcao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,valor_fixado,FALSE,,
+Itabaiana,Despesa Orçamentária,valor_liquidado,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,valor_pago,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Orçamentária,nome,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Receita Orçamentária,uni_gestora,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Itabaiana,Receita Orçamentária,alinea,FALSE,,
+Itabaiana,Receita Orçamentária,arrecadacao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Itabaiana,Receita Orçamentária,categoria_economica,FALSE,,
+Itabaiana,Receita Orçamentária,especie,FALSE,,
+Itabaiana,Receita Orçamentária,lancado,FALSE,,
+Itabaiana,Receita Orçamentária,origem,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Itabaiana,Receita Orçamentária,previsao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Itabaiana,Receita Orçamentária,rubrica,FALSE,,
+Itabaiana,Receita Orçamentária,sub_alinea,FALSE,,
+Itabaiana,Despesa Extra Orçamentária,valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Extra Orçamentária,codigo,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Despesa Extra Orçamentária,nomenclatura,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Itabaiana,Receita Extra Orçamentária,valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Itabaiana,Receita Extra Orçamentária,codigo,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Itabaiana,Receita Extra Orçamentária,nomenclatura,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Itabaiana,Quadro Pessoal,nome,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/QuadroFuncional,
+Itabaiana,Quadro Pessoal,cpf,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/QuadroFuncional,
+Itabaiana,Quadro Pessoal,cargo,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/QuadroFuncional,
+Itabaiana,Quadro Pessoal,tipo_cargo,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/QuadroFuncional,
+Itabaiana,Quadro Pessoal,salario_cargo,FALSE,,
+Itabaiana,Licitação,numero_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Itabaiana,Licitação,objeto_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Itabaiana,Licitação,modalidade_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Itabaiana,Licitação,data_publicacao_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Itabaiana,Licitação,valor,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Itabaiana,Licitação,cnpj_cpf,FALSE,,
+Itabaiana,Licitação,edital,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Itabaiana,Licitação,nome_vencedores,FALSE,,
+Itabaiana,Licitação,nome_perdedores,FALSE,,
+Itabaiana,Licitação,data_realizacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Itabaiana,Licitação,setor_interessado,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Itabaiana,Licitação,integra,FALSE,,
+Itabaiana,Licitação,termo_ratificacao,FALSE,,
+Itabaiana,Licitação,pregao,FALSE,,
+Itabaiana,Licitação,aviso,FALSE,,
+Itabaiana,Licitação,licitado,FALSE,,
+Bom Jesus,Despesa Orçamentária,acao,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,categoria_economica,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,elemento,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,emp_data,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,emp_numero,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,emp_valor,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,funcao,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,lic_modalidade,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,lic_num_contrato,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,lic_numero,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,lic_obj_servico,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,modalidade,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,natureza_despesa,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,programa,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,sub_elemento,FALSE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,sub_funcao,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,valor_fixado,FALSE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,valor_liquidado,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,valor_pago,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Despesa Orçamentária,nome,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas,
+Bom Jesus,Receita Orçamentária,uni_gestora,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas,
+Bom Jesus,Receita Orçamentária,alinea,FALSE,,
+Bom Jesus,Receita Orçamentária,arrecadacao,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas,
+Bom Jesus,Receita Orçamentária,categoria_economica,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas,
+Bom Jesus,Receita Orçamentária,especie,FALSE,,
+Bom Jesus,Receita Orçamentária,lancado,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas,
+Bom Jesus,Receita Orçamentária,origem,TRUE,https://transparencia.elmar.inf.br/Contab/Receitas,
+Bom Jesus,Receita Orçamentária,previsao,FALSE,,
+Bom Jesus,Receita Orçamentária,rubrica,FALSE,,
+Bom Jesus,Receita Orçamentária,sub_alinea,FALSE,,
+Bom Jesus,Despesa Extra Orçamentária,valor,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra,
+Bom Jesus,Despesa Extra Orçamentária,codigo,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra,
+Bom Jesus,Despesa Extra Orçamentária,nomenclatura,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra,
+Bom Jesus,Receita Extra Orçamentária,valor,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Extra,
+Bom Jesus,Receita Extra Orçamentária,codigo,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Extra,
+Bom Jesus,Receita Extra Orçamentária,nomenclatura,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Extra,
+Bom Jesus,Quadro Pessoal,nome,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
+Bom Jesus,Quadro Pessoal,cpf,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
+Bom Jesus,Quadro Pessoal,cargo,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
+Bom Jesus,Quadro Pessoal,tipo_cargo,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
+Bom Jesus,Quadro Pessoal,salario_cargo,FALSE,,
+Bom Jesus,Licitação,numero_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Jesus,Licitação,objeto_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Jesus,Licitação,modalidade_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Jesus,Licitação,data_publicacao_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Jesus,Licitação,valor,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Jesus,Licitação,cnpj_cpf,FALSE,,
+Bom Jesus,Licitação,edital,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Jesus,Licitação,nome_vencedores,FALSE,,
+Bom Jesus,Licitação,nome_perdedores,FALSE,,
+Bom Jesus,Licitação,data_realizacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Jesus,Licitação,setor_interessado,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Bom Jesus,Licitação,integra,FALSE,,
+Bom Jesus,Licitação,termo_ratificacao,FALSE,,
+Bom Jesus,Licitação,pregao,FALSE,,
+Bom Jesus,Licitação,aviso,FALSE,,
+Bom Jesus,Licitação,licitado,FALSE,,
+Bayeux,Despesa Orçamentária,acao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,emp_data,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,emp_indicacao_licitacao,FALSE,,
+Bayeux,Despesa Orçamentária,emp_numero,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,emp_valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,lic_modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,lic_num_contrato,FALSE,,
+Bayeux,Despesa Orçamentária,lic_numero,FALSE,,
+Bayeux,Despesa Orçamentária,lic_obj_servico,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,natureza_despesa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,programa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,sub_elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,sub_funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,valor_fixado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,valor_liquidado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,nome,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Despesa Orçamentária,valor_pago,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
+Bayeux,Receita Orçamentária,uni_gestora,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
+Bayeux,Receita Orçamentária,alinea,FALSE,,
+Bayeux,Receita Orçamentária,arrecadacao,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
+Bayeux,Receita Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
+Bayeux,Receita Orçamentária,especie,FALSE,,
+Bayeux,Receita Orçamentária,lancado,FALSE,,
+Bayeux,Receita Orçamentária,origem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
+Bayeux,Receita Orçamentária,previsao,FALSE,,
+Bayeux,Receita Orçamentária,rubrica,FALSE,,
+Bayeux,Receita Orçamentária,sub_alinea,FALSE,,
+Bayeux,Despesa Extra Orçamentária,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,
+Bayeux,Despesa Extra Orçamentária,codigo,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,
+Bayeux,Despesa Extra Orçamentária,nomenclatura,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,
+Bayeux,Receita Extra Orçamentária,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,
+Bayeux,Receita Extra Orçamentária,codigo,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,
+Bayeux,Receita Extra Orçamentária,nomenclatura,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,
+Bayeux,Quadro Pessoal,nome,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
+Bayeux,Quadro Pessoal,cpf,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
+Bayeux,Quadro Pessoal,cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
+Bayeux,Quadro Pessoal,tipo_cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
+Bayeux,Quadro Pessoal,salario_cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
+Bayeux,Licitação,numero_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,objeto_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,modalidade_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,data_publicacao_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,cnpj_cpf,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,edital,FALSE,,
+Bayeux,Licitação,nome_vencedores,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,nome_perdedores,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,data_realizacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,setor_interessado,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,integra,FALSE,,
+Bayeux,Licitação,termo_ratificacao,FALSE,,
+Bayeux,Licitação,pregao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
+Bayeux,Licitação,aviso,FALSE,,
+Bayeux,Licitação,licitado,FALSE,,
+Umbuzeiro,Despesa Orçamentária,acao,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,categoria_economica,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,elemento,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://www.transparenciaativa.com.br/DespesaPorFavorecido.aspx,
+Umbuzeiro,Despesa Orçamentária,emp_data,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,emp_numero,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,emp_valor,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,funcao,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,lic_data_pag_ultima,FALSE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,lic_modalidade,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,lic_num_contrato,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,lic_numero,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,lic_obj_servico,FALSE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,modalidade,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,natureza_despesa,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx,
+Umbuzeiro,Despesa Orçamentária,programa,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,sub_elemento,TRUE,http://www.transparenciaativa.com.br/detalhesEmpenho.aspx?,
+Umbuzeiro,Despesa Orçamentária,sub_funcao,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,valor_fixado,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,valor_liquidado,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Despesa Orçamentária,valor_pago,TRUE,http://www.transparenciaativa.com.br/DespesaPorElemento.aspx,
+Umbuzeiro,Despesa Orçamentária,nome,TRUE,http://www.transparenciaativa.com.br/DespesasComLicitacoes.aspx,
+Umbuzeiro,Receita Orçamentária,alinea,FALSE,NA,
+Umbuzeiro,Receita Orçamentária,uni_gestora,FALSE,NA,
+Umbuzeiro,Receita Orçamentária,arrecadacao,TRUE,NA,
+Umbuzeiro,Receita Orçamentária,categoria_economica,TRUE,http://www.transparenciaativa.com.br/Receita2018.aspx,
+Umbuzeiro,Receita Orçamentária,especie,FALSE,,
+Umbuzeiro,Receita Orçamentária,lancado,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx,
+Umbuzeiro,Receita Orçamentária,origem,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx,
+Umbuzeiro,Receita Orçamentária,previsao,TRUE,http://www.transparenciaativa.com.br/DetalhesReceita.aspx,
+Umbuzeiro,Receita Orçamentária,rubrica,FALSE,http://www.transparenciaativa.com.br/Receita2018.aspx,
+Umbuzeiro,Receita Orçamentária,sub_alinea,FALSE,NA,
+Umbuzeiro,Despesa Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,
+Umbuzeiro,Despesa Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,
+Umbuzeiro,Despesa Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho,
+Umbuzeiro,Receita Extra Orçamentária,valor,TRUE,http://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,
+Umbuzeiro,Receita Extra Orçamentária,codigo,TRUE,http://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,
+Umbuzeiro,Receita Extra Orçamentária,nomenclatura,TRUE,http://www.transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,
+Umbuzeiro,Quadro Pessoal,nome,FALSE,,
+Umbuzeiro,Quadro Pessoal,cpf,FALSE,,
+Umbuzeiro,Quadro Pessoal,cargo,FALSE,,
+Umbuzeiro,Quadro Pessoal,tipo_cargo,FALSE,,
+Umbuzeiro,Quadro Pessoal,salario_cargo,FALSE,,
+Umbuzeiro,Licitação,numero_licitacao,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx,http://www.transparenciaativa.com.br/LicitacaoCompleta
+Umbuzeiro,Licitação,objeto_licitacao,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx,http://www.transparenciaativa.com.br/LicitacaoCompleta
+Umbuzeiro,Licitação,modalidade_licitacao,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx,http://www.transparenciaativa.com.br/LicitacaoCompleta
+Umbuzeiro,Licitação,data_publicacao_licitacao,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx,http://www.transparenciaativa.com.br/LicitacaoCompleta
+Umbuzeiro,Licitação,valor,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx,http://www.transparenciaativa.com.br/LicitacaoCompleta
+Umbuzeiro,Licitação,cnpj_cpf,TRUE,http://www.transparenciaativa.com.br/LicitacaoCompleta,
+Umbuzeiro,Licitação,edital,FALSE,,
+Umbuzeiro,Licitação,nome_vencedores,TRUE,http://www.transparenciaativa.com.br/LicitacaoCompleta,
+Umbuzeiro,Licitação,nome_perdedores,TRUE,http://www.transparenciaativa.com.br/LicitacaoCompleta,
+Umbuzeiro,Licitação,data_realizacao,FALSE,,
+Umbuzeiro,Licitação,setor_interessado,FALSE,,
+Umbuzeiro,Licitação,integra,FALSE,,
+Umbuzeiro,Licitação,termo_ratificacao,FALSE,,
+Umbuzeiro,Licitação,pregao,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx,
+Umbuzeiro,Licitação,aviso,FALSE,,
+Umbuzeiro,Licitação,licitado,TRUE,http://www.transparenciaativa.com.br/Licitacoes.aspx,http://www.transparenciaativa.com.br/LicitacaoCompleta

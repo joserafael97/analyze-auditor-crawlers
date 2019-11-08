@@ -22,12 +22,11 @@ avaliacoes$`_id` <- NULL
 avaliacoes <- avaliacoes %>% 
     rename(criterio = name) %>% 
     unnest(itens) %>%
-    group_by(item = name, municipio = county, criterio, aproach) %>% 
+    group_by(item = name, municipio = county, criterio, aproach, date = as.POSIXct(gsub('Z', ' ', gsub('T', ' ', date)))) %>% 
     summarise(
         valid,
         contNodeNumberAccess,
         found,
-        date = as.POSIXct(gsub('Z', ' ', gsub('T', ' ', date))),
         pathSought,
         durationMin = as.numeric(durationMin),
         duration = as.numeric(duration)
@@ -40,3 +39,5 @@ avaliacoes<-full_join(avaliacoes, avaliacoes_dataset, by=c("municipio", "item", 
 
 avaliacoes %>% 
     write_csv(here::here("data/resultados_avaliacoes.csv"))
+
+
