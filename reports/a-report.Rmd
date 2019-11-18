@@ -93,7 +93,9 @@ metricas_result <- precisao %>%
         max_duration = max(duration),
         max_durationMin = max(durationMin),
         median_num_access_node = median(contNodeNumberAccess),
-        max_num_access_node = max(contNodeNumberAccess)
+        max_num_access_node = max(contNodeNumberAccess),
+        all_access_node = sum(contNodeNumberAccess)
+
     )
 
 metricas_result
@@ -104,11 +106,37 @@ metricas_result$fn_total <- NULL
 metricas_result$median_duration <- NULL
 metricas_result$max_duration <- NULL
 
-metricas_result
+metricas_result %>%
+    arrange(desc(recall))
 ```
 
 
 Vamos analisar onde ocorreu as divergências entre o gabarito e o resultado do crawler
+bfs	2019-11-09 23:00:55	35	3	0	0.9210526	1.0000000	0.9589041
+
+```{r}
+metricas_result %>%
+    ggplot() + 
+    geom_point(aes(x=aproach, y=recall,  color=aproach), position = "jitter")  
+
+metricas_result %>%
+    ggplot() + 
+    geom_point(aes(x=aproach, y=f1_score,  color=aproach), position = "jitter")  
+```
+```{r}
+metricas_result %>%
+    ggplot() + 
+    geom_point(aes(x=aproach, y=median_duration_min,  color=aproach), position = "jitter")  
+
+metricas_result %>%
+    ggplot() + 
+    geom_point(aes(x=aproach, y=max_durationMin,  color=aproach), position = "jitter")  
+```
+```{r}
+metricas_result %>%
+    ggplot() + 
+    geom_point(aes(x=aproach, y=max_num_access_node,  color=aproach), position = "jitter")  
+```
 
 
 ```{r}
@@ -130,8 +158,14 @@ precisao %>%
 
 
 ```{r}
-precisao %>% filter(municipio == "Arara", tp == FALSE, encontrado == TRUE) 
+precisao$aproach <- NULL
+precisao$date <- NULL
+precisao$contNodeNumberAccess <- NULL
+precisao$duration <- NULL
+precisao$durationMin <- NULL
+
+precisao %>% 
+    filter(municipio == "Quixaba") %>% 
+    arrange(desc(criterio))
 
 ```
-
-
