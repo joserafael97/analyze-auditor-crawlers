@@ -1524,51 +1524,51 @@ Serra Grande,Licitação,termo_ratificacao,FALSE,,
 Serra Grande,Licitação,pregao,FALSE,,
 Serra Grande,Licitação,aviso,FALSE,,
 Serra Grande,Licitação,licitado,FALSE,,
-Coremas,Despesa Orçamentária,acao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,emp_data,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,emp_indicacao_licitacao,FALSE,,
-Coremas,Despesa Orçamentária,emp_numero,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,emp_valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,lic_modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,lic_num_contrato,FALSE,,
-Coremas,Despesa Orçamentária,lic_numero,FALSE,,
-Coremas,Despesa Orçamentária,lic_obj_servico,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,natureza_despesa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,programa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,sub_elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,sub_funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,valor_fixado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,valor_liquidado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,valor_pago,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Despesa Orçamentária,nome,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,
-Coremas,Receita Orçamentária,uni_gestora,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
+Coremas,Despesa Orçamentária,acao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,emp_data,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,emp_indicacao_licitacao,FALSE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,emp_numero,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,emp_valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,lic_modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,lic_num_contrato,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,lic_numero,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,lic_obj_servico,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,natureza_despesa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,programa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,sub_elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,sub_funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,valor_fixado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,valor_liquidado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,valor_pago,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Despesa Orçamentária,nome,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho,
+Coremas,Receita Orçamentária,uni_gestora,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria,
 Coremas,Receita Orçamentária,alinea,FALSE,,
-Coremas,Receita Orçamentária,arrecadacao,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
-Coremas,Receita Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
+Coremas,Receita Orçamentária,arrecadacao,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria,
+Coremas,Receita Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria,
 Coremas,Receita Orçamentária,especie,FALSE,,
 Coremas,Receita Orçamentária,lancado,FALSE,,
-Coremas,Receita Orçamentária,origem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,
+Coremas,Receita Orçamentária,origem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria,
 Coremas,Receita Orçamentária,previsao,FALSE,,
 Coremas,Receita Orçamentária,rubrica,FALSE,,
 Coremas,Receita Orçamentária,sub_alinea,FALSE,,
-Coremas,Despesa Extra Orçamentária,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,
-Coremas,Despesa Extra Orçamentária,codigo,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,
-Coremas,Despesa Extra Orçamentária,nomenclatura,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,
-Coremas,Receita Extra Orçamentária,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,
-Coremas,Receita Extra Orçamentária,codigo,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,
-Coremas,Receita Extra Orçamentária,nomenclatura,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,
-Coremas,Quadro Pessoal,nome,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
-Coremas,Quadro Pessoal,cpf,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
-Coremas,Quadro Pessoal,cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
-Coremas,Quadro Pessoal,tipo_cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
-Coremas,Quadro Pessoal,salario_cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,
+Coremas,Despesa Extra Orçamentária,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra,
+Coremas,Despesa Extra Orçamentária,codigo,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra,
+Coremas,Despesa Extra Orçamentária,nomenclatura,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra,
+Coremas,Receita Extra Orçamentária,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra,
+Coremas,Receita Extra Orçamentária,codigo,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra,
+Coremas,Receita Extra Orçamentária,nomenclatura,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra,
+Coremas,Quadro Pessoal,nome,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
+Coremas,Quadro Pessoal,cpf,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
+Coremas,Quadro Pessoal,cargo,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
+Coremas,Quadro Pessoal,tipo_cargo,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
+Coremas,Quadro Pessoal,salario_cargo,TRUE,http://transparencia.elmar.inf.br/FolhaPag,
 Coremas,Licitação,numero_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
 Coremas,Licitação,objeto_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
 Coremas,Licitação,modalidade_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,
@@ -1646,3 +1646,186 @@ Quixaba,Licitação,termo_ratificacao,FALSE,,
 Quixaba,Licitação,pregao,FALSE,,
 Quixaba,Licitação,aviso,FALSE,,
 Quixaba,Licitação,licitado,FALSE,,
+Conceição,Despesa Orçamentária,acao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=3
+Conceição,Despesa Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=4
+Conceição,Despesa Orçamentária,elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=5
+Conceição,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=6
+Conceição,Despesa Orçamentária,emp_data,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=7
+Conceição,Despesa Orçamentária,emp_indicacao_licitacao,FALSE,,
+Conceição,Despesa Orçamentária,emp_numero,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=9
+Conceição,Despesa Orçamentária,emp_valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=10
+Conceição,Despesa Orçamentária,funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=11
+Conceição,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=12
+Conceição,Despesa Orçamentária,lic_modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=13
+Conceição,Despesa Orçamentária,lic_num_contrato,FALSE,,
+Conceição,Despesa Orçamentária,lic_numero,FALSE,,
+Conceição,Despesa Orçamentária,lic_obj_servico,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=16
+Conceição,Despesa Orçamentária,modalidade,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=17
+Conceição,Despesa Orçamentária,natureza_despesa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=18
+Conceição,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=19
+Conceição,Despesa Orçamentária,programa,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=20
+Conceição,Despesa Orçamentária,sub_elemento,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=21
+Conceição,Despesa Orçamentária,sub_funcao,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=22
+Conceição,Despesa Orçamentária,valor_fixado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=23
+Conceição,Despesa Orçamentária,valor_liquidado,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=24
+Conceição,Despesa Orçamentária,valor_pago,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=25
+Conceição,Despesa Orçamentária,nome,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=26
+Conceição,Receita Orçamentária,uni_gestora,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZW1wZW5ob3M=&m=27
+Conceição,Receita Orçamentária,alinea,FALSE,,
+Conceição,Receita Orçamentária,arrecadacao,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vYXJyZWNhZGFjYW9fb3JjYW1lbnRhcmlh&m=2
+Conceição,Receita Orçamentária,categoria_economica,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vYXJyZWNhZGFjYW9fb3JjYW1lbnRhcmlh&m=2
+Conceição,Receita Orçamentária,especie,FALSE,,
+Conceição,Receita Orçamentária,lancado,FALSE,,
+Conceição,Receita Orçamentária,origem,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vYXJyZWNhZGFjYW9fb3JjYW1lbnRhcmlh&m=2
+Conceição,Receita Orçamentária,previsao,FALSE,,
+Conceição,Receita Orçamentária,rubrica,FALSE,,
+Conceição,Receita Orçamentária,sub_alinea,FALSE,,
+Conceição,Despesa Extra Orçamentária,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZGVzcGVzYV9leHRyYQ==&m=3
+Conceição,Despesa Extra Orçamentária,codigo,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZGVzcGVzYV9leHRyYQ==&m=4
+Conceição,Despesa Extra Orçamentária,nomenclatura,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vZGVzcGVzYV9leHRyYQ==&m=5
+Conceição,Receita Extra Orçamentária,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vYXJyZWNhZGFjYW9fZXh0cmFfb3JjYW1lbnRhcmlh&m=2
+Conceição,Receita Extra Orçamentária,codigo,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vYXJyZWNhZGFjYW9fZXh0cmFfb3JjYW1lbnRhcmlh&m=3
+Conceição,Receita Extra Orçamentária,nomenclatura,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vYXJyZWNhZGFjYW9fZXh0cmFfb3JjYW1lbnRhcmlh&m=4
+Conceição,Quadro Pessoal,nome,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3d3dy5zaXRlc2V0aWNvbnMuY29tLmJyL3BvcnRhbC93cy9lbXByZXNhL01EZzVORE15TWpjd01EQXhPREk9L3NlcnZpZG9yZXM=&m=5
+Conceição,Quadro Pessoal,cpf,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3d3dy5zaXRlc2V0aWNvbnMuY29tLmJyL3BvcnRhbC93cy9lbXByZXNhL01EZzVORE15TWpjd01EQXhPREk9L3NlcnZpZG9yZXM=&m=6
+Conceição,Quadro Pessoal,cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3d3dy5zaXRlc2V0aWNvbnMuY29tLmJyL3BvcnRhbC93cy9lbXByZXNhL01EZzVORE15TWpjd01EQXhPREk9L3NlcnZpZG9yZXM=&m=7
+Conceição,Quadro Pessoal,tipo_cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3d3dy5zaXRlc2V0aWNvbnMuY29tLmJyL3BvcnRhbC93cy9lbXByZXNhL01EZzVORE15TWpjd01EQXhPREk9L3NlcnZpZG9yZXM=&m=8
+Conceição,Quadro Pessoal,salario_cargo,TRUE,http://transparenciaativa.com.br/ServidoresComSalario.aspx,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3d3dy5zaXRlc2V0aWNvbnMuY29tLmJyL3BvcnRhbC93cy9lbXByZXNhL01EZzVORE15TWpjd01EQXhPREk9L3NlcnZpZG9yZXM=&m=9
+Conceição,Licitação,numero_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=4
+Conceição,Licitação,objeto_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=5
+Conceição,Licitação,modalidade_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=6
+Conceição,Licitação,data_publicacao_licitacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=7
+Conceição,Licitação,valor,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=8
+Conceição,Licitação,cnpj_cpf,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=9
+Conceição,Licitação,edital,FALSE,,
+Conceição,Licitação,nome_vencedores,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=11
+Conceição,Licitação,nome_perdedores,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=12
+Conceição,Licitação,data_realizacao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=13
+Conceição,Licitação,setor_interessado,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=14
+Conceição,Licitação,integra,FALSE,,
+Conceição,Licitação,termo_ratificacao,FALSE,,
+Conceição,Licitação,pregao,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURnNU5ETXlNamN3TURBeE9EST0vbGljaXRhY29lcw==&m=17
+Conceição,Licitação,aviso,FALSE,,
+Conceição,Licitação,licitado,FALSE,,
+Barra de Santa Rosa,Despesa Orçamentária,acao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,categoria_economica,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,elemento,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,emp_cnpj_cpf,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,emp_data,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,emp_numero,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,emp_valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,funcao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,lic_data_pag_ultima,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,lic_modalidade,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,lic_num_contrato,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,lic_numero,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,lic_obj_servico,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,modalidade,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,natureza_despesa,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,programa,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,sub_elemento,FALSE,,
+Barra de Santa Rosa,Despesa Orçamentária,sub_funcao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,valor_fixado,FALSE,,
+Barra de Santa Rosa,Despesa Orçamentária,valor_liquidado,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,valor_pago,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Orçamentária,nome,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Receita Orçamentária,uni_gestora,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Barra de Santa Rosa,Receita Orçamentária,alinea,FALSE,,
+Barra de Santa Rosa,Receita Orçamentária,arrecadacao,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Barra de Santa Rosa,Receita Orçamentária,categoria_economica,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Barra de Santa Rosa,Receita Orçamentária,especie,FALSE,,
+Barra de Santa Rosa,Receita Orçamentária,lancado,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Barra de Santa Rosa,Receita Orçamentária,origem,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Barra de Santa Rosa,Receita Orçamentária,previsao,FALSE,,
+Barra de Santa Rosa,Receita Orçamentária,rubrica,FALSE,,
+Barra de Santa Rosa,Receita Orçamentária,sub_alinea,FALSE,,
+Barra de Santa Rosa,Despesa Extra Orçamentária,valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Extra Orçamentária,codigo,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Despesa Extra Orçamentária,nomenclatura,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas,
+Barra de Santa Rosa,Receita Extra Orçamentária,valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Barra de Santa Rosa,Receita Extra Orçamentária,codigo,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Barra de Santa Rosa,Receita Extra Orçamentária,nomenclatura,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,
+Barra de Santa Rosa,Quadro Pessoal,nome,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag,
+Barra de Santa Rosa,Quadro Pessoal,cpf,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag,
+Barra de Santa Rosa,Quadro Pessoal,cargo,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag,
+Barra de Santa Rosa,Quadro Pessoal,tipo_cargo,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag,
+Barra de Santa Rosa,Quadro Pessoal,salario_cargo,FALSE,,
+Barra de Santa Rosa,Licitação,numero_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Barra de Santa Rosa,Licitação,objeto_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Barra de Santa Rosa,Licitação,modalidade_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Barra de Santa Rosa,Licitação,data_publicacao_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Barra de Santa Rosa,Licitação,valor,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Barra de Santa Rosa,Licitação,cnpj_cpf,FALSE,,
+Barra de Santa Rosa,Licitação,edital,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Barra de Santa Rosa,Licitação,nome_vencedores,FALSE,,
+Barra de Santa Rosa,Licitação,nome_perdedores,FALSE,,
+Barra de Santa Rosa,Licitação,data_realizacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Barra de Santa Rosa,Licitação,setor_interessado,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Barra de Santa Rosa,Licitação,integra,FALSE,,
+Barra de Santa Rosa,Licitação,termo_ratificacao,FALSE,,
+Barra de Santa Rosa,Licitação,pregao,FALSE,,
+Barra de Santa Rosa,Licitação,aviso,FALSE,,
+Barra de Santa Rosa,Licitação,licitado,FALSE,,
+Areia de Baraúnas,Despesa Orçamentária,acao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,categoria_economica,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,elemento,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,emp_cnpj_cpf,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,emp_data,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,emp_indicacao_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,emp_numero,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,emp_valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,funcao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,lic_data_pag_ultima,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,lic_modalidade,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,lic_num_contrato,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,lic_numero,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,lic_obj_servico,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,modalidade,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,natureza_despesa,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,orgao_or_uni_orcamentaria,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,programa,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,sub_elemento,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,sub_funcao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,valor_fixado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,valor_liquidado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,valor_pago,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Orçamentária,nome,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpEmpenhos.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Orçamentária,uni_gestora,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuias.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Orçamentária,alinea,FALSE,,
+Areia de Baraúnas,Receita Orçamentária,arrecadacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuias.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Orçamentária,categoria_economica,FALSE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuias.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Orçamentária,especie,FALSE,,
+Areia de Baraúnas,Receita Orçamentária,lancado,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuias.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Orçamentária,origem,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuias.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Orçamentária,previsao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuias.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Orçamentária,rubrica,FALSE,,
+Areia de Baraúnas,Receita Orçamentária,sub_alinea,FALSE,,
+Areia de Baraúnas,Despesa Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpDespesasExtrasOrc.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpDespesasExtrasOrc.php&urlorigem=#frameContent
+Areia de Baraúnas,Despesa Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Empenho/FormEmpDespesasExtrasOrc.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuiasReceitaExtra.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuiasReceitaExtra.php&urlorigem=#frameContent
+Areia de Baraúnas,Receita Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Receitas/FormCPRCGuiasReceitaExtra.php&urlorigem=#frameContent
+Areia de Baraúnas,Quadro Pessoal,nome,TRUE,http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURFMk1USTJPRFV3TURBeE9UQT0vc2Vydmlkb3Jlcw==&m=5,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml
+Areia de Baraúnas,Quadro Pessoal,cpf,TRUE,http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURFMk1USTJPRFV3TURBeE9UQT0vc2Vydmlkb3Jlcw==&m=5,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml
+Areia de Baraúnas,Quadro Pessoal,cargo,TRUE,http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURFMk1USTJPRFV3TURBeE9UQT0vc2Vydmlkb3Jlcw==&m=5,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml
+Areia de Baraúnas,Quadro Pessoal,tipo_cargo,TRUE,http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURFMk1USTJPRFV3TURBeE9UQT0vc2Vydmlkb3Jlcw==&m=6,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml
+Areia de Baraúnas,Quadro Pessoal,salario_cargo,TRUE,http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3NpdGVzZXRpY29ucy5jb20uYnIvcG9ydGFsL3dzL2VtcHJlc2EvTURFMk1USTJPRFV3TURBeE9UQT0vc2Vydmlkb3Jlcw==&m=7,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml
+Areia de Baraúnas,Licitação,numero_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Licitacao/FormCPRCLicitacao.php&urlorigem=#frameContent
+Areia de Baraúnas,Licitação,objeto_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Licitacao/FormCPRCLicitacao.php&urlorigem=#frameContent
+Areia de Baraúnas,Licitação,modalidade_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Licitacao/FormCPRCLicitacao.php&urlorigem=#frameContent
+Areia de Baraúnas,Licitação,data_publicacao_licitacao,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Licitacao/FormCPRCLicitacao.php&urlorigem=#frameContent
+Areia de Baraúnas,Licitação,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Licitacao/FormCPRCLicitacao.php&urlorigem=#frameContent
+Areia de Baraúnas,Licitação,cnpj_cpf,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Licitacao/FormCPRCLicitacao.php&urlorigem=#frameContent
+Areia de Baraúnas,Licitação,edital,FALSE,,
+Areia de Baraúnas,Licitação,nome_vencedores,FALSE,,
+Areia de Baraúnas,Licitação,nome_perdedores,FALSE,,
+Areia de Baraúnas,Licitação,data_realizacao,FALSE,,
+Areia de Baraúnas,Licitação,setor_interessado,FALSE,,
+Areia de Baraúnas,Licitação,integra,FALSE,,
+Areia de Baraúnas,Licitação,termo_ratificacao,FALSE,,
+Areia de Baraúnas,Licitação,pregao,FALSE,,
+Areia de Baraúnas,Licitação,aviso,FALSE,,
+Areia de Baraúnas,Licitação,licitado,FALSE,,

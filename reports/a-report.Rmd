@@ -27,27 +27,7 @@ gararito[is.na(gararito)] <- ""
 
 data<-full_join(resultados_avaliacoes, gararito, by=c("municipio", "item", "criterio"))
 empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
-fornecedores <- readr::read_csv(here::here("data/empresas.csv"))
 ```
-
-##Combinações diferentes 
-
-```{r}
-empresas_portais[is.na(empresas_portais)] <- ""
-
-
-empresas_portais %>%
-    group_by(fornecedor) %>%
-    summarise(num_municipios_atendidos = n()) %>%
-    arrange(desc(num_municipios_atendidos))
-    
-```
-Existem 48 combinações diferentes entre os fornecedores. A Publicsoft sozinha (Sem contar combinações) é a empresa que mais atende municípios (56) 
-
-```{r}
-fornecedores
-```
-Existem 23 empresas fornecedoras de portais de transparência na Paraíba.
 
 
 ```{r}
@@ -76,6 +56,7 @@ Quantificando métricas
 ```{r}
 
 metricas_result <- precisao %>% 
+    #filter(!is.na(aproach )) %>% 
     group_by(municipio, aproach, date) %>% 
     summarise(
         tp_total = sum(tp), 
@@ -107,7 +88,13 @@ metricas_result$median_duration <- NULL
 metricas_result$max_duration <- NULL
 
 metricas_result %>%
-    arrange(desc(recall))
+    arrange(desc(recall)) 
+```
+```{r}
+metricas_result %>%
+    group_by(municipio) %>%
+    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
+    arrange(desc(bfs)) 
 ```
 
 
@@ -139,33 +126,14 @@ metricas_result %>%
 ```
 
 
-```{r}
- precisao %>% 
-    group_by(criterio, municipio) %>%
-    summarize(total_fn = sum(fn == TRUE), total_itens = n()) %>%
-    ggplot() + 
-    geom_bar(aes(x=criterio, y=total_fn), fill="#DD8888",stat="identity")+
-    facet_grid(municipio ~ .)
-
-
-precisao %>% 
-    group_by(criterio, municipio) %>%
-    summarize(total_fp = sum(fp == TRUE), total_itens = n()) %>%
-    ggplot() + 
-    geom_bar(aes(x=criterio, y=total_fp), fill="#DD8888",stat="identity") + 
-    facet_grid(municipio ~ .)
-```
-
 
 ```{r}
-precisao$aproach <- NULL
-precisao$date <- NULL
 precisao$contNodeNumberAccess <- NULL
 precisao$duration <- NULL
 precisao$durationMin <- NULL
 
 precisao %>% 
-    filter(municipio == "Quixaba") %>% 
+    filter(municipio == "Coremas", valid == FALSE, encontrado == TRUE, criterio=="Despesa Orçamentária") %>% 
     arrange(desc(criterio))
 
 ```

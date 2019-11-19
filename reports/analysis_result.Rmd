@@ -1,0 +1,16 @@
+---
+title: ""
+output:
+    html_document:
+    df_print: paged
+theme: sandstone
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse) # 
+library(dplyr) # 
+library(here)
+library(ggplot2)
+source(here::here("code/lib.R"))
+theme_set(theme_bw())
+```
