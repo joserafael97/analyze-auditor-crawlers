@@ -63,7 +63,7 @@ empresas_portais %>%
     summarise(num_municipios_atendidos = n()) %>%
     filter(num_municipios_atendidos > 1) %>%
     ggplot() + 
-    geom_point(aes(x=num_municipios_atendidos, y=reorder(fornecedor, +num_municipios_atendidos)), position = "jitter", color='darkblue')  
+    geom_point(aes(x=num_municipios_atendidos, y=reorder(fornecedor, +num_municipios_atendidos)), color='darkblue')  
 ```
 
 De acorco com a Figura acima é possível observar uma redução do número de combinações, sendo anteriormente 49 e passando para 18.
@@ -76,7 +76,7 @@ Como forma de garantir a construção de uma amostra de portais representativa p
 ```{r}
 amostra %>%
     ggplot() + 
-    geom_point(aes(y=reorder(`Combinação`, +`nº portais`), x=`nº portais`), position = "jitter", color='darkblue')  
+    geom_point(aes(x=`nº portais`, y=reorder(`Combinação`, +(`nº portais`))), color='darkblue')  
 ```
 Algumas combinações como Alfa Consultoria / e-TICons, Alfa Consultoria / Info Public apesar de atenderem mais de um portal foram desconsidaradas por possuirem layouts e navegação similares com outras combinações presentes na amostra como Alfa Consultoria / Elmar Tecnologia.
 
