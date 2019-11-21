@@ -1,0 +1,113 @@
+---
+title: "Entendo os fornecedores de portais de transparência na Paraíba"
+output:
+    html_document:
+    df_print: paged
+theme: sandstone
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse) # 
+library(dplyr) # 
+library(here)
+library(ggplot2)
+library(knitr)
+library(kableExtra)
+```
+
+
+Este relatório apresenta uma breve análise sobre empresas fornecedoras de portais de transparência no estado da Paraíba. Esta análise mantém o foco no número de empresas existentes e possíveis combinações entre elas (municípios que possuem seus critérios fiscais genrenciados por diferentes empresas).
+
+Os dados utililizados foram coletados por uma análise manual de todos os 223 municípios do estado por uma pequena equipe de desenvolvedores resposáveis pelo desenvolvimento do projeto Turmalina em parceria entre Universidade Federal de Campina Grande (UFCG) e Tribunal de Contas da Paraíba (TCE-PB). 
+
+A caracterização dos portais de transparência é fundamental para criação de uma abordagem de crawler que considere os seguintes aspectos: 
+
+* A diversidade nos tipos de layouts dos portais;
+* A falta de padronização na forma criar URLs e no modo de navegação entre elas;
+* A maneira de disponibilizar e visualizar as informações fiscais nestes sites;
+* Na forma de gerenciar o processamento e acesso componentes dinâmicos;
+* Na manutenção de sessões temporárias duranto o processo de crawling;
+* No gerenciamento do acesso à portais que atendem mais de um município no mesmo domínio.
+
+## Lendo os dados
+
+```{r read, message=FALSE, warning=FALSE, paged.print=TRUE}
+empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
+fornecedores <- readr::read_csv(here::here("data/empresas.csv"))
+amostra <- readr::read_csv(here::here("data/amostra.csv"))
+```
+
+##  Empresas Fornecedoras de Portais de Transparência
+ 
+
+Para caracterizar os portais de transparência durante a análise manual foram identificadas as empresas que atendiam cada portal. Para portais que possuíam seus critérios atendidos por mais de uma empresa foram criados grupos de combinações que formam novos layouts e portanto devem ser análisados de maneira distintas. 
+
+Iniciamente vamos verificar as empresas identificadas em todos os 223 portais de transparência
+
+```{r}
+kable(fornecedores) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+```
+
+Atualmente 23 empresa diferentes atuam no fornecimento de portais de transparência na Paraíba.
+
+
+Durante a caracterização dos portais da transparência do estado foi possível encontrar diferentes combinações entre fornecedores, ou seja, mais de uma empresa atentendo um mesmo portal. Desta forma, foi analisado as possíveis combinaçoes e a frequência de ocorrência de cada uma delas. Tais combinações são mostradas abaixo. 
+
+```{r}
+empresas_portais[is.na(empresas_portais)] <- ""
+
+
+empresas_portais %>%
+    group_by(fornecedor) %>%
+    summarise(num_municipios_atendidos = n()) %>%
+    arrange(desc(num_municipios_atendidos)) %>% 
+    kable() %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+    
+```
+
+Obs: Durante a coleta alguns layouts não identificados foram agrupados por semelhanla dando origem ao grupo Portal Próprio. 
+
+Existem 49 combinações diferentes entre os fornecedores. A Publicsoft sozinha (Sem contar combinações) é a empresa que mais atende municípios (49).
+
+No entanto, existem na Tabela acima é observado uma grande quantidade de combinação com uma única ocorrência. Assim, vamos verificar somente as combinações com ao menos duas ocorrência.
+
+
+```{r}
+
+empresas_portais %>%
+  group_by(fornecedor) %>%
+  summarise(num_municipios_atendidos = n()) %>%
+  filter(num_municipios_atendidos > 1) %>%
+  ggplot(aes(y=num_municipios_atendidos, x=reorder(fornecedor, +(num_municipios_atendidos)))) + 
+  geom_bar(stat = "identity",  fill="#5499C7") + 
+  ggtitle("Portais Por Combinação (População)") +
+  xlab("Combinações") + 
+  ylab("Número de Portais") +
+  coord_flip()
+
+```
+
+De acorco com a Figura acima é possível observar uma redução do número de combinações, sendo anteriormente 49 e passando para 18.
+
+Neste contexto, para a análise da eficácia e eficiência do crawler durante as avaliações fiscais é fundamental estabelecer a população/amostra que servirá de base representativa do contexto avaliado. Nesta perspectiva, foi utilizado um recorte de 30 portais de transparência de diferentes municípios da Paraíba, representando 13.4% dos 223 portais existentes no estado.
+
+Como forma de garantir a construção de uma amostra de portais representativa para avaliação da ferramenta os critérios fornecedor do portal, número de portais, as combinações entre fornecedores e a frequência de aparição da combinação foram considerados. Neste sentido, para cada combinação contendo mais de 2 portais foram selecionados de forma aleatória o número de portais que representassem um número superior 10% da combinação na população. A proporção de conmbinações selecionadas para amostra é apresentado na Figura abaixo.
+
+
+```{r}
+amostra %>%
+  ggplot(aes(y=`nº portais`, x=reorder(`Combinação`, +(`nº portais`)))) + 
+  geom_bar(stat = "identity",  fill="#5499C7") + 
+  ggtitle("Portais Por Combinação (Amostra)") +
+  xlab("Combinações") + 
+  ylab("Número de Portais") +
+  coord_flip()
+  
+```
+
+Algumas combinações como Alfa Consultoria / e-TICons, Alfa Consultoria / Info Public apesar de atenderem mais de um portal foram desconsidaradas por possuirem layouts e navegação similares com outras combinações presentes na amostra como Alfa Consultoria / Elmar Tecnologia.
+
+
+

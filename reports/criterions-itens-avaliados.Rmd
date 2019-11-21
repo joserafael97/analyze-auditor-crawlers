@@ -1,0 +1,61 @@
+---
+title: "REPLACE ME"
+output:
+    html_document:
+    df_print: paged
+theme: sandstone
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse) # 
+library(jsonlite) # Ler dados json
+library(dplyr) # 
+library(knitr)
+library(kableExtra)
+library(here)
+library(ggplot2)
+source(here::here("code/lib.R"))
+theme_set(theme_bw())
+```
+
+## Lendo os dados
+
+```{r read}
+resultados_avaliacoes = read_avaliacoes()
+```
+
+##Itens avaliados
+
+Vamos verifica quais itens são mais encontrados pelo crawler
+
+```{r}
+resultados_avaliacoes %>%
+    group_by(item, criterio) %>%
+    summarise(frequencia_positiva = sum(valid == TRUE), frequencia_negativa = sum(valid == FALSE)) %>%
+    arrange(desc(frequencia_negativa)) %>% 
+    kable() %>%
+    kable_styling(bootstrap_options = c("striped", "hover"))
+
+resultados_avaliacoes %>%
+    group_by(item, criterio) %>%
+    summarise(frequencia_positiva = sum(valid == TRUE), frequencia_negativa = sum(valid == FALSE)) %>%
+    filter(frequencia_negativa > 60 && frequencia_positiva == 0) %>%
+    ggplot(aes(y=frequencia_negativa, x=reorder(item, +frequencia_negativa), fill=criterio)) + 
+    geom_bar(stat = "identity") + 
+    coord_flip()
+
+resultados_avaliacoes %>%
+    group_by(item, criterio) %>%
+    summarise(frequencia_positiva = sum(valid == TRUE), frequencia_negativa = sum(valid == FALSE)) %>%
+    filter(frequencia_negativa > 60 && frequencia_positiva < 12) %>%
+    ggplot(aes(y=frequencia_negativa, x=reorder(item, +frequencia_negativa), fill=criterio)) + 
+    geom_bar(stat = "identity") + 
+    coord_flip()
+```
+
+
+Com base na Tabela e visualizações é perceptível a existência de itens que não foram encontrados em nenhuma avaliação licitado, integra, sub-alínea, rubrica, alínea. Além disso, alguns itens aparecem menos de 12 avaliações.
+
+Nesse aspecto, é possível identificar itens que possuem localização e definição (de acordo com TCE) não bem definidos como é caso de edital, licitado e rubrica. Assim, foi optado pela execução do crawler sem esses itens reduzindo 10 itens do total buscado. 
+
+Os itens aviso, nome dos vencedores e nome dos perdedores do critério Licitação também foram excluídos por serem informações que ficaram disponíveis ao longo do processo licitatório.

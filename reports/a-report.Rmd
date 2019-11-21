@@ -29,7 +29,7 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ```
 
 
-## Adicionando Combinação identificada no portal em cada Município no gabarito
+## Adicionando combinação encontrada em cada município no gabarito
 
 ```{r}
 empresas_portais <- empresas_portais %>% 
@@ -46,7 +46,7 @@ gararito<-left_join(gararito, empresas_portais, by=c("municipio"))
 data<-full_join(resultados_avaliacoes, gararito, by=c("municipio", "item", "criterio"))
 ```
 
-
+## Sumarizando as avaliações
 
 ```{r}
 
@@ -107,6 +107,7 @@ metricas_result$median_duration <- NULL
 metricas_result$max_duration <- NULL
 
 metricas_result %>%
+    select(municipio, aproach ,recall, precision, f1_score) %>%
     arrange(desc(recall)) 
 ```
 ```{r}
@@ -152,7 +153,7 @@ precisao$duration <- NULL
 precisao$durationMin <- NULL
 
 precisao %>% 
-    filter(municipio == "Coremas", valid == FALSE, encontrado == TRUE, criterio=="Despesa Orçamentária") %>% 
+    filter(aproach=='bfs', municipio == "Serraria", valid == FALSE, encontrado == TRUE) %>% 
     arrange(desc(criterio))
 
 ```

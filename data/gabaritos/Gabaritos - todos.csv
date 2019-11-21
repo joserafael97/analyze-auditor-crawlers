@@ -783,7 +783,7 @@ Bom Jesus,Licitação,data_publicacao_licitacao,TRUE,http://transparencia.elmar.
 Bom Jesus,Licitação,valor,TRUE,http://transparencia.elmar.inf.br/Licitacao,
 Bom Jesus,Licitação,cnpj_cpf,FALSE,,
 Bom Jesus,Licitação,edital,TRUE,http://transparencia.elmar.inf.br/Licitacao,
-Bom Jesus,Licitação,nome_vencedores,FALSE,,
+Bom Jesus,Licitação,nome_vencedores,TRUE,http://transparencia.elmar.inf.br/Licitacao,
 Bom Jesus,Licitação,nome_perdedores,FALSE,,
 Bom Jesus,Licitação,data_realizacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
 Bom Jesus,Licitação,setor_interessado,TRUE,http://transparencia.elmar.inf.br/Licitacao,
@@ -954,22 +954,22 @@ Serraria,Despesa Extra Orçamentária,nomenclatura,TRUE,https://transparencia.el
 Serraria,Receita Extra Orçamentária,valor,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,https://transparencia.elmartecnologia.com.br/Contab/Receitas
 Serraria,Receita Extra Orçamentária,codigo,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,https://transparencia.elmartecnologia.com.br/Contab/Receitas
 Serraria,Receita Extra Orçamentária,nomenclatura,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas,http://transparencia.serraria.pb.gov.br/receitas/
-Serraria,Quadro Pessoal,nome,TRUE,http://transparencia.elmar.inf.br/FolhaPag,http://transparencia.serraria.pb.gov.br/folha-pessoal/
-Serraria,Quadro Pessoal,cpf,TRUE,http://transparencia.elmar.inf.br/FolhaPag,http://transparencia.serraria.pb.gov.br/folha-pessoal/
-Serraria,Quadro Pessoal,cargo,TRUE,http://transparencia.elmar.inf.br/FolhaPag,http://transparencia.serraria.pb.gov.br/folha-pessoal/
-Serraria,Quadro Pessoal,tipo_cargo,TRUE,http://transparencia.elmar.inf.br/FolhaPag,http://transparencia.serraria.pb.gov.br/folha-pessoal/
+Serraria,Quadro Pessoal,nome,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag,http://transparencia.serraria.pb.gov.br/folha-pessoal/
+Serraria,Quadro Pessoal,cpf,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag,http://transparencia.serraria.pb.gov.br/folha-pessoal/
+Serraria,Quadro Pessoal,cargo,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag,http://transparencia.serraria.pb.gov.br/folha-pessoal/
+Serraria,Quadro Pessoal,tipo_cargo,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag,http://transparencia.serraria.pb.gov.br/folha-pessoal/
 Serraria,Quadro Pessoal,salario_cargo,FALSE,,
-Serraria,Licitação,numero_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
-Serraria,Licitação,objeto_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
-Serraria,Licitação,modalidade_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
-Serraria,Licitação,data_publicacao_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
-Serraria,Licitação,valor,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Serraria,Licitação,numero_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Serraria,Licitação,objeto_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Serraria,Licitação,modalidade_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Serraria,Licitação,data_publicacao_licitacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Serraria,Licitação,valor,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
 Serraria,Licitação,cnpj_cpf,TRUE,http://www.serraria.pb.gov.br/modalidade-da-licitacao-no-ano,
-Serraria,Licitação,edital,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Serraria,Licitação,edital,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
 Serraria,Licitação,nome_vencedores,TRUE,http://www.serraria.pb.gov.br/modalidade-da-licitacao-no-ano,
 Serraria,Licitação,nome_perdedores,TRUE,http://www.serraria.pb.gov.br/modalidade-da-licitacao-no-ano,
-Serraria,Licitação,data_realizacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
-Serraria,Licitação,setor_interessado,TRUE,http://transparencia.elmar.inf.br/Licitacao,
+Serraria,Licitação,data_realizacao,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
+Serraria,Licitação,setor_interessado,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao,
 Serraria,Licitação,integra,FALSE,,
 Serraria,Licitação,termo_ratificacao,FALSE,,
 Serraria,Licitação,pregao,TRUE,http://www.serraria.pb.gov.br/licitacoes,
