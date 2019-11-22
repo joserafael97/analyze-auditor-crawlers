@@ -1,6 +1,7 @@
 item,municipio,criterio,aproach,date,valid,contNodeNumberAccess,found,pathSought,durationMin,duration
 acao,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 acao,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+acao,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 acao,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,40,2377112
 acao,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012,31,1876746
 acao,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,44,2624663
@@ -9,9 +10,7 @@ acao,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,http://p
 acao,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 acao,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 acao,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-acao,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 acao,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-acao,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 acao,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 acao,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 acao,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -76,6 +75,7 @@ acao,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRUE,http
 acao,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 alinea,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,FALSE,5,FALSE,,11,688199
 alinea,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,FALSE,5,FALSE,,12,749107
+alinea,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,FALSE,12,FALSE,,26,1552695
 alinea,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,16,FALSE,,18,1103218
 alinea,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,16,FALSE,,16,971268
 alinea,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,15,FALSE,,17,1044135
@@ -84,9 +84,7 @@ alinea,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,FALSE,10,FALSE,,20,
 alinea,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,FALSE,9,FALSE,,13,757385
 alinea,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,14,FALSE,,14,864281
 alinea,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,16,FALSE,,17,1040770
-alinea,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,16,FALSE,,17,1045442
 alinea,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,35,FALSE,,55,3287867
-alinea,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,16,FALSE,,17,1001696
 alinea,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,20,1181398
 alinea,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,FALSE,5,FALSE,,15,906712
 alinea,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,20,1170012
@@ -151,6 +149,7 @@ alinea,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,FALSE,11,FALSE,
 alinea,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,FALSE,11,FALSE,,8,499245
 arrecadacao,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,11,688199
 arrecadacao,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,12,749107
+arrecadacao,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,26,1552695
 arrecadacao,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,18,1103218
 arrecadacao,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,16,971268
 arrecadacao,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,15,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&ctx=201012,17,1044135
@@ -159,9 +158,7 @@ arrecadacao,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,10,TRUE,h
 arrecadacao,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,13,757385
 arrecadacao,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201022&ctx=201022,14,864281
 arrecadacao,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml,17,1040770
-arrecadacao,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml,17,1045442
 arrecadacao,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,35,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml,55,3287867
-arrecadacao,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml,17,1001696
 arrecadacao,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,20,1181398
 arrecadacao,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,15,906712
 arrecadacao,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,20,1170012
@@ -226,6 +223,7 @@ arrecadacao,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,11,TR
 arrecadacao,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,11,TRUE,https://transparenciaativa.com.br/Receita2018.aspx,8,499245
 aviso,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,FALSE,,25,1505477
 aviso,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,FALSE,,25,1502113
+aviso,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,FALSE,,43,2586876
 aviso,Arara,Licitação,bandit,2019-11-11T14:33:27Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1063626
 aviso,Arara,Licitação,bfs,2019-11-09T23:00:57Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,17,1031945
 aviso,Arara,Licitação,dfs,2019-11-13T03:47:52Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1050505
@@ -234,9 +232,7 @@ aviso,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,https://areia.pb.g
 aviso,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,TRUE,14,TRUE,http://areiadebaraunas.pb.gov.br/acesso-a-informacao/licitacoes?q=contratos,24,1430714
 aviso,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 aviso,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacao/publicacao/aviso-de-licitacao-pregao-eletronico-srp-n-00004-2019-pmbex,16,932619
-aviso,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,https://www.bayeux.pb.gov.br/licitacao/publicacao/aviso-de-licitacao-tp-n-00008-2019-fms-pmbex,10,626967
 aviso,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,https://www.bayeux.pb.gov.br/licitacao/publicacao/aviso-de-licitacao-pregao-presencial-srp-n-00042-2019-pmbex,148,8866703
-aviso,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacao/publicacao/aviso-de-licitacao-pregao-eletronico-srp-n-00004-2019-pmbex,17,1045873
 aviso,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,26,1563699
 aviso,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,28,1660842
 aviso,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,26,1576025
@@ -253,7 +249,6 @@ aviso,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,TRUE,14,TRUE,http://po
 aviso,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,34,2047915
 aviso,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 aviso,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,FALSE,10,FALSE,,9,557231
-aviso,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,FALSE,9,FALSE,,7,446782
 aviso,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,FALSE,43,FALSE,,59,3567791
 aviso,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,27,1607782
 aviso,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,FALSE,,25,1505926
@@ -302,6 +297,7 @@ aviso,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,4,241403
 aviso,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 cargo,Alcantil,Quadro Pessoal,bandit,2019-11-19T04:04:19Z,FALSE,3,FALSE,,5,272852
 cargo,Alcantil,Quadro Pessoal,bfs,2019-11-11T22:58:13Z,FALSE,4,FALSE,,6,360244
+cargo,Alcantil,Quadro Pessoal,dfs,2019-11-22T15:33:46Z,FALSE,7,FALSE,,9,558454
 cargo,Arara,Quadro Pessoal,bandit,2019-11-11T14:33:27Z,TRUE,74,TRUE,http://transparencia.elmar.inf.br/FolhaPag/Index/QuadroFuncional?e=201012&Tab=2&isModal=false&ctx=201012,122,7344291
 cargo,Arara,Quadro Pessoal,bfs,2019-11-09T23:00:57Z,TRUE,89,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012,163,9799989
 cargo,Arara,Quadro Pessoal,dfs,2019-11-13T03:47:52Z,TRUE,95,TRUE,http://transparencia.elmar.inf.br/FolhaPag/Index/QuadroFuncional?e=201012&Tab=2&isModal=false&ctx=201012,180,10799630
@@ -310,9 +306,7 @@ cargo,Areia,Quadro Pessoal,bfs,2019-11-12T02:01:45Z,FALSE,80,FALSE,,142,8542217
 cargo,Areia de Baraúnas,Quadro Pessoal,bfs,2019-11-19T22:39:43Z,TRUE,3,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,3,164533
 cargo,Barra de Santa Rosa,Quadro Pessoal,bfs,2019-11-20T18:15:11Z,TRUE,119,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag?e=201022&Tab=1&isModal=false&ctx=201022,195,11697938
 cargo,Bayeux,Quadro Pessoal,bandit,2019-11-11T06:11:21Z,TRUE,52,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,60,3616637
-cargo,Bayeux,Quadro Pessoal,bandit,2019-11-19T04:59:59Z,TRUE,47,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,51,3031575
 cargo,Bayeux,Quadro Pessoal,bfs,2019-11-20T20:55:18Z,TRUE,152,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,195,11717383
-cargo,Bayeux,Quadro Pessoal,dfs,2019-11-13T00:38:10Z,TRUE,58,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,74,4440391
 cargo,Belém do Brejo do Cruz,Quadro Pessoal,bandit,2019-11-11T06:09:52Z,FALSE,4,FALSE,,6,349057
 cargo,Belém do Brejo do Cruz,Quadro Pessoal,bandit,2019-11-19T03:30:36Z,FALSE,3,FALSE,,6,387302
 cargo,Belém do Brejo do Cruz,Quadro Pessoal,bfs,2019-11-09T00:10:37Z,FALSE,4,FALSE,,7,392559
@@ -328,6 +322,7 @@ cargo,Campina Grande,Quadro Pessoal,bandit,2019-11-19T06:50:09Z,TRUE,2,TRUE,http
 cargo,Campina Grande,Quadro Pessoal,bfs,2019-11-09T23:00:06Z,TRUE,2,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,102298
 cargo,Campina Grande,Quadro Pessoal,dfs,2019-11-13T03:48:50Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,4,224422
 cargo,Carrapateira,Quadro Pessoal,bfs,2019-11-11T23:19:26Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201054&Tab=1&isModal=false&ctx=201054,2,127264
+cargo,Conceição,Quadro Pessoal,bandit,2019-11-21T16:57:54Z,TRUE,208,TRUE,http://www.siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,539,32317487
 cargo,Coremas,Quadro Pessoal,bfs,2019-11-19T20:49:52Z,FALSE,7,FALSE,,6,354446
 cargo,Cruz do Espírito Santo,Quadro Pessoal,bandit,2019-11-19T03:30:36Z,FALSE,3,FALSE,,6,351633
 cargo,Cruz do Espírito Santo,Quadro Pessoal,bfs,2019-11-11T22:23:22Z,FALSE,4,FALSE,,6,347162
@@ -376,8 +371,10 @@ cargo,Umbuzeiro,Quadro Pessoal,bfs,2019-11-09T23:01:07Z,TRUE,3,TRUE,https://tran
 cargo,Umbuzeiro,Quadro Pessoal,dfs,2019-11-13T03:48:34Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,2,134219
 categoria_economica,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 categoria_economica,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+categoria_economica,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 categoria_economica,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,FALSE,5,FALSE,,11,688199
 categoria_economica,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,FALSE,5,FALSE,,12,749107
+categoria_economica,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,FALSE,12,FALSE,,26,1552695
 categoria_economica,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,40,2377112
 categoria_economica,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012,31,1876746
 categoria_economica,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,44,2624663
@@ -393,13 +390,9 @@ categoria_economica,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:
 categoria_economica,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 categoria_economica,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,14,FALSE,,14,864281
 categoria_economica,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,24,FALSE,,32,1928684
-categoria_economica,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,FALSE,,42,2512870
 categoria_economica,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-categoria_economica,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,FALSE,,30,1821383
 categoria_economica,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,16,FALSE,,17,1040770
-categoria_economica,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,16,FALSE,,17,1045442
 categoria_economica,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,35,FALSE,,55,3287867
-categoria_economica,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,16,FALSE,,17,1001696
 categoria_economica,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 categoria_economica,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 categoria_economica,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -526,6 +519,7 @@ categoria_economica,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,TR
 categoria_economica,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,11,TRUE,https://transparenciaativa.com.br/DetalhesReceita.aspx?receita=11130311,8,499245
 cnpj_cpf,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,25,1505477
 cnpj_cpf,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,25,1502113
+cnpj_cpf,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,43,2586876
 cnpj_cpf,Arara,Licitação,bandit,2019-11-11T14:33:27Z,FALSE,13,FALSE,,18,1063626
 cnpj_cpf,Arara,Licitação,bfs,2019-11-09T23:00:57Z,FALSE,13,FALSE,,17,1031945
 cnpj_cpf,Arara,Licitação,dfs,2019-11-13T03:47:52Z,FALSE,13,FALSE,,18,1050505
@@ -534,9 +528,7 @@ cnpj_cpf,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,https://areia.p
 cnpj_cpf,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,FALSE,14,FALSE,,24,1430714
 cnpj_cpf,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,FALSE,26,FALSE,,37,2200642
 cnpj_cpf,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,16,932619
-cnpj_cpf,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,10,626967
 cnpj_cpf,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,148,8866703
-cnpj_cpf,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,17,1045873
 cnpj_cpf,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,26,1563699
 cnpj_cpf,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,28,1660842
 cnpj_cpf,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,26,1576025
@@ -553,7 +545,6 @@ cnpj_cpf,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,TRUE,14,TRUE,http:/
 cnpj_cpf,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,34,2047915
 cnpj_cpf,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,FALSE,13,FALSE,,16,959731
 cnpj_cpf,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,9,557231
-cnpj_cpf,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,TRUE,9,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,7,446782
 cnpj_cpf,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,59,3567791
 cnpj_cpf,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,27,1607782
 cnpj_cpf,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,25,1505926
@@ -602,8 +593,10 @@ cnpj_cpf,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,4,241403
 cnpj_cpf,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 codigo,Alcantil,Despesa Extra Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,56,3380140
 codigo,Alcantil,Despesa Extra Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,24,1431970
+codigo,Alcantil,Despesa Extra Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,32,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,81,4835790
 codigo,Alcantil,Receita Extra Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-receita-servicos.php,18,1095562
 codigo,Alcantil,Receita Extra Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,10,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-receita-contribuicoes.php,18,1077190
+codigo,Alcantil,Receita Extra Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,26,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-receita-servicos.php,56,3366917
 codigo,Arara,Despesa Extra Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,3,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=false&ctx=201012,3,195199
 codigo,Arara,Despesa Extra Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=false&ctx=201012,2,136358
 codigo,Arara,Despesa Extra Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,15,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012#,19,1122500
@@ -619,13 +612,9 @@ codigo,Areia de Baraúnas,Receita Extra Orçamentária,bfs,2019-11-19T22:39:43Z,
 codigo,Barra de Santa Rosa,Despesa Extra Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,3,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,4,239771
 codigo,Barra de Santa Rosa,Receita Extra Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,4,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas/Realizada?e=201022&Tab=2&isModal=false&ctx=201022,4,221377
 codigo,Bayeux,Despesa Extra Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,4,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,3,186209
-codigo,Bayeux,Despesa Extra Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,5,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,3,206012
 codigo,Bayeux,Despesa Extra Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,92867
-codigo,Bayeux,Despesa Extra Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,4,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,4,210602
 codigo,Bayeux,Receita Extra Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,127342
-codigo,Bayeux,Receita Extra Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,116679
 codigo,Bayeux,Receita Extra Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,113602
-codigo,Bayeux,Receita Extra Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,6,TRUE,http://siteseticons.com.br/portal/faces/pages/inicio.xhtml,5,307564
 codigo,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,21,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,45,2722476
 codigo,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,23,1351313
 codigo,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,31,1877159
@@ -657,9 +646,7 @@ codigo,Campina Grande,Receita Extra Orçamentária,dfs,2019-11-13T03:48:50Z,TRUE
 codigo,Carrapateira,Despesa Extra Orçamentária,bfs,2019-11-11T23:19:26Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201054&Tab=4&isModal=false&ctx=201054,2,122670
 codigo,Carrapateira,Receita Extra Orçamentária,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201054&ctx=201054,13,750778
 codigo,Conceição,Despesa Extra Orçamentária,bandit,2019-11-21T16:57:54Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,97792
-codigo,Conceição,Despesa Extra Orçamentária,bfs,2019-11-20T18:01:11Z,FALSE,4,FALSE,,5,281826
 codigo,Conceição,Receita Extra Orçamentária,bandit,2019-11-21T16:57:54Z,TRUE,3,TRUE,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia,2,144370
-codigo,Conceição,Receita Extra Orçamentária,bfs,2019-11-20T18:01:11Z,TRUE,2,TRUE,http://conceicao.pb.gov.br/assuntos/portal-da-transparencia,2,137594
 codigo,Coremas,Despesa Extra Orçamentária,bfs,2019-11-19T20:49:52Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,94578
 codigo,Coremas,Receita Extra Orçamentária,bfs,2019-11-19T20:49:52Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,107986
 codigo,Cruz do Espírito Santo,Despesa Extra Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,44,2617869
@@ -754,6 +741,7 @@ codigo,Umbuzeiro,Receita Extra Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,2,TR
 codigo,Umbuzeiro,Receita Extra Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,19,TRUE,https://transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,15,890508
 cpf,Alcantil,Quadro Pessoal,bandit,2019-11-19T04:04:19Z,TRUE,3,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,5,272852
 cpf,Alcantil,Quadro Pessoal,bfs,2019-11-11T22:58:13Z,TRUE,4,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,6,360244
+cpf,Alcantil,Quadro Pessoal,dfs,2019-11-22T15:33:46Z,TRUE,7,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,9,558454
 cpf,Arara,Quadro Pessoal,bandit,2019-11-11T14:33:27Z,TRUE,74,TRUE,http://transparencia.elmar.inf.br/FolhaPag/Index/QuadroFuncional?e=201012&Tab=2&isModal=false&ctx=201012,122,7344291
 cpf,Arara,Quadro Pessoal,bfs,2019-11-09T23:00:57Z,TRUE,89,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012,163,9799989
 cpf,Arara,Quadro Pessoal,dfs,2019-11-13T03:47:52Z,TRUE,95,TRUE,http://transparencia.elmar.inf.br/FolhaPag/Index/QuadroFuncional?e=201012&Tab=2&isModal=false&ctx=201012,180,10799630
@@ -762,9 +750,7 @@ cpf,Areia,Quadro Pessoal,bfs,2019-11-12T02:01:45Z,FALSE,80,FALSE,,142,8542217
 cpf,Areia de Baraúnas,Quadro Pessoal,bfs,2019-11-19T22:39:43Z,TRUE,3,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,3,164533
 cpf,Barra de Santa Rosa,Quadro Pessoal,bfs,2019-11-20T18:15:11Z,TRUE,119,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag?e=201022&Tab=1&isModal=false&ctx=201022,195,11697938
 cpf,Bayeux,Quadro Pessoal,bandit,2019-11-11T06:11:21Z,TRUE,52,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,60,3616637
-cpf,Bayeux,Quadro Pessoal,bandit,2019-11-19T04:59:59Z,TRUE,47,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,51,3031575
 cpf,Bayeux,Quadro Pessoal,bfs,2019-11-20T20:55:18Z,TRUE,152,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,195,11717383
-cpf,Bayeux,Quadro Pessoal,dfs,2019-11-13T00:38:10Z,TRUE,58,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,74,4440391
 cpf,Belém do Brejo do Cruz,Quadro Pessoal,bandit,2019-11-11T06:09:52Z,TRUE,4,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,6,349057
 cpf,Belém do Brejo do Cruz,Quadro Pessoal,bandit,2019-11-19T03:30:36Z,TRUE,3,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,6,387302
 cpf,Belém do Brejo do Cruz,Quadro Pessoal,bfs,2019-11-09T00:10:37Z,TRUE,4,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,7,392559
@@ -780,6 +766,7 @@ cpf,Campina Grande,Quadro Pessoal,bandit,2019-11-19T06:50:09Z,TRUE,2,TRUE,https:
 cpf,Campina Grande,Quadro Pessoal,bfs,2019-11-09T23:00:06Z,TRUE,2,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,102298
 cpf,Campina Grande,Quadro Pessoal,dfs,2019-11-13T03:48:50Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,4,224422
 cpf,Carrapateira,Quadro Pessoal,bfs,2019-11-11T23:19:26Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201054&Tab=1&isModal=false&ctx=201054,2,127264
+cpf,Conceição,Quadro Pessoal,bandit,2019-11-21T16:57:54Z,FALSE,208,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,539,32317487
 cpf,Coremas,Quadro Pessoal,bfs,2019-11-19T20:49:52Z,FALSE,7,FALSE,,6,354446
 cpf,Cruz do Espírito Santo,Quadro Pessoal,bandit,2019-11-19T03:30:36Z,TRUE,3,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,6,351633
 cpf,Cruz do Espírito Santo,Quadro Pessoal,bfs,2019-11-11T22:23:22Z,TRUE,4,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,6,347162
@@ -828,6 +815,7 @@ cpf,Umbuzeiro,Quadro Pessoal,bfs,2019-11-09T23:01:07Z,TRUE,3,TRUE,https://transp
 cpf,Umbuzeiro,Quadro Pessoal,dfs,2019-11-13T03:48:34Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,2,134219
 data_publicacao_licitacao,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1505477
 data_publicacao_licitacao,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1502113
+data_publicacao_licitacao,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,43,2586876
 data_publicacao_licitacao,Arara,Licitação,bandit,2019-11-11T14:33:27Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1063626
 data_publicacao_licitacao,Arara,Licitação,bfs,2019-11-09T23:00:57Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,17,1031945
 data_publicacao_licitacao,Arara,Licitação,dfs,2019-11-13T03:47:52Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1050505
@@ -836,9 +824,7 @@ data_publicacao_licitacao,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRU
 data_publicacao_licitacao,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,TRUE,14,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,24,1430714
 data_publicacao_licitacao,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 data_publicacao_licitacao,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,16,932619
-data_publicacao_licitacao,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,10,626967
 data_publicacao_licitacao,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,148,8866703
-data_publicacao_licitacao,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,17,1045873
 data_publicacao_licitacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,26,1563699
 data_publicacao_licitacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,28,1660842
 data_publicacao_licitacao,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,26,1576025
@@ -855,7 +841,6 @@ data_publicacao_licitacao,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,TR
 data_publicacao_licitacao,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,34,2047915
 data_publicacao_licitacao,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 data_publicacao_licitacao,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,9,557231
-data_publicacao_licitacao,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,TRUE,9,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,7,446782
 data_publicacao_licitacao,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,59,3567791
 data_publicacao_licitacao,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,27,1607782
 data_publicacao_licitacao,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1505926
@@ -904,6 +889,7 @@ data_publicacao_licitacao,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,TRUE,5,
 data_publicacao_licitacao,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,TRUE,5,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,4,264285
 data_realizacao,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,25,1505477
 data_realizacao,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,25,1502113
+data_realizacao,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,43,2586876
 data_realizacao,Arara,Licitação,bandit,2019-11-11T14:33:27Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1063626
 data_realizacao,Arara,Licitação,bfs,2019-11-09T23:00:57Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,17,1031945
 data_realizacao,Arara,Licitação,dfs,2019-11-13T03:47:52Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1050505
@@ -912,9 +898,7 @@ data_realizacao,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,https://
 data_realizacao,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,TRUE,14,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,24,1430714
 data_realizacao,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 data_realizacao,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,16,932619
-data_realizacao,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,10,626967
 data_realizacao,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,148,8866703
-data_realizacao,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,17,1045873
 data_realizacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,26,1563699
 data_realizacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,28,1660842
 data_realizacao,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,26,1576025
@@ -931,7 +915,6 @@ data_realizacao,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,FALSE,14,TRU
 data_realizacao,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,FALSE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,34,2047915
 data_realizacao,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 data_realizacao,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,9,557231
-data_realizacao,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,TRUE,9,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,7,446782
 data_realizacao,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,59,3567791
 data_realizacao,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,27,1607782
 data_realizacao,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,25,1505926
@@ -980,6 +963,7 @@ data_realizacao,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,4,
 data_realizacao,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 edital,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,FALSE,,25,1505477
 edital,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,FALSE,,25,1502113
+edital,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,FALSE,,43,2586876
 edital,Arara,Licitação,bandit,2019-11-11T14:33:27Z,FALSE,13,FALSE,,18,1063626
 edital,Arara,Licitação,bfs,2019-11-09T23:00:57Z,FALSE,13,FALSE,,17,1031945
 edital,Arara,Licitação,dfs,2019-11-13T03:47:52Z,FALSE,13,FALSE,,18,1050505
@@ -988,9 +972,7 @@ edital,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,https://areia.pb.
 edital,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,FALSE,14,FALSE,,24,1430714
 edital,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,FALSE,26,FALSE,,37,2200642
 edital,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,FALSE,12,FALSE,,16,932619
-edital,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,FALSE,10,FALSE,,10,626967
 edital,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,https://www.bayeux.pb.gov.br/licitacao/publicacao/edital-pregao-presencial-srp-n-00042-2019-pmbex,148,8866703
-edital,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,FALSE,12,FALSE,,17,1045873
 edital,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,26,1563699
 edital,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,28,1660842
 edital,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,26,1576025
@@ -1007,7 +989,6 @@ edital,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,TRUE,14,TRUE,http://p
 edital,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,34,2047915
 edital,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,FALSE,13,FALSE,,16,959731
 edital,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,FALSE,10,FALSE,,9,557231
-edital,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,FALSE,9,FALSE,,7,446782
 edital,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,FALSE,43,FALSE,,59,3567791
 edital,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,27,1607782
 edital,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,FALSE,,25,1505926
@@ -1056,6 +1037,7 @@ edital,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,4,241403
 edital,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 elemento,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 elemento,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+elemento,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 elemento,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,40,2377112
 elemento,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012,31,1876746
 elemento,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,44,2624663
@@ -1064,9 +1046,7 @@ elemento,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,http
 elemento,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 elemento,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 elemento,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,24,FALSE,,32,1928684
-elemento,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,FALSE,,42,2512870
 elemento,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/frota.xhtml,216,12961618
-elemento,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,FALSE,,30,1821383
 elemento,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 elemento,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 elemento,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -1131,6 +1111,7 @@ elemento,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,FALSE,27,FALS
 elemento,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,FALSE,27,FALSE,,30,1788284
 emp_cnpj_cpf,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 emp_cnpj_cpf,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+emp_cnpj_cpf,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 emp_cnpj_cpf,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 emp_cnpj_cpf,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 emp_cnpj_cpf,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -1139,9 +1120,7 @@ emp_cnpj_cpf,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,
 emp_cnpj_cpf,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 emp_cnpj_cpf,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 emp_cnpj_cpf,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,32,1928684
-emp_cnpj_cpf,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 emp_cnpj_cpf,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-emp_cnpj_cpf,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,30,1821383
 emp_cnpj_cpf,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 emp_cnpj_cpf,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 emp_cnpj_cpf,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -1206,6 +1185,7 @@ emp_cnpj_cpf,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,T
 emp_cnpj_cpf,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,30,1788284
 emp_data,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 emp_data,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+emp_data,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 emp_data,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 emp_data,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 emp_data,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -1214,9 +1194,7 @@ emp_data,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,http
 emp_data,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 emp_data,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 emp_data,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-emp_data,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 emp_data,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-emp_data,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 emp_data,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 emp_data,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 emp_data,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -1281,6 +1259,7 @@ emp_data,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRUE,
 emp_data,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 emp_indicacao_licitacao,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 emp_indicacao_licitacao,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+emp_indicacao_licitacao,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 emp_indicacao_licitacao,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 emp_indicacao_licitacao,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 emp_indicacao_licitacao,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -1289,9 +1268,7 @@ emp_indicacao_licitacao,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TR
 emp_indicacao_licitacao,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 emp_indicacao_licitacao,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 emp_indicacao_licitacao,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-emp_indicacao_licitacao,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 emp_indicacao_licitacao,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-emp_indicacao_licitacao,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 emp_indicacao_licitacao,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 emp_indicacao_licitacao,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 emp_indicacao_licitacao,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -1356,6 +1333,7 @@ emp_indicacao_licitacao,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07
 emp_indicacao_licitacao,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,30,1788284
 emp_numero,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/QD/FormPTQD.php?tipoQuadro=QDD,25,1501074
 emp_numero,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+emp_numero,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/QD/FormPTQD.php?tipoQuadro=QDD,42,2522205
 emp_numero,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,40,2377112
 emp_numero,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012,31,1876746
 emp_numero,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,44,2624663
@@ -1364,9 +1342,7 @@ emp_numero,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,ht
 emp_numero,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 emp_numero,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 emp_numero,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-emp_numero,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 emp_numero,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-emp_numero,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 emp_numero,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/QD/FormPTQD.php?tipoQuadro=QDD,32,1938606
 emp_numero,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/QD/FormPTQD.php?tipoQuadro=QDD,34,2022031
 emp_numero,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -1431,6 +1407,7 @@ emp_numero,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRU
 emp_numero,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 emp_valor,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 emp_valor,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+emp_valor,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 emp_valor,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 emp_valor,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 emp_valor,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -1439,9 +1416,7 @@ emp_valor,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,htt
 emp_valor,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 emp_valor,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 emp_valor,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,24,FALSE,,32,1928684
-emp_valor,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,FALSE,,42,2512870
 emp_valor,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-emp_valor,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,FALSE,,30,1821383
 emp_valor,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 emp_valor,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 emp_valor,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -1506,6 +1481,7 @@ emp_valor,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRUE
 emp_valor,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 especie,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,FALSE,5,FALSE,,11,688199
 especie,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,FALSE,5,FALSE,,12,749107
+especie,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,FALSE,12,FALSE,,26,1552695
 especie,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,16,FALSE,,18,1103218
 especie,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,16,FALSE,,16,971268
 especie,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,15,FALSE,,17,1044135
@@ -1514,9 +1490,7 @@ especie,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,FALSE,10,FALSE,,20
 especie,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,FALSE,9,FALSE,,13,757385
 especie,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,14,FALSE,,14,864281
 especie,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,16,FALSE,,17,1040770
-especie,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,16,FALSE,,17,1045442
 especie,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,35,FALSE,,55,3287867
-especie,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,16,FALSE,,17,1001696
 especie,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,20,1181398
 especie,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,FALSE,5,FALSE,,15,906712
 especie,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,20,1170012
@@ -1581,6 +1555,7 @@ especie,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,FALSE,11,FALSE
 especie,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,FALSE,11,FALSE,,8,499245
 funcao,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,25,1501074
 funcao,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,26,1534798
+funcao,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,42,2522205
 funcao,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 funcao,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 funcao,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -1589,9 +1564,7 @@ funcao,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,http:/
 funcao,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,44,2640282
 funcao,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 funcao,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,32,1928684
-funcao,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 funcao,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,216,12961618
-funcao,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,30,1821383
 funcao,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,32,1938606
 funcao,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,34,2022031
 funcao,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,32,1930901
@@ -1656,6 +1629,7 @@ funcao,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRUE,ht
 funcao,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 integra,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,FALSE,,25,1505477
 integra,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,FALSE,,25,1502113
+integra,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,FALSE,,43,2586876
 integra,Arara,Licitação,bandit,2019-11-11T14:33:27Z,FALSE,13,FALSE,,18,1063626
 integra,Arara,Licitação,bfs,2019-11-09T23:00:57Z,FALSE,13,FALSE,,17,1031945
 integra,Arara,Licitação,dfs,2019-11-13T03:47:52Z,FALSE,13,FALSE,,18,1050505
@@ -1664,9 +1638,7 @@ integra,Areia,Licitação,bfs,2019-11-12T02:01:45Z,FALSE,79,FALSE,,165,9872651
 integra,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,FALSE,14,FALSE,,24,1430714
 integra,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,FALSE,26,FALSE,,37,2200642
 integra,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,FALSE,12,FALSE,,16,932619
-integra,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,FALSE,10,FALSE,,10,626967
 integra,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,FALSE,108,FALSE,,148,8866703
-integra,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,FALSE,12,FALSE,,17,1045873
 integra,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,26,1563699
 integra,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,28,1660842
 integra,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,26,1576025
@@ -1683,7 +1655,6 @@ integra,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,FALSE,14,FALSE,,25,1
 integra,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,FALSE,17,FALSE,,34,2047915
 integra,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,FALSE,13,FALSE,,16,959731
 integra,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,FALSE,10,FALSE,,9,557231
-integra,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,FALSE,9,FALSE,,7,446782
 integra,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,FALSE,43,FALSE,,59,3567791
 integra,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,27,1607782
 integra,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,FALSE,,25,1505926
@@ -1732,6 +1703,7 @@ integra,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,4,241403
 integra,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 lancado,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,11,688199
 lancado,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,12,749107
+lancado,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,26,1552695
 lancado,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,18,1103218
 lancado,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,16,971268
 lancado,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,15,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,17,1044135
@@ -1740,9 +1712,7 @@ lancado,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,10,TRUE,http:
 lancado,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,13,757385
 lancado,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas/Realizada?e=201022&Tab=2&isModal=false&ctx=201022,14,864281
 lancado,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,16,FALSE,,17,1040770
-lancado,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,16,FALSE,,17,1045442
 lancado,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,35,FALSE,,55,3287867
-lancado,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,16,FALSE,,17,1001696
 lancado,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,20,1181398
 lancado,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,15,906712
 lancado,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,20,1170012
@@ -1807,6 +1777,7 @@ lancado,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,11,TRUE,h
 lancado,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,11,TRUE,https://transparenciaativa.com.br/DetalhesReceita.aspx?receita=11130311,8,499245
 lic_data_pag_ultima,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 lic_data_pag_ultima,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+lic_data_pag_ultima,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 lic_data_pag_ultima,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 lic_data_pag_ultima,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 lic_data_pag_ultima,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -1815,9 +1786,7 @@ lic_data_pag_ultima,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,1
 lic_data_pag_ultima,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 lic_data_pag_ultima,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 lic_data_pag_ultima,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,24,FALSE,,32,1928684
-lic_data_pag_ultima,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,FALSE,,42,2512870
 lic_data_pag_ultima,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-lic_data_pag_ultima,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,FALSE,,30,1821383
 lic_data_pag_ultima,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 lic_data_pag_ultima,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 lic_data_pag_ultima,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -1882,6 +1851,7 @@ lic_data_pag_ultima,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,FA
 lic_data_pag_ultima,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,FALSE,27,FALSE,,30,1788284
 licitado,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,FALSE,,25,1505477
 licitado,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,FALSE,,25,1502113
+licitado,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,FALSE,,43,2586876
 licitado,Arara,Licitação,bandit,2019-11-11T14:33:27Z,FALSE,13,FALSE,,18,1063626
 licitado,Arara,Licitação,bfs,2019-11-09T23:00:57Z,FALSE,13,FALSE,,17,1031945
 licitado,Arara,Licitação,dfs,2019-11-13T03:47:52Z,FALSE,13,FALSE,,18,1050505
@@ -1890,9 +1860,7 @@ licitado,Areia,Licitação,bfs,2019-11-12T02:01:45Z,FALSE,79,FALSE,,165,9872651
 licitado,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,FALSE,14,FALSE,,24,1430714
 licitado,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,FALSE,26,FALSE,,37,2200642
 licitado,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,FALSE,12,FALSE,,16,932619
-licitado,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,FALSE,10,FALSE,,10,626967
 licitado,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,FALSE,108,FALSE,,148,8866703
-licitado,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,FALSE,12,FALSE,,17,1045873
 licitado,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,26,1563699
 licitado,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,28,1660842
 licitado,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,26,1576025
@@ -1909,7 +1877,6 @@ licitado,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,FALSE,14,FALSE,,25,
 licitado,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,FALSE,17,FALSE,,34,2047915
 licitado,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,FALSE,13,FALSE,,16,959731
 licitado,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,FALSE,10,FALSE,,9,557231
-licitado,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,FALSE,9,FALSE,,7,446782
 licitado,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,FALSE,43,FALSE,,59,3567791
 licitado,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,27,1607782
 licitado,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,FALSE,,25,1505926
@@ -1958,6 +1925,7 @@ licitado,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,4,241403
 licitado,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 lic_modalidade,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 lic_modalidade,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+lic_modalidade,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 lic_modalidade,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 lic_modalidade,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 lic_modalidade,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -1966,9 +1934,7 @@ lic_modalidade,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRU
 lic_modalidade,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 lic_modalidade,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 lic_modalidade,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-lic_modalidade,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/programas/inicio.xhtml#,42,2512870
 lic_modalidade,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-lic_modalidade,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 lic_modalidade,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 lic_modalidade,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 lic_modalidade,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -2033,6 +1999,7 @@ lic_modalidade,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27
 lic_modalidade,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,30,1788284
 lic_num_contrato,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 lic_num_contrato,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+lic_num_contrato,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 lic_num_contrato,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 lic_num_contrato,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 lic_num_contrato,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -2041,9 +2008,7 @@ lic_num_contrato,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,T
 lic_num_contrato,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 lic_num_contrato,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 lic_num_contrato,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-lic_num_contrato,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 lic_num_contrato,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-lic_num_contrato,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 lic_num_contrato,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 lic_num_contrato,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 lic_num_contrato,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -2108,6 +2073,7 @@ lic_num_contrato,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,
 lic_num_contrato,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,30,1788284
 lic_numero,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 lic_numero,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+lic_numero,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 lic_numero,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 lic_numero,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 lic_numero,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -2116,9 +2082,7 @@ lic_numero,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,ht
 lic_numero,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 lic_numero,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 lic_numero,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-lic_numero,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,42,2512870
 lic_numero,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-lic_numero,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 lic_numero,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 lic_numero,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 lic_numero,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -2183,6 +2147,7 @@ lic_numero,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRU
 lic_numero,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,30,1788284
 lic_obj_servico,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,FALSE,13,FALSE,,25,1501074
 lic_obj_servico,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,FALSE,13,FALSE,,26,1534798
+lic_obj_servico,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,FALSE,22,FALSE,,42,2522205
 lic_obj_servico,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 lic_obj_servico,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 lic_obj_servico,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -2191,9 +2156,7 @@ lic_obj_servico,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,FALSE,17,F
 lic_obj_servico,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,FALSE,24,FALSE,,44,2640282
 lic_obj_servico,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 lic_obj_servico,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,24,FALSE,,32,1928684
-lic_obj_servico,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,FALSE,,42,2512870
 lic_obj_servico,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-lic_obj_servico,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,FALSE,,30,1821383
 lic_obj_servico,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,FALSE,17,FALSE,,32,1938606
 lic_obj_servico,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,FALSE,17,FALSE,,34,2022031
 lic_obj_servico,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,FALSE,17,FALSE,,32,1930901
@@ -2258,6 +2221,7 @@ lic_obj_servico,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,FALSE,
 lic_obj_servico,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,FALSE,27,FALSE,,30,1788284
 modalidade,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 modalidade,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+modalidade,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 modalidade,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 modalidade,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 modalidade,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -2266,9 +2230,7 @@ modalidade,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,ht
 modalidade,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 modalidade,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 modalidade,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-modalidade,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/programas/inicio.xhtml#,42,2512870
 modalidade,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-modalidade,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 modalidade,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 modalidade,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 modalidade,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -2333,6 +2295,7 @@ modalidade,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRU
 modalidade,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,30,1788284
 modalidade_licitacao,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1505477
 modalidade_licitacao,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1502113
+modalidade_licitacao,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,43,2586876
 modalidade_licitacao,Arara,Licitação,bandit,2019-11-11T14:33:27Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1063626
 modalidade_licitacao,Arara,Licitação,bfs,2019-11-09T23:00:57Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,17,1031945
 modalidade_licitacao,Arara,Licitação,dfs,2019-11-13T03:47:52Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1050505
@@ -2341,9 +2304,7 @@ modalidade_licitacao,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,htt
 modalidade_licitacao,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,TRUE,14,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,24,1430714
 modalidade_licitacao,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 modalidade_licitacao,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,16,932619
-modalidade_licitacao,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,10,626967
 modalidade_licitacao,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,148,8866703
-modalidade_licitacao,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,17,1045873
 modalidade_licitacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,26,1563699
 modalidade_licitacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,28,1660842
 modalidade_licitacao,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,26,1576025
@@ -2360,7 +2321,6 @@ modalidade_licitacao,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,TRUE,14
 modalidade_licitacao,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,34,2047915
 modalidade_licitacao,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 modalidade_licitacao,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,9,557231
-modalidade_licitacao,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,TRUE,9,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,7,446782
 modalidade_licitacao,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,59,3567791
 modalidade_licitacao,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,27,1607782
 modalidade_licitacao,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1505926
@@ -2409,6 +2369,7 @@ modalidade_licitacao,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,TRUE,5,TRUE,
 modalidade_licitacao,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,TRUE,5,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,4,264285
 natureza_despesa,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 natureza_despesa,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+natureza_despesa,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 natureza_despesa,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 natureza_despesa,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 natureza_despesa,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -2417,9 +2378,7 @@ natureza_despesa,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,T
 natureza_despesa,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 natureza_despesa,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 natureza_despesa,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-natureza_despesa,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 natureza_despesa,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-natureza_despesa,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 natureza_despesa,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 natureza_despesa,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 natureza_despesa,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -2484,8 +2443,10 @@ natureza_despesa,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,
 natureza_despesa,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,30,1788284
 nome,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 nome,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+nome,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 nome,Alcantil,Quadro Pessoal,bandit,2019-11-19T04:04:19Z,TRUE,3,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,5,272852
 nome,Alcantil,Quadro Pessoal,bfs,2019-11-11T22:58:13Z,TRUE,4,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,6,360244
+nome,Alcantil,Quadro Pessoal,dfs,2019-11-22T15:33:46Z,TRUE,7,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,9,558454
 nome,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 nome,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 nome,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -2501,13 +2462,9 @@ nome,Areia de Baraúnas,Quadro Pessoal,bfs,2019-11-19T22:39:43Z,TRUE,3,TRUE,http
 nome,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 nome,Barra de Santa Rosa,Quadro Pessoal,bfs,2019-11-20T18:15:11Z,TRUE,119,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag?e=201022&Tab=1&isModal=false&ctx=201022,195,11697938
 nome,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-nome,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 nome,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-nome,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 nome,Bayeux,Quadro Pessoal,bandit,2019-11-11T06:11:21Z,TRUE,52,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,60,3616637
-nome,Bayeux,Quadro Pessoal,bandit,2019-11-19T04:59:59Z,TRUE,47,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,51,3031575
 nome,Bayeux,Quadro Pessoal,bfs,2019-11-20T20:55:18Z,TRUE,152,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,195,11717383
-nome,Bayeux,Quadro Pessoal,dfs,2019-11-13T00:38:10Z,TRUE,58,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,74,4440391
 nome,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 nome,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 nome,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -2539,6 +2496,7 @@ nome,Campina Grande,Quadro Pessoal,dfs,2019-11-13T03:48:50Z,TRUE,3,TRUE,https://
 nome,Carrapateira,Despesa Orçamentária,bfs,2019-11-11T23:19:26Z,FALSE,32,FALSE,,31,1847370
 nome,Carrapateira,Quadro Pessoal,bfs,2019-11-11T23:19:26Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201054&Tab=1&isModal=false&ctx=201054,2,127264
 nome,Conceição,Despesa Orçamentária,bandit,2019-11-21T16:57:54Z,TRUE,120,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/inicio.xhtml,203,12171552
+nome,Conceição,Quadro Pessoal,bandit,2019-11-21T16:57:54Z,TRUE,208,TRUE,http://conceicao.pb.gov.br/acesso/perguntas_frequentes,539,32317487
 nome,Coremas,Despesa Orçamentária,bfs,2019-11-19T20:49:52Z,TRUE,53,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,81,4853311
 nome,Coremas,Quadro Pessoal,bfs,2019-11-19T20:49:52Z,FALSE,7,FALSE,,6,354446
 nome,Cruz do Espírito Santo,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1507020
@@ -2633,8 +2591,10 @@ nome,Umbuzeiro,Quadro Pessoal,bfs,2019-11-09T23:01:07Z,TRUE,3,TRUE,https://trans
 nome,Umbuzeiro,Quadro Pessoal,dfs,2019-11-13T03:48:34Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,2,134219
 nomenclatura,Alcantil,Despesa Extra Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,56,3380140
 nomenclatura,Alcantil,Despesa Extra Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,24,1431970
+nomenclatura,Alcantil,Despesa Extra Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,32,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,81,4835790
 nomenclatura,Alcantil,Receita Extra Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-receita-servicos.php,18,1095562
 nomenclatura,Alcantil,Receita Extra Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,10,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-receita-contribuicoes.php,18,1077190
+nomenclatura,Alcantil,Receita Extra Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,26,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-receita-servicos.php,56,3366917
 nomenclatura,Arara,Despesa Extra Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,3,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=false&ctx=201012,3,195199
 nomenclatura,Arara,Despesa Extra Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=false&ctx=201012,2,136358
 nomenclatura,Arara,Despesa Extra Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,15,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012#,19,1122500
@@ -2650,13 +2610,9 @@ nomenclatura,Areia de Baraúnas,Receita Extra Orçamentária,bfs,2019-11-19T22:3
 nomenclatura,Barra de Santa Rosa,Despesa Extra Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,3,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,4,239771
 nomenclatura,Barra de Santa Rosa,Receita Extra Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,4,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201022&ctx=201022,4,221377
 nomenclatura,Bayeux,Despesa Extra Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,4,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,3,186209
-nomenclatura,Bayeux,Despesa Extra Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,5,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,3,206012
 nomenclatura,Bayeux,Despesa Extra Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,92867
-nomenclatura,Bayeux,Despesa Extra Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,4,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,4,210602
 nomenclatura,Bayeux,Receita Extra Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,127342
-nomenclatura,Bayeux,Receita Extra Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,116679
 nomenclatura,Bayeux,Receita Extra Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,113602
-nomenclatura,Bayeux,Receita Extra Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,6,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/relatorio/inicio.xhtml,5,307564
 nomenclatura,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,21,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,45,2722476
 nomenclatura,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,23,1351313
 nomenclatura,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,31,1877159
@@ -2688,9 +2644,7 @@ nomenclatura,Campina Grande,Receita Extra Orçamentária,dfs,2019-11-13T03:48:50
 nomenclatura,Carrapateira,Despesa Extra Orçamentária,bfs,2019-11-11T23:19:26Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201054&Tab=4&isModal=false&ctx=201054,2,122670
 nomenclatura,Carrapateira,Receita Extra Orçamentária,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201054&ctx=201054,13,750778
 nomenclatura,Conceição,Despesa Extra Orçamentária,bandit,2019-11-21T16:57:54Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,97792
-nomenclatura,Conceição,Despesa Extra Orçamentária,bfs,2019-11-20T18:01:11Z,FALSE,4,FALSE,,5,281826
 nomenclatura,Conceição,Receita Extra Orçamentária,bandit,2019-11-21T16:57:54Z,TRUE,3,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,144370
-nomenclatura,Conceição,Receita Extra Orçamentária,bfs,2019-11-20T18:01:11Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,137594
 nomenclatura,Coremas,Despesa Extra Orçamentária,bfs,2019-11-19T20:49:52Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,94578
 nomenclatura,Coremas,Receita Extra Orçamentária,bfs,2019-11-19T20:49:52Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,107986
 nomenclatura,Cruz do Espírito Santo,Despesa Extra Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,44,2617869
@@ -2785,6 +2739,7 @@ nomenclatura,Umbuzeiro,Receita Extra Orçamentária,bfs,2019-11-09T23:01:07Z,TRU
 nomenclatura,Umbuzeiro,Receita Extra Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,19,TRUE,https://transparenciaativa.com.br/Principal.aspx?Entidade=189,15,890508
 nome_perdedores,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,FALSE,,25,1505477
 nome_perdedores,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,FALSE,,25,1502113
+nome_perdedores,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,FALSE,,43,2586876
 nome_perdedores,Arara,Licitação,bandit,2019-11-11T14:33:27Z,FALSE,13,FALSE,,18,1063626
 nome_perdedores,Arara,Licitação,bfs,2019-11-09T23:00:57Z,FALSE,13,FALSE,,17,1031945
 nome_perdedores,Arara,Licitação,dfs,2019-11-13T03:47:52Z,FALSE,13,FALSE,,18,1050505
@@ -2793,9 +2748,7 @@ nome_perdedores,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,https://
 nome_perdedores,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,FALSE,14,FALSE,,24,1430714
 nome_perdedores,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,FALSE,26,TRUE,https://www.barradesantarosa.pb.gov.br/licitacoes,37,2200642
 nome_perdedores,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,FALSE,12,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,16,932619
-nome_perdedores,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,10,626967
 nome_perdedores,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,148,8866703
-nome_perdedores,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,FALSE,12,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,17,1045873
 nome_perdedores,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,26,1563699
 nome_perdedores,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,28,1660842
 nome_perdedores,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,26,1576025
@@ -2812,7 +2765,6 @@ nome_perdedores,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,FALSE,14,FAL
 nome_perdedores,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,FALSE,17,FALSE,,34,2047915
 nome_perdedores,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,FALSE,13,FALSE,,16,959731
 nome_perdedores,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,9,557231
-nome_perdedores,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,TRUE,9,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,7,446782
 nome_perdedores,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,59,3567791
 nome_perdedores,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,27,1607782
 nome_perdedores,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,FALSE,,25,1505926
@@ -2861,6 +2813,7 @@ nome_perdedores,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,TRUE,http
 nome_perdedores,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,TRUE,https://transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012017&&Tipo=02,4,264285
 nome_vencedores,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,FALSE,,25,1505477
 nome_vencedores,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,FALSE,,25,1502113
+nome_vencedores,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,FALSE,,43,2586876
 nome_vencedores,Arara,Licitação,bandit,2019-11-11T14:33:27Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1063626
 nome_vencedores,Arara,Licitação,bfs,2019-11-09T23:00:57Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,17,1031945
 nome_vencedores,Arara,Licitação,dfs,2019-11-13T03:47:52Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1050505
@@ -2869,9 +2822,7 @@ nome_vencedores,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,https://
 nome_vencedores,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,FALSE,14,FALSE,,24,1430714
 nome_vencedores,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 nome_vencedores,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,FALSE,12,FALSE,,16,932619
-nome_vencedores,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,FALSE,10,FALSE,,10,626967
 nome_vencedores,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,FALSE,108,FALSE,,148,8866703
-nome_vencedores,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,FALSE,12,FALSE,,17,1045873
 nome_vencedores,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,26,1563699
 nome_vencedores,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,28,1660842
 nome_vencedores,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,26,1576025
@@ -2888,7 +2839,6 @@ nome_vencedores,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,FALSE,14,FAL
 nome_vencedores,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,FALSE,17,FALSE,,34,2047915
 nome_vencedores,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 nome_vencedores,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,FALSE,10,FALSE,,9,557231
-nome_vencedores,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,FALSE,9,FALSE,,7,446782
 nome_vencedores,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,FALSE,43,FALSE,,59,3567791
 nome_vencedores,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,27,1607782
 nome_vencedores,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,FALSE,,25,1505926
@@ -2937,6 +2887,7 @@ nome_vencedores,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,TRUE,http
 nome_vencedores,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,TRUE,https://transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012017&&Tipo=02,4,264285
 numero_licitacao,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,25,1505477
 numero_licitacao,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,25,1502113
+numero_licitacao,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,43,2586876
 numero_licitacao,Arara,Licitação,bandit,2019-11-11T14:33:27Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1063626
 numero_licitacao,Arara,Licitação,bfs,2019-11-09T23:00:57Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,17,1031945
 numero_licitacao,Arara,Licitação,dfs,2019-11-13T03:47:52Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1050505
@@ -2945,9 +2896,7 @@ numero_licitacao,Areia,Licitação,bfs,2019-11-12T02:01:45Z,FALSE,79,FALSE,,165,
 numero_licitacao,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,TRUE,14,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,24,1430714
 numero_licitacao,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 numero_licitacao,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,16,932619
-numero_licitacao,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,10,626967
 numero_licitacao,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,148,8866703
-numero_licitacao,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,17,1045873
 numero_licitacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,26,1563699
 numero_licitacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,28,1660842
 numero_licitacao,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,26,1576025
@@ -2964,7 +2913,6 @@ numero_licitacao,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,TRUE,14,TRU
 numero_licitacao,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,34,2047915
 numero_licitacao,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 numero_licitacao,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,9,557231
-numero_licitacao,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,TRUE,9,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,7,446782
 numero_licitacao,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,59,3567791
 numero_licitacao,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,27,1607782
 numero_licitacao,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,25,1505926
@@ -3013,6 +2961,7 @@ numero_licitacao,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,TRUE,5,TRUE,http
 numero_licitacao,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,TRUE,5,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,4,264285
 objeto_licitacao,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1505477
 objeto_licitacao,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1502113
+objeto_licitacao,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,43,2586876
 objeto_licitacao,Arara,Licitação,bandit,2019-11-11T14:33:27Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1063626
 objeto_licitacao,Arara,Licitação,bfs,2019-11-09T23:00:57Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,17,1031945
 objeto_licitacao,Arara,Licitação,dfs,2019-11-13T03:47:52Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1050505
@@ -3021,9 +2970,7 @@ objeto_licitacao,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,https:/
 objeto_licitacao,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,TRUE,14,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,24,1430714
 objeto_licitacao,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 objeto_licitacao,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,16,932619
-objeto_licitacao,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,https://www.bayeux.pb.gov.br/licitacoes,10,626967
 objeto_licitacao,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,https://www.bayeux.pb.gov.br/licitacoes,148,8866703
-objeto_licitacao,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,17,1045873
 objeto_licitacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,26,1563699
 objeto_licitacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,28,1660842
 objeto_licitacao,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,26,1576025
@@ -3040,7 +2987,6 @@ objeto_licitacao,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,TRUE,14,TRU
 objeto_licitacao,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,34,2047915
 objeto_licitacao,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 objeto_licitacao,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,FALSE,10,FALSE,,9,557231
-objeto_licitacao,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,FALSE,9,FALSE,,7,446782
 objeto_licitacao,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://www.coremas.pb.gov.br/avisos-editais-e-documentos/ano-2019/inexigibilidade-2019/category/535-inexigibilidade-001-2019.html,59,3567791
 objeto_licitacao,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,27,1607782
 objeto_licitacao,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,25,1505926
@@ -3089,6 +3035,7 @@ objeto_licitacao,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,TRUE,5,TRUE,http
 objeto_licitacao,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,TRUE,5,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,4,264285
 orgao_or_uni_orcamentaria,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 orgao_or_uni_orcamentaria,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+orgao_or_uni_orcamentaria,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 orgao_or_uni_orcamentaria,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,40,2377112
 orgao_or_uni_orcamentaria,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012,31,1876746
 orgao_or_uni_orcamentaria,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,44,2624663
@@ -3097,9 +3044,7 @@ orgao_or_uni_orcamentaria,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,
 orgao_or_uni_orcamentaria,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 orgao_or_uni_orcamentaria,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 orgao_or_uni_orcamentaria,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-orgao_or_uni_orcamentaria,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 orgao_or_uni_orcamentaria,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-orgao_or_uni_orcamentaria,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 orgao_or_uni_orcamentaria,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 orgao_or_uni_orcamentaria,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 orgao_or_uni_orcamentaria,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -3164,6 +3109,7 @@ orgao_or_uni_orcamentaria,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:
 orgao_or_uni_orcamentaria,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 origem,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,11,688199
 origem,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,12,749107
+origem,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,26,1552695
 origem,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,18,1103218
 origem,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,16,971268
 origem,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,15,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,17,1044135
@@ -3172,9 +3118,7 @@ origem,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,10,TRUE,http:/
 origem,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,13,757385
 origem,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201022&ctx=201022,14,864281
 origem,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/relatorio/inicio.xhtml,17,1040770
-origem,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/orcamentaria/inicio.xhtml,17,1045442
 origem,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,35,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/relatorio/inicio.xhtml,55,3287867
-origem,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/orcamento/unidade/inicio.xhtml,17,1001696
 origem,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,20,1181398
 origem,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,15,906712
 origem,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,20,1170012
@@ -3239,6 +3183,7 @@ origem,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,11,TRUE,ht
 origem,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,11,TRUE,https://transparenciaativa.com.br/Principal.aspx?Entidade=189,8,499245
 pregao,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,FALSE,,25,1505477
 pregao,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,FALSE,,25,1502113
+pregao,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,FALSE,,43,2586876
 pregao,Arara,Licitação,bandit,2019-11-11T14:33:27Z,FALSE,13,FALSE,,18,1063626
 pregao,Arara,Licitação,bfs,2019-11-09T23:00:57Z,FALSE,13,FALSE,,17,1031945
 pregao,Arara,Licitação,dfs,2019-11-13T03:47:52Z,FALSE,13,FALSE,,18,1050505
@@ -3247,9 +3192,7 @@ pregao,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,http://www.cacimb
 pregao,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,TRUE,14,TRUE,http://areiadebaraunas.pb.gov.br/acesso-a-informacao/licitacoes?q=contratos,24,1430714
 pregao,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,FALSE,26,TRUE,https://www.barradesantarosa.pb.gov.br/licitacoes,37,2200642
 pregao,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,16,932619
-pregao,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,10,626967
 pregao,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,148,8866703
-pregao,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,https://www.bayeux.pb.gov.br/licitacoes,17,1045873
 pregao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,26,1563699
 pregao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,28,1660842
 pregao,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,26,1576025
@@ -3266,7 +3209,6 @@ pregao,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,FALSE,14,FALSE,,25,15
 pregao,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,FALSE,17,FALSE,,34,2047915
 pregao,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,FALSE,13,FALSE,,16,959731
 pregao,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,9,557231
-pregao,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,TRUE,9,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,7,446782
 pregao,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,59,3567791
 pregao,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,27,1607782
 pregao,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,FALSE,,25,1505926
@@ -3315,6 +3257,7 @@ pregao,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,4,241403
 pregao,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 previsao,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,11,688199
 previsao,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,12,749107
+previsao,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,26,1552695
 previsao,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/?e=201012,18,1103218
 previsao,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/?e=201012,16,971268
 previsao,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,15,TRUE,http://transparencia.elmar.inf.br/?e=201012,17,1044135
@@ -3323,9 +3266,7 @@ previsao,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,10,TRUE,http
 previsao,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,9,TRUE,http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia,13,757385
 previsao,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201022&ctx=201022,14,864281
 previsao,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml,17,1040770
-previsao,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml,17,1045442
 previsao,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,35,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml,55,3287867
-previsao,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/inicio.xhtml,17,1001696
 previsao,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,20,1181398
 previsao,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,15,906712
 previsao,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,20,1170012
@@ -3390,6 +3331,7 @@ previsao,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,11,TRUE,
 previsao,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,11,TRUE,https://transparenciaativa.com.br/Receita2018.aspx,8,499245
 programa,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 programa,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+programa,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 programa,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,40,2377112
 programa,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012,31,1876746
 programa,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Fixada?e=201012&Tab=1&isModal=false&ctx=201012,44,2624663
@@ -3398,9 +3340,7 @@ programa,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,http
 programa,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 programa,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 programa,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-programa,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 programa,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-programa,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 programa,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 programa,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 programa,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -3465,6 +3405,7 @@ programa,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRUE,
 programa,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 rubrica,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,FALSE,5,FALSE,,11,688199
 rubrica,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,FALSE,5,FALSE,,12,749107
+rubrica,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,FALSE,12,FALSE,,26,1552695
 rubrica,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,16,FALSE,,18,1103218
 rubrica,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,16,FALSE,,16,971268
 rubrica,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,15,FALSE,,17,1044135
@@ -3473,9 +3414,7 @@ rubrica,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,FALSE,10,FALSE,,20
 rubrica,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,FALSE,9,FALSE,,13,757385
 rubrica,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,14,FALSE,,14,864281
 rubrica,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,16,FALSE,,17,1040770
-rubrica,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,16,FALSE,,17,1045442
 rubrica,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,35,FALSE,,55,3287867
-rubrica,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,16,FALSE,,17,1001696
 rubrica,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,20,1181398
 rubrica,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,FALSE,5,FALSE,,15,906712
 rubrica,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,20,1170012
@@ -3540,6 +3479,7 @@ rubrica,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,FALSE,11,FALSE
 rubrica,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,FALSE,11,FALSE,,8,499245
 salario_cargo,Alcantil,Quadro Pessoal,bandit,2019-11-19T04:04:19Z,FALSE,3,FALSE,,5,272852
 salario_cargo,Alcantil,Quadro Pessoal,bfs,2019-11-11T22:58:13Z,FALSE,4,FALSE,,6,360244
+salario_cargo,Alcantil,Quadro Pessoal,dfs,2019-11-22T15:33:46Z,FALSE,7,FALSE,,9,558454
 salario_cargo,Arara,Quadro Pessoal,bandit,2019-11-11T14:33:27Z,FALSE,74,FALSE,,122,7344291
 salario_cargo,Arara,Quadro Pessoal,bfs,2019-11-09T23:00:57Z,FALSE,89,FALSE,,163,9799989
 salario_cargo,Arara,Quadro Pessoal,dfs,2019-11-13T03:47:52Z,FALSE,95,FALSE,,180,10799630
@@ -3548,9 +3488,7 @@ salario_cargo,Areia,Quadro Pessoal,bfs,2019-11-12T02:01:45Z,FALSE,80,FALSE,,142,
 salario_cargo,Areia de Baraúnas,Quadro Pessoal,bfs,2019-11-19T22:39:43Z,TRUE,3,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,3,164533
 salario_cargo,Barra de Santa Rosa,Quadro Pessoal,bfs,2019-11-20T18:15:11Z,FALSE,119,FALSE,,195,11697938
 salario_cargo,Bayeux,Quadro Pessoal,bandit,2019-11-11T06:11:21Z,FALSE,52,FALSE,,60,3616637
-salario_cargo,Bayeux,Quadro Pessoal,bandit,2019-11-19T04:59:59Z,FALSE,47,FALSE,,51,3031575
 salario_cargo,Bayeux,Quadro Pessoal,bfs,2019-11-20T20:55:18Z,FALSE,152,FALSE,,195,11717383
-salario_cargo,Bayeux,Quadro Pessoal,dfs,2019-11-13T00:38:10Z,FALSE,58,FALSE,,74,4440391
 salario_cargo,Belém do Brejo do Cruz,Quadro Pessoal,bandit,2019-11-11T06:09:52Z,FALSE,4,FALSE,,6,349057
 salario_cargo,Belém do Brejo do Cruz,Quadro Pessoal,bandit,2019-11-19T03:30:36Z,FALSE,3,FALSE,,6,387302
 salario_cargo,Belém do Brejo do Cruz,Quadro Pessoal,bfs,2019-11-09T00:10:37Z,FALSE,4,FALSE,,7,392559
@@ -3566,6 +3504,7 @@ salario_cargo,Campina Grande,Quadro Pessoal,bandit,2019-11-19T06:50:09Z,TRUE,2,T
 salario_cargo,Campina Grande,Quadro Pessoal,bfs,2019-11-09T23:00:06Z,TRUE,2,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,102298
 salario_cargo,Campina Grande,Quadro Pessoal,dfs,2019-11-13T03:48:50Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,4,224422
 salario_cargo,Carrapateira,Quadro Pessoal,bfs,2019-11-11T23:19:26Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201054&Tab=1&isModal=false&ctx=201054,2,127264
+salario_cargo,Conceição,Quadro Pessoal,bandit,2019-11-21T16:57:54Z,TRUE,208,TRUE,http://www.siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,539,32317487
 salario_cargo,Coremas,Quadro Pessoal,bfs,2019-11-19T20:49:52Z,FALSE,7,FALSE,,6,354446
 salario_cargo,Cruz do Espírito Santo,Quadro Pessoal,bandit,2019-11-19T03:30:36Z,FALSE,3,FALSE,,6,351633
 salario_cargo,Cruz do Espírito Santo,Quadro Pessoal,bfs,2019-11-11T22:23:22Z,FALSE,4,FALSE,,6,347162
@@ -3614,6 +3553,7 @@ salario_cargo,Umbuzeiro,Quadro Pessoal,bfs,2019-11-09T23:01:07Z,TRUE,3,TRUE,http
 salario_cargo,Umbuzeiro,Quadro Pessoal,dfs,2019-11-13T03:48:34Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,2,134219
 setor_interessado,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,25,1505477
 setor_interessado,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,25,1502113
+setor_interessado,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,43,2586876
 setor_interessado,Arara,Licitação,bandit,2019-11-11T14:33:27Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1063626
 setor_interessado,Arara,Licitação,bfs,2019-11-09T23:00:57Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,17,1031945
 setor_interessado,Arara,Licitação,dfs,2019-11-13T03:47:52Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201012&ctx=201012,18,1050505
@@ -3622,9 +3562,7 @@ setor_interessado,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,https:
 setor_interessado,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,FALSE,14,FALSE,,24,1430714
 setor_interessado,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 setor_interessado,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,FALSE,12,FALSE,,16,932619
-setor_interessado,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,FALSE,10,FALSE,,10,626967
 setor_interessado,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,FALSE,108,FALSE,,148,8866703
-setor_interessado,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,FALSE,12,FALSE,,17,1045873
 setor_interessado,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,26,1563699
 setor_interessado,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,28,1660842
 setor_interessado,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,26,1576025
@@ -3641,7 +3579,6 @@ setor_interessado,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,TRUE,14,TR
 setor_interessado,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,34,2047915
 setor_interessado,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 setor_interessado,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,FALSE,10,FALSE,,9,557231
-setor_interessado,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,FALSE,9,FALSE,,7,446782
 setor_interessado,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://www.coremas.pb.gov.br/avisos-editais-e-documentos/ano-2019/inexigibilidade-2019/category/535-inexigibilidade-001-2019.html,59,3567791
 setor_interessado,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,27,1607782
 setor_interessado,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,25,1505926
@@ -3690,6 +3627,7 @@ setor_interessado,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,
 setor_interessado,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 sub_alinea,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,FALSE,5,FALSE,,11,688199
 sub_alinea,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,FALSE,5,FALSE,,12,749107
+sub_alinea,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,FALSE,12,FALSE,,26,1552695
 sub_alinea,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,16,FALSE,,18,1103218
 sub_alinea,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,16,FALSE,,16,971268
 sub_alinea,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,15,FALSE,,17,1044135
@@ -3698,9 +3636,7 @@ sub_alinea,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,FALSE,10,FALSE,
 sub_alinea,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,FALSE,9,FALSE,,13,757385
 sub_alinea,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,14,FALSE,,14,864281
 sub_alinea,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,16,FALSE,,17,1040770
-sub_alinea,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,16,FALSE,,17,1045442
 sub_alinea,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,FALSE,35,FALSE,,55,3287867
-sub_alinea,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,16,FALSE,,17,1001696
 sub_alinea,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,20,1181398
 sub_alinea,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,FALSE,5,FALSE,,15,906712
 sub_alinea,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,20,1170012
@@ -3765,6 +3701,7 @@ sub_alinea,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,FALSE,11,FA
 sub_alinea,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,FALSE,11,FALSE,,8,499245
 sub_elemento,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 sub_elemento,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+sub_elemento,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 sub_elemento,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 sub_elemento,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 sub_elemento,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -3773,9 +3710,7 @@ sub_elemento,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,
 sub_elemento,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 sub_elemento,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 sub_elemento,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-sub_elemento,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/programas/inicio.xhtml#,42,2512870
 sub_elemento,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-sub_elemento,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 sub_elemento,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 sub_elemento,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 sub_elemento,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -3840,6 +3775,7 @@ sub_elemento,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,T
 sub_elemento,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,30,1788284
 sub_funcao,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 sub_funcao,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+sub_funcao,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 sub_funcao,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,36,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,40,2377112
 sub_funcao,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,32,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,31,1876746
 sub_funcao,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,35,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Empenhos?e=201012&Tab=2&isModal=false&ctx=201012,44,2624663
@@ -3848,9 +3784,7 @@ sub_funcao,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,ht
 sub_funcao,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 sub_funcao,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,19,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Empenhos?e=201022&Tab=2&isModal=false&ctx=201022&header=off&footer=off&menu=off,37,2230017
 sub_funcao,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-sub_funcao,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,42,2512870
 sub_funcao,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/pagamento/inicio.xhtml,216,12961618
-sub_funcao,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/programas/inicio.xhtml#,30,1821383
 sub_funcao,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 sub_funcao,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 sub_funcao,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -3915,6 +3849,7 @@ sub_funcao,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,TRU
 sub_funcao,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 termo_ratificacao,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,FALSE,9,FALSE,,25,1505477
 termo_ratificacao,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,FALSE,9,FALSE,,25,1502113
+termo_ratificacao,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,FALSE,17,FALSE,,43,2586876
 termo_ratificacao,Arara,Licitação,bandit,2019-11-11T14:33:27Z,FALSE,13,FALSE,,18,1063626
 termo_ratificacao,Arara,Licitação,bfs,2019-11-09T23:00:57Z,FALSE,13,FALSE,,17,1031945
 termo_ratificacao,Arara,Licitação,dfs,2019-11-13T03:47:52Z,FALSE,13,FALSE,,18,1050505
@@ -3923,9 +3858,7 @@ termo_ratificacao,Areia,Licitação,bfs,2019-11-12T02:01:45Z,TRUE,79,TRUE,http:/
 termo_ratificacao,Areia de Baraúnas,Licitação,bfs,2019-11-19T22:39:43Z,FALSE,14,FALSE,,24,1430714
 termo_ratificacao,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,FALSE,26,FALSE,,37,2200642
 termo_ratificacao,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,FALSE,12,FALSE,,16,932619
-termo_ratificacao,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,FALSE,10,FALSE,,10,626967
 termo_ratificacao,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,https://www.bayeux.pb.gov.br/licitacao/publicacao/ratificacao-e-publicacoes-ad-00010-2019-fms-pmbex,148,8866703
-termo_ratificacao,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,FALSE,12,FALSE,,17,1045873
 termo_ratificacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-11T06:09:52Z,FALSE,9,FALSE,,26,1563699
 termo_ratificacao,Belém do Brejo do Cruz,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,28,1660842
 termo_ratificacao,Belém do Brejo do Cruz,Licitação,bfs,2019-11-09T00:10:37Z,FALSE,9,FALSE,,26,1576025
@@ -3942,7 +3875,6 @@ termo_ratificacao,Campina Grande,Licitação,bfs,2019-11-09T23:00:06Z,FALSE,14,F
 termo_ratificacao,Campina Grande,Licitação,dfs,2019-11-13T03:48:50Z,FALSE,17,FALSE,,34,2047915
 termo_ratificacao,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,FALSE,13,FALSE,,16,959731
 termo_ratificacao,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,FALSE,10,FALSE,,9,557231
-termo_ratificacao,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,FALSE,9,FALSE,,7,446782
 termo_ratificacao,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,FALSE,43,FALSE,,59,3567791
 termo_ratificacao,Cruz do Espírito Santo,Licitação,bandit,2019-11-19T03:30:36Z,FALSE,9,FALSE,,27,1607782
 termo_ratificacao,Cruz do Espírito Santo,Licitação,bfs,2019-11-11T22:23:22Z,FALSE,9,FALSE,,25,1505926
@@ -3991,6 +3923,7 @@ termo_ratificacao,Umbuzeiro,Licitação,bfs,2019-11-09T23:01:07Z,FALSE,5,FALSE,,
 termo_ratificacao,Umbuzeiro,Licitação,dfs,2019-11-13T03:48:34Z,FALSE,5,FALSE,,4,264285
 tipo_cargo,Alcantil,Quadro Pessoal,bandit,2019-11-19T04:04:19Z,FALSE,3,FALSE,,5,272852
 tipo_cargo,Alcantil,Quadro Pessoal,bfs,2019-11-11T22:58:13Z,FALSE,4,FALSE,,6,360244
+tipo_cargo,Alcantil,Quadro Pessoal,dfs,2019-11-22T15:33:46Z,FALSE,7,FALSE,,9,558454
 tipo_cargo,Arara,Quadro Pessoal,bandit,2019-11-11T14:33:27Z,TRUE,74,TRUE,http://transparencia.elmar.inf.br/FolhaPag/Index/QuadroFuncional?e=201012&Tab=2&isModal=false&ctx=201012,122,7344291
 tipo_cargo,Arara,Quadro Pessoal,bfs,2019-11-09T23:00:57Z,TRUE,89,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201012&Tab=1&isModal=false&ctx=201012,163,9799989
 tipo_cargo,Arara,Quadro Pessoal,dfs,2019-11-13T03:47:52Z,TRUE,95,TRUE,http://transparencia.elmar.inf.br/FolhaPag/Index/QuadroFuncional?e=201012&Tab=2&isModal=false&ctx=201012,180,10799630
@@ -3999,9 +3932,7 @@ tipo_cargo,Areia,Quadro Pessoal,bfs,2019-11-12T02:01:45Z,FALSE,80,FALSE,,142,854
 tipo_cargo,Areia de Baraúnas,Quadro Pessoal,bfs,2019-11-19T22:39:43Z,TRUE,3,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,3,164533
 tipo_cargo,Barra de Santa Rosa,Quadro Pessoal,bfs,2019-11-20T18:15:11Z,TRUE,119,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag?e=201022&Tab=1&isModal=false&ctx=201022,195,11697938
 tipo_cargo,Bayeux,Quadro Pessoal,bandit,2019-11-11T06:11:21Z,TRUE,52,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,60,3616637
-tipo_cargo,Bayeux,Quadro Pessoal,bandit,2019-11-19T04:59:59Z,TRUE,47,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,51,3031575
 tipo_cargo,Bayeux,Quadro Pessoal,bfs,2019-11-20T20:55:18Z,TRUE,152,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,195,11717383
-tipo_cargo,Bayeux,Quadro Pessoal,dfs,2019-11-13T00:38:10Z,TRUE,58,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201025,74,4440391
 tipo_cargo,Belém do Brejo do Cruz,Quadro Pessoal,bandit,2019-11-11T06:09:52Z,FALSE,4,FALSE,,6,349057
 tipo_cargo,Belém do Brejo do Cruz,Quadro Pessoal,bandit,2019-11-19T03:30:36Z,FALSE,3,FALSE,,6,387302
 tipo_cargo,Belém do Brejo do Cruz,Quadro Pessoal,bfs,2019-11-09T00:10:37Z,FALSE,4,FALSE,,7,392559
@@ -4017,6 +3948,7 @@ tipo_cargo,Campina Grande,Quadro Pessoal,bandit,2019-11-19T06:50:09Z,TRUE,2,TRUE
 tipo_cargo,Campina Grande,Quadro Pessoal,bfs,2019-11-09T23:00:06Z,TRUE,2,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,102298
 tipo_cargo,Campina Grande,Quadro Pessoal,dfs,2019-11-13T03:48:50Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,4,224422
 tipo_cargo,Carrapateira,Quadro Pessoal,bfs,2019-11-11T23:19:26Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/FolhaPag?e=201054&Tab=1&isModal=false&ctx=201054,2,127264
+tipo_cargo,Conceição,Quadro Pessoal,bandit,2019-11-21T16:57:54Z,TRUE,208,TRUE,http://www.siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,539,32317487
 tipo_cargo,Coremas,Quadro Pessoal,bfs,2019-11-19T20:49:52Z,FALSE,7,FALSE,,6,354446
 tipo_cargo,Cruz do Espírito Santo,Quadro Pessoal,bandit,2019-11-19T03:30:36Z,FALSE,3,FALSE,,6,351633
 tipo_cargo,Cruz do Espírito Santo,Quadro Pessoal,bfs,2019-11-11T22:23:22Z,FALSE,4,FALSE,,6,347162
@@ -4065,6 +3997,7 @@ tipo_cargo,Umbuzeiro,Quadro Pessoal,bfs,2019-11-09T23:01:07Z,TRUE,3,TRUE,https:/
 tipo_cargo,Umbuzeiro,Quadro Pessoal,dfs,2019-11-13T03:48:34Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,2,134219
 uni_gestora,Alcantil,Receita Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,11,688199
 uni_gestora,Alcantil,Receita Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,12,749107
+uni_gestora,Alcantil,Receita Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,26,1552695
 uni_gestora,Arara,Receita Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,18,1103218
 uni_gestora,Arara,Receita Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,16,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201012&ctx=201012,16,971268
 uni_gestora,Arara,Receita Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,15,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas/Realizada?e=201012&Tab=2&isModal=false&ctx=201012,17,1044135
@@ -4073,9 +4006,7 @@ uni_gestora,Areia,Receita Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,10,TRUE,h
 uni_gestora,Areia de Baraúnas,Receita Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,13,757385
 uni_gestora,Barra de Santa Rosa,Receita Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201022&ctx=201022,14,864281
 uni_gestora,Bayeux,Receita Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/orcamento/documentos/ldo.xhtml,17,1040770
-uni_gestora,Bayeux,Receita Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/orcamento/unidade/inicio.xhtml,17,1045442
 uni_gestora,Bayeux,Receita Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,35,TRUE,http://siteseticons.com.br/portal/faces/pages/orcamento/unidade/inicio.xhtml,55,3287867
-uni_gestora,Bayeux,Receita Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,16,TRUE,http://siteseticons.com.br/portal/faces/pages/orcamento/unidade/inicio.xhtml,17,1001696
 uni_gestora,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,20,1181398
 uni_gestora,Belém do Brejo do Cruz,Receita Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,5,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,15,906712
 uni_gestora,Belém do Brejo do Cruz,Receita Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,20,1170012
@@ -4140,10 +4071,13 @@ uni_gestora,Umbuzeiro,Receita Orçamentária,bfs,2019-11-09T23:01:07Z,FALSE,11,F
 uni_gestora,Umbuzeiro,Receita Orçamentária,dfs,2019-11-13T03:48:34Z,FALSE,11,FALSE,,8,499245
 valor,Alcantil,Despesa Extra Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,56,3380140
 valor,Alcantil,Despesa Extra Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,24,1431970
+valor,Alcantil,Despesa Extra Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,32,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,81,4835790
 valor,Alcantil,Licitação,bandit,2019-11-19T04:04:19Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,25,1505477
 valor,Alcantil,Licitação,bfs,2019-11-11T22:58:13Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,25,1502113
+valor,Alcantil,Licitação,dfs,2019-11-22T15:33:46Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,43,2586876
 valor,Alcantil,Receita Extra Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,9,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,18,1095562
 valor,Alcantil,Receita Extra Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,10,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,18,1077190
+valor,Alcantil,Receita Extra Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,26,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,56,3366917
 valor,Arara,Despesa Extra Orçamentária,bandit,2019-11-11T14:33:27Z,TRUE,3,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=false&ctx=201012,3,195199
 valor,Arara,Despesa Extra Orçamentária,bfs,2019-11-09T23:00:57Z,TRUE,2,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas/Extra?e=201012&Tab=4&isModal=false&ctx=201012,2,136358
 valor,Arara,Despesa Extra Orçamentária,dfs,2019-11-13T03:47:52Z,TRUE,15,TRUE,http://transparencia.elmar.inf.br/Contab/Despesas?e=201012&ctx=201012,19,1122500
@@ -4166,17 +4100,11 @@ valor,Barra de Santa Rosa,Despesa Extra Orçamentária,bfs,2019-11-20T18:15:11Z,
 valor,Barra de Santa Rosa,Licitação,bfs,2019-11-20T18:15:11Z,TRUE,26,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201022&ctx=201022,37,2200642
 valor,Barra de Santa Rosa,Receita Extra Orçamentária,bfs,2019-11-20T18:15:11Z,TRUE,4,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas/Realizada?e=201022&Tab=2&isModal=false&ctx=201022,4,221377
 valor,Bayeux,Despesa Extra Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,4,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,3,186209
-valor,Bayeux,Despesa Extra Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,5,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,3,206012
 valor,Bayeux,Despesa Extra Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,92867
-valor,Bayeux,Despesa Extra Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,4,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,4,210602
 valor,Bayeux,Licitação,bandit,2019-11-11T06:11:21Z,TRUE,12,TRUE,http://siteseticons.com.br/portal/faces/pages/inicio.xhtml,16,932619
-valor,Bayeux,Licitação,bandit,2019-11-19T04:59:59Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/inicio.xhtml,10,626967
 valor,Bayeux,Licitação,bfs,2019-11-20T20:55:18Z,TRUE,108,TRUE,http://siteseticons.com.br/portal/faces/pages/inicio.xhtml,148,8866703
-valor,Bayeux,Licitação,dfs,2019-11-13T00:38:10Z,TRUE,12,TRUE,http://siteseticons.com.br/portal/faces/pages/inicio.xhtml,17,1045873
 valor,Bayeux,Receita Extra Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,127342
-valor,Bayeux,Receita Extra Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,116679
 valor,Bayeux,Receita Extra Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,113602
-valor,Bayeux,Receita Extra Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,6,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,5,307564
 valor,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,21,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,45,2722476
 valor,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,23,1351313
 valor,Belém do Brejo do Cruz,Despesa Extra Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,31,1877159
@@ -4223,11 +4151,8 @@ valor,Carrapateira,Despesa Extra Orçamentária,bfs,2019-11-11T23:19:26Z,TRUE,2,
 valor,Carrapateira,Licitação,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201054&ctx=201054,16,959731
 valor,Carrapateira,Receita Extra Orçamentária,bfs,2019-11-11T23:19:26Z,TRUE,13,TRUE,http://transparencia.elmar.inf.br/Contab/Receitas?e=201054&ctx=201054,13,750778
 valor,Conceição,Despesa Extra Orçamentária,bandit,2019-11-21T16:57:54Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,97792
-valor,Conceição,Despesa Extra Orçamentária,bfs,2019-11-20T18:01:11Z,FALSE,4,FALSE,,5,281826
 valor,Conceição,Licitação,bandit,2019-11-21T16:57:54Z,TRUE,10,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,9,557231
-valor,Conceição,Licitação,bfs,2019-11-20T18:01:11Z,TRUE,9,TRUE,http://siteseticons.com.br/portal/faces/pages/licitacao/dados/inicio.xhtml,7,446782
 valor,Conceição,Receita Extra Orçamentária,bandit,2019-11-21T16:57:54Z,TRUE,3,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,144370
-valor,Conceição,Receita Extra Orçamentária,bfs,2019-11-20T18:01:11Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,137594
 valor,Coremas,Despesa Extra Orçamentária,bfs,2019-11-19T20:49:52Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/extra/inicio.xhtml,2,94578
 valor,Coremas,Licitação,bfs,2019-11-19T20:49:52Z,TRUE,43,TRUE,http://siteseticons.com.br/portal/faces/pages/inicio.xhtml,59,3567791
 valor,Coremas,Receita Extra Orçamentária,bfs,2019-11-19T20:49:52Z,TRUE,2,TRUE,http://siteseticons.com.br/portal/faces/pages/receita/extra/inicio.xhtml,2,107986
@@ -4368,6 +4293,7 @@ valor,Umbuzeiro,Receita Extra Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,2,TRU
 valor,Umbuzeiro,Receita Extra Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,19,TRUE,https://transparenciaativa.com.br/DetalhesReceita.aspx?receita=11130311,15,890508
 valor_fixado,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 valor_fixado,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+valor_fixado,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 valor_fixado,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 valor_fixado,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 valor_fixado,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -4376,9 +4302,7 @@ valor_fixado,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,
 valor_fixado,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 valor_fixado,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 valor_fixado,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,24,FALSE,,32,1928684
-valor_fixado,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,FALSE,,42,2512870
 valor_fixado,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-valor_fixado,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,FALSE,,30,1821383
 valor_fixado,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 valor_fixado,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 valor_fixado,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -4443,6 +4367,7 @@ valor_fixado,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,27,T
 valor_fixado,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 valor_liquidado,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 valor_liquidado,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+valor_liquidado,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 valor_liquidado,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 valor_liquidado,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 valor_liquidado,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -4451,9 +4376,7 @@ valor_liquidado,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TR
 valor_liquidado,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 valor_liquidado,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 valor_liquidado,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,FALSE,24,FALSE,,32,1928684
-valor_liquidado,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,FALSE,38,FALSE,,42,2512870
 valor_liquidado,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-valor_liquidado,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,FALSE,22,FALSE,,30,1821383
 valor_liquidado,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 valor_liquidado,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 valor_liquidado,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901
@@ -4518,6 +4441,7 @@ valor_liquidado,Umbuzeiro,Despesa Orçamentária,bfs,2019-11-09T23:01:07Z,TRUE,2
 valor_liquidado,Umbuzeiro,Despesa Orçamentária,dfs,2019-11-13T03:48:34Z,TRUE,27,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,30,1788284
 valor_pago,Alcantil,Despesa Orçamentária,bandit,2019-11-19T04:04:19Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,25,1501074
 valor_pago,Alcantil,Despesa Orçamentária,bfs,2019-11-11T22:58:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,26,1534798
+valor_pago,Alcantil,Despesa Orçamentária,dfs,2019-11-22T15:33:46Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,42,2522205
 valor_pago,Arara,Despesa Orçamentária,bandit,2019-11-11T14:33:27Z,FALSE,36,FALSE,,40,2377112
 valor_pago,Arara,Despesa Orçamentária,bfs,2019-11-09T23:00:57Z,FALSE,32,FALSE,,31,1876746
 valor_pago,Arara,Despesa Orçamentária,dfs,2019-11-13T03:47:52Z,FALSE,35,FALSE,,44,2624663
@@ -4526,9 +4450,7 @@ valor_pago,Areia,Despesa Orçamentária,bfs,2019-11-12T02:01:45Z,TRUE,17,TRUE,ht
 valor_pago,Areia de Baraúnas,Despesa Orçamentária,bfs,2019-11-19T22:39:43Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,44,2640282
 valor_pago,Barra de Santa Rosa,Despesa Orçamentária,bfs,2019-11-20T18:15:11Z,FALSE,19,FALSE,,37,2230017
 valor_pago,Bayeux,Despesa Orçamentária,bandit,2019-11-11T06:11:21Z,TRUE,24,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,32,1928684
-valor_pago,Bayeux,Despesa Orçamentária,bandit,2019-11-19T04:59:59Z,TRUE,38,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,42,2512870
 valor_pago,Bayeux,Despesa Orçamentária,bfs,2019-11-20T20:55:18Z,TRUE,123,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,216,12961618
-valor_pago,Bayeux,Despesa Orçamentária,dfs,2019-11-13T00:38:10Z,TRUE,22,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/empenho/locomocao.xhtml,30,1821383
 valor_pago,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-11T06:09:52Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1938606
 valor_pago,Belém do Brejo do Cruz,Despesa Orçamentária,bandit,2019-11-19T03:30:36Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,34,2022031
 valor_pago,Belém do Brejo do Cruz,Despesa Orçamentária,bfs,2019-11-09T00:10:37Z,TRUE,17,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,32,1930901

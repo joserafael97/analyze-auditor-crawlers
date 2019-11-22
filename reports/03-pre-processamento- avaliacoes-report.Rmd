@@ -1,5 +1,5 @@
 ---
-title: "REPLACE ME"
+title: "Avalições Auditor Crawler"
 output:
     html_document:
     df_print: paged
@@ -11,9 +11,11 @@ library(tidyverse) #
 library(jsonlite) # Ler dados json
 library(dplyr) # 
 library(here)
+library(DT)
 library(ggplot2)
 source(here::here("code/lib.R"))
 theme_set(theme_bw())
+
 ```
 
 ## Lendo os dados
@@ -69,7 +71,7 @@ precisao <- data %>%
           )
 ```
 
-Quantificando métricas
+## Quantificando métricas
 
 ```{r}
 
@@ -95,31 +97,112 @@ metricas_result <- precisao %>%
         max_num_access_node = max(contNodeNumberAccess),
         all_access_node = sum(contNodeNumberAccess),
         combination = last(fornecedor)
-
     )
 
 metricas_result 
 
-metricas_result$tp_total <- NULL
-metricas_result$fp_total <- NULL
-metricas_result$fn_total <- NULL
-metricas_result$median_duration <- NULL
-metricas_result$max_duration <- NULL
+```
+
+## Avaliações por abordagem
+
+```{r}
+metricas_result %>%
+    group_by(aproach) %>% 
+    summarise(ocorrencia = n()) %>%
+    ggplot(aes(y=ocorrencia, x=reorder(aproach, +(ocorrencia)))) + 
+    geom_bar(stat = "identity",  fill="#5499C7") + 
+    ggtitle("Número de Avaliações por Abordagem") +
+    xlab("Abordagem") + 
+    ylab("Número de avaliações") +
+    coord_flip()
+```
+
+## Avaliações por valor do Recall e Precision
+
+```{r}
+metricas_result %>%
+    ggplot(aes(x=recall)) + 
+    geom_histogram(alpha=0.5, position="identity", bins=20) 
 
 metricas_result %>%
-    select(municipio, aproach ,recall, precision, f1_score) %>%
-    arrange(desc(recall)) 
+    ggplot(aes(x=precision)) + 
+    geom_histogram(alpha=0.5, position="identity", bins=20) 
 ```
+
+```{r}
+metricas_result %>%
+    ggplot(aes(x=recall, color=aproach)) + 
+    geom_histogram(fill='white', alpha=0.5, position="identity", bins=20) +
+    facet_grid(aproach ~ .)
+
+
+metricas_result %>%
+    ggplot(aes(x=precision, color=aproach)) + 
+    geom_histogram(fill='white', alpha=0.5, position="identity", bins=20) +
+    facet_grid(aproach ~ .)
+
+```
+
+## Avaliações por tempo (Min)
+
+```{r}
+metricas_result %>%
+    ggplot(aes(x=median_duration_min, color=aproach)) + 
+    geom_histogram(fill='white', alpha=0.5, position="identity", bins=20) +
+    facet_grid(aproach ~ .)
+
+metricas_result %>%
+    ggplot(aes(x=max_durationMin, color=aproach)) + 
+    geom_histogram(fill='white', alpha=0.5, position="identity", bins=20) +
+    facet_grid(aproach ~ .)
+
+```
+
+## Avaliações por número de nós acessados
+
+```{r}
+metricas_result %>%
+    ggplot(aes(x=median_num_access_node, color=aproach)) + 
+    geom_histogram(fill='white', alpha=0.5, position="identity", bins=20) +
+    facet_grid(aproach ~ .)
+
+metricas_result %>%
+    ggplot(aes(x=max_num_access_node, color=aproach)) + 
+    geom_histogram(fill='white', alpha=0.5, position="identity", bins=20) +
+    facet_grid(aproach ~ .)
+
+```
+
+## Avaliações com Recall abaixo de 0.7
+
+```{r}
+metricas_result %>%
+    filter(recall < 0.8)  %>%
+    ggplot(aes(x=recall, fill=combination)) + 
+    geom_histogram( alpha=0.5, position="identity", bins=20) +
+    facet_grid(aproach ~ .)
+
+```
+
+## Todas as Avaliações
+
 ```{r}
 metricas_result %>%
     group_by(municipio) %>%
     summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
-    arrange(desc(bfs)) 
+    arrange(desc(dfs)) %>%
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
 
 
-Vamos analisar onde ocorreu as divergências entre o gabarito e o resultado do crawler
-bfs	2019-11-09 23:00:55	35	3	0	0.9210526	1.0000000	0.9589041
+```{r}
+metricas_result %>%
+    select(municipio, aproach ,recall, precision, f1_score) %>%
+    arrange(desc(recall)) %>% 
+    datatable(options = list(pageLength = 30),  rownames = FALSE, class = 'cell-border stripe')
+```
+
+## Métricas 
 
 ```{r}
 metricas_result %>%
@@ -130,6 +213,9 @@ metricas_result %>%
     ggplot() + 
     geom_point(aes(x=aproach, y=f1_score,  color=aproach), position = "jitter")  
 ```
+
+## Tempo de Duração  
+
 ```{r}
 metricas_result %>%
     ggplot() + 
@@ -141,19 +227,21 @@ metricas_result %>%
 ```
 ```{r}
 metricas_result %>%
+    ggplot(aes(x = aproach, y = median_duration_min)) +
+    geom_boxplot(fill = "orange") 
+```
+
+## Nós Acessados  
+
+```{r}
+metricas_result %>%
     ggplot() + 
     geom_point(aes(x=aproach, y=max_num_access_node,  color=aproach), position = "jitter")  
 ```
 
-
-
 ```{r}
-precisao$contNodeNumberAccess <- NULL
-precisao$duration <- NULL
-precisao$durationMin <- NULL
-
-precisao %>% 
-    filter(aproach=='bfs', municipio == "Serraria", valid == FALSE, encontrado == TRUE) %>% 
-    arrange(desc(criterio))
-
+metricas_result %>%
+    ggplot(aes(x = aproach, y = max_num_access_node)) +
+    geom_boxplot(fill = "orange") 
 ```
+
