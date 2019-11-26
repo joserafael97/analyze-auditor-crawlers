@@ -274,7 +274,7 @@ bootstraps <- boot(data = metricas_result,
 
 ci.tb = tidy(bootstraps, 
           conf.level = .95,
-          conf.method = "norm",
+          conf.method = "basic",
           conf.int = TRUE) 
 
 
@@ -318,7 +318,7 @@ ics.aproach <- boot.aproach %>%
     summarise(
         ci = list(tidy(cors_boot[[1]], 
           conf.level = .95,
-          conf.method = "norm",
+          conf.method = "basic",
           conf.int = TRUE))
     ) %>% 
     unnest(ci) 
@@ -336,4 +336,11 @@ ics.aproach %>%
 
 ```
 
+```{r}
+metricas_result %>%
+ggplot(aes(x=combination, y=max_num_access_node, ymin=min(max_num_access_node), ymax=1, color=aproach)) +
+  geom_pointrange() +
+  geom_point() +
+  coord_flip() 
+```
 
