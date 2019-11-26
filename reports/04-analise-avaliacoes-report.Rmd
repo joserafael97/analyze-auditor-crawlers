@@ -1,0 +1,27 @@
+---
+title: "Avalições Auditor Crawler"
+output:
+    html_document:
+    df_print: paged
+theme: sandstone
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse) # 
+library(jsonlite) # Ler dados json
+library(dplyr) # 
+library(here)
+library(DT)
+library(ggplot2)
+source(here::here("code/lib.R"))
+theme_set(theme_bw())
+
+```
+
+## Lendo os dados
+
+```{r read}
+metricas_result <- readr::read_csv(here::here("data/resultados_sumarizado.csv"))
+```
+
+

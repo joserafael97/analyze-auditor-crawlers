@@ -8,10 +8,12 @@ theme: sandstone
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse) # 
+library(broom)
 library(jsonlite) # Ler dados json
 library(dplyr) # 
 library(here)
 library(DT)
+library(boot)
 library(ggplot2)
 source(here::here("code/lib.R"))
 theme_set(theme_bw())
@@ -69,6 +71,9 @@ precisao <- data %>%
            fp = valid == TRUE 
            & encontrado == FALSE
           )
+
+precisao %>%
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
 
 ## Quantificando métricas
@@ -99,6 +104,9 @@ metricas_result <- precisao %>%
         combination = last(fornecedor),
         tipo_exp = last(tipo_exp)
     )
+
+metricas_result %>% 
+    write_csv(here::here("data/resultados_sumarizado.csv"))
 
 metricas_result 
 
@@ -245,4 +253,87 @@ metricas_result %>%
     ggplot(aes(x = aproach, y = max_num_access_node)) +
     geom_boxplot(fill = "orange") 
 ```
+
+
+## IC 
+
+```{r}
+set.seed(123)
+
+f1_score <- function (d, i) {
+    dt<-d[i,]
+    c(
+        dt$f1_score
+    )
+}
+    
+bootstraps <- boot(data = metricas_result, 
+                   statistic = f1_score, # <- referência para a função 
+                   R = 4000) # número de bootstraps
+
+
+ci.tb = tidy(bootstraps, 
+          conf.level = .95,
+          conf.method = "norm",
+          conf.int = TRUE) 
+
+
+glimpse(ci.tb)
+
+ci.tb %>%
+    ggplot(aes(x = "", y = statistic,
+               ymin = conf.low,
+               ymax = conf.high)) +
+    geom_pointrange() +
+    geom_point(size = 3) +
+    labs(y = "F1-score",
+         x = "") +
+    theme(axis.title = element_text(size=10)) 
+```
+
+```{r}
+#Calcula a media das posições escolhidas nas buscas.
+set.seed(123)
+
+f1_score_boot <- function (d, i) {
+    dt<-d[i,]
+    c(
+        dt$f1_score
+    )
+}
+
+boot.aproach <- metricas_result %>%
+  group_by(aproach) %>% 
+  mutate(cors_boot = list(
+      boot(
+          data = metricas_result, 
+          statistic = f1_score_boot, 
+          R = 4000
+          )
+      )
+     )
+
+ics.aproach <- boot.aproach %>% 
+    group_by(aproach) %>% 
+    summarise(
+        ci = list(tidy(cors_boot[[1]], 
+          conf.level = .95,
+          conf.method = "norm",
+          conf.int = TRUE))
+    ) %>% 
+    unnest(ci) 
+
+
+ics.aproach %>%
+    ggplot(aes(x = aproach, y = statistic,
+               ymin = conf.low,
+               ymax = conf.high)) +
+    geom_pointrange() +
+    geom_point(size = 3) +
+    labs(y = "F1-score",
+         x = "") +
+    theme(axis.title = element_text(size=10)) 
+
+```
+
 
