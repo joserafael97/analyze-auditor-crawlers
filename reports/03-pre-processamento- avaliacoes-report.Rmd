@@ -96,7 +96,8 @@ metricas_result <- precisao %>%
         median_num_access_node = median(contNodeNumberAccess),
         max_num_access_node = max(contNodeNumberAccess),
         all_access_node = sum(contNodeNumberAccess),
-        combination = last(fornecedor)
+        combination = last(fornecedor),
+        tipo_exp = last(tipo_exp)
     )
 
 metricas_result 
@@ -175,9 +176,9 @@ metricas_result %>%
 
 ## Avaliações com Recall abaixo de 0.7
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 metricas_result %>%
-    filter(recall < 0.8)  %>%
+    filter(recall < 0.8 & !is.na(aproach))  %>%
     ggplot(aes(x=recall, fill=combination)) + 
     geom_histogram( alpha=0.5, position="identity", bins=20) +
     facet_grid(aproach ~ .)
@@ -189,7 +190,7 @@ metricas_result %>%
 ```{r}
 metricas_result %>%
     group_by(municipio) %>%
-    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
+    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit'), tipo_exp=last(tipo_exp)) %>%
     arrange(desc(dfs)) %>%
     datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```

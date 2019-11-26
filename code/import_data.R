@@ -32,10 +32,17 @@ avaliacoes <- avaliacoes %>%
         duration = as.numeric(duration)
     )
 
+avaliacoes <- avaliacoes %>% 
+    group_by(municipio, aproach, date) %>% 
+    mutate(tipo_exp = ifelse( n() <= 48, "less_itens", 'all_itens')) %>%
+    ungroup()
 
 avaliacoes<-full_join(avaliacoes, avaliacoes_dataset, by=c("municipio", "item", "criterio", "aproach", 
                                                            "date", "valid", "contNodeNumberAccess",
-                                                           "found", "pathSought", "durationMin", "duration"))
+                                                           "found", "pathSought", "durationMin", "duration", 'tipo_exp'))
+
+avaliacoes <- avaliacoes %>% 
+    distinct(municipio, item, criterio, aproach, .keep_all = TRUE)
 
 avaliacoes %>% 
     write_csv(here::here("data/resultados_avaliacoes.csv"))
