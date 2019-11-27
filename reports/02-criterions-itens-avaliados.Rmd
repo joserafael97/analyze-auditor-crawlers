@@ -24,9 +24,28 @@ theme_set(theme_bw())
 resultados_avaliacoes = read_avaliacoes()
 ```
 
-##Itens avaliados
+## Fiscalização de Portais de transparência
 
-Vamos verifica quais itens são mais encontrados pelo crawler
+O sancionamento da Lei 12.527/2011,  conhecida como Lei de Acesso à Informação,  deu origem a criação de novas políticas de fiscalização e combate a corrupção nos estados e mu-nicípios brasileiros, obrigando-os ao cumprimento de normas que garantem o acesso à informações de interesse coletivo ou geral de forma pública e gratuita.
+
+Nesse sentido, com o objetivo de garantir a efetividade no cumprimento da Lei de Aceso à informação, órgãos fiscalizadores como o Tribunal de Contas do Estado da Paraíba (TCE-PB) têm investido em mecanismos que incentivam os municípios e o estado na manutenção de suas informações fiscais.  Uma destas iniciativas é a criação do Índice de transparência dos municípios e câmaras municipais, que periodicamente fiscaliza os 223 municípios, suas câmaras e o estado na Paraíba, analisando a disponibilização online das informações referentes às contas públicas destas entidades nos seus portais de transparência. Segundo TCE-PB, tais ações já resultaram na aplicação de cerca de quatrocentos mil reais em multas e diversas representações à Controladoria Geral do Estado, Controladoria Geral da União e Procuradoria.
+
+## Projeto Turmalina
+
+A fim de analisar a diversidade de portais de transparência municipais noestado da Paraíba, um grupo de desenvolvedores do laboratório Analytics da Universida de Federal de Campina Grande em parceria com TCE-PB, examinaram, por meio do número de empresas contratas pelas prefeituras municipais, a variação nos layouts entre os sites, considerando como variação cada nova empresa investigada. Assim, foram identificadas 23 empresas atuantes no fornecimentos de portais de transparência para os municípios. Apesar de número de empresas diferentes ser baixo, considerando os 223 municípios existentes, o estudo também identificou que algumas prefeituras possuem mais de um destes fornecedores, onde diferentes critérios eram administrados por empresas distintas
+
+## Critérios e Itens avaliados
+ 
+Atualmente o Índice de transparência criado pelo TCE-PB possui 123 itens dividos entre os critérios Despesa Orçamentária, Despesa Extra-Orçamentária, Licitação, Receita Orçamentária, Receita Extra-Orçamentária, Quadro Pessoal, Contratos, Convênios, Usabilidade, Série Histórica e Frequência de atualização, Extração de Dados e Outros. No entanto, pela numerosa quantidade de itens, foi optado pela redução de critérios e consequentemente a redução do número de itens. Para seleção que seriam utilizados durante as avaliações do Auditor Crawler, foram escolhidos critérios com itens mais bem definidos e claros, critérios com maior presença nos sites e considerados fundamentais para transparência pública. Neste sentido, foram selecionados os critérios: 
+
+* Despesa Orçamentário;
+* Despesa Extra-Orçamentária;
+* Receita Orçamentária
+* Receita Extra-Orçamentária;
+* Licitação
+* Quadro Pessoal
+
+Esses critérios resultam na avaliação de 61 itens de transparência fiscal. Nesse aspeceto, vamos verifica quais itens são mais encontrados pelo crawler
 
 ```{r}
 resultados_avaliacoes %>%
@@ -58,4 +77,4 @@ Com base na Tabela e visualizações é perceptível a existência de itens que 
 
 Nesse aspecto, é possível identificar itens que possuem localização e definição (de acordo com TCE) não bem definidos como é caso de edital, licitado e rubrica. Assim, foi optado pela execução do crawler sem esses itens reduzindo 10 itens do total buscado. 
 
-Os itens aviso, nome dos vencedores e nome dos perdedores do critério Licitação também foram excluídos por serem informações que ficaram disponíveis ao longo do processo licitatório.
+Os itens aviso, nome dos vencedores e nome dos perdedores do critério Licitação também foram excluídos por possuírem informações que somente ficam disponíveis ao longo do processo licitatório.

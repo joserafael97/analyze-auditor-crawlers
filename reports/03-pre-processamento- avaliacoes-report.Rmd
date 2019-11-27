@@ -206,7 +206,7 @@ metricas_result %>%
 
 ```{r}
 metricas_result %>%
-    select(municipio, aproach ,recall, precision, f1_score) %>%
+    select(municipio, aproach, date, recall, precision, f1_score) %>%
     arrange(desc(recall)) %>% 
     datatable(options = list(pageLength = 30),  rownames = FALSE, class = 'cell-border stripe')
 ```
@@ -269,7 +269,7 @@ f1_score <- function (d, i) {
     
 bootstraps <- boot(data = metricas_result, 
                    statistic = f1_score, # <- referência para a função 
-                   R = 4000) # número de bootstraps
+                   R = 40) # número de bootstraps
 
 
 ci.tb = tidy(bootstraps, 
@@ -308,7 +308,7 @@ boot.aproach <- metricas_result %>%
       boot(
           data = metricas_result, 
           statistic = f1_score_boot, 
-          R = 4000
+          R = 40
           )
       )
      )
