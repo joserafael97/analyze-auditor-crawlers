@@ -2,7 +2,7 @@
 title: "Avalições Auditor Crawler"
 output:
     html_document:
-    df_print: paged
+    css: styles.css
 theme: sandstone
 ---
 
@@ -218,9 +218,22 @@ metricas_result %>%
     ggplot() + 
     geom_point(aes(x=aproach, y=recall,  color=aproach), position = "jitter")  
 
+
+metricas_result %>%
+  ggplot(aes(x='',y = recall)) +
+  geom_boxplot(fill = "white") +
+  geom_jitter(aes(color = aproach), alpha=0.5, size=3)
+
+metricas_result %>%
+    ggplot(aes(x = aproach, y = recall)) +
+    geom_boxplot(fill = "orange") 
+
 metricas_result %>%
     ggplot() + 
     geom_point(aes(x=aproach, y=f1_score,  color=aproach), position = "jitter")  
+
+
+
 ```
 
 ## Tempo de Duração  
@@ -235,8 +248,14 @@ metricas_result %>%
     geom_point(aes(x=aproach, y=max_durationMin,  color=aproach), position = "jitter")  
 ```
 ```{r}
+
 metricas_result %>%
-    ggplot(aes(x = aproach, y = median_duration_min)) +
+  ggplot(aes(x='',y = max_durationMin)) +
+  geom_boxplot(fill = "white") +
+  geom_jitter(aes(color = aproach), alpha=0.5, size=3)
+
+metricas_result %>%
+    ggplot(aes(x = aproach, y = max_durationMin)) +
     geom_boxplot(fill = "orange") 
 ```
 
@@ -250,7 +269,12 @@ metricas_result %>%
 
 ```{r}
 metricas_result %>%
-    ggplot(aes(x = aproach, y = max_num_access_node)) +
+  ggplot(aes(x='',y = max_num_access_node)) +
+  geom_boxplot(fill = "white") +
+  geom_jitter(aes(color = aproach), alpha=0.5, size=3)
+
+metricas_result %>%
+    ggplot(aes(x = aproach, y = max_num_access_node), ) +
     geom_boxplot(fill = "orange") 
 ```
 
@@ -269,7 +293,7 @@ f1_score <- function (d, i) {
     
 bootstraps <- boot(data = metricas_result, 
                    statistic = f1_score, # <- referência para a função 
-                   R = 40) # número de bootstraps
+                   R = 4000) # número de bootstraps
 
 
 ci.tb = tidy(bootstraps, 
@@ -308,7 +332,7 @@ boot.aproach <- metricas_result %>%
       boot(
           data = metricas_result, 
           statistic = f1_score_boot, 
-          R = 40
+          R = 4000
           )
       )
      )
@@ -338,9 +362,23 @@ ics.aproach %>%
 
 ```{r}
 metricas_result %>%
-ggplot(aes(x=combination, y=max_num_access_node, ymin=min(max_num_access_node), ymax=1, color=aproach)) +
-  geom_pointrange() +
-  geom_point() +
-  coord_flip() 
+ggplot() +
+  geom_boxplot(aes(x=combination, y=max_num_access_node), fill = "white")  +
+  geom_point(alpha = 0.4, aes(x=combination, y=max_num_access_node, color=aproach), position = "jitter") +
+  coord_flip()
+
+
+metricas_result %>%
+ggplot() +
+  geom_boxplot(aes(x=combination, y=max_durationMin), fill = "white")  +
+  geom_point(alpha = 0.4, aes(x=combination, y=max_durationMin, color=aproach), position = "jitter") +
+  coord_flip()
+
+
+metricas_result %>%
+  filter(combination == 'Publicsoft') %>% 
+  ggplot() +
+  geom_boxplot(aes(x=combination, y=max_durationMin), fill = "white")  +
+  geom_point(alpha = 0.4, aes(x=combination, y=max_durationMin, color=aproach), position = "jitter")
 ```
 
