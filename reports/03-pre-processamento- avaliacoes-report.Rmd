@@ -47,7 +47,7 @@ gararito<-left_join(gararito, empresas_portais, by=c("municipio"))
 
 ```{r}
 # concatena os dois csv o do gabarito e avaliações do crawler
-data<-full_join(resultados_avaliacoes, gararito, by=c("municipio", "item", "criterio"))
+data<-left_join(resultados_avaliacoes, gararito, by=c("municipio", "item", "criterio"))
 ```
 
 ## Sumarizando as avaliações
@@ -59,11 +59,12 @@ precisao <- data %>%
     mutate(
            
            #verifica se a avaliação foi acertiva
-           tp = valid == TRUE 
+           tp = (valid == TRUE 
            & valid == encontrado 
            #valida se no gabarito e na avaliação o item foi encontrado na mesma url 
            & (grepl(local_encontrado, pathSought) |
-                  grepl(local_encontrado_2, pathSought)),
+                  grepl(local_encontrado_2, pathSought))) | (valid == FALSE 
+           & valid == encontrado),
            
            fn =  valid == FALSE 
            & encontrado == TRUE,
@@ -84,6 +85,7 @@ metricas_result <- precisao %>%
     #filter(!is.na(aproach )) %>% 
     group_by(municipio, aproach, date) %>% 
     summarise(
+        total_itens = n(),
         tp_total = sum(tp), 
         fn_total = sum(fn),
         fp_total = sum(fp),
@@ -105,10 +107,17 @@ metricas_result <- precisao %>%
         tipo_exp = last(tipo_exp)
     )
 
+
+metricas_result <- metricas_result %>%
+  filter(total_itens == 61 | total_itens == 48)
+
 metricas_result %>% 
+    
     write_csv(here::here("data/resultados_sumarizado.csv"))
 
-metricas_result 
+metricas_result %>%
+  arrange(desc(recall))
+
 
 ```
 
