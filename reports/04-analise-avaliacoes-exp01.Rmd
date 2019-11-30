@@ -1,0 +1,314 @@
+---
+title: "Avalições Auditor Crawler"
+output:
+    html_document:
+    css: styles.css
+theme: sandstone
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse) # 
+library(broom)
+library(jsonlite) # Ler dados json
+library(dplyr) # 
+library(here)
+library(DT)
+library(boot)
+library(ggplot2)
+source(here::here("code/lib.R"))
+theme_set(theme_bw())
+
+```
+
+## Lendo os dados
+
+```{r read}
+resultados_avaliacoes_exp01 = read_avaliacoes()
+resultados_avaliacoes_exp01[is.na(resultados_avaliacoes_exp01)] <- ""
+
+gararito = read_gabaritos()
+gararito[is.na(gararito)] <- ""
+
+empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
+```
+
+## Removendo avaliações que não pertecem ao experimento 01
+```{r}
+resultados_avaliacoes_exp01 <- resultados_avaliacoes_exp01 %>% 
+  filter(tipo_exp == 'all_itens')
+
+```
+
+
+
+## Adicionando combinação encontrada em cada município no gabarito
+
+```{r}
+empresas_portais <- empresas_portais %>% 
+    select(municipio, fornecedor)
+
+gararito<-left_join(gararito, empresas_portais, by=c("municipio"))
+```
+
+
+## Juntando Avaliações e Gabaritos
+
+```{r}
+# concatena os dois csv o do gabarito e avaliações do crawler
+data<-left_join(resultados_avaliacoes_exp01, gararito, by=c("municipio", "item", "criterio"))
+```
+
+## Sumarizando as avaliações
+
+```{r}
+
+sumarise_exp01 <- data %>% 
+    group_by(municipio, criterio, item, aproach, date) %>% 
+    mutate(
+           
+           #verifica se a avaliação foi acertiva
+           tp = (valid == TRUE 
+           & valid == encontrado 
+           #valida se no gabarito e na avaliação o item foi encontrado na mesma url 
+           & (grepl(local_encontrado, pathSought) |
+                  grepl(local_encontrado_2, pathSought))) | (valid == FALSE 
+           & valid == encontrado),
+           
+           fn =  valid == FALSE 
+           & encontrado == TRUE,
+           
+           fp = valid == TRUE 
+           & encontrado == FALSE
+          )
+
+sumarise_exp01 %>%
+    datatable(options = list(pageLength = 5),  rownames = FALSE, class = 'cell-border stripe')
+```
+
+## Quantificando métricas
+
+```{r}
+
+metricas_result_exp01 <- sumarise_exp01 %>% 
+    #filter(!is.na(aproach )) %>% 
+    group_by(municipio, aproach, date) %>% 
+    summarise(
+        total_itens = n(),
+        tp_total = sum(tp), 
+        fn_total = sum(fn),
+        fp_total = sum(fp),
+        
+        #cálculo das métricas 
+        recall = tp_total/(tp_total + fn_total),
+        precision =  tp_total/(tp_total + fp_total),
+        f1_score = (2*(recall*precision))/(recall+precision),
+        
+        #tempo das avaliações
+        median_duration_min = median(durationMin),
+        median_duration = median(duration),
+        max_duration = max(duration),
+        max_durationMin = max(durationMin),
+        median_num_access_node = median(contNodeNumberAccess),
+        max_num_access_node = max(contNodeNumberAccess),
+        all_access_node = sum(contNodeNumberAccess),
+        combination = last(fornecedor),
+        tipo_exp = last(tipo_exp)
+    )
+
+
+metricas_result_exp01 <- metricas_result_exp01 %>%
+  filter(total_itens == 61)
+
+metricas_result_exp01 %>% 
+    write_csv(here::here("data/resultados_sumarizado_exp01.csv"))
+
+metricas_result_exp01 %>%
+  arrange(desc(recall))
+
+```
+
+## Avaliações por abordagem
+
+```{r}
+metricas_result_exp01 %>%
+    group_by(aproach) %>% 
+    summarise(ocorrencia = n()) %>%
+    ggplot(aes(y=ocorrencia, x=reorder(aproach, +(ocorrencia)))) + 
+    geom_bar(stat = "identity",  fill="#5499C7") + 
+    ggtitle("Número de Avaliações por Abordagem") +
+    xlab("Abordagem") + 
+    ylab("Número de avaliações") +
+    coord_flip()
+```
+
+## Número de Avaliações por abordagem
+
+```{r}
+metricas_result_exp01 %>%
+    group_by(municipio) %>%
+    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
+    arrange(desc(dfs)) %>%
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
+```
+
+## Todas as Avaliações
+
+```{r}
+metricas_result_exp01 %>%
+    select(municipio, aproach, date, recall, precision, f1_score) %>%
+    arrange(desc(recall)) %>% 
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
+```
+
+## F1-score 
+
+```{r}
+metricas_result_exp01 %>% 
+  ggplot(aes(x = aproach, y = f1_score)) +
+  geom_boxplot() 
+
+metricas_result_exp01 %>%
+    ggplot(aes(x = reorder(aproach, +(f1_score)), y = f1_score)) +
+    geom_boxplot() +
+    geom_jitter(aes(color = aproach), alpha=0.5)
+
+
+
+# median( (metricas_result_exp01 %>% filter(aproach=='bandit'))$f1_score)
+# [1] 0.9107143
+# [1] 0.9107143
+# [1] 0.9009009
+
+```
+
+## Tempo de Duração  
+
+```{r}
+metricas_result_exp01 %>%
+    ggplot(aes(x = reorder(aproach, +(max_durationMin)), y = max_durationMin)) +
+    geom_boxplot() 
+
+```
+
+## Nós Acessados  
+
+
+```{r}
+
+metricas_result_exp01 %>%
+  ggplot(aes(x = reorder(aproach, +(max_num_access_node)), y = max_num_access_node)) +
+  geom_boxplot()
+```
+
+
+## IC 
+
+```{r}
+set.seed(123)
+
+f1_score <- function (d, i) {
+    dt<-d[i,]
+    c(
+        median(dt$f1_score)
+    )
+}
+    
+bootstraps_exp01 <- boot(data = metricas_result_exp01, 
+                   statistic = f1_score, # <- referência para a função 
+                   R = 4000) # número de bootstraps
+
+
+ci.tb_exp01 = tidy(bootstraps_exp01, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE) 
+
+
+glimpse(ci.tb_exp01)
+
+
+
+ci.tb_exp01 %>%
+    ggplot(aes(x = "", y = statistic,
+               ymin = conf.low,
+               ymax = conf.high)) +
+    geom_pointrange() +
+    geom_point(size = 3) +
+    labs(y = "F1-score",
+         x = "") +
+    theme(axis.title = element_text(size=10)) 
+
+median(metricas_result_exp01$f1_score)
+```
+
+```{r}
+#Calcula a media das posições escolhidas nas buscas.
+set.seed(123)
+
+f1_score_boot <- function (d, i) {
+    dt<-d[i,]
+    c(
+        median(dt$f1_score)
+    )
+}
+
+boot.aproach_exp01 <- metricas_result_exp01 %>%
+  group_by(aproach) %>% 
+  mutate(cors_boot = list(
+      boot(
+          data = metricas_result_exp01, 
+          statistic = f1_score_boot, 
+          R = 4000
+          )
+      )
+     )
+
+ics.aproach_exp01 <- boot.aproach_exp01 %>% 
+    group_by(aproach) %>% 
+    summarise(
+        ci = list(tidy(cors_boot[[1]], 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE))
+    ) %>% 
+    unnest(ci) 
+
+
+ics.aproach_exp01 %>%
+    ggplot(aes(x = aproach, y = statistic,
+               ymin = conf.low,
+               ymax = conf.high)) +
+    geom_pointrange() +
+    geom_point(size = 3) +
+    labs(y = "F1-score",
+         x = "") +
+    theme(axis.title = element_text(size=10)) 
+
+```
+
+
+## Vamos analisar as Combinações
+
+```{r}
+
+metricas_result_exp01 %>%
+ggplot() +
+  geom_boxplot(aes(x=combination, y=f1_score), fill = "white")  +
+  geom_point(alpha = 0.4, aes(x=combination, y=f1_score, color=aproach), position = "jitter") +
+  coord_flip()
+
+metricas_result_exp01 %>%
+ggplot() +
+  geom_boxplot(aes(x=combination, y=max_num_access_node), fill = "white")  +
+  geom_point(alpha = 0.4, aes(x=combination, y=max_num_access_node, color=aproach), position = "jitter") +
+  coord_flip()
+
+
+metricas_result_exp01 %>%
+ggplot() +
+  geom_boxplot(aes(x=combination, y=max_durationMin), fill = "white")  +
+  geom_point(alpha = 0.4, aes(x=combination, y=max_durationMin, color=aproach), position = "jitter") +
+  coord_flip()
+
+```
+

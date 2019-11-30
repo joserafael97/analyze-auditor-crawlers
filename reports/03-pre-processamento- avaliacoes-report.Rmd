@@ -72,9 +72,6 @@ precisao <- data %>%
            fp = valid == TRUE 
            & encontrado == FALSE
           )
-
-precisao %>%
-    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
 
 ## Quantificando métricas
@@ -202,7 +199,7 @@ metricas_result %>%
 
 ```
 
-## Todas as Avaliações
+## Número de Avaliações por abordagem
 
 ```{r}
 metricas_result %>%
@@ -212,182 +209,13 @@ metricas_result %>%
     datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
 
+## Todas as Avaliações
+
 
 ```{r}
 metricas_result %>%
     select(municipio, aproach, date, recall, precision, f1_score) %>%
     arrange(desc(recall)) %>% 
     datatable(options = list(pageLength = 30),  rownames = FALSE, class = 'cell-border stripe')
-```
-
-## Métricas 
-
-```{r}
-metricas_result %>%
-    ggplot() + 
-    geom_point(aes(x=aproach, y=recall,  color=aproach), position = "jitter")  
-
-
-metricas_result %>%
-  ggplot(aes(x='',y = recall)) +
-  geom_boxplot(fill = "white") +
-  geom_jitter(aes(color = aproach), alpha=0.5, size=3)
-
-metricas_result %>%
-    ggplot(aes(x = aproach, y = recall)) +
-    geom_boxplot(fill = "orange") 
-
-metricas_result %>%
-    ggplot() + 
-    geom_point(aes(x=aproach, y=f1_score,  color=aproach), position = "jitter")  
-
-
-
-```
-
-## Tempo de Duração  
-
-```{r}
-metricas_result %>%
-    ggplot() + 
-    geom_point(aes(x=aproach, y=median_duration_min,  color=aproach), position = "jitter")  
-
-metricas_result %>%
-    ggplot() + 
-    geom_point(aes(x=aproach, y=max_durationMin,  color=aproach), position = "jitter")  
-```
-```{r}
-
-metricas_result %>%
-  ggplot(aes(x='',y = max_durationMin)) +
-  geom_boxplot(fill = "white") +
-  geom_jitter(aes(color = aproach), alpha=0.5, size=3)
-
-metricas_result %>%
-    ggplot(aes(x = aproach, y = max_durationMin)) +
-    geom_boxplot(fill = "orange") 
-```
-
-## Nós Acessados  
-
-```{r}
-metricas_result %>%
-    ggplot() + 
-    geom_point(aes(x=aproach, y=max_num_access_node,  color=aproach), position = "jitter")  
-```
-
-```{r}
-metricas_result %>%
-  ggplot(aes(x='',y = max_num_access_node)) +
-  geom_boxplot(fill = "white") +
-  geom_jitter(aes(color = aproach), alpha=0.5, size=3)
-
-metricas_result %>%
-    ggplot(aes(x = aproach, y = max_num_access_node), ) +
-    geom_boxplot(fill = "orange") 
-```
-
-
-## IC 
-
-```{r}
-set.seed(123)
-
-f1_score <- function (d, i) {
-    dt<-d[i,]
-    c(
-        dt$f1_score
-    )
-}
-    
-bootstraps <- boot(data = metricas_result, 
-                   statistic = f1_score, # <- referência para a função 
-                   R = 4000) # número de bootstraps
-
-
-ci.tb = tidy(bootstraps, 
-          conf.level = .95,
-          conf.method = "basic",
-          conf.int = TRUE) 
-
-
-glimpse(ci.tb)
-
-ci.tb %>%
-    ggplot(aes(x = "", y = statistic,
-               ymin = conf.low,
-               ymax = conf.high)) +
-    geom_pointrange() +
-    geom_point(size = 3) +
-    labs(y = "F1-score",
-         x = "") +
-    theme(axis.title = element_text(size=10)) 
-```
-
-```{r}
-#Calcula a media das posições escolhidas nas buscas.
-set.seed(123)
-
-f1_score_boot <- function (d, i) {
-    dt<-d[i,]
-    c(
-        dt$f1_score
-    )
-}
-
-boot.aproach <- metricas_result %>%
-  group_by(aproach) %>% 
-  mutate(cors_boot = list(
-      boot(
-          data = metricas_result, 
-          statistic = f1_score_boot, 
-          R = 4000
-          )
-      )
-     )
-
-ics.aproach <- boot.aproach %>% 
-    group_by(aproach) %>% 
-    summarise(
-        ci = list(tidy(cors_boot[[1]], 
-          conf.level = .95,
-          conf.method = "basic",
-          conf.int = TRUE))
-    ) %>% 
-    unnest(ci) 
-
-
-ics.aproach %>%
-    ggplot(aes(x = aproach, y = statistic,
-               ymin = conf.low,
-               ymax = conf.high)) +
-    geom_pointrange() +
-    geom_point(size = 3) +
-    labs(y = "F1-score",
-         x = "") +
-    theme(axis.title = element_text(size=10)) 
-
-```
-
-```{r}
-metricas_result %>%
-ggplot() +
-  geom_boxplot(aes(x=combination, y=max_num_access_node), fill = "white")  +
-  geom_point(alpha = 0.4, aes(x=combination, y=max_num_access_node, color=aproach), position = "jitter") +
-  coord_flip()
-
-
-metricas_result %>%
-ggplot() +
-  geom_boxplot(aes(x=combination, y=max_durationMin), fill = "white")  +
-  geom_point(alpha = 0.4, aes(x=combination, y=max_durationMin, color=aproach), position = "jitter") +
-  coord_flip()
-
-
-metricas_result %>%
-  filter(combination == 'Publicsoft') %>% 
-  ggplot() +
-  geom_boxplot(aes(x=combination, y=max_durationMin), fill = "white")  +
-  geom_point(alpha = 0.4, aes(x=combination, y=max_durationMin, color=aproach), position = "jitter")
 ```
 
