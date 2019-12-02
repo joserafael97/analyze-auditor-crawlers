@@ -14,7 +14,9 @@ library(dplyr) #
 library(here)
 library(DT)
 library(boot)
+set.seed(12345)
 library(ggplot2)
+library(ggbeeswarm)
 source(here::here("code/lib.R"))
 theme_set(theme_bw())
 
@@ -33,9 +35,14 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ```
 
 ## Removendo avaliações que não pertecem ao experimento 01
+
+Para uma avaliação ser considerada válida ela precisa conter 61 itens. Vamos desconsiderar as avaliações que não contém esse número
+
+Vamos remover também o município de Curral de Cima que encontra-se com seu portal de transparência fora do ar.
+
 ```{r}
 resultados_avaliacoes_exp01 <- resultados_avaliacoes_exp01 %>% 
-  filter(tipo_exp == 'all_itens')
+  filter(tipo_exp == 'all_itens' & municipio != 'Curral de Cima')
 
 ```
 
@@ -170,9 +177,10 @@ metricas_result_exp01 %>%
 metricas_result_exp01 %>%
     ggplot(aes(x = reorder(aproach, +(f1_score)), y = f1_score)) +
     geom_boxplot() +
-    geom_jitter(aes(color = aproach), alpha=0.5)
+    geom_beeswarm(alpha = 0.5, beeswarmArgs=list(side=1))
 
-
+metricas_result_exp01 %>%
+  ggplot(aes(aproach, f1_score, color=aproach)) + geom_beeswarm(alpha = 0.5, beeswarmArgs=list(side=1))
 
 # median( (metricas_result_exp01 %>% filter(aproach=='bandit'))$f1_score)
 # [1] 0.9107143
@@ -180,6 +188,29 @@ metricas_result_exp01 %>%
 # [1] 0.9009009
 
 ```
+
+vamos verificar os outlies 
+
+```{r}
+metricas_result_exp01 %>% filter(f1_score < 0.75) %>%
+  select(municipio, aproach, date, f1_score, max_durationMin)  %>%
+  ggplot(aes( x=aproach, y=f1_score, color=municipio))+
+  geom_jitter()
+
+metricas_result_exp01 %>%
+  filter(municipio == 'Barra de Santa Rosa') %>%
+  select(municipio, aproach, date, f1_score, max_durationMin)
+
+
+metricas_result_exp01 %>%
+  filter(municipio == 'Conceição') %>%
+  select(municipio, aproach, date, f1_score, max_durationMin)
+
+metricas_result_exp01 %>%
+  filter(municipio == 'Remígio') %>%
+  select(municipio, aproach, date, f1_score, max_durationMin)
+```
+
 
 ## Tempo de Duração  
 
@@ -203,43 +234,6 @@ metricas_result_exp01 %>%
 
 ## IC 
 
-```{r}
-set.seed(123)
-
-f1_score <- function (d, i) {
-    dt<-d[i,]
-    c(
-        median(dt$f1_score)
-    )
-}
-    
-bootstraps_exp01 <- boot(data = metricas_result_exp01, 
-                   statistic = f1_score, # <- referência para a função 
-                   R = 4000) # número de bootstraps
-
-
-ci.tb_exp01 = tidy(bootstraps_exp01, 
-          conf.level = .95,
-          conf.method = "bca",
-          conf.int = TRUE) 
-
-
-glimpse(ci.tb_exp01)
-
-
-
-ci.tb_exp01 %>%
-    ggplot(aes(x = "", y = statistic,
-               ymin = conf.low,
-               ymax = conf.high)) +
-    geom_pointrange() +
-    geom_point(size = 3) +
-    labs(y = "F1-score",
-         x = "") +
-    theme(axis.title = element_text(size=10)) 
-
-median(metricas_result_exp01$f1_score)
-```
 
 ```{r}
 #Calcula a media das posições escolhidas nas buscas.
@@ -248,7 +242,7 @@ set.seed(123)
 f1_score_boot <- function (d, i) {
     dt<-d[i,]
     c(
-        median(dt$f1_score)
+          median(dt$f1_score)
     )
 }
 
@@ -266,25 +260,24 @@ boot.aproach_exp01 <- metricas_result_exp01 %>%
 ics.aproach_exp01 <- boot.aproach_exp01 %>% 
     group_by(aproach) %>% 
     summarise(
+        median_value = median(f1_score),
         ci = list(tidy(cors_boot[[1]], 
           conf.level = .95,
           conf.method = "bca",
           conf.int = TRUE))
+        
     ) %>% 
     unnest(ci) 
 
+  
+ics.aproach_exp01 %>%  
+  ggplot() + 
+  geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=aproach, y=median_value), color='red', size=3) 
 
-ics.aproach_exp01 %>%
-    ggplot(aes(x = aproach, y = statistic,
-               ymin = conf.low,
-               ymax = conf.high)) +
-    geom_pointrange() +
-    geom_point(size = 3) +
-    labs(y = "F1-score",
-         x = "") +
-    theme(axis.title = element_text(size=10)) 
 
 ```
+
 
 
 ## Vamos analisar as Combinações

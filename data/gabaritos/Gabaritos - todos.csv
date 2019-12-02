@@ -1442,11 +1442,11 @@ Remígio,Despesa Extra Orçamentária,nomenclatura,TRUE,http://portaldatranspare
 Remígio,Receita Extra Orçamentária,valor,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
 Remígio,Receita Extra Orçamentária,codigo,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
 Remígio,Receita Extra Orçamentária,nomenclatura,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,
-Remígio,Quadro Pessoal,nome,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://www.remigio.pb.gov.br/portal/transparencia-fiscal
-Remígio,Quadro Pessoal,cpf,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://www.remigio.pb.gov.br/portal/transparencia-fiscal
-Remígio,Quadro Pessoal,cargo,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://www.remigio.pb.gov.br/portal/transparencia-fiscal
-Remígio,Quadro Pessoal,tipo_cargo,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://www.remigio.pb.gov.br/portal/transparencia-fiscal
-Remígio,Quadro Pessoal,salario_cargo,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://www.remigio.pb.gov.br/portal/transparencia-fiscal
+Remígio,Quadro Pessoal,nome,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://transparenciaativa.com.br/ServidoresComSalario.aspx
+Remígio,Quadro Pessoal,cpf,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://transparenciaativa.com.br/ServidoresComSalario.aspx
+Remígio,Quadro Pessoal,cargo,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://transparenciaativa.com.br/ServidoresComSalario.aspx
+Remígio,Quadro Pessoal,tipo_cargo,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://transparenciaativa.com.br/ServidoresComSalario.aspx
+Remígio,Quadro Pessoal,salario_cargo,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx,https://transparenciaativa.com.br/ServidoresComSalario.aspx
 Remígio,Licitação,numero_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
 Remígio,Licitação,objeto_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
 Remígio,Licitação,modalidade_licitacao,TRUE,http://transparencia.elmar.inf.br/Licitacao,
