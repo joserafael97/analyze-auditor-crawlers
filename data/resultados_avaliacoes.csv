@@ -9495,6 +9495,672 @@ id,item,municipio,criterio,aproach,date,valid,contNodeNumberAccess,found,pathSou
 5de40a15af150510f3097fa1,rubrica,Cruz do Espírito Santo,Receita Orçamentária,bandit,2019-12-01T21:43:44Z,FALSE,9,FALSE,,17,996920,all_itens
 5de40a15af150510f3097fa2,alinea,Cruz do Espírito Santo,Receita Orçamentária,bandit,2019-12-01T21:43:44Z,FALSE,9,FALSE,,17,996920,all_itens
 5de40a15af150510f3097fa3,sub_alinea,Cruz do Espírito Santo,Receita Orçamentária,bandit,2019-12-01T21:43:44Z,FALSE,9,FALSE,,17,996920,all_itens
+5de58277e055fc3af9391514,funcao,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391515,sub_funcao,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391516,orgao_or_uni_orcamentaria,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391517,programa,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391518,categoria_economica,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391519,acao,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af939151a,natureza_despesa,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af939151b,modalidade,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af939151c,elemento,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af939151d,emp_numero,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,25,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/QD/FormPTQD.php?tipoQuadro=QDD,113,6791323,all_itens
+5de58277e055fc3af939151e,emp_data,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af939151f,emp_cnpj_cpf,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391520,emp_indicacao_licitacao,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391521,emp_valor,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391522,valor_fixado,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391523,valor_liquidado,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391524,valor_pago,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391525,lic_data_pag_ultima,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391526,lic_obj_servico,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391527,sub_elemento,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391528,lic_modalidade,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af9391529,lic_numero,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af939152a,lic_num_contrato,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af939152b,nome,Remígio,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,25,FALSE,,113,6791323,all_itens
+5de58277e055fc3af939152c,valor,Remígio,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,105,6328737,all_itens
+5de58277e055fc3af939152d,codigo,Remígio,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,105,6328737,all_itens
+5de58277e055fc3af939152e,nomenclatura,Remígio,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,22,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,105,6328737,all_itens
+5de5827e0bc9423ae0e6a530,funcao,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a531,sub_funcao,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a532,orgao_or_uni_orcamentaria,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a533,programa,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a534,categoria_economica,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a535,acao,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a536,natureza_despesa,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,86,FALSE,,372,22298381,all_itens
+5de5827e0bc9423ae0e6a537,modalidade,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a538,elemento,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a539,emp_numero,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a53a,emp_data,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a53b,emp_cnpj_cpf,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a53c,emp_indicacao_licitacao,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a53d,emp_valor,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a53e,valor_fixado,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,86,FALSE,,372,22298381,all_itens
+5de5827e0bc9423ae0e6a53f,valor_liquidado,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,86,FALSE,,372,22298381,all_itens
+5de5827e0bc9423ae0e6a540,valor_pago,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,86,FALSE,,372,22298381,all_itens
+5de5827e0bc9423ae0e6a541,lic_data_pag_ultima,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a542,lic_obj_servico,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,86,FALSE,,372,22298381,all_itens
+5de5827e0bc9423ae0e6a543,sub_elemento,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,86,FALSE,,372,22298381,all_itens
+5de5827e0bc9423ae0e6a544,lic_modalidade,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a545,lic_numero,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,86,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,372,22298381,all_itens
+5de5827e0bc9423ae0e6a546,lic_num_contrato,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,86,FALSE,,372,22298381,all_itens
+5de5827e0bc9423ae0e6a547,nome,Serraria,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,86,FALSE,,372,22298381,all_itens
+5de5827f1125263ae57a9629,valor,Areia,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,35,2125515,all_itens
+5de5827f1125263ae57a962a,codigo,Areia,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,35,2125515,all_itens
+5de5827f1125263ae57a962b,nomenclatura,Areia,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,35,2125515,all_itens
+5de582800bc9423ae0e6a548,valor,Serraria,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,9,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,24,1446777,all_itens
+5de582800bc9423ae0e6a549,codigo,Serraria,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,9,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,24,1446777,all_itens
+5de582800bc9423ae0e6a54a,nomenclatura,Serraria,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,9,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201205&menu=off,24,1446777,all_itens
+5de582800bc9423ae0e6a54b,uni_gestora,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201205&menu=off,15,877204,all_itens
+5de582800bc9423ae0e6a54c,previsao,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201205&menu=off,15,877204,all_itens
+5de582800bc9423ae0e6a54d,arrecadacao,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201205&menu=off,15,877204,all_itens
+5de582800bc9423ae0e6a54e,lancado,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,15,877204,all_itens
+5de582800bc9423ae0e6a54f,categoria_economica,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,15,877204,all_itens
+5de582800bc9423ae0e6a550,origem,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201205&menu=off,15,877204,all_itens
+5de582800bc9423ae0e6a551,especie,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,15,877204,all_itens
+5de582800bc9423ae0e6a552,rubrica,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,15,877204,all_itens
+5de582800bc9423ae0e6a553,alinea,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,15,877204,all_itens
+5de582800bc9423ae0e6a554,sub_alinea,Serraria,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,15,877204,all_itens
+5de58280e055fc3af939152f,uni_gestora,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,18,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,93,5553075,all_itens
+5de58280e055fc3af9391530,previsao,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,93,5553075,all_itens
+5de58280e055fc3af9391531,arrecadacao,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,93,5553075,all_itens
+5de58280e055fc3af9391532,lancado,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,93,5553075,all_itens
+5de58280e055fc3af9391533,categoria_economica,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,93,5553075,all_itens
+5de58280e055fc3af9391534,origem,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,93,5553075,all_itens
+5de58280e055fc3af9391535,especie,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,93,5553075,all_itens
+5de58280e055fc3af9391536,rubrica,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,93,5553075,all_itens
+5de58280e055fc3af9391537,alinea,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,93,5553075,all_itens
+5de58280e055fc3af9391538,sub_alinea,Remígio,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,93,5553075,all_itens
+5de582811125263ae57a962c,funcao,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,37,2234205,all_itens
+5de582811125263ae57a962d,sub_funcao,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a962e,orgao_or_uni_orcamentaria,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a962f,programa,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9630,categoria_economica,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9631,acao,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9632,natureza_despesa,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9633,modalidade,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9634,elemento,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9635,emp_numero,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/QD/FormPTQD.php?tipoQuadro=QDD,37,2234205,all_itens
+5de582811125263ae57a9636,emp_data,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9637,emp_cnpj_cpf,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9638,emp_indicacao_licitacao,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9639,emp_valor,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a963a,valor_fixado,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a963b,valor_liquidado,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a963c,valor_pago,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a963d,lic_data_pag_ultima,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a963e,lic_obj_servico,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,20,FALSE,,37,2234205,all_itens
+5de582811125263ae57a963f,sub_elemento,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9640,lic_modalidade,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9641,lic_numero,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9642,lic_num_contrato,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582811125263ae57a9643,nome,Areia,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,20,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2234205,all_itens
+5de582831125263ae57a9644,uni_gestora,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,15,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,28,1680272,all_itens
+5de582831125263ae57a9645,previsao,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,15,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,28,1680272,all_itens
+5de582831125263ae57a9646,arrecadacao,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,15,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,28,1680272,all_itens
+5de582831125263ae57a9647,lancado,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,15,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,28,1680272,all_itens
+5de582831125263ae57a9648,categoria_economica,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,15,FALSE,,28,1680272,all_itens
+5de582831125263ae57a9649,origem,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,15,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,28,1680272,all_itens
+5de582831125263ae57a964a,especie,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,15,FALSE,,28,1680272,all_itens
+5de582831125263ae57a964b,rubrica,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,15,FALSE,,28,1680272,all_itens
+5de582831125263ae57a964c,alinea,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,15,FALSE,,28,1680272,all_itens
+5de582831125263ae57a964d,sub_alinea,Areia,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,15,FALSE,,28,1680272,all_itens
+5de5828aa580b13ade0da38b,funcao,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,37,2201981,all_itens
+5de5828aa580b13ade0da38c,sub_funcao,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da38d,orgao_or_uni_orcamentaria,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da38e,programa,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da38f,categoria_economica,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da390,acao,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da391,natureza_despesa,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da392,modalidade,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da393,elemento,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da394,emp_numero,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da395,emp_data,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da396,emp_cnpj_cpf,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da397,emp_indicacao_licitacao,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da398,emp_valor,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da399,valor_fixado,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da39a,valor_liquidado,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da39b,valor_pago,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da39c,lic_data_pag_ultima,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da39d,lic_obj_servico,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,23,FALSE,,37,2201981,all_itens
+5de5828aa580b13ade0da39e,sub_elemento,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da39f,lic_modalidade,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da3a0,lic_numero,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da3a1,lic_num_contrato,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5828aa580b13ade0da3a2,nome,Areia de Baraúnas,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,23,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,37,2201981,all_itens
+5de5829e0bc9423ae0e6a555,valor,Serraria,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,4,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201205&menu=off,5,307073,all_itens
+5de5829e0bc9423ae0e6a556,codigo,Serraria,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,4,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201205&menu=off,5,307073,all_itens
+5de5829e0bc9423ae0e6a557,nomenclatura,Serraria,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,4,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201205&menu=off,5,307073,all_itens
+5de5829ee055fc3af9391539,nome,Remígio,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,6,TRUE,https://transparenciaativa.com.br/TipoServidor.aspx?Entidade=41&Ano=2019,5,324690,all_itens
+5de5829ee055fc3af939153a,cpf,Remígio,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,6,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,5,324690,all_itens
+5de5829ee055fc3af939153b,cargo,Remígio,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,6,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,5,324690,all_itens
+5de5829ee055fc3af939153c,tipo_cargo,Remígio,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,6,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,5,324690,all_itens
+5de5829ee055fc3af939153d,salario_cargo,Remígio,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,6,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,5,324690,all_itens
+5de5829fe055fc3af939153e,valor,Remígio,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,46,2768553,all_itens
+5de5829fe055fc3af939153f,codigo,Remígio,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,46,2768553,all_itens
+5de5829fe055fc3af9391540,nomenclatura,Remígio,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,46,2768553,all_itens
+5de582a01125263ae57a964e,valor,Areia,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,50,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,206,12380402,all_itens
+5de582a01125263ae57a964f,codigo,Areia,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,50,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,206,12380402,all_itens
+5de582a01125263ae57a9650,nomenclatura,Areia,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,50,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,206,12380402,all_itens
+5de582a1a580b13ade0da3a3,uni_gestora,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,17,1030934,all_itens
+5de582a1a580b13ade0da3a4,previsao,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,13,TRUE,http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia,17,1030934,all_itens
+5de582a1a580b13ade0da3a5,arrecadacao,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,17,1030934,all_itens
+5de582a1a580b13ade0da3a6,lancado,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,17,1030934,all_itens
+5de582a1a580b13ade0da3a7,categoria_economica,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,13,FALSE,,17,1030934,all_itens
+5de582a1a580b13ade0da3a8,origem,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,17,1030934,all_itens
+5de582a1a580b13ade0da3a9,especie,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,13,FALSE,,17,1030934,all_itens
+5de582a1a580b13ade0da3aa,rubrica,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,13,FALSE,,17,1030934,all_itens
+5de582a1a580b13ade0da3ab,alinea,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,13,FALSE,,17,1030934,all_itens
+5de582a1a580b13ade0da3ac,sub_alinea,Areia de Baraúnas,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,13,FALSE,,17,1030934,all_itens
+5de582a6a580b13ade0da3ad,valor,Areia de Baraúnas,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,15,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,26,1588039,all_itens
+5de582a6a580b13ade0da3ae,codigo,Areia de Baraúnas,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,15,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,26,1588039,all_itens
+5de582a6a580b13ade0da3af,nomenclatura,Areia de Baraúnas,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,15,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,26,1588039,all_itens
+5de582a81125263ae57a9651,nome,Areia,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,FALSE,169,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,629,37711550,all_itens
+5de582a81125263ae57a9652,cpf,Areia,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,169,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,629,37711550,all_itens
+5de582a81125263ae57a9653,cargo,Areia,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,169,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,629,37711550,all_itens
+5de582a81125263ae57a9654,tipo_cargo,Areia,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,169,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,629,37711550,all_itens
+5de582a81125263ae57a9655,salario_cargo,Areia,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,169,TRUE,http://siteseticons.com.br/portal/faces/pages/despesa/servidor/inicio.xhtml,629,37711550,all_itens
+5de582afe055fc3af9391541,numero_licitacao,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af9391542,objeto_licitacao,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af9391543,modalidade_licitacao,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af9391544,data_publicacao_licitacao,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af9391545,valor,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af9391546,cnpj_cpf,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,27,FALSE,,91,5434087,all_itens
+5de582afe055fc3af9391547,edital,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,27,FALSE,,91,5434087,all_itens
+5de582afe055fc3af9391548,nome_vencedores,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af9391549,nome_perdedores,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,27,FALSE,,91,5434087,all_itens
+5de582afe055fc3af939154a,data_realizacao,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af939154b,setor_interessado,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af939154c,integra,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,27,FALSE,,91,5434087,all_itens
+5de582afe055fc3af939154d,termo_ratificacao,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,27,FALSE,,91,5434087,all_itens
+5de582afe055fc3af939154e,pregao,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,27,FALSE,,91,5434087,all_itens
+5de582afe055fc3af939154f,aviso,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,27,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201157&ctx=201157,91,5434087,all_itens
+5de582afe055fc3af9391550,licitado,Remígio,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,27,FALSE,,91,5434087,all_itens
+5de582b31125263ae57a9656,numero_licitacao,Areia,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,39,FALSE,,41,2452527,all_itens
+5de582b31125263ae57a9657,objeto_licitacao,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a9658,modalidade_licitacao,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a9659,data_publicacao_licitacao,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a965a,valor,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a965b,cnpj_cpf,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a965c,edital,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a965d,nome_vencedores,Areia,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,39,FALSE,,41,2452527,all_itens
+5de582b31125263ae57a965e,nome_perdedores,Areia,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,39,FALSE,,41,2452527,all_itens
+5de582b31125263ae57a965f,data_realizacao,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a9660,setor_interessado,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a9661,integra,Areia,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,39,FALSE,,41,2452527,all_itens
+5de582b31125263ae57a9662,termo_ratificacao,Areia,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,39,FALSE,,41,2452527,all_itens
+5de582b31125263ae57a9663,pregao,Areia,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,39,FALSE,,41,2452527,all_itens
+5de582b31125263ae57a9664,aviso,Areia,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,39,TRUE,https://areia.pb.gov.br/tomada-de-preco-010-2019/,41,2452527,all_itens
+5de582b31125263ae57a9665,licitado,Areia,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,39,FALSE,,41,2452527,all_itens
+5de582b4a580b13ade0da3b0,valor,Areia de Baraúnas,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,38,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,162,9720861,all_itens
+5de582b4a580b13ade0da3b1,codigo,Areia de Baraúnas,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,38,TRUE,http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia,162,9720861,all_itens
+5de582b4a580b13ade0da3b2,nomenclatura,Areia de Baraúnas,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,38,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,162,9720861,all_itens
+5de582c10bc9423ae0e6a558,numero_licitacao,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a559,objeto_licitacao,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,41,TRUE,http://www.serraria.pb.gov.br/modalidade-da-licitacao-no-ano/,43,2606701,all_itens
+5de582c10bc9423ae0e6a55a,modalidade_licitacao,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a55b,data_publicacao_licitacao,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a55c,valor,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a55d,cnpj_cpf,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,41,TRUE,http://www.serraria.pb.gov.br/modalidade-da-licitacao-no-ano/,43,2606701,all_itens
+5de582c10bc9423ae0e6a55e,edital,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a55f,nome_vencedores,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,41,TRUE,http://www.serraria.pb.gov.br/modalidade-da-licitacao-no-ano/,43,2606701,all_itens
+5de582c10bc9423ae0e6a560,nome_perdedores,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a561,data_realizacao,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,41,TRUE,http://www.serraria.pb.gov.br/modalidade-da-licitacao-no-ano/,43,2606701,all_itens
+5de582c10bc9423ae0e6a562,setor_interessado,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,41,TRUE,http://www.serraria.pb.gov.br/modalidade-da-licitacao-no-ano/,43,2606701,all_itens
+5de582c10bc9423ae0e6a563,integra,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a564,termo_ratificacao,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a565,pregao,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,41,TRUE,http://www.serraria.pb.gov.br/licitacoes/,43,2606701,all_itens
+5de582c10bc9423ae0e6a566,aviso,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a567,licitado,Serraria,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,41,FALSE,,43,2606701,all_itens
+5de582c10bc9423ae0e6a568,nome,Serraria,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,71,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag?e=201205&menu=off,296,17770264,all_itens
+5de582c10bc9423ae0e6a569,cpf,Serraria,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,71,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag?e=201205&menu=off,296,17770264,all_itens
+5de582c10bc9423ae0e6a56a,cargo,Serraria,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,71,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag?e=201205&menu=off,296,17770264,all_itens
+5de582c10bc9423ae0e6a56b,tipo_cargo,Serraria,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,71,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag?e=201205&menu=off,296,17770264,all_itens
+5de582c10bc9423ae0e6a56c,salario_cargo,Serraria,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,FALSE,71,FALSE,,296,17770264,all_itens
+5de582d9a580b13ade0da3b8,numero_licitacao,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,29,1758258,all_itens
+5de582d9a580b13ade0da3b9,objeto_licitacao,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,29,1758258,all_itens
+5de582d9a580b13ade0da3ba,modalidade_licitacao,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,29,1758258,all_itens
+5de582d9a580b13ade0da3bb,data_publicacao_licitacao,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,29,1758258,all_itens
+5de582d9a580b13ade0da3bc,valor,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Licitacao/FormCPRCLicitacao.php&urlorigem=http://areiadebaraunas.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3BvcnRhbGRhdHJhbnNwYXJlbmNpYS5wdWJsaWNzb2Z0LmNvbS5ici9zaXN0ZW1hcy9Db250YWJpbGlkYWRlUHVibGljYS9OOWM9L2xpY2l0YWNvZXM=&m=4,29,1758258,all_itens
+5de582d9a580b13ade0da3bd,cnpj_cpf,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,19,FALSE,,29,1758258,all_itens
+5de582d9a580b13ade0da3be,edital,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,19,FALSE,,29,1758258,all_itens
+5de582d9a580b13ade0da3bf,nome_vencedores,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,19,FALSE,,29,1758258,all_itens
+5de582d9a580b13ade0da3c0,nome_perdedores,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,19,FALSE,,29,1758258,all_itens
+5de582d9a580b13ade0da3c1,data_realizacao,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,29,1758258,all_itens
+5de582d9a580b13ade0da3c2,setor_interessado,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,19,FALSE,,29,1758258,all_itens
+5de582d9a580b13ade0da3c3,integra,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,19,FALSE,,29,1758258,all_itens
+5de582d9a580b13ade0da3c4,termo_ratificacao,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,19,FALSE,,29,1758258,all_itens
+5de582d9a580b13ade0da3c5,pregao,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://areiadebaraunas.pb.gov.br/acesso-a-informacao/licitacoes?q=contratos,29,1758258,all_itens
+5de582d9a580b13ade0da3c6,aviso,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,19,TRUE,http://areiadebaraunas.pb.gov.br/acesso-a-informacao/licitacoes?q=contratos,29,1758258,all_itens
+5de582d9a580b13ade0da3c7,licitado,Areia de Baraúnas,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,19,FALSE,,29,1758258,all_itens
+5de5831164b0753af3aecb54,nome,Belém do Brejo do Cruz,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,7,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,8,461955,all_itens
+5de5831164b0753af3aecb55,cpf,Belém do Brejo do Cruz,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,TRUE,7,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-despesa-pessoal-encargos.php,8,461955,all_itens
+5de5831164b0753af3aecb56,cargo,Belém do Brejo do Cruz,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,FALSE,7,FALSE,,8,461955,all_itens
+5de5831164b0753af3aecb57,tipo_cargo,Belém do Brejo do Cruz,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,FALSE,7,FALSE,,8,461955,all_itens
+5de5831164b0753af3aecb58,salario_cargo,Belém do Brejo do Cruz,Quadro Pessoal,dfs,2019-12-03T00:30:13Z,FALSE,7,FALSE,,8,461955,all_itens
+5de5834564b0753af3aecb59,valor,Belém do Brejo do Cruz,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,21,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuiasReceitaExtra.php,43,2594921,all_itens
+5de5834564b0753af3aecb5a,codigo,Belém do Brejo do Cruz,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,21,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-receita-servicos.php,43,2594921,all_itens
+5de5834564b0753af3aecb5b,nomenclatura,Belém do Brejo do Cruz,Receita Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,21,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/Padroes/themes/PT/PTransparencia3.0/consultas-ajax/grid-total-receita-servicos.php,43,2594921,all_itens
+5de5835064b0753af3aecb5c,numero_licitacao,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,41,2431975,all_itens
+5de5835064b0753af3aecb5d,objeto_licitacao,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,41,2431975,all_itens
+5de5835064b0753af3aecb5e,modalidade_licitacao,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,41,2431975,all_itens
+5de5835064b0753af3aecb5f,data_publicacao_licitacao,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,41,2431975,all_itens
+5de5835064b0753af3aecb60,valor,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/,41,2431975,all_itens
+5de5835064b0753af3aecb61,cnpj_cpf,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,41,2431975,all_itens
+5de5835064b0753af3aecb62,edital,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,41,2431975,all_itens
+5de5835064b0753af3aecb63,nome_vencedores,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,41,2431975,all_itens
+5de5835164b0753af3aecb64,nome_perdedores,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,41,2431975,all_itens
+5de5835164b0753af3aecb65,data_realizacao,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,41,2431975,all_itens
+5de5835164b0753af3aecb66,setor_interessado,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,41,2431975,all_itens
+5de5835164b0753af3aecb67,integra,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,41,2431975,all_itens
+5de5835164b0753af3aecb68,termo_ratificacao,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,41,2431975,all_itens
+5de5835164b0753af3aecb69,pregao,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,41,2431975,all_itens
+5de5835164b0753af3aecb6a,aviso,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,41,2431975,all_itens
+5de5835164b0753af3aecb6b,licitado,Belém do Brejo do Cruz,Licitação,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,41,2431975,all_itens
+5de5835664b0753af3aecb6c,valor,Belém do Brejo do Cruz,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,60,3591023,all_itens
+5de5835664b0753af3aecb6d,codigo,Belém do Brejo do Cruz,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,60,3591023,all_itens
+5de5835664b0753af3aecb6e,nomenclatura,Belém do Brejo do Cruz,Despesa Extra Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,24,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,60,3591023,all_itens
+5de5837364b0753af3aecb6f,funcao,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,33,2005299,all_itens
+5de5837364b0753af3aecb70,sub_funcao,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb71,orgao_or_uni_orcamentaria,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb72,programa,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb73,categoria_economica,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb74,acao,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb75,natureza_despesa,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb76,modalidade,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb77,elemento,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb78,emp_numero,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/QD/FormPTQD.php?tipoQuadro=QDD,33,2005299,all_itens
+5de5837364b0753af3aecb79,emp_data,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb7a,emp_cnpj_cpf,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb7b,emp_indicacao_licitacao,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb7c,emp_valor,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb7d,valor_fixado,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb7e,valor_liquidado,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb7f,valor_pago,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb80,lic_data_pag_ultima,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb81,lic_obj_servico,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,18,FALSE,,33,2005299,all_itens
+5de5837364b0753af3aecb82,sub_elemento,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb83,lic_modalidade,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb84,lic_numero,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb85,lic_num_contrato,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837364b0753af3aecb86,nome,Belém do Brejo do Cruz,Despesa Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,18,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,33,2005299,all_itens
+5de5837464b0753af3aecb87,uni_gestora,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,24,1450065,all_itens
+5de5837464b0753af3aecb88,previsao,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,24,1450065,all_itens
+5de5837464b0753af3aecb89,arrecadacao,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,24,1450065,all_itens
+5de5837464b0753af3aecb8a,lancado,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,24,1450065,all_itens
+5de5837464b0753af3aecb8b,categoria_economica,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,24,1450065,all_itens
+5de5837464b0753af3aecb8c,origem,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,24,1450065,all_itens
+5de5837464b0753af3aecb8d,especie,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,24,1450065,all_itens
+5de5837464b0753af3aecb8e,rubrica,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,24,1450065,all_itens
+5de5837464b0753af3aecb8f,alinea,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,24,1450065,all_itens
+5de5837464b0753af3aecb90,sub_alinea,Belém do Brejo do Cruz,Receita Orçamentária,dfs,2019-12-03T00:30:13Z,FALSE,11,FALSE,,24,1450065,all_itens
+5de590b3b40ab158b27153d5,valor,Umbuzeiro,Despesa Extra Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,12,TRUE,https://transparenciaativa.com.br/EmpenhosPorFuncional.aspx,7,441116,all_itens
+5de590b3b40ab158b27153d6,codigo,Umbuzeiro,Despesa Extra Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,12,TRUE,https://transparenciaativa.com.br/DespesaPorElemento.aspx,7,441116,all_itens
+5de590b3b40ab158b27153d7,nomenclatura,Umbuzeiro,Despesa Extra Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,12,TRUE,https://transparenciaativa.com.br/Principal.aspx?Entidade=189,7,441116,all_itens
+5de590b6b40ab158b27153d8,funcao,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153d9,sub_funcao,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153da,orgao_or_uni_orcamentaria,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153db,programa,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153dc,categoria_economica,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153dd,acao,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153de,natureza_despesa,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153df,modalidade,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153e0,elemento,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,FALSE,25,FALSE,,14,867650,all_itens
+5de590b6b40ab158b27153e1,emp_numero,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153e2,emp_data,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153e3,emp_cnpj_cpf,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153e4,emp_indicacao_licitacao,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153e5,emp_valor,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153e6,valor_fixado,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153e7,valor_liquidado,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153e8,valor_pago,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153e9,lic_data_pag_ultima,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153ea,lic_obj_servico,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/Principal.aspx?Entidade=189,14,867650,all_itens
+5de590b6b40ab158b27153eb,sub_elemento,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153ec,lic_modalidade,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153ed,lic_numero,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153ee,lic_num_contrato,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/detalhesEmpenho.aspx?nemp=2051,14,867650,all_itens
+5de590b6b40ab158b27153ef,nome,Umbuzeiro,Despesa Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,25,TRUE,https://transparenciaativa.com.br/DespesasComPassagens.aspx,14,867650,all_itens
+5de590b6b40ab158b27153f0,uni_gestora,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,FALSE,12,FALSE,,3,168721,all_itens
+5de590b6b40ab158b27153f1,previsao,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,12,TRUE,https://transparenciaativa.com.br/Receita2018.aspx,3,168721,all_itens
+5de590b6b40ab158b27153f2,arrecadacao,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,12,TRUE,https://transparenciaativa.com.br/Receita2018.aspx,3,168721,all_itens
+5de590b6b40ab158b27153f3,lancado,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,FALSE,12,FALSE,,3,168721,all_itens
+5de590b6b40ab158b27153f4,categoria_economica,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,FALSE,12,FALSE,,3,168721,all_itens
+5de590b6b40ab158b27153f5,origem,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,12,TRUE,https://transparenciaativa.com.br/Principal.aspx?Entidade=189,3,168721,all_itens
+5de590b6b40ab158b27153f6,especie,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,FALSE,12,FALSE,,3,168721,all_itens
+5de590b6b40ab158b27153f7,rubrica,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,FALSE,12,FALSE,,3,168721,all_itens
+5de590b6b40ab158b27153f8,alinea,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,FALSE,12,FALSE,,3,168721,all_itens
+5de590b6b40ab158b27153f9,sub_alinea,Umbuzeiro,Receita Orçamentária,dfs,2019-12-03T01:30:56Z,FALSE,12,FALSE,,3,168721,all_itens
+5de590b8b40ab158b27153fa,valor,Umbuzeiro,Receita Extra Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,20,TRUE,https://transparenciaativa.com.br/DetalhesReceita.aspx?receita=11130311,6,333776,all_itens
+5de590b8b40ab158b27153fb,codigo,Umbuzeiro,Receita Extra Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,20,TRUE,https://transparenciaativa.com.br/ReceitaExtraOrcamentaria.aspx,6,333776,all_itens
+5de590b8b40ab158b27153fc,nomenclatura,Umbuzeiro,Receita Extra Orçamentária,dfs,2019-12-03T01:30:56Z,TRUE,20,TRUE,https://transparenciaativa.com.br/Principal.aspx?Entidade=189,6,333776,all_itens
+5de590b8b40ab158b27153fd,numero_licitacao,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,TRUE,6,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,2,117753,all_itens
+5de590b8b40ab158b27153fe,objeto_licitacao,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,TRUE,6,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,2,117753,all_itens
+5de590b8b40ab158b27153ff,modalidade_licitacao,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,TRUE,6,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,2,117753,all_itens
+5de590b8b40ab158b2715400,data_publicacao_licitacao,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,TRUE,6,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,2,117753,all_itens
+5de590b8b40ab158b2715401,valor,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,TRUE,6,TRUE,https://transparenciaativa.com.br/Licitacoes.aspx,2,117753,all_itens
+5de590b8b40ab158b2715402,cnpj_cpf,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b2715403,edital,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b2715404,nome_vencedores,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,TRUE,https://transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012017&&Tipo=02,2,117753,all_itens
+5de590b8b40ab158b2715405,nome_perdedores,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,TRUE,https://transparenciaativa.com.br/LicitacaoCompleta.aspx?Numero=000012017&&Tipo=02,2,117753,all_itens
+5de590b8b40ab158b2715406,data_realizacao,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b2715407,setor_interessado,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b2715408,integra,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b2715409,termo_ratificacao,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b271540a,pregao,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b271540b,aviso,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b271540c,licitado,Umbuzeiro,Licitação,dfs,2019-12-03T01:30:56Z,FALSE,6,FALSE,,2,117753,all_itens
+5de590b8b40ab158b271540d,nome,Umbuzeiro,Quadro Pessoal,dfs,2019-12-03T01:30:56Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,1,48567,all_itens
+5de590b8b40ab158b271540e,cpf,Umbuzeiro,Quadro Pessoal,dfs,2019-12-03T01:30:56Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,1,48567,all_itens
+5de590b8b40ab158b271540f,cargo,Umbuzeiro,Quadro Pessoal,dfs,2019-12-03T01:30:56Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,1,48567,all_itens
+5de590b8b40ab158b2715410,tipo_cargo,Umbuzeiro,Quadro Pessoal,dfs,2019-12-03T01:30:56Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,1,48567,all_itens
+5de590b8b40ab158b2715411,salario_cargo,Umbuzeiro,Quadro Pessoal,dfs,2019-12-03T01:30:56Z,TRUE,2,TRUE,https://transparenciaativa.com.br/ServidoresComSalario.aspx,1,48567,all_itens
+5de5941e23a39a5edd8a1b04,valor,Quixaba,Despesa Extra Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,29,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,78,4699712,all_itens
+5de5941e23a39a5edd8a1b05,codigo,Quixaba,Despesa Extra Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,29,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/FolhaPagamento/folha.php?db=RGJfUFNfRlBfUXVpeGFiYV9QQl9QcmVmZWl0dXJh,78,4699712,all_itens
+5de5941e23a39a5edd8a1b06,nomenclatura,Quixaba,Despesa Extra Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,29,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,78,4699712,all_itens
+5de5941f23a39a5edd8a1b07,funcao,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b08,sub_funcao,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b09,orgao_or_uni_orcamentaria,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b0a,programa,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b0b,categoria_economica,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b0c,acao,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b0d,natureza_despesa,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b0e,modalidade,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b0f,elemento,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b10,emp_numero,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b11,emp_data,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b12,emp_cnpj_cpf,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b13,emp_indicacao_licitacao,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b14,emp_valor,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b15,valor_fixado,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b16,valor_liquidado,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b17,valor_pago,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b18,lic_data_pag_ultima,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b19,lic_obj_servico,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,FALSE,35,FALSE,,135,8070859,all_itens
+5de5941f23a39a5edd8a1b1a,sub_elemento,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b1b,lic_modalidade,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b1c,lic_numero,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b1d,lic_num_contrato,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b1e,nome,Quixaba,Despesa Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,35,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,135,8070859,all_itens
+5de5941f23a39a5edd8a1b1f,valor,Quixaba,Receita Extra Orçamentária,dfs,2019-12-03T01:45:25Z,FALSE,3,FALSE,,1,79419,all_itens
+5de5941f23a39a5edd8a1b20,codigo,Quixaba,Receita Extra Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,3,TRUE,http://quixaba.pb.gov.br/assuntos/portal-da-transparencia,1,79419,all_itens
+5de5941f23a39a5edd8a1b21,nomenclatura,Quixaba,Receita Extra Orçamentária,dfs,2019-12-03T01:45:25Z,FALSE,3,FALSE,,1,79419,all_itens
+5de5942023a39a5edd8a1b22,uni_gestora,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,27,1645798,all_itens
+5de5942023a39a5edd8a1b23,previsao,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,13,TRUE,http://quixaba.pb.gov.br/assuntos/portal-da-transparencia,27,1645798,all_itens
+5de5942023a39a5edd8a1b24,arrecadacao,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,27,1645798,all_itens
+5de5942023a39a5edd8a1b25,lancado,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,27,1645798,all_itens
+5de5942023a39a5edd8a1b26,categoria_economica,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,FALSE,13,FALSE,,27,1645798,all_itens
+5de5942023a39a5edd8a1b27,origem,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,TRUE,13,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,27,1645798,all_itens
+5de5942023a39a5edd8a1b28,especie,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,FALSE,13,FALSE,,27,1645798,all_itens
+5de5942023a39a5edd8a1b29,rubrica,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,FALSE,13,FALSE,,27,1645798,all_itens
+5de5942023a39a5edd8a1b2a,alinea,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,FALSE,13,FALSE,,27,1645798,all_itens
+5de5942023a39a5edd8a1b2b,sub_alinea,Quixaba,Receita Orçamentária,dfs,2019-12-03T01:45:25Z,FALSE,13,FALSE,,27,1645798,all_itens
+5de5942523a39a5edd8a1b2c,nome,Quixaba,Quadro Pessoal,dfs,2019-12-03T01:45:25Z,TRUE,12,TRUE,http://quixaba.pb.gov.br/acesso/perguntas_frequentes,36,2130126,all_itens
+5de5942523a39a5edd8a1b2d,cpf,Quixaba,Quadro Pessoal,dfs,2019-12-03T01:45:25Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/FolhaPagamento/folha.php?db=RGJfUFNfRlBfUXVpeGFiYV9QQl9QcmVmZWl0dXJh,36,2130126,all_itens
+5de5942523a39a5edd8a1b2e,cargo,Quixaba,Quadro Pessoal,dfs,2019-12-03T01:45:25Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/FolhaPagamento/folha.php?db=RGJfUFNfRlBfUXVpeGFiYV9QQl9QcmVmZWl0dXJh,36,2130126,all_itens
+5de5942523a39a5edd8a1b2f,tipo_cargo,Quixaba,Quadro Pessoal,dfs,2019-12-03T01:45:25Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/FolhaPagamento/folha.php?db=RGJfUFNfRlBfUXVpeGFiYV9QQl9QcmVmZWl0dXJh,36,2130126,all_itens
+5de5942523a39a5edd8a1b30,salario_cargo,Quixaba,Quadro Pessoal,dfs,2019-12-03T01:45:25Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/FolhaPagamento/folha.php?db=RGJfUFNfRlBfUXVpeGFiYV9QQl9QcmVmZWl0dXJh,36,2130126,all_itens
+5de5942723a39a5edd8a1b31,numero_licitacao,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,39,2311214,all_itens
+5de5942723a39a5edd8a1b32,objeto_licitacao,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,39,2311214,all_itens
+5de5942723a39a5edd8a1b33,modalidade_licitacao,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,39,2311214,all_itens
+5de5942723a39a5edd8a1b34,data_publicacao_licitacao,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,39,2311214,all_itens
+5de5942723a39a5edd8a1b35,valor,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/?url=Licitacao/FormCPRCLicitacao.php&urlorigem=http://quixaba.pb.gov.br/assuntos/portal-da-transparencia?acao=aHR0cDovL3BvcnRhbGRhdHJhbnNwYXJlbmNpYS5wdWJsaWNzb2Z0LmNvbS5ici9zaXN0ZW1hcy9Db250YWJpbGlkYWRlUHVibGljYS9Pa2s9L2xpY2l0YWNvZXM=&m=4,39,2311214,all_itens
+5de5942723a39a5edd8a1b36,cnpj_cpf,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de5942723a39a5edd8a1b37,edital,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de5942723a39a5edd8a1b38,nome_vencedores,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de5942723a39a5edd8a1b39,nome_perdedores,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de5942723a39a5edd8a1b3a,data_realizacao,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,TRUE,19,TRUE,http://portaldatransparencia.publicsoft.com.br/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,39,2311214,all_itens
+5de5942723a39a5edd8a1b3b,setor_interessado,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de5942723a39a5edd8a1b3c,integra,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de5942723a39a5edd8a1b3d,termo_ratificacao,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de5942723a39a5edd8a1b3e,pregao,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,TRUE,http://quixaba.pb.gov.br/acesso-a-informacao/licitacoes?q=contratos,39,2311214,all_itens
+5de5942723a39a5edd8a1b3f,aviso,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de5942723a39a5edd8a1b40,licitado,Quixaba,Licitação,dfs,2019-12-03T01:45:25Z,FALSE,19,FALSE,,39,2311214,all_itens
+5de59cfbc8131d6b2e1a7ee5,valor,Itabaiana,Despesa Extra Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,29,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201089&ctx=201089,32,1917027,all_itens
+5de59cfbc8131d6b2e1a7ee6,codigo,Itabaiana,Despesa Extra Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,29,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201089&ctx=201089,32,1917027,all_itens
+5de59cfbc8131d6b2e1a7ee7,nomenclatura,Itabaiana,Despesa Extra Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,29,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201089&ctx=201089,32,1917027,all_itens
+5de59cfcc8131d6b2e1a7ee8,valor,Itabaiana,Receita Extra Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,63,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201089&isModal=False,165,9910319,all_itens
+5de59cfcc8131d6b2e1a7ee9,codigo,Itabaiana,Receita Extra Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,63,TRUE,https://public.tableau.com/views/Estado-Public-Receitas/PainelEvolucaoReceitas?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=0,165,9910319,all_itens
+5de59cfcc8131d6b2e1a7eea,nomenclatura,Itabaiana,Receita Extra Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,63,TRUE,https://public.tableau.com/views/ReceitasOramentrias_0/EvoluoReceita?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=0,165,9910319,all_itens
+5de59cfdc8131d6b2e1a7eeb,funcao,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://public.tableau.com/views/Municipios-Public-Despesas/PainelEvolucaoDespesas?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=0,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7eec,sub_funcao,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://public.tableau.com/views/Municipios-Public-Despesas/PainelEvolucaoDespesas?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=0,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7eed,orgao_or_uni_orcamentaria,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201089&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7eee,programa,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201089&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7eef,categoria_economica,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201089&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef0,acao,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201089&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef1,natureza_despesa,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,FALSE,143,FALSE,,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef2,modalidade,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Liquidacao?e=201089&Tab=7&isModal=false&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef3,elemento,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://public.tableau.com/views/Estado-Public-Despesas/PainelEvolucaoDespesas?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=0,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef4,emp_numero,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201089&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef5,emp_data,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Restos?e=201089&Tab=5&isModal=false&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef6,emp_cnpj_cpf,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Restos?e=201089&Tab=5&isModal=false&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef7,emp_indicacao_licitacao,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://tce.pb.gov.br/paineis/paineis-de-acompanhamento/,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef8,emp_valor,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Liquidacao?e=201089&Tab=7&isModal=false&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7ef9,valor_fixado,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,FALSE,143,FALSE,,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7efa,valor_liquidado,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,FALSE,143,FALSE,,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7efb,valor_pago,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,FALSE,143,FALSE,,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7efc,lic_data_pag_ultima,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Restos?e=201089&Tab=5&isModal=false&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7efd,lic_obj_servico,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,FALSE,143,FALSE,,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7efe,sub_elemento,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://public.tableau.com/views/Municipios-Public-Despesas/PainelIndiceDespesas?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=0,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7eff,lic_modalidade,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Liquidacao?e=201089&Tab=7&isModal=false&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7f00,lic_numero,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://tce.pb.gov.br/paineis/paineis-de-acompanhamento/,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7f01,lic_num_contrato,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Pagamentos?e=201089&Tab=6&isModal=false&ctx=201089,146,8788759,all_itens
+5de59cfdc8131d6b2e1a7f02,nome,Itabaiana,Despesa Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,143,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas/Restos?e=201089&Tab=5&isModal=false&ctx=201089,146,8788759,all_itens
+5de59cfec8131d6b2e1a7f03,uni_gestora,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,85,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201089&isModal=False,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f04,previsao,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,85,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201089&isModal=False,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f05,arrecadacao,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,85,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201089&isModal=False,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f06,lancado,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,85,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas/Realizada?e=201089&Tab=2&isModal=false&ctx=201089,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f07,categoria_economica,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,85,TRUE,https://public.tableau.com/views/ReceitasOramentrias_0/PainelIndicesReceitas?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=0,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f08,origem,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,85,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201089&isModal=False,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f09,especie,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,TRUE,85,TRUE,https://public.tableau.com/views/ReceitasOramentrias_0/PainelIndicesReceitas?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:loadOrderID=0,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f0a,rubrica,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,FALSE,85,FALSE,,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f0b,alinea,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,FALSE,85,FALSE,,229,13756854,all_itens
+5de59cfec8131d6b2e1a7f0c,sub_alinea,Itabaiana,Receita Orçamentária,dfs,2019-12-03T02:23:26Z,FALSE,85,FALSE,,229,13756854,all_itens
+5de59d00c8131d6b2e1a7f0d,numero_licitacao,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f0e,objeto_licitacao,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f0f,modalidade_licitacao,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f10,data_publicacao_licitacao,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f11,valor,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f12,cnpj_cpf,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,FALSE,14,FALSE,,14,869297,all_itens
+5de59d00c8131d6b2e1a7f13,edital,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,FALSE,14,FALSE,,14,869297,all_itens
+5de59d00c8131d6b2e1a7f14,nome_vencedores,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f15,nome_perdedores,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,FALSE,14,FALSE,,14,869297,all_itens
+5de59d00c8131d6b2e1a7f16,data_realizacao,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f17,setor_interessado,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f18,integra,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,FALSE,14,FALSE,,14,869297,all_itens
+5de59d00c8131d6b2e1a7f19,termo_ratificacao,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,FALSE,14,FALSE,,14,869297,all_itens
+5de59d00c8131d6b2e1a7f1a,pregao,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,FALSE,14,FALSE,,14,869297,all_itens
+5de59d00c8131d6b2e1a7f1b,aviso,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,TRUE,14,TRUE,https://transparencia.elmartecnologia.com.br/Licitacao?e=201089&Tab=1&isModal=false&ctx=201089,14,869297,all_itens
+5de59d00c8131d6b2e1a7f1c,licitado,Itabaiana,Licitação,dfs,2019-12-03T02:23:26Z,FALSE,14,FALSE,,14,869297,all_itens
+5de59d04c8131d6b2e1a7f1d,nome,Itabaiana,Quadro Pessoal,dfs,2019-12-03T02:23:26Z,TRUE,82,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/Temporarios?e=201089&Tab=3&isModal=false&ctx=201089,100,6009157,all_itens
+5de59d04c8131d6b2e1a7f1e,cpf,Itabaiana,Quadro Pessoal,dfs,2019-12-03T02:23:26Z,TRUE,82,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/Temporarios?e=201089&Tab=3&isModal=false&ctx=201089,100,6009157,all_itens
+5de59d04c8131d6b2e1a7f1f,cargo,Itabaiana,Quadro Pessoal,dfs,2019-12-03T02:23:26Z,TRUE,82,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/Temporarios?e=201089&Tab=3&isModal=false&ctx=201089,100,6009157,all_itens
+5de59d04c8131d6b2e1a7f20,tipo_cargo,Itabaiana,Quadro Pessoal,dfs,2019-12-03T02:23:26Z,TRUE,82,TRUE,https://transparencia.elmartecnologia.com.br/FolhaPag/Index/Temporarios?e=201089&Tab=3&isModal=false&ctx=201089,100,6009157,all_itens
+5de59d04c8131d6b2e1a7f21,salario_cargo,Itabaiana,Quadro Pessoal,dfs,2019-12-03T02:23:26Z,FALSE,82,FALSE,,100,6009157,all_itens
+5de5b3a350886f059f456f85,valor,Bom Sucesso,Despesa Extra Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,4,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,2,132250,all_itens
+5de5b3a350886f059f456f86,codigo,Bom Sucesso,Despesa Extra Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,4,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,2,132250,all_itens
+5de5b3a350886f059f456f87,nomenclatura,Bom Sucesso,Despesa Extra Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,4,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,2,132250,all_itens
+5de5b3a550886f059f456f88,valor,Bom Sucesso,Receita Extra Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,2,TRUE,http://191.253.90.19:5656/pmbomsucesso/ReceitasPorEntidade.aspx,1,77111,all_itens
+5de5b3a550886f059f456f89,codigo,Bom Sucesso,Receita Extra Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,2,TRUE,http://191.253.90.19:5656/pmbomsucesso/ReceitasPorEntidade.aspx,1,77111,all_itens
+5de5b3a550886f059f456f8a,nomenclatura,Bom Sucesso,Receita Extra Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,2,TRUE,http://191.253.90.19:5656/pmbomsucesso/ReceitasPorEntidade.aspx,1,77111,all_itens
+5de5b3a550886f059f456f8b,uni_gestora,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,4,236750,all_itens
+5de5b3a550886f059f456f8c,previsao,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/ReceitasPorEntidade.aspx,4,236750,all_itens
+5de5b3a550886f059f456f8d,arrecadacao,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/ReceitasPorEntidade.aspx,4,236750,all_itens
+5de5b3a550886f059f456f8e,lancado,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/ReceitasPorEntidade.aspx,4,236750,all_itens
+5de5b3a550886f059f456f8f,categoria_economica,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,4,236750,all_itens
+5de5b3a550886f059f456f90,origem,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,4,236750,all_itens
+5de5b3a550886f059f456f91,especie,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,4,236750,all_itens
+5de5b3a550886f059f456f92,rubrica,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,4,236750,all_itens
+5de5b3a550886f059f456f93,alinea,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,4,236750,all_itens
+5de5b3a550886f059f456f94,sub_alinea,Bom Sucesso,Receita Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,4,236750,all_itens
+5de5b3a650886f059f456f95,funcao,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456f96,sub_funcao,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456f97,orgao_or_uni_orcamentaria,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456f98,programa,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456f99,categoria_economica,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456f9a,acao,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456f9b,natureza_despesa,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456f9c,modalidade,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456f9d,elemento,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456f9e,emp_numero,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456f9f,emp_data,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456fa0,emp_cnpj_cpf,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456fa1,emp_indicacao_licitacao,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456fa2,emp_valor,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456fa3,valor_fixado,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456fa4,valor_liquidado,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456fa5,valor_pago,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456fa6,lic_data_pag_ultima,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456fa7,lic_obj_servico,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,TRUE,7,TRUE,http://191.253.90.19:5656/pmbomsucesso/DespesasPorEntidade.aspx,5,303797,all_itens
+5de5b3a650886f059f456fa8,sub_elemento,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456fa9,lic_modalidade,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456faa,lic_numero,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456fab,lic_num_contrato,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a650886f059f456fac,nome,Bom Sucesso,Despesa Orçamentária,dfs,2019-12-03T03:59:58Z,FALSE,7,FALSE,,5,303797,all_itens
+5de5b3a750886f059f456fad,nome,Bom Sucesso,Quadro Pessoal,dfs,2019-12-03T03:59:58Z,TRUE,3,TRUE,http://www.portaldc.com.br/Pages/RH/v1.aspx?nemp=201032,1,89758,all_itens
+5de5b3a750886f059f456fae,cpf,Bom Sucesso,Quadro Pessoal,dfs,2019-12-03T03:59:58Z,TRUE,3,TRUE,http://www.portaldc.com.br/Pages/RH/v1.aspx?nemp=201032,1,89758,all_itens
+5de5b3a750886f059f456faf,cargo,Bom Sucesso,Quadro Pessoal,dfs,2019-12-03T03:59:58Z,TRUE,3,TRUE,http://www.portaldc.com.br/Pages/RH/v1.aspx?nemp=201032,1,89758,all_itens
+5de5b3a750886f059f456fb0,tipo_cargo,Bom Sucesso,Quadro Pessoal,dfs,2019-12-03T03:59:58Z,TRUE,3,TRUE,http://www.portaldc.com.br/Pages/RH/v1.aspx?nemp=201032,1,89758,all_itens
+5de5b3a750886f059f456fb1,salario_cargo,Bom Sucesso,Quadro Pessoal,dfs,2019-12-03T03:59:58Z,TRUE,3,TRUE,http://www.portaldc.com.br/Pages/RH/v1.aspx?nemp=201032,1,89758,all_itens
+5de5b3a750886f059f456fb2,numero_licitacao,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fb3,objeto_licitacao,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fb4,modalidade_licitacao,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fb5,data_publicacao_licitacao,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fb6,valor,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fb7,cnpj_cpf,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,FALSE,12,FALSE,,14,820379,all_itens
+5de5b3a750886f059f456fb8,edital,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,FALSE,12,FALSE,,14,820379,all_itens
+5de5b3a750886f059f456fb9,nome_vencedores,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fba,nome_perdedores,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,FALSE,12,FALSE,,14,820379,all_itens
+5de5b3a750886f059f456fbb,data_realizacao,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fbc,setor_interessado,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fbd,integra,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,FALSE,12,FALSE,,14,820379,all_itens
+5de5b3a750886f059f456fbe,termo_ratificacao,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,FALSE,12,FALSE,,14,820379,all_itens
+5de5b3a750886f059f456fbf,pregao,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,FALSE,12,FALSE,,14,820379,all_itens
+5de5b3a750886f059f456fc0,aviso,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,TRUE,12,TRUE,http://transparencia.elmar.inf.br/Licitacao?e=201032,14,820379,all_itens
+5de5b3a750886f059f456fc1,licitado,Bom Sucesso,Licitação,dfs,2019-12-03T03:59:58Z,FALSE,12,FALSE,,14,820379,all_itens
+5de5b6d28460700a3c18d695,valor,Pedra Lavrada,Despesa Extra Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,9,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,7,405507,all_itens
+5de5b6d28460700a3c18d696,codigo,Pedra Lavrada,Despesa Extra Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,9,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,7,405507,all_itens
+5de5b6d28460700a3c18d697,nomenclatura,Pedra Lavrada,Despesa Extra Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,9,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,7,405507,all_itens
+5de5b6d28460700a3c18d698,funcao,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d699,sub_funcao,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d69a,orgao_or_uni_orcamentaria,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5,266,15982932,all_itens
+5de5b6d28460700a3c18d69b,programa,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5,266,15982932,all_itens
+5de5b6d28460700a3c18d69c,categoria_economica,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,88,FALSE,,266,15982932,all_itens
+5de5b6d28460700a3c18d69d,acao,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d69e,natureza_despesa,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,88,FALSE,,266,15982932,all_itens
+5de5b6d28460700a3c18d69f,modalidade,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d6a0,elemento,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d6a1,emp_numero,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5,266,15982932,all_itens
+5de5b6d28460700a3c18d6a2,emp_data,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5,266,15982932,all_itens
+5de5b6d28460700a3c18d6a3,emp_cnpj_cpf,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5,266,15982932,all_itens
+5de5b6d28460700a3c18d6a4,emp_indicacao_licitacao,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d6a5,emp_valor,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d6a6,valor_fixado,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,88,FALSE,,266,15982932,all_itens
+5de5b6d28460700a3c18d6a7,valor_liquidado,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,88,FALSE,,266,15982932,all_itens
+5de5b6d28460700a3c18d6a8,valor_pago,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,88,FALSE,,266,15982932,all_itens
+5de5b6d28460700a3c18d6a9,lic_data_pag_ultima,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5,266,15982932,all_itens
+5de5b6d28460700a3c18d6aa,lic_obj_servico,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,88,FALSE,,266,15982932,all_itens
+5de5b6d28460700a3c18d6ab,sub_elemento,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,88,FALSE,,266,15982932,all_itens
+5de5b6d28460700a3c18d6ac,lic_modalidade,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d6ad,lic_numero,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5#,266,15982932,all_itens
+5de5b6d28460700a3c18d6ae,lic_num_contrato,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,88,FALSE,,266,15982932,all_itens
+5de5b6d28460700a3c18d6af,nome,Pedra Lavrada,Despesa Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,88,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Despesas?e=201138&ctx=201138&menu=off&header=off&Tab=5,266,15982932,all_itens
+5de5b6d38460700a3c18d6b0,uni_gestora,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,18,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201138&ctx=201138&menu=off&header=off&Tab=2,19,1157964,all_itens
+5de5b6d38460700a3c18d6b1,previsao,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,18,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL,19,1157964,all_itens
+5de5b6d38460700a3c18d6b2,arrecadacao,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,18,FALSE,,19,1157964,all_itens
+5de5b6d38460700a3c18d6b3,lancado,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,18,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201138&ctx=201138&menu=off&header=off&Tab=2,19,1157964,all_itens
+5de5b6d38460700a3c18d6b4,categoria_economica,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,18,FALSE,,19,1157964,all_itens
+5de5b6d38460700a3c18d6b5,origem,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,18,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201138&ctx=201138&menu=off&header=off&Tab=2,19,1157964,all_itens
+5de5b6d38460700a3c18d6b6,especie,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,18,FALSE,,19,1157964,all_itens
+5de5b6d38460700a3c18d6b7,rubrica,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,18,FALSE,,19,1157964,all_itens
+5de5b6d38460700a3c18d6b8,alinea,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,18,FALSE,,19,1157964,all_itens
+5de5b6d38460700a3c18d6b9,sub_alinea,Pedra Lavrada,Receita Orçamentária,dfs,2019-12-03T04:13:39Z,FALSE,18,FALSE,,19,1157964,all_itens
+5de5b6d48460700a3c18d6ba,numero_licitacao,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,TRUE,6,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,2,127113,all_itens
+5de5b6d48460700a3c18d6bb,objeto_licitacao,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,TRUE,6,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,2,127113,all_itens
+5de5b6d48460700a3c18d6bc,modalidade_licitacao,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,TRUE,6,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,2,127113,all_itens
+5de5b6d48460700a3c18d6bd,data_publicacao_licitacao,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,TRUE,6,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,2,127113,all_itens
+5de5b6d48460700a3c18d6be,valor,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d48460700a3c18d6bf,cnpj_cpf,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d48460700a3c18d6c0,edital,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d48460700a3c18d6c1,nome_vencedores,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,TRUE,6,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,2,127113,all_itens
+5de5b6d48460700a3c18d6c2,nome_perdedores,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d48460700a3c18d6c3,data_realizacao,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d48460700a3c18d6c4,setor_interessado,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,TRUE,6,TRUE,http://diariopedra.lhsystem.com.br/inc/impressao/licitacao.php?&id=351,2,127113,all_itens
+5de5b6d48460700a3c18d6c5,integra,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d48460700a3c18d6c6,termo_ratificacao,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d48460700a3c18d6c7,pregao,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,TRUE,6,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/licitacoes,2,127113,all_itens
+5de5b6d48460700a3c18d6c8,aviso,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d48460700a3c18d6c9,licitado,Pedra Lavrada,Licitação,dfs,2019-12-03T04:13:39Z,FALSE,6,FALSE,,2,127113,all_itens
+5de5b6d58460700a3c18d6ca,nome,Pedra Lavrada,Quadro Pessoal,dfs,2019-12-03T04:13:39Z,TRUE,17,TRUE,http://portaldatransparencia.lhsystem.com.br/PMPL/publicacoes/diarias-servidores,15,872240,all_itens
+5de5b6d58460700a3c18d6cb,cpf,Pedra Lavrada,Quadro Pessoal,dfs,2019-12-03T04:13:39Z,TRUE,17,TRUE,http://apessoal.brasilia.me:8077/?Ini=PMPL,15,872240,all_itens
+5de5b6d58460700a3c18d6cc,cargo,Pedra Lavrada,Quadro Pessoal,dfs,2019-12-03T04:13:39Z,TRUE,17,TRUE,http://apessoal.brasilia.me:8077/?Ini=PMPL,15,872240,all_itens
+5de5b6d58460700a3c18d6cd,tipo_cargo,Pedra Lavrada,Quadro Pessoal,dfs,2019-12-03T04:13:39Z,TRUE,17,TRUE,http://apessoal.brasilia.me:8077/?Ini=PMPL,15,872240,all_itens
+5de5b6d58460700a3c18d6ce,salario_cargo,Pedra Lavrada,Quadro Pessoal,dfs,2019-12-03T04:13:39Z,TRUE,17,TRUE,http://apessoal.brasilia.me:8077/?Ini=PMPL,15,872240,all_itens
+5de5b6d88460700a3c18d6cf,valor,Pedra Lavrada,Receita Extra Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,5,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201138&ctx=201138&menu=off&header=off&Tab=2,4,255198,all_itens
+5de5b6d88460700a3c18d6d0,codigo,Pedra Lavrada,Receita Extra Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,5,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201138&ctx=201138&menu=off&header=off&Tab=2,4,255198,all_itens
+5de5b6d88460700a3c18d6d1,nomenclatura,Pedra Lavrada,Receita Extra Orçamentária,dfs,2019-12-03T04:13:39Z,TRUE,5,TRUE,https://transparencia.elmartecnologia.com.br/Contab/Receitas?e=201138&ctx=201138&menu=off&header=off&Tab=2,4,255198,all_itens
+5de5d2d7334009222dbf1f9e,valor,Campina Grande,Receita Extra Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,10,FALSE,,11,674596,all_itens
+5de5d2d7334009222dbf1f9f,codigo,Campina Grande,Receita Extra Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,10,FALSE,,11,674596,all_itens
+5de5d2d7334009222dbf1fa0,nomenclatura,Campina Grande,Receita Extra Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,10,FALSE,,11,674596,all_itens
+5de5d2d8334009222dbf1fa1,valor,Campina Grande,Despesa Extra Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,14,817772,all_itens
+5de5d2d8334009222dbf1fa2,codigo,Campina Grande,Despesa Extra Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,14,817772,all_itens
+5de5d2d8334009222dbf1fa3,nomenclatura,Campina Grande,Despesa Extra Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,11,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpDespesasExtrasOrc.php,14,817772,all_itens
+5de5d2da334009222dbf1fa4,uni_gestora,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,10,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/resultadoConsultaGridCPRCGuias.php,13,767466,all_itens
+5de5d2da334009222dbf1fa5,previsao,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,10,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,13,767466,all_itens
+5de5d2da334009222dbf1fa6,arrecadacao,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,10,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,13,767466,all_itens
+5de5d2da334009222dbf1fa7,lancado,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,10,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,13,767466,all_itens
+5de5d2da334009222dbf1fa8,categoria_economica,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,10,FALSE,,13,767466,all_itens
+5de5d2da334009222dbf1fa9,origem,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,10,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Receitas/FormCPRCGuias.php,13,767466,all_itens
+5de5d2da334009222dbf1faa,especie,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,10,FALSE,,13,767466,all_itens
+5de5d2da334009222dbf1fab,rubrica,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,10,FALSE,,13,767466,all_itens
+5de5d2da334009222dbf1fac,alinea,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,10,FALSE,,13,767466,all_itens
+5de5d2da334009222dbf1fad,sub_alinea,Campina Grande,Receita Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,10,FALSE,,13,767466,all_itens
+5de5d2db334009222dbf1fae,numero_licitacao,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,72,4296803,all_itens
+5de5d2db334009222dbf1faf,objeto_licitacao,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/resultadoConsultaGridCPRCLicitacao.php,72,4296803,all_itens
+5de5d2db334009222dbf1fb0,modalidade_licitacao,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,72,4296803,all_itens
+5de5d2db334009222dbf1fb1,data_publicacao_licitacao,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,72,4296803,all_itens
+5de5d2db334009222dbf1fb2,valor,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/?url=LicitacaoV2/Licitacoes.php&urlorigem=http://transparencia.campinagrande.pb.gov.br/licitacoes/,72,4296803,all_itens
+5de5d2db334009222dbf1fb3,cnpj_cpf,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,72,4296803,all_itens
+5de5d2db334009222dbf1fb4,edital,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,72,4296803,all_itens
+5de5d2db334009222dbf1fb5,nome_vencedores,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,FALSE,45,FALSE,,72,4296803,all_itens
+5de5d2db334009222dbf1fb6,nome_perdedores,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,FALSE,45,FALSE,,72,4296803,all_itens
+5de5d2db334009222dbf1fb7,data_realizacao,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,FALSE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Licitacao/FormCPRCLicitacao.php,72,4296803,all_itens
+5de5d2db334009222dbf1fb8,setor_interessado,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,72,4296803,all_itens
+5de5d2db334009222dbf1fb9,integra,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,FALSE,45,FALSE,,72,4296803,all_itens
+5de5d2db334009222dbf1fba,termo_ratificacao,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,FALSE,45,FALSE,,72,4296803,all_itens
+5de5d2db334009222dbf1fbb,pregao,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,FALSE,45,FALSE,,72,4296803,all_itens
+5de5d2db334009222dbf1fbc,aviso,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,TRUE,45,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/LicitacaoV2/Licitacoes.php,72,4296803,all_itens
+5de5d2db334009222dbf1fbd,licitado,Campina Grande,Licitação,dfs,2019-12-03T06:12:44Z,FALSE,45,FALSE,,72,4296803,all_itens
+5de5d2db334009222dbf1fbe,nome,Campina Grande,Quadro Pessoal,dfs,2019-12-03T06:12:44Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,105631,all_itens
+5de5d2db334009222dbf1fbf,cpf,Campina Grande,Quadro Pessoal,dfs,2019-12-03T06:12:44Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,105631,all_itens
+5de5d2db334009222dbf1fc0,cargo,Campina Grande,Quadro Pessoal,dfs,2019-12-03T06:12:44Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,105631,all_itens
+5de5d2db334009222dbf1fc1,tipo_cargo,Campina Grande,Quadro Pessoal,dfs,2019-12-03T06:12:44Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,105631,all_itens
+5de5d2db334009222dbf1fc2,salario_cargo,Campina Grande,Quadro Pessoal,dfs,2019-12-03T06:12:44Z,TRUE,3,TRUE,https://sagresonline.tce.pb.gov.br/#/municipal/pessoal/servidores,2,105631,all_itens
+5de5d2de334009222dbf1fc3,funcao,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/resultadoConsultaGridPCEmpEmpenho.php,15,903788,all_itens
+5de5d2de334009222dbf1fc4,sub_funcao,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fc5,orgao_or_uni_orcamentaria,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fc6,programa,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fc7,categoria_economica,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fc8,acao,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fc9,natureza_despesa,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fca,modalidade,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fcb,elemento,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fcc,emp_numero,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fcd,emp_data,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fce,emp_cnpj_cpf,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fcf,emp_indicacao_licitacao,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd0,emp_valor,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd1,valor_fixado,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd2,valor_liquidado,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd3,valor_pago,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd4,lic_data_pag_ultima,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd5,lic_obj_servico,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,FALSE,12,FALSE,,15,903788,all_itens
+5de5d2de334009222dbf1fd6,sub_elemento,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd7,lic_modalidade,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd8,lic_numero,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fd9,lic_num_contrato,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
+5de5d2de334009222dbf1fda,nome,Campina Grande,Despesa Orçamentária,dfs,2019-12-03T06:12:44Z,TRUE,12,TRUE,http://portaldatransparencia.publicsoftsolutions.com/sistemas/ContabilidadePublica/views/Empenho/FormEmpEmpenhos.php,15,903788,all_itens
 5dbc9aa32f443d4e3e9b3ba5,nome,João Pessoa,Quadro Pessoal,bandit,2019-11-01T23:49:45Z,FALSE,7,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal,10,624999,all_itens
 5dbc9aa32f443d4e3e9b3ba6,cpf,João Pessoa,Quadro Pessoal,bandit,2019-11-01T23:49:45Z,TRUE,7,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal,10,624999,all_itens
 5dbc9aa32f443d4e3e9b3ba7,cargo,João Pessoa,Quadro Pessoal,bandit,2019-11-01T23:49:45Z,TRUE,7,TRUE,https://transparencia.joaopessoa.pb.gov.br/#/pessoal,10,624999,all_itens

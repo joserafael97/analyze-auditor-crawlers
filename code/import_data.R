@@ -45,6 +45,6 @@ avaliacoes <- avaliacoes %>%
     distinct(id, .keep_all = TRUE)
 
 avaliacoes %>% 
-    write_csv(here::here("data/resultados_avaliacoes2.csv"))
+    write_csv(here::here("data/resultados_avaliacoes.csv"))
 
 

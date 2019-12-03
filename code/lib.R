@@ -1,6 +1,6 @@
 read_avaliacoes <- function(municipio_nome=''){
     library(dplyr)
-    data = readr::read_csv(here::here("data/resultados_avaliacoes2.csv"))
+    data = readr::read_csv(here::here("data/resultados_avaliacoes.csv"))
     if(municipio_nome == ''){
         data
     } else {
