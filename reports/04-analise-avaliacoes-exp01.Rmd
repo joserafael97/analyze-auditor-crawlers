@@ -1,5 +1,5 @@
 ---
-title: "Avalições Auditor Crawler"
+title: "Experimento 01 Auditor Crawler"
 output:
     html_document:
     css: styles.css
@@ -15,7 +15,6 @@ library(here)
 library(DT)
 library(boot)
 library(ggalt)
-
 set.seed(12345)
 library(ggplot2)
 library(ggbeeswarm)
@@ -40,8 +39,7 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 
 Para uma avaliação ser considerada válida ela precisa conter 61 itens. Vamos desconsiderar as avaliações que não contém esse número
 
-Vamos remover também o município de Curral de Cima que encontra-se com seu portal de transparência fora do ar.
-
+Vamos remover também o município de Curral de Cima que encontra-se com seu portal de transparência fora do ar. 
 ```{r}
 resultados_avaliacoes_exp01 <- resultados_avaliacoes_exp01 %>% 
   filter(tipo_exp == 'all_itens' & (municipio != 'Curral de Cima' & municipio != 'todo'))
@@ -205,41 +203,43 @@ set.seed(123)
 
 f1_score_boot <- function (d, i) {
     dt<-d[i,]
-    c(
+    return(c(
           median(dt$f1_score)
-    )
+    ))
 }
 
-boot.aproach_exp01 <- metricas_result_exp01 %>%
-  group_by(aproach) %>% 
-  mutate(cors_boot = list(
-      boot(
-          data = metricas_result_exp01, 
+create_ic <- function(x) {
+  x <- last(x)
+  df.boot <- filter(metricas_result_exp01, aproach == x)
+  
+  bootstrap.aproach <- boot(
+          data = df.boot, 
           statistic = f1_score_boot, 
-          R = 4000
-          )
-      )
-     )
-
-ics.aproach_exp01 <- boot.aproach_exp01 %>% 
-    group_by(aproach) %>% 
-    summarise(
-        median_value = median(f1_score),
-        ci = list(tidy(cors_boot[[1]], 
+          R = 4000 )
+  
+  ci = tidy(bootstrap.aproach, 
           conf.level = .95,
           conf.method = "bca",
-          conf.int = TRUE))
-        
-    ) %>% 
-    unnest(ci) 
+          conf.int = TRUE)
+  
+  print(glimpse(ci))
+  
+  return(ci)
+}
 
+
+ics.aproach_exp01 <- metricas_result_exp01 %>%
+  group_by(aproach) %>% 
+   summarise(
+     median_value = median(f1_score),
+     ci = list(create_ic(aproach))
+  ) %>% 
+  unnest(ci) 
   
 ics.aproach_exp01 %>%  
   ggplot() + 
   geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
   geom_point(aes(x=aproach, y=median_value), color='red', size=3) 
-
-
 ```
 
 
@@ -255,51 +255,60 @@ metricas_result_exp01 %>%
   geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
   geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
                 dot_guide=TRUE, dot_guide_size=0.25) + 
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha=0.5) +
+  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.5) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
   labs(x='F1 Score', y=NULL, title="F1 Score Por Município") 
 ```
 
-## Intervalo de Confiança da Mediana encontrada do F1 Score para cada Abordagem
 
-
-```{r}
+```{r eval=FALSE, include=FALSE}
 
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
 f1_score_boot <- function (d, i) {
     dt<-d[i,]
-    c(
+    return(c(
           median(dt$f1_score)
-    )
+    ))
 }
 
-boot.aproach_exp01 <- metricas_result_exp01 %>%
-  group_by(aproach) %>% 
-  mutate(cors_boot = list(
-      boot(
-          data = metricas_result_exp01, 
+create_ic.mun <- function(x, y) {
+  x <- last(x)
+  y <- last(y)
+  
+  df.boot.mun <- filter(metricas_result_exp01, aproach == x, municipio == y)
+  
+  bootstrap.aproach.mun <- boot(
+          data = df.boot.mun, 
           statistic = f1_score_boot, 
-          R = 4000
-          )
-      )
-     )
-
-ics.aproach_exp01_1 <- boot.aproach_exp01 %>% 
-    group_by(municipio, aproach) %>% 
-    summarise(
-        median_value = median(f1_score),
-        ci = list(tidy(cors_boot[[1]], 
-          conf.level = .95,
-          conf.method = "bca",
-          conf.int = TRUE))
-        
-    ) %>% 
-    unnest(ci) 
+          R = 4000 )
+  
+  print(glimpse(bootstrap.aproach.mun))
 
   
-ics.aproach_exp01_1 %>% 
+  ci = tidy(bootstrap.aproach.mun, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+  
+  print(glimpse(ci))
+  
+  return(ci)
+}
+
+
+boot.aproach_exp01.mun <- metricas_result_exp01 %>%
+  group_by(aproach, municipio) %>% 
+  summarise(
+     median_value = median(f1_score),
+     ci = create_ic.mun(aproach, municipio)
+  ) %>% 
+  unnest(ci)
+
+  
+boot.aproach_exp01.mun %>% 
   ggplot() + 
   geom_errorbar(aes(x = municipio, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
   geom_point(aes(x=municipio, y=median_value), color='red', size=1) +
@@ -308,6 +317,7 @@ ics.aproach_exp01_1 %>%
   
 
 ```
+
 
 
 
@@ -352,8 +362,6 @@ metricas_result_exp01 %>%
 ## Número de nós acessados por combinação
 
 ```{r}
-
-
 metricas_result_exp01 %>% 
   group_by(combination) %>% 
   summarise(max_value = max(max_num_access_node), min_value = min(max_num_access_node), median_value=median(max_num_access_node)) %>% 

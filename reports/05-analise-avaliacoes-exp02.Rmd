@@ -1,5 +1,5 @@
 ---
-title: "Avalições Auditor Crawler"
+title: "Experimento 02 Auditor Crawler"
 output:
     html_document:
     css: styles.css
@@ -14,7 +14,10 @@ library(dplyr) #
 library(here)
 library(DT)
 library(boot)
+library(ggalt)
+set.seed(12345)
 library(ggplot2)
+library(ggbeeswarm)
 source(here::here("code/lib.R"))
 theme_set(theme_bw())
 
@@ -35,7 +38,7 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ## Removendo avaliações que não pertecem ao experimento 02
 ```{r}
 resultados_avaliacoes_exp02 <- resultados_avaliacoes_exp02 %>% 
-  filter(tipo_exp == 'less_itens')
+  filter(tipo_exp == 'less_itens' & (municipio != 'Curral de Cima' & municipio != 'todo'))
 
 ```
 
@@ -120,7 +123,7 @@ metricas_result_exp02 <- metricas_result_exp02 %>%
   filter(total_itens == 48)
 
 metricas_result_exp02 %>% 
-    write_csv(here::here("data/resultados_sumarizado_exp01.csv"))
+    write_csv(here::here("data/resultados_sumarizado_exp.csv"))
 
 metricas_result_exp02 %>%
   arrange(desc(recall))
@@ -163,23 +166,163 @@ metricas_result_exp02 %>%
 ## F1-score 
 
 ```{r}
-metricas_result_exp02 %>%
-    ggplot(aes(x = aproach, y = f1_score)) +
-    geom_boxplot() 
+metricas_result_exp02 %>% 
+  ggplot(aes(x = aproach, y = f1_score)) +
+  geom_boxplot() +
+  geom_jitter(aes(color=aproach), alpha=0.4) +
+  scale_color_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
+  labs(x='Abordagem', y="F1 Score", title="Avaliações por Abordagem")
+
 
 metricas_result_exp02 %>%
-    ggplot(aes(x = aproach, y = f1_score)) +
-    geom_boxplot() +
-    geom_jitter(aes(color = aproach), alpha=0.5)
+  group_by(aproach)  %>%
+  ggplot(aes(x = aproach, y = f1_score)) + 
+  geom_dotplot(aes(fill = aproach),
+               color='white',
+               binaxis = "y", 
+               binwidth = 0.0097,
+               stackdir = "center") +
+  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
+                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
+  scale_linetype_manual("", values=c("median"="x")) +
+  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
+  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
+  labs(x='Abordagem', y="F1 Score", title="Avaliações por Abordagem", color = "")
+``` 
+
+## Intervalo de Confiança da Mediana encontrada do F1 Score para cada Abordagem
+
+
+```{r}
+#Calcula a media das posições escolhidas nas buscas.
+set.seed(123)
+
+f1_score_boot <- function (d, i) {
+    dt<-d[i,]
+    return(c(
+          median(dt$f1_score)
+    ))
+}
+
+create_ic <- function(x) {
+  x <- last(x)
+  df.boot <- filter(metricas_result_exp02, aproach == x)
+  
+  bootstrap.aproach <- boot(
+          data = df.boot, 
+          statistic = f1_score_boot, 
+          R = 4000 )
+  
+  ci = tidy(bootstrap.aproach, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+  
+  print(glimpse(ci))
+  
+  return(ci)
+}
+
+
+ics.aproach_exp02 <- metricas_result_exp02 %>%
+  group_by(aproach) %>% 
+   summarise(
+     median_value = median(f1_score),
+     ci = list(create_ic(aproach))
+  ) %>% 
+  unnest(ci) 
+  
+ics.aproach_exp02 %>%  
+  ggplot() + 
+  geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=aproach, y=median_value), color='red', size=3) 
+```
+
+
+## F1 Score por cada Município da Amostra 
+
+
+```{r}
+metricas_result_exp02 %>% 
+  group_by(municipio) %>% 
+  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
+  ggplot(aes(y=municipio)) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=3) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
+                dot_guide=TRUE, dot_guide_size=0.25) + 
+  geom_point(aes(x= median_value, color='#f39422'), size=5, shape=108) +
+  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
+  labs(x='F1 Score', y=NULL, title="F1 Score Por Município") 
+```
+
+
+```{r eval=FALSE, include=FALSE}
+
+#Calcula a media das posições escolhidas nas buscas.
+set.seed(123)
+
+f1_score_boot <- function (d, i) {
+    dt<-d[i,]
+    return(c(
+          median(dt$f1_score)
+    ))
+}
+
+create_ic.mun <- function(x, y) {
+  x <- last(x)
+  y <- last(y)
+  
+  df.boot.mun <- filter(metricas_result_exp02, aproach == x, municipio == y)
+  
+  bootstrap.aproach.mun <- boot(
+          data = df.boot.mun, 
+          statistic = f1_score_boot, 
+          R = 4000 )
+  
+  print(glimpse(bootstrap.aproach.mun))
+
+  
+  ci = tidy(bootstrap.aproach.mun, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+  
+  print(glimpse(ci))
+  
+  return(ci)
+}
+
+
+boot.aproach_exp02.mun <- metricas_result_exp02 %>%
+  group_by(aproach, municipio) %>% 
+  summarise(
+     median_value = median(f1_score),
+     ci = create_ic.mun(aproach, municipio)
+  ) %>% 
+  unnest(ci)
+
+  
+boot.aproach_exp02.mun %>% 
+  ggplot() + 
+  geom_errorbar(aes(x = municipio, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=municipio, y=median_value), color='red', size=1) +
+  coord_flip() +
+  facet_grid(. ~aproach) 
+  
 
 ```
+
+
+
 
 ## Tempo de Duração  
 
 ```{r}
 metricas_result_exp02 %>%
-    ggplot(aes(x = aproach, y = max_durationMin)) +
+    ggplot(aes(x = reorder(aproach, +(max_durationMin)), y = max_durationMin)) +
     geom_boxplot() 
+
 ```
 
 ## Nós Acessados  
@@ -188,115 +331,59 @@ metricas_result_exp02 %>%
 ```{r}
 
 metricas_result_exp02 %>%
-  ggplot(aes(x = aproach, y = max_num_access_node), ) +
+  ggplot(aes(x = reorder(aproach, +(max_num_access_node)), y = max_num_access_node)) +
   geom_boxplot()
 ```
 
 
-## IC 
-
-```{r}
-set.seed(123)
-
-f1_score <- function (d, i) {
-    dt<-d[i,]
-    c(
-        dt$f1_score
-    )
-}
-    
-bootstraps_exp02 <- boot(data = metricas_result_exp02, 
-                   statistic = f1_score, # <- referência para a função 
-                   R = 4000) # número de bootstraps
-
-
-ci.tb_exp02 = tidy(bootstraps_exp02, 
-          conf.level = .95,
-          conf.method = "basic",
-          conf.int = TRUE) 
-
-
-glimpse(ci.tb_exp02)
-
-ci.tb_exp02 %>%
-    ggplot(aes(x = "", y = statistic,
-               ymin = conf.low,
-               ymax = conf.high)) +
-    geom_pointrange() +
-    geom_point(size = 3) +
-    labs(y = "F1-score",
-         x = "") +
-    theme(axis.title = element_text(size=10)) 
-```
-
-```{r}
-#Calcula a media das posições escolhidas nas buscas.
-set.seed(123)
-
-f1_score_boot <- function (d, i) {
-    dt<-d[i,]
-    c(
-        dt$f1_score
-    )
-}
-
-boot.aproach_exp02 <- metricas_result_exp02 %>%
-  group_by(aproach) %>% 
-  mutate(cors_boot = list(
-      boot(
-          data = metricas_result_exp02, 
-          statistic = f1_score_boot, 
-          R = 4000
-          )
-      )
-     )
-
-ics.aproach_exp02 <- boot.aproach_exp02 %>% 
-    group_by(aproach) %>% 
-    summarise(
-        ci = list(tidy(cors_boot[[1]], 
-          conf.level = .95,
-          conf.method = "basic",
-          conf.int = TRUE))
-    ) %>% 
-    unnest(ci) 
-
-
-ics.aproach_exp02 %>%
-    ggplot(aes(x = aproach, y = statistic,
-               ymin = conf.low,
-               ymax = conf.high)) +
-    geom_pointrange() +
-    geom_point(size = 3) +
-    labs(y = "F1-score",
-         x = "") +
-    theme(axis.title = element_text(size=10)) 
-
-```
-
-
-## Vamos analisar as Combinações
+## f1 Score por combinação
 
 ```{r}
 
-metricas_result_exp02 %>%
-ggplot() +
-  geom_boxplot(aes(x=combination, y=f1_score), fill = "white")  +
-  geom_point(alpha = 0.4, aes(x=combination, y=f1_score, color=aproach), position = "jitter") +
-  coord_flip()
-
-metricas_result_exp02 %>%
-ggplot() +
-  geom_boxplot(aes(x=combination, y=max_num_access_node), fill = "white")  +
-  geom_point(alpha = 0.4, aes(x=combination, y=max_num_access_node, color=aproach), position = "jitter") +
-  coord_flip()
-
-
-metricas_result_exp02 %>%
-ggplot() +
-  geom_boxplot(aes(x=combination, y=max_durationMin), fill = "white")  +
-  geom_point(alpha = 0.4, aes(x=combination, y=max_durationMin, color=aproach), position = "jitter") +
-  coord_flip()
+metricas_result_exp02 %>% 
+  group_by(combination) %>% 
+  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
+  ggplot(aes(y=combination)) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=3) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
+                dot_guide=TRUE, dot_guide_size=0.25) + 
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha=0.7) +
+  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
+  labs(x='F1 Score', y=NULL, title="Combinações por F1 Score") 
 
 ```
+
+## Número de nós acessados por combinação
+
+```{r}
+metricas_result_exp02 %>% 
+  group_by(combination) %>% 
+  summarise(max_value = max(max_num_access_node), min_value = min(max_num_access_node), median_value=median(max_num_access_node)) %>% 
+  ggplot(aes(y=combination)) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=3) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
+                dot_guide=TRUE, dot_guide_size=0.25) + 
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha=0.7) +
+  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
+  labs(x='Número de nós', y=NULL, title="Combinações Por Número de Nós Acessados") 
+```
+
+## Duração das avaliações por combinações
+
+```{r}
+metricas_result_exp02 %>% 
+  group_by(combination) %>% 
+  summarise(max_value = max(max_durationMin), min_value = min(max_durationMin), median_value=median(max_durationMin)) %>% 
+  ggplot(aes(y=combination)) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=3) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
+                dot_guide=TRUE, dot_guide_size=0.25) + 
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha=0.7) +
+  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
+  labs(x='Minutos', y=NULL, title="Combinações Por Tempo de Duração") 
+```
+
 
