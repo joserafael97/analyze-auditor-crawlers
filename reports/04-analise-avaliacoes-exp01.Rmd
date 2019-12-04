@@ -19,9 +19,15 @@ set.seed(12345)
 library(ggplot2)
 library(ggbeeswarm)
 source(here::here("code/lib.R"))
+library(knitr)
+library(kableExtra)
 theme_set(theme_bw())
 
 ```
+
+Este relatório usa dados de avaliações transparência de fiscal de uma amostra de 30 portais de transparência do estado da Paraíba. Estes dados foram obtidos por meio da execução de processo de crawling.
+
+A utilização dessas avaliações tem como o objetivo de verificar o desempenho de diferentes técnicas durante a varreduras dos portais de transparência. Nesta pespectiva, abordagens utilizando os algoritmos BFS, DFS, Bandit (e-greedy) foram testadas.
 
 ## Lendo os dados
 
@@ -35,17 +41,20 @@ gararito[is.na(gararito)] <- ""
 empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ```
 
+
+
 ## Removendo avaliações que não pertecem ao experimento 01
 
-Para uma avaliação ser considerada válida ela precisa conter 61 itens. Vamos desconsiderar as avaliações que não contém esse número
+Avaliações válidas são excuções do Auditor Crawler que possuem 61 itens pesquisados. Assim, para análise do experimento 01 foram desconsideradas avaliações que não atendem este critério. 
 
-Vamos remover também o município de Curral de Cima que encontra-se com seu portal de transparência fora do ar. 
+Além disso, as avaliações do município de Curral de Cima não foran consideradas por seu portal de transparência está atualmente fora do ar.
+
+
 ```{r}
 resultados_avaliacoes_exp01 <- resultados_avaliacoes_exp01 %>% 
   filter(tipo_exp == 'all_itens' & (municipio != 'Curral de Cima' & municipio != 'todo'))
 
 ```
-
 
 
 ## Adicionando combinação encontrada em cada município no gabarito
@@ -66,6 +75,8 @@ data<-left_join(resultados_avaliacoes_exp01, gararito, by=c("municipio", "item",
 ```
 
 ## Sumarizando as avaliações
+
+Um exemplo dos dados utilizados
 
 ```{r}
 
@@ -88,11 +99,12 @@ sumarise_exp01 <- data %>%
            & encontrado == FALSE
           )
 
-sumarise_exp01 %>%
-    datatable(options = list(pageLength = 5),  rownames = FALSE, class = 'cell-border stripe')
+head(sumarise_exp01)
 ```
 
 ## Quantificando métricas
+
+Calculando Recall, Precision, F1 Score e métricas relacionadas ao desempenho do Auditor Crawler.
 
 ```{r}
 
@@ -136,6 +148,7 @@ metricas_result_exp01 %>%
 
 ## Avaliações por abordagem
 
+
 ```{r}
 metricas_result_exp01 %>%
     group_by(aproach) %>% 
@@ -167,7 +180,12 @@ metricas_result_exp01 %>%
     datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
 
-## F1-score 
+## Análise das Abordagens Utilizadas
+
+Para análise dos resultados obtidos duranter as execuções do crawler para as distintas abordagens, foi utilizado a métrica F1 Score que representa a harmonia entre os valores de Precision e Recall. 
+
+A escolha dessa métrica foi motivada pela necessidade do equilíbrio entre os valores obtidos para Recall e Precision, em outras palavras, da necessidade de uma avaliação de transparência que consiga identificar a maior quantidade de itens possível (Recall) e que mantenha uma alta confiabilidade nos itens identificados (Precision). Abaixo é apresentada a distribuição das avaliações entre as abordagens.
+
 
 ```{r}
 metricas_result_exp01 %>% 
@@ -194,8 +212,12 @@ metricas_result_exp01 %>%
   labs(x='Abordagem', y="F1 Score", title="Avaliações por Abordagem", color = "")
 ``` 
 
+
+Com base na visualização é possível perceber que a abordagem Bandit apresenta a maior mediana. Além disso, é possível notar que a abordagem BFS é a única que não contém outlies.
+
 ## Intervalo de Confiança da Mediana encontrada do F1 Score para cada Abordagem
 
+Vamos criar intervalos de confiança para mediana de F1 Score para verificar se os intervalos contém a mediana da amostra entre as abordagens.
 
 ```{r}
 #Calcula a media das posições escolhidas nas buscas.
@@ -242,23 +264,25 @@ ics.aproach_exp01 %>%
   geom_point(aes(x=aproach, y=median_value), color='red', size=3) 
 ```
 
+De acordo com a visulização é verificar com 95% de confiança que a mediana da amostra para cada abordagem está contida nos intervalos.
 
 ## F1 Score por cada Município da Amostra 
 
 
 ```{r}
 metricas_result_exp01 %>% 
-  group_by(municipio) %>% 
+  group_by(municipio, aproach) %>% 
   summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
   ggplot(aes(y=municipio)) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=3) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
-                dot_guide=TRUE, dot_guide_size=0.25) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
+                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
   #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.5) +
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='F1 Score', y=NULL, title="F1 Score Por Município") 
+  labs(x='F1 Score', y=NULL, title="F1 Score Por Município") +
+  facet_grid(.~ aproach)
 ```
 
 

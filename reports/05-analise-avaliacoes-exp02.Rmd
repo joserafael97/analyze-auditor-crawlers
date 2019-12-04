@@ -84,8 +84,7 @@ sumarise_exp02 <- data %>%
            & encontrado == FALSE
           )
 
-sumarise_exp02 %>%
-    datatable(options = list(pageLength = 5),  rownames = FALSE, class = 'cell-border stripe')
+head(sumarise_exp02) 
 ```
 
 ## Quantificando métricas
@@ -244,16 +243,18 @@ ics.aproach_exp02 %>%
 
 ```{r}
 metricas_result_exp02 %>% 
-  group_by(municipio) %>% 
+  group_by(municipio, aproach) %>% 
   summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
   ggplot(aes(y=municipio)) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=3) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
-                dot_guide=TRUE, dot_guide_size=0.25) + 
-  geom_point(aes(x= median_value, color='#f39422'), size=5, shape=108) +
+  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
+                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
+  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='F1 Score', y=NULL, title="F1 Score Por Município") 
+  labs(x='F1 Score', y=NULL, title="F1 Score Por Município") +
+  facet_grid(.~ aproach)
 ```
 
 
