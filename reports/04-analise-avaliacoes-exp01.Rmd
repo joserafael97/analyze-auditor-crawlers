@@ -33,10 +33,10 @@ A utilização dessas avaliações tem como o objetivo de verificar o desempenho
 
 ```{r read}
 resultados_avaliacoes_exp01 = read_avaliacoes()
-resultados_avaliacoes_exp01[is.na(resultados_avaliacoes_exp01)] <- ""
+resultados_avaliacoes_exp01[is.na(resultados_avaliacoes_exp01)] <- ''
 
 gararito = read_gabaritos()
-gararito[is.na(gararito)] <- ""
+gararito[is.na(gararito)] <- ''
 
 empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ```
@@ -81,7 +81,7 @@ Um exemplo dos dados utilizados
 ```{r}
 
 sumarise_exp01 <- data %>% 
-    group_by(municipio, criterio, item, aproach, date) %>% 
+    group_by(id, municipio, criterio, item, aproach, date) %>% 
     mutate(
            
            #verifica se a avaliação foi acertiva
@@ -202,7 +202,7 @@ metricas_result_exp01 %>%
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.009,
+               binwidth = 0.007,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +

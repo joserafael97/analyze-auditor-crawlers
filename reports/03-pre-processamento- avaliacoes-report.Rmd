@@ -55,7 +55,7 @@ data<-left_join(resultados_avaliacoes, gararito, by=c("municipio", "item", "crit
 ```{r}
 
 precisao <- data %>% 
-    group_by(municipio, criterio, item, aproach, date) %>% 
+    group_by(id, municipio, criterio, item, aproach, date) %>% 
     mutate(
            
            #verifica se a avaliação foi acertiva
