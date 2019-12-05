@@ -34,6 +34,10 @@ A utilização dessas avaliações tem como o objetivo de verificar o desempenho
 ```{r read}
 resultados_avaliacoes_exp01 = read_avaliacoes()
 resultados_avaliacoes_exp01[is.na(resultados_avaliacoes_exp01)] <- ''
+resultados_avaliacoes_exp01$aproach <- replace(as.character(resultados_avaliacoes_exp01$aproach), resultados_avaliacoes_exp01$aproach == "bandit", "Epsilon-greedy")
+resultados_avaliacoes_exp01$aproach <- replace(as.character(resultados_avaliacoes_exp01$aproach), resultados_avaliacoes_exp01$aproach == "bfs", "Bfs")
+resultados_avaliacoes_exp01$aproach <- replace(as.character(resultados_avaliacoes_exp01$aproach), resultados_avaliacoes_exp01$aproach == "dfs", "Dfs")
+
 
 gararito = read_gabaritos()
 gararito[is.na(gararito)] <- ''
@@ -188,29 +192,46 @@ A escolha dessa métrica foi motivada pela necessidade do equilíbrio entre os v
 
 
 ```{r}
-metricas_result_exp01 %>% 
-  ggplot(aes(x = aproach, y = f1_score)) +
-  geom_boxplot() +
-  geom_jitter(aes(color=aproach), alpha=0.4) +
-  scale_color_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
-  labs(x='Abordagem', y="F1 Score", title="Avaliações por Abordagem")
-
-
 metricas_result_exp01 %>%
   group_by(aproach)  %>%
-  ggplot(aes(x = aproach, y = f1_score)) + 
+  ggplot(aes(x = aproach, y = recall)) + 
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.007,
+               binwidth = 0.012,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
   scale_linetype_manual("", values=c("median"="x")) +
   scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
   scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
-  labs(x='Abordagem', y="F1 Score", title="Avaliações por Abordagem", color = "")
-``` 
+  ylim(0.5, 1) +
+  labs(x='Algoritmo', y="Recall", color = "")
+
+ggsave('exp01-distribuition-recall.png')
+
+```
+
+```{r}
+metricas_result_exp01 %>%
+  group_by(aproach)  %>%
+  ggplot(aes(x = aproach, y = precision)) + 
+  geom_dotplot(aes(fill = aproach),
+               color='white',
+               binaxis = "y", 
+               binwidth = 0.011,
+               stackdir = "center") +
+  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
+                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
+  scale_linetype_manual("", values=c("median"="x")) +
+  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
+  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
+  ylim(0.5, 1) +
+  labs(x='Algoritmo', y="Precisão", color = "")
+
+ggsave('exp01-distribuition-precision.png')
+```
+
 
 
 Com base na visualização é possível perceber que a abordagem Bandit apresenta a maior mediana. Além disso, é possível notar que a abordagem BFS é a única que não contém outlies.
@@ -223,20 +244,20 @@ Vamos criar intervalos de confiança para mediana de F1 Score para verificar se 
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
-f1_score_boot <- function (d, i) {
+recall_boot <- function (d, i) {
     dt<-d[i,]
     return(c(
-          median(dt$f1_score)
+          median(dt$recall)
     ))
 }
 
-create_ic <- function(x) {
+create_ic.recall <- function(x) {
   x <- last(x)
   df.boot <- filter(metricas_result_exp01, aproach == x)
   
   bootstrap.aproach <- boot(
           data = df.boot, 
-          statistic = f1_score_boot, 
+          statistic = precision_boot, 
           R = 4000 )
   
   ci = tidy(bootstrap.aproach, 
@@ -250,21 +271,74 @@ create_ic <- function(x) {
 }
 
 
-ics.aproach_exp01 <- metricas_result_exp01 %>%
+ics.aproach_exp01.recall <- metricas_result_exp01 %>%
   group_by(aproach) %>% 
    summarise(
      median_value = median(f1_score),
-     ci = list(create_ic(aproach))
+     ci = list(create_ic.recall(aproach))
   ) %>% 
   unnest(ci) 
   
-ics.aproach_exp01 %>%  
+ics.aproach_exp01.recall %>%  
   ggplot() + 
   geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
-  geom_point(aes(x=aproach, y=median_value), color='red', size=3) 
+  geom_point(aes(x=aproach, y=median_value), color='#f39422', size=2) + 
+  ylim(0.5, 1)
+
 ```
 
+
+
 De acordo com a visulização é verificar com 95% de confiança que a mediana da amostra para cada abordagem está contida nos intervalos.
+
+
+```{r}
+#Calcula a media das posições escolhidas nas buscas.
+set.seed(123)
+
+precision_boot <- function (d, i) {
+    dt<-d[i,]
+    return(c(
+          median(dt$precision)
+    ))
+}
+
+create_ic.recall <- function(x) {
+  x <- last(x)
+  df.boot <- filter(metricas_result_exp01, aproach == x)
+  
+  bootstrap.aproach <- boot(
+          data = df.boot, 
+          statistic = recall_boot, 
+          R = 4000 )
+  
+  ci = tidy(bootstrap.aproach, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+  
+  print(glimpse(ci))
+  
+  return(ci)
+}
+
+
+ics.aproach_exp01.recall <- metricas_result_exp01 %>%
+  group_by(aproach) %>% 
+   summarise(
+     median_value = median(f1_score),
+     ci = list(create_ic.recall(aproach))
+  ) %>% 
+  unnest(ci) 
+  
+ics.aproach_exp01.recall %>%  
+  ggplot() + 
+  geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=aproach, y=median_value), color='#f39422', size=2) + 
+  ylim(0.5, 1)
+
+```
+
 
 ## F1 Score por cada Município da Amostra 
 
