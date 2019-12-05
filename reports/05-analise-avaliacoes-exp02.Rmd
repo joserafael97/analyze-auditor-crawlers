@@ -146,7 +146,7 @@ metricas_result_exp02 %>%
 ```{r}
 metricas_result_exp02 %>%
     group_by(municipio) %>%
-    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
+    summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'bandit')) %>%
     arrange(desc(dfs)) %>%
     datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```

@@ -170,7 +170,7 @@ metricas_result_exp01 %>%
 ```{r}
 metricas_result_exp01 %>%
     group_by(municipio) %>%
-    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
+    summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy')) %>%
     arrange(desc(dfs)) %>%
     datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
@@ -244,7 +244,7 @@ Vamos criar intervalos de confiança para mediana de F1 Score para verificar se 
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
-recall_boot <- function (d, i) {
+precision_boot <- function (d, i) {
     dt<-d[i,]
     return(c(
           median(dt$recall)
@@ -274,7 +274,7 @@ create_ic.recall <- function(x) {
 ics.aproach_exp01.recall <- metricas_result_exp01 %>%
   group_by(aproach) %>% 
    summarise(
-     median_value = median(f1_score),
+     median_value = median(recall),
      ci = list(create_ic.recall(aproach))
   ) %>% 
   unnest(ci) 
@@ -283,7 +283,7 @@ ics.aproach_exp01.recall %>%
   ggplot() + 
   geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
   geom_point(aes(x=aproach, y=median_value), color='#f39422', size=2) + 
-  ylim(0.5, 1)
+  ylim(0.7, 1)
 
 ```
 
@@ -303,16 +303,16 @@ precision_boot <- function (d, i) {
     ))
 }
 
-create_ic.recall <- function(x) {
+create_ic.precision <- function(x) {
   x <- last(x)
   df.boot <- filter(metricas_result_exp01, aproach == x)
   
-  bootstrap.aproach <- boot(
+  bootstrap.aproach.precision <- boot(
           data = df.boot, 
-          statistic = recall_boot, 
+          statistic = precision_boot, 
           R = 4000 )
   
-  ci = tidy(bootstrap.aproach, 
+  ci = tidy(bootstrap.aproach.precision, 
           conf.level = .95,
           conf.method = "bca",
           conf.int = TRUE)
@@ -323,19 +323,19 @@ create_ic.recall <- function(x) {
 }
 
 
-ics.aproach_exp01.recall <- metricas_result_exp01 %>%
+ics.aproach_exp01.precision <- metricas_result_exp01 %>%
   group_by(aproach) %>% 
    summarise(
-     median_value = median(f1_score),
-     ci = list(create_ic.recall(aproach))
+     median_value = median(precision),
+     ci = list(create_ic.precision(aproach))
   ) %>% 
   unnest(ci) 
   
-ics.aproach_exp01.recall %>%  
+ics.aproach_exp01.precision %>%  
   ggplot() + 
   geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
-  geom_point(aes(x=aproach, y=median_value), color='#f39422', size=2) + 
-  ylim(0.5, 1)
+  geom_point(aes(x=aproach, y=median_value), color='#f39422', size=1) + 
+  ylim(0.7, 1)
 
 ```
 
