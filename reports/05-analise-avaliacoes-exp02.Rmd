@@ -28,6 +28,9 @@ theme_set(theme_bw())
 ```{r read}
 resultados_avaliacoes_exp02 = read_avaliacoes()
 resultados_avaliacoes_exp02[is.na(resultados_avaliacoes_exp02)] <- ""
+resultados_avaliacoes_exp02$aproach <- replace(as.character(resultados_avaliacoes_exp02$aproach), resultados_avaliacoes_exp02$aproach == "bandit", "Epsilon-greedy")
+resultados_avaliacoes_exp02$aproach <- replace(as.character(resultados_avaliacoes_exp02$aproach), resultados_avaliacoes_exp02$aproach == "bfs", "Bfs")
+resultados_avaliacoes_exp02$aproach <- replace(as.character(resultados_avaliacoes_exp02$aproach), resultados_avaliacoes_exp02$aproach == "dfs", "Dfs")
 
 gararito = read_gabaritos()
 gararito[is.na(gararito)] <- ""
@@ -164,7 +167,7 @@ metricas_result_exp02 %>%
 ```{r}
 metricas_result_exp02 %>%
     group_by(municipio) %>%
-    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
+    summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy')) %>%
     arrange(desc(dfs)) %>%
     datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
@@ -202,7 +205,7 @@ metricas_result_exp02 %>%
   scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
   labs(x='Algoritmo', y="Recall", title="", color = "") + 
   guides(fill=guide_legend(title="Algoritmo"))  + 
-  theme(legend.position = "bottom")
+  theme(legend.position = "top")
 
 
 ``` 
@@ -225,7 +228,7 @@ metricas_result_exp02 %>%
   scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
   labs(x='Algoritmo', y="Precisão", title="", color = "") + 
   guides(fill=guide_legend(title="Algoritmo")) + 
-  theme(legend.position = "bottom")
+  theme(legend.position = "top")
 
   
 
@@ -336,17 +339,18 @@ ics.aproach_exp02 %>%
 ```{r}
 metricas_result_exp02 %>% 
   group_by(municipio, aproach) %>% 
-  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
-  ggplot(aes(y=municipio)) + 
+  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score), dif = max_value - min_value) %>% 
+  ggplot(aes(y=reorder(municipio, dif))) + 
   geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
   geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=2,
                 dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
   #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
+  geom_point(aes(x= median_value, color='#f39422'), size=2, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
   labs(x='F1 Score', y=NULL, title="") +
-  facet_grid(.~ aproach)
+  facet_grid(.~ aproach) + 
+  theme(legend.position = "top")
 ```
 
 
@@ -368,7 +372,7 @@ metricas_result_exp02 %>%
   scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
   labs(x='Algoritmo', y="Duração (Min)", title="", color = "") + 
   guides(fill=guide_legend(title="Algoritmo")) + 
-  theme(legend.position = "bottom")
+  theme(legend.position = "top")
 
 ```
 
@@ -391,7 +395,7 @@ metricas_result_exp02 %>%
   scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
   labs(x='Algoritmo', y="Número de Nós Acessados", title="", color = "") + 
   guides(fill=guide_legend(title="Algoritmo")) + 
-  theme(legend.position = "bottom")
+  theme(legend.position = "top")
 
 ```
 
@@ -411,7 +415,8 @@ metricas_result_exp02 %>%
   geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
   labs(x='F1 Score', y=NULL, title="") +
-  facet_grid(.~ aproach)
+  facet_grid(.~ aproach) + 
+  theme(legend.position = "top")
 
 ```
 
@@ -421,8 +426,8 @@ metricas_result_exp02 %>%
 
 metricas_result_exp02 %>% 
   group_by(combination, aproach) %>% 
-  summarise(max_value = max(max_num_access_node), min_value = min(max_num_access_node), median_value=median(max_num_access_node)) %>% 
-  ggplot(aes(y=combination)) + 
+  summarise(max_value = max(max_num_access_node), min_value = min(max_num_access_node), median_value=median(max_num_access_node), dif = max_value - min_value) %>% 
+  ggplot(aes(y=reorder(combination, dif))) + 
   geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
   geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
   geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
@@ -431,7 +436,8 @@ metricas_result_exp02 %>%
   geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
   labs(x='Número de Nós Acessados', y=NULL, title="") +
-  facet_grid(.~ aproach)
+  facet_grid(.~ aproach) + 
+  theme(legend.position = "top")
 ```
 
 ## Duração das avaliações por combinações
@@ -449,7 +455,8 @@ metricas_result_exp02 %>%
   geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
   labs(x='Duração (Min)', y=NULL, title="") +
-  facet_grid(.~ aproach)
+  facet_grid(.~ aproach) + 
+  theme(legend.position = "top")
 ```
 
 
