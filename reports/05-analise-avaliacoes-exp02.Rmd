@@ -401,8 +401,8 @@ metricas_result_exp02 %>%
 ```{r}
 metricas_result_exp02 %>% 
   group_by(combination, aproach) %>% 
-  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
-  ggplot(aes(y=combination)) + 
+  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score), dif = max_value - min_value) %>% 
+  ggplot(aes(y=reorder(combination, dif))) + 
   geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
   geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
   geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
@@ -448,7 +448,7 @@ metricas_result_exp02 %>%
   #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
   geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='Número de Nós Acessados', y=NULL, title="") +
+  labs(x='Duração (Min)', y=NULL, title="") +
   facet_grid(.~ aproach)
 ```
 

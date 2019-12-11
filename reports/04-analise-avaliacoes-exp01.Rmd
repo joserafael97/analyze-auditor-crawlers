@@ -106,6 +106,8 @@ sumarise_exp01 <- data %>%
 head(sumarise_exp01)
 ```
 
+
+
 ## Quantificando métricas
 
 Calculando Recall, Precision, F1 Score e métricas relacionadas ao desempenho do Auditor Crawler.
@@ -140,7 +142,7 @@ metricas_result_exp01 <- sumarise_exp01 %>%
 
 
 metricas_result_exp01 <- metricas_result_exp01 %>%
-  filter(total_itens == 61)
+  filter(total_itens == 61  & recall > 0.46)
 
 metricas_result_exp01 %>% 
     write_csv(here::here("data/resultados_sumarizado_exp01.csv"))
@@ -148,6 +150,20 @@ metricas_result_exp01 %>%
 metricas_result_exp01 %>%
   arrange(desc(recall))
 
+```
+
+## Remoção de avaliações que não possuem maior 
+
+```{r}
+metricas_result_exp01 <- metricas_result_exp01 %>%
+  group_by(municipio, aproach) %>%
+  mutate(variance_recall = sd(recall), recall_median = median(recall)) %>%
+  ungroup() %>%
+  mutate(recall_t = recall - recall_median ) %>%
+  arrange(desc(recall_t), municipio, aproach) %>%
+  group_by(municipio, aproach) %>%
+  slice(seq_len(3)) %>%
+  ungroup()
 ```
 
 ## Avaliações por abordagem
@@ -193,20 +209,23 @@ A escolha dessa métrica foi motivada pela necessidade do equilíbrio entre os v
 
 ```{r}
 metricas_result_exp01 %>%
-  group_by(aproach)  %>%
-  ggplot(aes(x = aproach, y = recall)) + 
+  group_by(aproach) %>%
+  mutate(median_value = median(recall)) %>%
+  ungroup() %>%
+  ggplot(aes(x =  reorder(aproach, -(median_value)), y = recall)) + 
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.012,
+               binwidth = 0.0115,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
-                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
+                 geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
   scale_linetype_manual("", values=c("median"="x")) +
   scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
   scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
   ylim(0.5, 1) +
-  labs(x='Algoritmo', y="Recall", color = "")
+  labs(x='Algoritmo', y="Recall", color = "") + 
+  theme(legend.position = "top")
 
 ggsave('exp01-distribuition-recall.png')
 
@@ -214,20 +233,24 @@ ggsave('exp01-distribuition-recall.png')
 
 ```{r}
 metricas_result_exp01 %>%
-  group_by(aproach)  %>%
-  ggplot(aes(x = aproach, y = precision)) + 
+  group_by(aproach) %>%
+  mutate(median_value = median(recall)) %>%
+  ungroup() %>%
+  ggplot(aes(x = reorder(aproach, +(median_value)), y = precision)) + 
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.011,
+               binwidth = 0.0115,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
-                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
+                 geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
   scale_linetype_manual("", values=c("median"="x")) +
   scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
   scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
+  labs(x='Algoritmo', y="Precisão", title="", color = "") + 
+  guides(fill=guide_legend(title="Algoritmo")) + 
   ylim(0.5, 1) +
-  labs(x='Algoritmo', y="Precisão", color = "")
+  theme(legend.position = "top")
 
 ggsave('exp01-distribuition-precision.png')
 ```
@@ -281,9 +304,12 @@ ics.aproach_exp01.recall <- metricas_result_exp01 %>%
   
 ics.aproach_exp01.recall %>%  
   ggplot() + 
-  geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_errorbar(aes(x =  reorder(aproach, -(median_value)), y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
   geom_point(aes(x=aproach, y=median_value), color='#f39422', size=2) + 
-  ylim(0.7, 1)
+  ylim(0.7, 1) +
+  labs(x='Algoritmo', y="Recall", title="", color = "") 
+
+ggsave('exp01-ci-recall.png')
 
 ```
 
@@ -335,7 +361,10 @@ ics.aproach_exp01.precision %>%
   ggplot() + 
   geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
   geom_point(aes(x=aproach, y=median_value), color='#f39422', size=1) + 
-  ylim(0.7, 1)
+  ylim(0.7, 1) +
+  labs(x='Algoritmo', y="Precisão", title="", color = "") 
+
+ggsave('exp01-ci-precision.png')
 
 ```
 
@@ -350,13 +379,17 @@ metricas_result_exp01 %>%
   ggplot(aes(y=municipio)) + 
   geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
   geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=2,
                 dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
   #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
+  geom_point(aes(x= median_value, color='#f39422'), size=2, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='F1 Score', y=NULL, title="F1 Score Por Município") +
-  facet_grid(.~ aproach)
+  labs(x='F1 Score', y=NULL, title="") +
+  facet_grid(.~ aproach)  + 
+  theme(legend.position = "top")
+
+ggsave('exp01-f1score-by_municipios.png')
+
 ```
 
 
@@ -423,8 +456,23 @@ boot.aproach_exp01.mun %>%
 
 ```{r}
 metricas_result_exp01 %>%
-    ggplot(aes(x = reorder(aproach, +(max_durationMin)), y = max_durationMin)) +
-    geom_boxplot() 
+  group_by(aproach)  %>%
+  ggplot(aes(x = reorder(aproach, -(max_durationMin)), y = max_durationMin)) + 
+  geom_dotplot(aes(fill = aproach),
+               color='white',
+               binaxis = "y", 
+               binwidth = 17,
+               stackdir = "center") +
+  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
+                 geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
+  scale_linetype_manual("", values=c("median"="x")) +
+  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
+  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
+  labs(x='Algoritmo', y="Duração (Min)", title="", color = "") + 
+  guides(fill=guide_legend(title="Algoritmo")) + 
+  theme(legend.position = "top")
+
+ggsave('exp01-duration.png')
 
 ```
 
@@ -432,10 +480,24 @@ metricas_result_exp01 %>%
 
 
 ```{r}
-
 metricas_result_exp01 %>%
-  ggplot(aes(x = reorder(aproach, +(max_num_access_node)), y = max_num_access_node)) +
-  geom_boxplot()
+  group_by(aproach)  %>%
+  ggplot(aes(x = reorder(aproach, -(max_num_access_node)), y = max_num_access_node)) + 
+  geom_dotplot(aes(fill = aproach),
+               color='white',
+               binaxis = "y", 
+               binwidth = 5,
+               stackdir = "center") +
+  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
+                 geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
+  scale_linetype_manual("", values=c("median"="x")) +
+  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
+  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
+  labs(x='Algoritmo', y="Número de Nós Acessados", title="", color = "") + 
+  guides(fill=guide_legend(title="Algoritmo")) + 
+  theme(legend.position = "top")
+
+ggsave('exp01-n-access-nodes.png')
 ```
 
 
@@ -444,49 +506,67 @@ metricas_result_exp01 %>%
 ```{r}
 
 metricas_result_exp01 %>% 
-  group_by(combination) %>% 
-  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
-  ggplot(aes(y=combination)) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=3) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
-                dot_guide=TRUE, dot_guide_size=0.25) + 
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha=0.7) +
+  group_by(combination, aproach) %>% 
+  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score), dif = max_value - min_value) %>% 
+  ggplot(aes(y=reorder(combination, dif))) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
+                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
+  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='F1 Score', y=NULL, title="Combinações por F1 Score") 
+  labs(x='F1 Score', y=NULL, title="") +
+  facet_grid(.~ aproach)  + 
+  theme(legend.position = "top")
+
+ggsave('exp01-f1score-by_combinations.png')
 
 ```
 
 ## Número de nós acessados por combinação
 
 ```{r}
+
 metricas_result_exp01 %>% 
-  group_by(combination) %>% 
-  summarise(max_value = max(max_num_access_node), min_value = min(max_num_access_node), median_value=median(max_num_access_node)) %>% 
-  ggplot(aes(y=combination)) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=3) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
-                dot_guide=TRUE, dot_guide_size=0.25) + 
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha=0.7) +
+  group_by(combination, aproach) %>% 
+  summarise(max_value = max(max_num_access_node), min_value = min(max_num_access_node), median_value=median(max_num_access_node), dif = max_value-min_value) %>% 
+  ggplot(aes(y=reorder(combination, dif))) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
+                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
+  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='Número de nós', y=NULL, title="Combinações Por Número de Nós Acessados") 
+  labs(x='Número de Nós Acessados', y=NULL, title="") +
+  facet_grid(.~ aproach) + 
+  theme(legend.position = "top")
+
+ggsave('exp01-num_nodes_by_combinations.png')
+
 ```
 
 ## Duração das avaliações por combinações
 
 ```{r}
 metricas_result_exp01 %>% 
-  group_by(combination) %>% 
-  summarise(max_value = max(max_durationMin), min_value = min(max_durationMin), median_value=median(max_durationMin)) %>% 
-  ggplot(aes(y=combination)) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=3) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=3)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3,
-                dot_guide=TRUE, dot_guide_size=0.25) + 
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha=0.7) +
+  group_by(combination, aproach) %>% 
+  summarise(max_value = max(max_durationMin), min_value = min(max_durationMin), median_value=median(max_durationMin), dif = max_value - min_value) %>% 
+  ggplot(aes(y=reorder(combination, dif))) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
+                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
+  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
+  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
   scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='Minutos', y=NULL, title="Combinações Por Tempo de Duração") 
+  labs(x='Duração (Min)', y=NULL, title="") +
+  facet_grid(.~ aproach) + 
+  theme(legend.position = "top")
+
+ggsave('exp01-duration_nodes_by_combinations.png')
+
 ```
 
 
