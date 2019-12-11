@@ -1,0 +1,5 @@
+municipio,aproach,date,total_itens,tp_total,fn_total,fp_total,recall,precision,f1_score,median_duration_min,median_duration,max_duration,max_durationMin,median_num_access_node,max_num_access_node,all_access_node,combination,tipo_exp
+Campina Grande,bandit,2019-12-10T18:59:56Z,48,38,8,2,0.8260869565217391,0.95,0.8837209302325583,13,766618,1634126,27,13,17,601,Alfa Consultoria / Publicsoft,less_itens
+Campina Grande,bfs,2019-12-10T19:00:26Z,48,38,8,2,0.8260869565217391,0.95,0.8837209302325583,15,916045,1639291,27,15,17,650,Alfa Consultoria / Publicsoft,less_itens
+Ouro Velho,bandit,2019-12-10T19:29:20Z,48,43,2,3,0.9555555555555556,0.9347826086956522,0.945054945054945,15,903625,2020698,34,10,16,515,Publicsoft,less_itens
+Ouro Velho,bfs,2019-12-10T19:29:18Z,48,43,2,3,0.9555555555555556,0.9347826086956522,0.945054945054945,20,1186554,2017530,34,14,16,604,Publicsoft,less_itens
