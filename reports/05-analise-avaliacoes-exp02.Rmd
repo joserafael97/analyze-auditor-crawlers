@@ -459,4 +459,32 @@ metricas_result_exp02 %>%
   theme(legend.position = "top")
 ```
 
+```{r}
+sumarise_exp02 %>% 
+  filter(municipio == 'Alcantil' , aproach != 'Dfs', criterio == 'Despesa Extra Orçamentária') %>% 
+  group_by(municipio, aproach, date) %>% 
+    summarise(
+        total_itens = n(),
+        tp_total = sum(tp), 
+        fn_total = sum(fn),
+        fp_total = sum(fp),
+        
+        #cálculo das métricas 
+        recall = tp_total/(tp_total + fn_total),
+        precision =  tp_total/(tp_total + fp_total),
+        f1_score = (2*(recall*precision))/(recall+precision),
+        
+        #tempo das avaliações
+        median_duration_min = median(durationMin),
+        median_duration = median(duration),
+        max_duration = max(duration),
+        max_durationMin = max(durationMin),
+        median_num_access_node = median(contNodeNumberAccess),
+        max_num_access_node = max(contNodeNumberAccess),
+        all_access_node = sum(contNodeNumberAccess),
+        combination = last(fornecedor),
+        tipo_exp = last(tipo_exp)
+    )
+```
+
 
