@@ -461,8 +461,7 @@ metricas_result_exp02 %>%
 
 ```{r}
 sumarise_exp02 %>% 
-  filter(municipio == 'Alcantil' , aproach != 'Dfs', criterio == 'Despesa Extra Orçamentária') %>% 
-  group_by(municipio, aproach, date) %>% 
+  group_by(municipio, criterio, aproach, date) %>% 
     summarise(
         total_itens = n(),
         tp_total = sum(tp), 
@@ -484,7 +483,50 @@ sumarise_exp02 %>%
         all_access_node = sum(contNodeNumberAccess),
         combination = last(fornecedor),
         tipo_exp = last(tipo_exp)
-    )
+    ) %>%
+  filter(total_itens == tp_total) %>%
+  group_by(criterio) %>%
+  summarise(n = n()) %>%
+  arrange(desc(n)) 
+
+
+
+sumarise_exp02 %>% 
+  filter(criterio == 'Despesa Extra Orçamentária') %>%
+  group_by(municipio, criterio, aproach, date) %>% 
+    summarise(
+        total_itens = n(),
+        tp_total = sum(tp), 
+        fn_total = sum(fn),
+        fp_total = sum(fp),
+        
+        #cálculo das métricas 
+        recall = tp_total/(tp_total + fn_total),
+        precision =  tp_total/(tp_total + fp_total),
+        f1_score = (2*(recall*precision))/(recall+precision),
+        
+        #tempo das avaliações
+        median_duration_min = median(durationMin),
+        median_duration = median(duration),
+        max_duration = max(duration),
+        max_durationMin = max(durationMin),
+        median_num_access_node = median(contNodeNumberAccess),
+        max_num_access_node = max(contNodeNumberAccess),
+        all_access_node = sum(contNodeNumberAccess),
+        combination = last(fornecedor),
+        tipo_exp = last(tipo_exp)
+    ) %>%
+  filter(total_itens == tp_total)  %>%
+  ggplot(aes(x = reorder(aproach, -(max_num_access_node)), y = max_num_access_node)) + 
+  geom_point() +
+  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
+                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
+  scale_linetype_manual("", values=c("median"="x")) +
+  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
+  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
+  labs(x='Algoritmo', y="Nº de Nós Acessados", title="", color = "") + 
+  guides(fill=guide_legend(title="Algoritmo")) + 
+  theme(legend.position = "top")
 ```
 
 
