@@ -22,16 +22,26 @@ source(here::here("code/lib.R"))
 library(knitr)
 library(kableExtra)
 theme_set(theme_bw())
-
+require(gridExtra)
 ```
 
-Este relatório usa dados de avaliações transparência de fiscal de uma amostra de 30 portais de transparência do estado da Paraíba. Estes dados foram obtidos por meio da execução de processo de crawling.
 
-A utilização dessas avaliações tem como o objetivo de verificar o desempenho de diferentes técnicas durante a varreduras dos portais de transparência. Nesta pespectiva, abordagens utilizando os algoritmos BFS, DFS, Bandit (e-greedy) foram testadas.
+## Problema 
+
+A ausência de estratégias  de recuperação da informação eficientes e de caráter eficaz, com aplicação robusta no contexto da identificação e avaliação automática de critérios fiscais em portais de transparência municipais.
+
+## Contexto
+
+Com base no problema apresentado, este trabalho 
+
+## Experimento 1 
+
+
+
 
 ## Lendo os dados
 
-```{r read}
+```{r warning=FALSE, include=FALSE}
 resultados_avaliacoes_exp01 = read_avaliacoes()
 resultados_avaliacoes_exp01[is.na(resultados_avaliacoes_exp01)] <- ''
 resultados_avaliacoes_exp01$aproach <- replace(as.character(resultados_avaliacoes_exp01$aproach), resultados_avaliacoes_exp01$aproach == "bandit", "Epsilon-greedy")
@@ -47,6 +57,9 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 
 
 
+
+
+
 ## Removendo avaliações que não pertecem ao experimento 01
 
 Avaliações válidas são excuções do Auditor Crawler que possuem 61 itens pesquisados. Assim, para análise do experimento 01 foram desconsideradas avaliações que não atendem este critério. 
@@ -54,7 +67,7 @@ Avaliações válidas são excuções do Auditor Crawler que possuem 61 itens pe
 Além disso, as avaliações do município de Curral de Cima não foran consideradas por seu portal de transparência está atualmente fora do ar.
 
 
-```{r}
+```{r warning=FALSE, include=FALSE}
 resultados_avaliacoes_exp01 <- resultados_avaliacoes_exp01 %>% 
   filter(tipo_exp == 'all_itens' & (municipio != 'Curral de Cima' & municipio != 'todo'))
 
@@ -63,7 +76,7 @@ resultados_avaliacoes_exp01 <- resultados_avaliacoes_exp01 %>%
 
 ## Adicionando combinação encontrada em cada município no gabarito
 
-```{r}
+```{r warning=FALSE, include=FALSE}
 empresas_portais <- empresas_portais %>% 
     select(municipio, fornecedor)
 
@@ -73,7 +86,7 @@ gararito<-left_join(gararito, empresas_portais, by=c("municipio"))
 
 ## Juntando Avaliações e Gabaritos
 
-```{r}
+```{r warning=FALSE, include=FALSE}
 # concatena os dois csv o do gabarito e avaliações do crawler
 data<-left_join(resultados_avaliacoes_exp01, gararito, by=c("municipio", "item", "criterio"))
 ```
@@ -82,7 +95,7 @@ data<-left_join(resultados_avaliacoes_exp01, gararito, by=c("municipio", "item",
 
 Um exemplo dos dados utilizados
 
-```{r}
+```{r echo=FALSE}
 
 sumarise_exp01 <- data %>% 
     group_by(id, municipio, criterio, item, aproach, date) %>% 
@@ -103,7 +116,8 @@ sumarise_exp01 <- data %>%
            & encontrado == FALSE
           )
 
-head(sumarise_exp01)
+kable(head(sumarise_exp01)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) 
 ```
 
 
@@ -112,7 +126,7 @@ head(sumarise_exp01)
 
 Calculando Recall, Precision, F1 Score e métricas relacionadas ao desempenho do Auditor Crawler.
 
-```{r}
+```{r warning=FALSE, include=FALSE}
 
 metricas_result_exp01 <- sumarise_exp01 %>% 
     #filter(!is.na(aproach )) %>% 
@@ -154,7 +168,7 @@ metricas_result_exp01 %>%
 
 ## Remoção de avaliações que não possuem maior 
 
-```{r}
+```{r warning=FALSE, include=FALSE}
 metricas_result_exp01 <- metricas_result_exp01 %>%
   group_by(municipio, aproach) %>%
   mutate(variance_recall = sd(recall), recall_median = median(recall)) %>%
@@ -169,7 +183,7 @@ metricas_result_exp01 <- metricas_result_exp01 %>%
 ## Avaliações por abordagem
 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp01 %>%
     group_by(aproach) %>% 
     summarise(ocorrencia = n()) %>%
@@ -181,24 +195,7 @@ metricas_result_exp01 %>%
     coord_flip()
 ```
 
-## Número de Avaliações por abordagem
 
-```{r}
-metricas_result_exp01 %>%
-    group_by(municipio) %>%
-    summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy')) %>%
-    arrange(desc(dfs)) %>%
-    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
-```
-
-## Todas as Avaliações
-
-```{r}
-metricas_result_exp01 %>%
-    select(municipio, aproach, date, recall, precision, f1_score) %>%
-    arrange(desc(recall)) %>% 
-    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
-```
 
 ## Análise das Abordagens Utilizadas
 
@@ -207,7 +204,7 @@ Para análise dos resultados obtidos duranter as execuções do crawler para as 
 A escolha dessa métrica foi motivada pela necessidade do equilíbrio entre os valores obtidos para Recall e Precision, em outras palavras, da necessidade de uma avaliação de transparência que consiga identificar a maior quantidade de itens possível (Recall) e que mantenha uma alta confiabilidade nos itens identificados (Precision). Abaixo é apresentada a distribuição das avaliações entre as abordagens.
 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp01 %>%
   group_by(aproach) %>%
   mutate(median_value = median(recall)) %>%
@@ -227,11 +224,175 @@ metricas_result_exp01 %>%
   labs(x='Algoritmo', y="Recall", color = "") + 
   theme(legend.position = "top")
 
-ggsave('exp01-distribuition-recall.png')
+ggsave('01-exp01-distribuition-recall.png')
 
 ```
 
-```{r}
+
+## Intervalo de Confiança
+
+Vamos criar intervalos de confiança para mediana de F1 Score para verificar se os intervalos contém a mediana da amostra entre as abordagens.
+
+```{r echo=FALSE}
+#Calcula a media das posições escolhidas nas buscas.
+set.seed(123)
+
+recall_boot <- function (d, i) {
+    dt<-d[i,]
+    return(c(
+          median(dt$recall)
+    ))
+}
+
+create_ic.recall <- function(x) {
+  x <- last(x)
+  df.boot <- filter(metricas_result_exp01, aproach == x)
+  
+  bootstrap.aproach <- boot(
+          data = df.boot, 
+          statistic = recall_boot, 
+          R = 4000 )
+  
+  ci = tidy(bootstrap.aproach, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+  
+  print(glimpse(ci))
+  
+  return(ci)
+}
+
+
+ics.aproach_exp01.recall <- metricas_result_exp01 %>%
+  group_by(aproach) %>% 
+   summarise(
+     median_value = median(recall),
+     ci = list(create_ic.recall(aproach))
+  ) %>% 
+  unnest(ci) 
+
+
+```
+
+### IC Diferença Recall 
+
+```{r echo=FALSE}
+set.seed(123)
+
+# IC entre DFs e E-greedy
+
+diff_mediana_recall.e_greedy.dfs <- function (d, i) {
+
+  grupo = metricas_result_exp01 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(recall))
+  
+  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  dfs = grupo %>% filter(aproach ==  "Dfs") %>% pull(median_value_test)
+  
+  return(e_greedy-dfs)
+}
+
+booted.dif <- boot(data = metricas_result_exp01, 
+               statistic = diff_mediana_recall.e_greedy.dfs, 
+               R = 4000)
+ci.dif = tidy(booted.dif, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+glimpse(ci.dif)
+
+
+# IC entre BFs e E-greedy
+
+diff_mediana_recall.e_greedy.bfs <- function (d, i) {
+
+  grupo = metricas_result_exp01 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(recall))
+  
+  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
+  
+  return(e_greedy-bfs)
+}
+
+booted.dif.recall.2 <- boot(data = metricas_result_exp01, 
+               statistic = diff_mediana_recall.e_greedy.bfs, 
+               R = 4000)
+
+ci.dif.recall.greedy.bfs = tidy(booted.dif.recall.2, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.recall.greedy.bfs)
+
+p1.recall.e_greedy.dfs = ics.aproach_exp01.recall %>% 
+  filter(aproach != 'Bfs') %>%  
+  ggplot() + 
+  geom_errorbar(aes(x =  reorder(aproach, -(median_value)), y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=aproach, y=median_value), size=3) + 
+  ylim(0.7, 1) +
+  labs(x='Algoritmo', y="Recall", title="", color = "")  +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  coord_flip() 
+
+
+
+p2.recall.e_greedy.dfs = ci.dif %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 3) + 
+  coord_flip(ylim = c(-0.5, 0.5)) +
+  labs(x = "",
+       y = "") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray")) +
+  geom_hline(yintercept = -0.5, color="#B2B0AF",)
+
+
+p1.recall.e_greedy.bfs = ics.aproach_exp01.recall %>% 
+  filter(aproach != 'Dfs') %>%  
+  ggplot() + 
+  geom_errorbar(aes(x =  reorder(aproach, -(median_value)), y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=aproach, y=median_value), size=3) + 
+  ylim(0.7, 1) +
+  labs(x='Algoritmo', y="Recall", title="", color = "")  +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  coord_flip() 
+  
+
+
+p2.recall.e_greedy.bfs = ci.dif.recall.greedy.bfs %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 3) + 
+  coord_flip(ylim = c(-0.5, 0.5)) +
+  labs(x = "",
+       y = "Recall") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = -0.5, color="#B2B0AF",)
+
+
+grid.arrange(p1.recall.e_greedy.dfs, p2.recall.e_greedy.dfs, nrow = 1)
+grid.arrange(p1.recall.e_greedy.bfs, p2.recall.e_greedy.bfs, nrow = 1)
+
+```
+
+
+
+```{r echo=FALSE}
 metricas_result_exp01 %>%
   group_by(aproach) %>%
   mutate(median_value = median(recall)) %>%
@@ -259,66 +420,11 @@ ggsave('exp01-distribuition-precision.png')
 
 Com base na visualização é possível perceber que a abordagem Bandit apresenta a maior mediana. Além disso, é possível notar que a abordagem BFS é a única que não contém outlies.
 
-## Intervalo de Confiança da Mediana encontrada do F1 Score para cada Abordagem
-
-Vamos criar intervalos de confiança para mediana de F1 Score para verificar se os intervalos contém a mediana da amostra entre as abordagens.
-
-```{r}
-#Calcula a media das posições escolhidas nas buscas.
-set.seed(123)
-
-precision_boot <- function (d, i) {
-    dt<-d[i,]
-    return(c(
-          median(dt$recall)
-    ))
-}
-
-create_ic.recall <- function(x) {
-  x <- last(x)
-  df.boot <- filter(metricas_result_exp01, aproach == x)
-  
-  bootstrap.aproach <- boot(
-          data = df.boot, 
-          statistic = precision_boot, 
-          R = 4000 )
-  
-  ci = tidy(bootstrap.aproach, 
-          conf.level = .95,
-          conf.method = "bca",
-          conf.int = TRUE)
-  
-  print(glimpse(ci))
-  
-  return(ci)
-}
-
-
-ics.aproach_exp01.recall <- metricas_result_exp01 %>%
-  group_by(aproach) %>% 
-   summarise(
-     median_value = median(recall),
-     ci = list(create_ic.recall(aproach))
-  ) %>% 
-  unnest(ci) 
-  
-ics.aproach_exp01.recall %>%  
-  ggplot() + 
-  geom_errorbar(aes(x =  reorder(aproach, -(median_value)), y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
-  geom_point(aes(x=aproach, y=median_value), color='#f39422', size=2) + 
-  ylim(0.7, 1) +
-  labs(x='Algoritmo', y="Recall", title="", color = "") 
-
-ggsave('exp01-ci-recall.png')
-
-```
-
-
 
 De acordo com a visulização é verificar com 95% de confiança que a mediana da amostra para cada abordagem está contida nos intervalos.
 
 
-```{r}
+```{r echo=FALSE}
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
@@ -356,16 +462,120 @@ ics.aproach_exp01.precision <- metricas_result_exp01 %>%
      ci = list(create_ic.precision(aproach))
   ) %>% 
   unnest(ci) 
+
+```
+
+## IC da Diferença Precisão
+
+```{r echo=FALSE}
+set.seed(123)
+
+# IC entre DFs e BFS
+
+diff_mediana_precision.bfs.dfs <- function (d, i) {
+
+  grupo = metricas_result_exp01 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(recall))
   
-ics.aproach_exp01.precision %>%  
+  bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
+  dfs = grupo %>% filter(aproach ==  "Dfs") %>% pull(median_value_test)
+  
+  return(bfs-dfs)
+}
+
+booted.dif.preci.bfs.dfs <- boot(data = metricas_result_exp01, 
+               statistic = diff_mediana_precision.bfs.dfs, 
+               R = 4000)
+
+ci.dif.preci.bfs.dfs = tidy(booted.dif.preci.bfs.dfs, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.preci.bfs.dfs)
+
+
+# IC entre BFs e E-greedy
+
+diff_mediana_precision.e_greedy.bfs <- function (d, i) {
+
+  grupo = metricas_result_exp01 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(recall))
+  
+  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
+  
+  return(bfs-e_greedy)
+}
+
+booted.dif.preci.bfs.e_greedy <- boot(data = metricas_result_exp01, 
+               statistic = diff_mediana_precision.e_greedy.bfs, 
+               R = 4000)
+
+ci.dif.preci.greedy.bfs = tidy(booted.dif.preci.bfs.e_greedy, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.preci.greedy.bfs)
+
+p1.dif.preci.bfs.dfs = ics.aproach_exp01.precision %>% 
+  filter(aproach != 'Epsilon-greedy') %>%  
   ggplot() + 
-  geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
-  geom_point(aes(x=aproach, y=median_value), color='#f39422', size=1) + 
+  geom_errorbar(aes(x =  reorder(aproach, -(median_value)), y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=aproach, y=median_value), size=3) + 
   ylim(0.7, 1) +
-  labs(x='Algoritmo', y="Precisão", title="", color = "") 
+  labs(x='Algoritmo', y="Precisão", title="", color = "")  +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  coord_flip() 
 
-ggsave('exp01-ci-precision.png')
+p2.dif.preci.bfs.dfs = ci.dif.preci.bfs.dfs %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 3) + 
+  coord_flip(ylim = c(-0.5, 0.5)) +
+  labs(x = "",
+       y = "") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray")) +
+  geom_hline(yintercept = -0.5, color="#B2B0AF",)
 
+
+p1.dif.preci.greedy.bfs = ics.aproach_exp01.precision %>% 
+  filter(aproach != 'Dfs') %>%  
+  ggplot() + 
+  geom_errorbar(aes(x =  reorder(aproach, -(median_value)), y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=aproach, y=median_value), size=3) + 
+  ylim(0.7, 1) +
+  labs(x='Algoritmo', y="Precisão", title="", color = "")  +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  coord_flip() 
+  
+
+p2.dif.preci.greedy.bfs = ci.dif.preci.greedy.bfs %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 3) + 
+  coord_flip(ylim = c(-0.5, 0.5)) +
+  labs(x = "",
+       y = "") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = -0.5, color="#B2B0AF",)
+
+
+grid.arrange(p1.dif.preci.bfs.dfs, p2.dif.preci.bfs.dfs, nrow = 1)
+grid.arrange(p1.dif.preci.greedy.bfs, p2.dif.preci.greedy.bfs, nrow = 1)
 ```
 
 
@@ -569,4 +779,22 @@ ggsave('exp01-duration_nodes_by_combinations.png')
 
 ```
 
+## Número de Avaliações por abordagem
+
+```{r}
+metricas_result_exp01 %>%
+    group_by(municipio) %>%
+    summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy')) %>%
+    arrange(desc(dfs)) %>%
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
+```
+
+## Todas as Avaliações
+
+```{r}
+metricas_result_exp01 %>%
+    select(municipio, aproach, date, recall, precision, f1_score) %>%
+    arrange(desc(recall)) %>% 
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
+```
 

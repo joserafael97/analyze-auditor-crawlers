@@ -31,6 +31,7 @@ resultados_avaliacoes_exp02[is.na(resultados_avaliacoes_exp02)] <- ""
 resultados_avaliacoes_exp02$aproach <- replace(as.character(resultados_avaliacoes_exp02$aproach), resultados_avaliacoes_exp02$aproach == "bandit", "Epsilon-greedy")
 resultados_avaliacoes_exp02$aproach <- replace(as.character(resultados_avaliacoes_exp02$aproach), resultados_avaliacoes_exp02$aproach == "bfs", "Bfs")
 resultados_avaliacoes_exp02$aproach <- replace(as.character(resultados_avaliacoes_exp02$aproach), resultados_avaliacoes_exp02$aproach == "dfs", "Dfs")
+resultados_avaliacoes_exp02$aproach <- replace(as.character(resultados_avaliacoes_exp02$aproach), resultados_avaliacoes_exp02$aproach == "bandit_bfs", "Epsilon-greedy + Bfs")
 
 gararito = read_gabaritos()
 gararito[is.na(gararito)] <- ""
@@ -166,10 +167,11 @@ metricas_result_exp02 %>%
 
 ```{r}
 metricas_result_exp02 %>%
-    group_by(municipio) %>%
-    summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy')) %>%
-    arrange(desc(dfs)) %>%
-    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
+  group_by(municipio) %>%
+  summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy'), 
+              bandit_bfs = sum(aproach == 'Epsilon-greedy + Bfs')) %>%
+  arrange(desc(dfs)) %>%
+  datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
 
 ## Todas as Avaliações
