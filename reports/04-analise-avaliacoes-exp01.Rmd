@@ -38,7 +38,7 @@ Neste contexto, com o objetivo de construir uma solução eficaz, eficiente e ro
 
 ## Experimento 1 
 
-Neste experimento foi avaliado o desempenho do crawler focado na avaliação da transparênica e a utilização dos Algoritmos BFS, DFS em relação ao Epsilon-greedy durante a busca e identificação dos critérios ficais nos sites de transparência. Este experimento tentar respoder as seguintes perguntas:
+Neste experimento foi avaliado o desempenho do crawler focado na avaliação da transparênica e a utilização dos Algoritmos BFS, DFS em relação ao Epsilon-greedy durante a busca e identificação dos critérios ficais nos sites de transparência. Este experimento tentar responder as seguintes perguntas:
 
 1. Como se comporta o crawler em relação ao Recall e Precisão considerando os diferentes algoritmos durante as avaliações de transparência (Eficácia)?
 2. Como se comporta o crawler em relação a número de nós acessados considerando os diferentes algoritmos durante as avaliações (Eficiência)?
@@ -212,7 +212,7 @@ Foram coletadas entre os algoritmos 3 avaliações por portal de transparência.
 
 Para avaliar a eficácia do crawler com uso dos diferentes algoritmos propostos foram utilizadas a métricas de Recall e Precisão. A escolha destas métricas foi motivada pela necessidade do equilíbrio entre os valores obtidos para Recall e Precision, em outras palavras, da necessidade de uma avaliação de transparência que consiga identificar a maior quantidade de itens possível (Recall) e que mantenha uma alta confiabilidade nos itens identificados (Precision). 
 
-## Recall das avaliações por algoritmo
+### Recall das avaliações por algoritmo
 
 A Figura x apresenta a distribuição e a mediana das avaliações entre os diferentes algoritmos de buscas experimentados. 
 
@@ -244,11 +244,11 @@ ggsave('01-exp01-distribuition-recall.png')
 Na Figura x é possível observar uma notável semelhança entre as distribuições do Recall nas avaliações para cada uma dos algoritmos, estando a maior parte das avaliações entre as faixas de valores de 0.7 até 1. Apesar disto, existem alguns outiles situados abaixo destas faixas de valores e encontrados nos resultados obtidos com os algoritmos Epsilon-greedy e Dfs. Estes fazem parte de avaliações pertecentes ao portal de transparência do município de Remígio, ao qual o crawler utilizando Epsilon-greedy ou DFs não consegue lidar com as sessões temporárias dentro de iframes de forma efetiva, devido o acesso não sequencial aos nós e a má prática no uso de iframes embutidos nas páginas neste site. Além disso, comparando as medianas entre os algoritmos é quase imperceptível a moderada diferença entre os métodos de busca, variando entre 0.90 (Epsilon-greedy) e 0.89 (Dfs e Bfs).
 
 
-## Intervalo de Confiança
+#### Intervalos de Confiança da mediana do Recall
 
 Vamos criar intervalos de confiança para mediana de F1 Score para verificar se os intervalos contém a mediana da amostra entre as abordagens.
 
-```{r echo=FALSE}
+```{r include=FALSE}
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
@@ -290,7 +290,7 @@ ics.aproach_exp01.recall <- metricas_result_exp01 %>%
 
 ```
 
-### IC Diferença Recall 
+#### IC Diferença Recall do Epsilon-greedy e Dfs
 
 ```{r echo=FALSE}
 set.seed(123)
@@ -320,6 +320,38 @@ ci.dif = tidy(booted.dif,
 glimpse(ci.dif)
 
 
+p1.recall.e_greedy.dfs = ics.aproach_exp01.recall %>% 
+  filter(aproach != 'Bfs') %>%  
+  ggplot() + 
+  geom_errorbar(aes(x =  reorder(aproach, -(median_value)), y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
+  geom_point(aes(x=aproach, y=median_value), size=3) + 
+  ylim(0.7, 1) +
+  labs(x='Algoritmo', y="Recall", title="", color = "")  +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  coord_flip() 
+
+
+p2.recall.e_greedy.dfs = ci.dif %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 3) + 
+  coord_flip(ylim = c(-0.5, 0.5)) +
+  labs(x = "",
+       y = "") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray")) +
+  geom_hline(yintercept = -0.5, color="#B2B0AF",)
+
+grid.arrange(p1.recall.e_greedy.dfs, p2.recall.e_greedy.dfs, nrow = 1)
+
+```
+
+#### IC Diferença Recall do Epsilon-greedy e Bfs
+
+```{r}
 # IC entre BFs e E-greedy
 
 diff_mediana_recall.e_greedy.bfs <- function (d, i) {
@@ -345,33 +377,6 @@ ci.dif.recall.greedy.bfs = tidy(booted.dif.recall.2,
           conf.int = TRUE)
 
 glimpse(ci.dif.recall.greedy.bfs)
-
-p1.recall.e_greedy.dfs = ics.aproach_exp01.recall %>% 
-  filter(aproach != 'Bfs') %>%  
-  ggplot() + 
-  geom_errorbar(aes(x =  reorder(aproach, -(median_value)), y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
-  geom_point(aes(x=aproach, y=median_value), size=3) + 
-  ylim(0.7, 1) +
-  labs(x='Algoritmo', y="Recall", title="", color = "")  +
-  theme_minimal() +
-  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
-  coord_flip() 
-
-
-
-p2.recall.e_greedy.dfs = ci.dif %>% 
-  ggplot(aes(x = "", y = statistic,
-             ymin = conf.low,
-             ymax = conf.high)) +
-  geom_pointrange() +
-  geom_point(size = 3) + 
-  coord_flip(ylim = c(-0.5, 0.5)) +
-  labs(x = "",
-       y = "") +
-  theme_minimal() +
-  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray")) +
-  geom_hline(yintercept = -0.5, color="#B2B0AF",)
-
 
 p1.recall.e_greedy.bfs = ics.aproach_exp01.recall %>% 
   filter(aproach != 'Dfs') %>%  
@@ -400,19 +405,20 @@ p2.recall.e_greedy.bfs = ci.dif.recall.greedy.bfs %>%
   geom_hline(yintercept = -0.5, color="#B2B0AF",)
 
 
-grid.arrange(p1.recall.e_greedy.dfs, p2.recall.e_greedy.dfs, nrow = 1)
 grid.arrange(p1.recall.e_greedy.bfs, p2.recall.e_greedy.bfs, nrow = 1)
 
 ```
 
 
+### Precisão das avaliações por algoritmo
+
 
 ```{r echo=FALSE}
 metricas_result_exp01 %>%
   group_by(aproach) %>%
-  mutate(median_value = median(recall)) %>%
+  mutate(median_value = median(precision)) %>%
   ungroup() %>%
-  ggplot(aes(x = reorder(aproach, +(median_value)), y = precision)) + 
+  ggplot(aes(x = reorder(aproach, -(median_value)), y = precision)) + 
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
@@ -439,7 +445,10 @@ Com base na visualização é possível perceber que a abordagem Bandit apresent
 De acordo com a visulização é verificar com 95% de confiança que a mediana da amostra para cada abordagem está contida nos intervalos.
 
 
-```{r echo=FALSE}
+#### Intervalos de Confiança da mediana de Precisão
+
+
+```{r include=FALSE}
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
@@ -480,7 +489,7 @@ ics.aproach_exp01.precision <- metricas_result_exp01 %>%
 
 ```
 
-## IC da Diferença Precisão
+#### IC Diferença Precisão do Bfs e Dfs
 
 ```{r echo=FALSE}
 set.seed(123)
@@ -512,31 +521,7 @@ ci.dif.preci.bfs.dfs = tidy(booted.dif.preci.bfs.dfs,
 glimpse(ci.dif.preci.bfs.dfs)
 
 
-# IC entre BFs e E-greedy
 
-diff_mediana_precision.e_greedy.bfs <- function (d, i) {
-
-  grupo = metricas_result_exp01 %>% 
-    slice(i) %>% 
-    group_by(aproach) %>% 
-    summarise(median_value_test = median(recall))
-  
-  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
-  bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
-  
-  return(bfs-e_greedy)
-}
-
-booted.dif.preci.bfs.e_greedy <- boot(data = metricas_result_exp01, 
-               statistic = diff_mediana_precision.e_greedy.bfs, 
-               R = 4000)
-
-ci.dif.preci.greedy.bfs = tidy(booted.dif.preci.bfs.e_greedy, 
-          conf.level = .95,
-          conf.method = "bca",
-          conf.int = TRUE)
-
-glimpse(ci.dif.preci.greedy.bfs)
 
 p1.dif.preci.bfs.dfs = ics.aproach_exp01.precision %>% 
   filter(aproach != 'Epsilon-greedy') %>%  
@@ -562,6 +547,40 @@ p2.dif.preci.bfs.dfs = ci.dif.preci.bfs.dfs %>%
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray")) +
   geom_hline(yintercept = -0.5, color="#B2B0AF",)
 
+
+
+
+grid.arrange(p1.dif.preci.bfs.dfs, p2.dif.preci.bfs.dfs, nrow = 1)
+```
+
+#### IC Diferença Precisão do Bfs e Epsilon-greedy
+
+```{r}
+# IC entre BFs e E-greedy
+
+diff_mediana_precision.e_greedy.bfs <- function (d, i) {
+
+  grupo = metricas_result_exp01 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(recall))
+  
+  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
+  
+  return(bfs-e_greedy)
+}
+
+booted.dif.preci.bfs.e_greedy <- boot(data = metricas_result_exp01, 
+               statistic = diff_mediana_precision.e_greedy.bfs, 
+               R = 4000)
+
+ci.dif.preci.greedy.bfs = tidy(booted.dif.preci.bfs.e_greedy, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.preci.greedy.bfs)
 
 p1.dif.preci.greedy.bfs = ics.aproach_exp01.precision %>% 
   filter(aproach != 'Dfs') %>%  
@@ -589,8 +608,8 @@ p2.dif.preci.greedy.bfs = ci.dif.preci.greedy.bfs %>%
   geom_hline(yintercept = -0.5, color="#B2B0AF",)
 
 
-grid.arrange(p1.dif.preci.bfs.dfs, p2.dif.preci.bfs.dfs, nrow = 1)
 grid.arrange(p1.dif.preci.greedy.bfs, p2.dif.preci.greedy.bfs, nrow = 1)
+
 ```
 
 
