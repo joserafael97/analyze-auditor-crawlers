@@ -32,14 +32,32 @@ A ausência de estratégias  de recuperação da informação eficientes e de ca
 
 ## Contexto
 
-Com base no problema apresentado, este trabalho 
+Com base no problema apresentado, este trabalho propôs a utilização e validação de crawlers para avaliar automaticamente portais municipais de transparência. Assim, durante a pesquisa foi implementado um crawler focado (crawlers aplicados a um contexto único) para avaliar os portais de transparência dos municipios do estado da Paraíba, utilizando como diretrizes de avaliação e validação da solução o Índice de transparência Municipal criado pelo Tribunal de Contas da Paraíba (TCE-PB). Por meio do ìndice foram elicitados itens para serem classificados como presentes ou ausentes em cada portal.
+
+Neste contexto, com o objetivo de construir uma solução eficaz, eficiente e robusta foram experiementadas diferentes formas de buscar por novas páginas, partindo da premissa que o modo de percorrer e buscar novas páginas é tem impacto direto na manuteção destas métricas. Desta forma, foram avaliados 3 diferentes algoritmos neste aspaceto, sendo dois algoritmos tradicionais neste tipo de aplicação BFS e DFS e outro encontrado na litertatura o E-greedy.    
 
 ## Experimento 1 
 
+Neste experimento foi avaliado o desempenho do crawler focado na avaliação da transparênica e a utilização dos Algoritmos BFS, DFS em relação ao Epsilon-greedy durante a busca e identificação dos critérios ficais nos sites de transparência. Este experimento tentar respoder as seguintes perguntas:
+
+1. Como se comporta o crawler em relação ao Recall e Precisão considerando os diferentes algoritmos durante as avaliações de transparência (Eficácia)?
+2. Como se comporta o crawler em relação a número de nós acessados considerando os diferentes algoritmos durante as avaliações (Eficiência)?
+3. Como é a estabilidade do crawler considerando cada um dos algoritmos e as combinação de portal de transparência?
+4. Como se comporta a variação do crawler considerando os diferentes algoritmos e as combinações de transparência?
 
 
+Para responder essas perguntas foram utilizadas as seguintes variáveis: 
 
-## Lendo os dados
+* Recall de cada avaliação;
+* Precisão de cada avaliação;
+* Número máximo de nós acessados;
+* Mediana do número de nós acessados;
+* Duração máxima em minutos da avaliação;
+* Mediana da duração da avaliação em minutos;
+* Combinação de portais de transparência;
+
+Obs: Um nó pode ser representado por um link ou componente clicável em páginas da web.
+
 
 ```{r warning=FALSE, include=FALSE}
 resultados_avaliacoes_exp01 = read_avaliacoes()
@@ -56,15 +74,9 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ```
 
 
+## Avaliações válidas
 
-
-
-
-## Removendo avaliações que não pertecem ao experimento 01
-
-Avaliações válidas são excuções do Auditor Crawler que possuem 61 itens pesquisados. Assim, para análise do experimento 01 foram desconsideradas avaliações que não atendem este critério. 
-
-Além disso, as avaliações do município de Curral de Cima não foran consideradas por seu portal de transparência está atualmente fora do ar.
+As avaliações válidas são excuções do Crawler que tiveram entre os critérios fiscais avaliados 61 itens pesquisados. Deste modo, para evitar ruídos que possam impactar nos resultados obtidos, todas as avaliações que não contínham este padrão de validade foram descartadas. Além disso, as avaliações do município de ***Curral de Cima*** não foram consideradas por seu portal de transparência está atualmente fora do ar, restando 29 municípios na amostra.
 
 
 ```{r warning=FALSE, include=FALSE}
@@ -74,7 +86,6 @@ resultados_avaliacoes_exp01 <- resultados_avaliacoes_exp01 %>%
 ```
 
 
-## Adicionando combinação encontrada em cada município no gabarito
 
 ```{r warning=FALSE, include=FALSE}
 empresas_portais <- empresas_portais %>% 
@@ -84,16 +95,13 @@ gararito<-left_join(gararito, empresas_portais, by=c("municipio"))
 ```
 
 
-## Juntando Avaliações e Gabaritos
-
 ```{r warning=FALSE, include=FALSE}
 # concatena os dois csv o do gabarito e avaliações do crawler
 data<-left_join(resultados_avaliacoes_exp01, gararito, by=c("municipio", "item", "criterio"))
 ```
 
-## Sumarizando as avaliações
+## Um exemplo dos dados utilizados
 
-Um exemplo dos dados utilizados
 
 ```{r echo=FALSE}
 
@@ -116,7 +124,11 @@ sumarise_exp01 <- data %>%
            & encontrado == FALSE
           )
 
-kable(head(sumarise_exp01)) %>%
+
+
+
+kable(head(sumarise_exp01 %>%
+  select(municipio, criterio, item, aproach, tp, contNodeNumberAccess, durationMin))) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) 
 ```
 
@@ -166,7 +178,6 @@ metricas_result_exp01 %>%
 
 ```
 
-## Remoção de avaliações que não possuem maior 
 
 ```{r warning=FALSE, include=FALSE}
 metricas_result_exp01 <- metricas_result_exp01 %>%
@@ -180,7 +191,7 @@ metricas_result_exp01 <- metricas_result_exp01 %>%
   ungroup()
 ```
 
-## Avaliações por abordagem
+## Número de Avaliações por Algoritmo
 
 
 ```{r echo=FALSE}
@@ -195,13 +206,15 @@ metricas_result_exp01 %>%
     coord_flip()
 ```
 
+Foram coletadas entre os algoritmos 3 avaliações por portal de transparência. No total foram realizadas proporcionalmente 261 avalições dividas entre os 29 portais da amostra e os algoritmos de busca avaliados.
 
+## Como se comporta o crawler em relação ao Recall e a Precisão considerando os diferentes algoritmos durante as avaliações de transparência (Eficácia)?
 
-## Análise das Abordagens Utilizadas
+Para avaliar a eficácia do crawler com uso dos diferentes algoritmos propostos foram utilizadas a métricas de Recall e Precisão. A escolha destas métricas foi motivada pela necessidade do equilíbrio entre os valores obtidos para Recall e Precision, em outras palavras, da necessidade de uma avaliação de transparência que consiga identificar a maior quantidade de itens possível (Recall) e que mantenha uma alta confiabilidade nos itens identificados (Precision). 
 
-Para análise dos resultados obtidos duranter as execuções do crawler para as distintas abordagens, foi utilizado a métrica F1 Score que representa a harmonia entre os valores de Precision e Recall. 
+## Recall das avaliações por algoritmo
 
-A escolha dessa métrica foi motivada pela necessidade do equilíbrio entre os valores obtidos para Recall e Precision, em outras palavras, da necessidade de uma avaliação de transparência que consiga identificar a maior quantidade de itens possível (Recall) e que mantenha uma alta confiabilidade nos itens identificados (Precision). Abaixo é apresentada a distribuição das avaliações entre as abordagens.
+A Figura x apresenta a distribuição e a mediana das avaliações entre os diferentes algoritmos de buscas experimentados. 
 
 
 ```{r echo=FALSE}
@@ -227,6 +240,8 @@ metricas_result_exp01 %>%
 ggsave('01-exp01-distribuition-recall.png')
 
 ```
+
+Na Figura x é possível observar uma notável semelhança entre as distribuições do Recall nas avaliações para cada uma dos algoritmos, estando a maior parte das avaliações entre as faixas de valores de 0.7 a 1. Apesar disto, existem alguns outiles nos valores de Recall, situados abaixo destas faixas de valores e encontrados nos resultados obtidos no Epsilon-greedy e Dfs. Estes fazem parte de avaliações pertecentes a portal de transparência do município de Remígio ao qual o Epsilon-greedy e DFs não conseguem lidar com as sessões temporárias dentro de iframes de forma efetiva, devido o acesso não sequencial aos nós e a má prática no uso de iframes embutidos nas páginas neste site. Além disso, comparando as medianas entre os algoritmos é quase imperceptível a moderada diferença entre os métodos de buscas, variando entre 0.90 (Epsilon-greedy) e 0.89 (Dfs e Bfs).
 
 
 ## Intervalo de Confiança

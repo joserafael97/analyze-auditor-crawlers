@@ -58,7 +58,7 @@ gararito<-left_join(gararito, empresas_portais, by=c("municipio"))
 
 ```{r}
 # concatena os dois csv o do gabarito e avaliações do crawler
-data<-full_join(resultados_avaliacoes_exp03, gararito, by=c("municipio", "item", "criterio"))
+data<-left_join(resultados_avaliacoes_exp03, gararito, by=c("municipio", "item", "criterio"))
 ```
 
 ## Sumarizando as avaliações
@@ -116,11 +116,11 @@ metricas_result_exp03 <- sumarise_exp03 %>%
     )
 
 
-#metricas_result_exp03 <- metricas_result_exp03 %>%
- # filter(total_itens == 48 & recall > 0.46)
+metricas_result_exp03 <- metricas_result_exp03 %>%
+ filter(total_itens == 48 & recall > 0.46)
 
-#metricas_result_exp03 %>% 
-#    write_csv(here::here("data/resultados_sumarizado_exp03.csv"))
+metricas_result_exp03 %>% 
+  write_csv(here::here("data/resultados_sumarizado_exp03.csv"))
 
 metricas_result_exp03 %>%
   arrange(desc(recall))
