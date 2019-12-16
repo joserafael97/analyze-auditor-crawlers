@@ -214,7 +214,7 @@ Para avaliar a eficácia do crawler com uso dos diferentes algoritmos propostos 
 
 ### Recall das avaliações por algoritmo
 
-A Figura x apresenta a distribuição e a mediana das avaliações entre os diferentes algoritmos de buscas experimentados. 
+A Figura x apresenta a distribuição e a mediana dos valores de Recall das avaliações entre os diferentes algoritmos de buscas experimentados. 
 
 
 ```{r echo=FALSE}
@@ -226,7 +226,7 @@ metricas_result_exp01 %>%
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.0115,
+               binwidth = 0.00915,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
@@ -241,14 +241,14 @@ ggsave('01-exp01-distribuition-recall.png')
 
 ```
 
-Na Figura x é possível observar uma notável semelhança entre as distribuições do Recall nas avaliações para cada uma dos algoritmos, estando a maior parte das avaliações entre as faixas de valores de 0.7 até 1. Apesar disto, existem alguns outiles situados abaixo destas faixas de valores e encontrados nos resultados obtidos com os algoritmos Epsilon-greedy e Dfs. Estes fazem parte de avaliações pertecentes ao portal de transparência do município de Remígio, ao qual o crawler utilizando Epsilon-greedy ou DFs não consegue lidar com as sessões temporárias dentro de iframes de forma efetiva, devido o acesso não sequencial aos nós e a má prática no uso de iframes embutidos nas páginas neste site. Além disso, comparando as medianas entre os algoritmos é quase imperceptível a moderada diferença entre os métodos de busca, variando entre 0.90 (Epsilon-greedy) e 0.89 (Dfs e Bfs).
+Na Figura x, é possível observar uma semelhança entre as distribuições do Recall nas avaliações para cada um dos algoritmos, estando a maior parte das avaliações entre as faixas de valores de 0.7 até 1. Apesar disto, existem alguns outiles situados abaixo destas faixas de valores e encontrados nos resultados obtidos com os algoritmos Epsilon-greedy e Dfs. Estes fazem parte de avaliações pertecentes ao portal de transparência do município de Remígio, ao qual o crawler utilizando Epsilon-greedy ou DFs não consegue lidar com as sessões temporárias dentro de iframes de forma efetiva, devido o acesso não sequencial aos nós e a má prática no uso de iframes embutidos nas páginas deste site. Além disso, comparando as medianas entre os algoritmos é imperceptível a diferença entre os métodos de busca, variando entre 0.90 (Epsilon-greedy) e 0.89 (Dfs e Bfs).
 
 
 #### Intervalos de Confiança da mediana do Recall
 
-Vamos criar intervalos de confiança para mediana de F1 Score para verificar se os intervalos contém a mediana da amostra entre as abordagens.
 
-```{r include=FALSE}
+
+```{r echo=FALSE}
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
@@ -351,7 +351,7 @@ grid.arrange(p1.recall.e_greedy.dfs, p2.recall.e_greedy.dfs, nrow = 1)
 
 #### IC Diferença Recall do Epsilon-greedy e Bfs
 
-```{r}
+```{r echo=FALSE}
 # IC entre BFs e E-greedy
 
 diff_mediana_recall.e_greedy.bfs <- function (d, i) {
@@ -412,6 +412,8 @@ grid.arrange(p1.recall.e_greedy.bfs, p2.recall.e_greedy.bfs, nrow = 1)
 
 ### Precisão das avaliações por algoritmo
 
+A Figura y exibe a distribuição e a mediana dos valores da Precisão das avaliações entre os diferentes algoritmos de buscas experimentados. 
+
 
 ```{r echo=FALSE}
 metricas_result_exp01 %>%
@@ -422,7 +424,7 @@ metricas_result_exp01 %>%
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.0115,
+               binwidth = 0.00915,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
@@ -437,18 +439,14 @@ metricas_result_exp01 %>%
 ggsave('exp01-distribuition-precision.png')
 ```
 
+Com base na Figura y, constata-se que as faixas de valores da Precisão das avaliações entre os algoritmos são similares, variando entre 0.85 até 1. Ademais, os valores das medianas apresentaram pequenas mudanças nos mesmos, situados entre 0.95 (Epsilon-greedy e Dfs) e 0.96 (Bfs).
 
-
-Com base na visualização é possível perceber que a abordagem Bandit apresenta a maior mediana. Além disso, é possível notar que a abordagem BFS é a única que não contém outlies.
-
-
-De acordo com a visulização é verificar com 95% de confiança que a mediana da amostra para cada abordagem está contida nos intervalos.
-
+Sob essa pespectiva é possível perceber um equilíbrio entre.
 
 #### Intervalos de Confiança da mediana de Precisão
 
 
-```{r include=FALSE}
+```{r echo=FALSE}
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
@@ -555,7 +553,7 @@ grid.arrange(p1.dif.preci.bfs.dfs, p2.dif.preci.bfs.dfs, nrow = 1)
 
 #### IC Diferença Precisão do Bfs e Epsilon-greedy
 
-```{r}
+```{r echo=FALSE}
 # IC entre BFs e E-greedy
 
 diff_mediana_precision.e_greedy.bfs <- function (d, i) {
@@ -612,11 +610,12 @@ grid.arrange(p1.dif.preci.greedy.bfs, p2.dif.preci.greedy.bfs, nrow = 1)
 
 ```
 
+Sob a pespectiva dos valores de Recall e Precisão, é observado apenas uma discreta variância de 0.01 entre os algoritmos de busca.  Falar sobre o motivo  
 
 ## F1 Score por cada Município da Amostra 
 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp01 %>% 
   group_by(municipio, aproach) %>% 
   summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
@@ -698,7 +697,7 @@ boot.aproach_exp01.mun %>%
 
 ## Tempo de Duração  
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp01 %>%
   group_by(aproach)  %>%
   ggplot(aes(x = reorder(aproach, -(max_durationMin)), y = max_durationMin)) + 
@@ -723,7 +722,7 @@ ggsave('exp01-duration.png')
 ## Nós Acessados  
 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp01 %>%
   group_by(aproach)  %>%
   ggplot(aes(x = reorder(aproach, -(max_num_access_node)), y = max_num_access_node)) + 
@@ -747,7 +746,7 @@ ggsave('exp01-n-access-nodes.png')
 
 ## f1 Score por combinação
 
-```{r}
+```{r echo=FALSE}
 
 metricas_result_exp01 %>% 
   group_by(combination, aproach) %>% 
@@ -770,7 +769,7 @@ ggsave('exp01-f1score-by_combinations.png')
 
 ## Número de nós acessados por combinação
 
-```{r}
+```{r echo=FALSE}
 
 metricas_result_exp01 %>% 
   group_by(combination, aproach) %>% 
@@ -793,7 +792,7 @@ ggsave('exp01-num_nodes_by_combinations.png')
 
 ## Duração das avaliações por combinações
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp01 %>% 
   group_by(combination, aproach) %>% 
   summarise(max_value = max(max_durationMin), min_value = min(max_durationMin), median_value=median(max_durationMin), dif = max_value - min_value) %>% 
@@ -815,7 +814,7 @@ ggsave('exp01-duration_nodes_by_combinations.png')
 
 ## Número de Avaliações por abordagem
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp01 %>%
     group_by(municipio) %>%
     summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy')) %>%
@@ -825,7 +824,7 @@ metricas_result_exp01 %>%
 
 ## Todas as Avaliações
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp01 %>%
     select(municipio, aproach, date, recall, precision, f1_score) %>%
     arrange(desc(recall)) %>% 
