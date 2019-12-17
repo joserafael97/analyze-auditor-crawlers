@@ -32,13 +32,13 @@ A ausência de estratégias  de recuperação da informação eficientes e de ca
 
 ## Contexto
 
-Com base no problema apresentado, este trabalho propôs a utilização e validação de crawlers para avaliar automaticamente portais municipais de transparência. Assim, durante a pesquisa foi implementado um crawler focado (crawlers aplicados a um contexto único) para avaliar os portais de transparência dos municipios do estado da Paraíba, utilizando como diretrizes de avaliação e validação da solução o Índice de transparência Municipal criado pelo Tribunal de Contas da Paraíba (TCE-PB). Por meio do ìndice foram elicitados itens para serem classificados como presentes ou ausentes em cada portal.
+Com base no problema apresentado, este trabalho propôs a utilização e validação de crawlers para avaliar automaticamente portais municipais de transparência. Assim, durante a pesquisa foi implementado um crawler focado (crawlers aplicados a um contexto único) para avaliar os portais de transparência dos municipios do estado da Paraíba, utilizando como diretrizes de avaliação e validação da solução o Índice de transparência Municipal criado pelo Tribunal de Contas da Paraíba (TCE-PB). Por meio do ìndice foram elicitados todos os itens utilizados na avaliação de cada portal.
 
-Neste contexto, com o objetivo de construir uma solução eficaz, eficiente e robusta foram experiementadas diferentes formas de buscar por novas páginas, partindo da premissa que o modo de percorrer e buscar novas páginas é tem impacto direto na manuteção destas métricas. Desta forma, foram avaliados 3 diferentes algoritmos neste aspaceto, sendo dois algoritmos tradicionais neste tipo de aplicação BFS e DFS e outro encontrado na litertatura o E-greedy.    
+Neste contexto, com o objetivo de construir uma solução eficaz, eficiente e robusta foram experiementadas diferentes formas de buscar por novas páginas, partindo da premissa que o modo de percorrer e buscar novas páginas possui impacto direto na perfomace e manuteção destas caraterísticas. Desta forma, foram avaliados 3 diferentes algoritmos, sendo dois algoritmos tradicionais neste tipo de aplicação (BFS e DFS) e outro encontrado através da litertatura o E-greedy.    
 
 ## Experimento 1 
 
-Neste experimento foi avaliado o desempenho do crawler focado na avaliação da transparênica e a utilização dos Algoritmos BFS, DFS em relação ao Epsilon-greedy durante a busca e identificação dos critérios ficais nos sites de transparência. Este experimento tentar responder as seguintes perguntas:
+Neste experimento foi avaliado o desempenho do crawler focado na avaliação da transparênica comparando a uso dos Algoritmos Bfs, Dfs em relação ao Epsilon-greedy durante a busca e identificação dos critérios ficais nos sites de transparência. Este experimento tentar responder as seguintes perguntas:
 
 1. Como se comporta o crawler em relação ao Recall e Precisão considerando os diferentes algoritmos durante as avaliações de transparência (Eficácia)?
 2. Como se comporta o crawler em relação a número de nós acessados considerando os diferentes algoritmos durante as avaliações (Eficiência)?
@@ -56,7 +56,7 @@ Para responder essas perguntas foram utilizadas as seguintes variáveis:
 * Mediana da duração da avaliação em minutos;
 * Combinação de portais de transparência;
 
-Obs: Um nó pode ser representado por um link ou componente clicável em páginas da web.
+Obs: Um nó pode ser representado por um link ou um componente clicável em páginas da web.
 
 
 ```{r warning=FALSE, include=FALSE}
@@ -76,7 +76,7 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 
 ## Avaliações válidas
 
-As avaliações válidas são excuções do Crawler que tiveram entre os critérios fiscais avaliados 61 itens pesquisados. Deste modo, para evitar ruídos que possam impactar nos resultados obtidos, todas as avaliações que não contínham este padrão de validade foram descartadas. Além disso, as avaliações do município de ***Curral de Cima*** não foram consideradas por seu portal de transparência está atualmente fora do ar, restando 29 municípios na amostra.
+As avaliações válidas são execuções do Crawler que tiveram entre os critérios fiscais avaliados 61 itens pesquisados. Deste modo, para evitar ruídos que possam impactar nos resultados, todas as avaliações que não contínham este padrão de validade foram descartadas. Além disso, as avaliações do município de ***Curral de Cima*** não foram consideradas por seu portal de transparência está atualmente fora do ar, restando 29 municípios na amostra.
 
 
 ```{r warning=FALSE, include=FALSE}
@@ -210,7 +210,7 @@ Foram coletadas entre os algoritmos 3 avaliações por portal de transparência.
 
 ## Como se comporta o crawler em relação ao Recall e a Precisão considerando os diferentes algoritmos durante as avaliações de transparência (Eficácia)?
 
-Para avaliar a eficácia do crawler com uso dos diferentes algoritmos propostos foram utilizadas a métricas de Recall e Precisão. A escolha destas métricas foi motivada pela necessidade do equilíbrio entre os valores obtidos para Recall e Precision, em outras palavras, da necessidade de uma avaliação de transparência que consiga identificar a maior quantidade de itens possível (Recall) e que mantenha uma alta confiabilidade nos itens identificados (Precision). 
+Para avaliar a eficácia do crawler com uso dos diferentes algoritmos propostos foram utilizadas as métricas Recall e Precisão. A escolha destas métricas foi motivada pela necessidade do equilíbrio entre os valores obtidos para Recall e Precision, em outras palavras, da necessidade de uma avaliação de transparência que consiga identificar a maior quantidade de itens possível (Recall) e que mantenha uma alta confiabilidade nos itens identificados (Precision). 
 
 ### Recall das avaliações por algoritmo
 
@@ -226,7 +226,7 @@ metricas_result_exp01 %>%
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.00915,
+               binwidth = 0.00911,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
@@ -237,7 +237,7 @@ metricas_result_exp01 %>%
   labs(x='Algoritmo', y="Recall", color = "") + 
   theme(legend.position = "top")
 
-ggsave('01-exp01-distribuition-recall.png')
+ggsave('exp01-distribuition-recall-fig01.png')
 
 ```
 
@@ -292,7 +292,7 @@ ics.aproach_exp01.recall <- metricas_result_exp01 %>%
 
 #### IC Diferença Recall do Epsilon-greedy e Dfs
 
-Como visto na Figura x, os algoritmos que obtiveram maiores valores Recall foram Epsilon-greedy e Dfs. Assim, foram criados intervalos de confiança para a diferença entre eles. Estes intervalos de confiança são mostrados na Figura u 
+Como visto na Figura x, os algoritmos que obtiveram maiores valores Recall foram Epsilon-greedy e Dfs. Assim, foram criados intervalos de confiança para a diferença entre eles. Estes intervalos de confiança são mostrados na Figura u.
 
 ```{r echo=FALSE}
 set.seed(123)
@@ -328,8 +328,8 @@ p1.recall.e_greedy.dfs = ics.aproach_exp01.recall %>%
              ymin = conf.low,
              ymax = conf.high)) +
   geom_pointrange() +
-  ylim(0.7, 1) +
-  labs(x='Algoritmo', y="Recall", title="IC da Mediana do valor do Recall", color = "")  +
+  ylim(0.8, 1) +
+  labs(x='Algoritmo', y="Recall", title="", color = "")  +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   coord_flip() 
@@ -341,23 +341,25 @@ p2.recall.e_greedy.dfs = ci.dif %>%
              ymax = conf.high)) +
   geom_pointrange() +
   geom_point(size = 3) + 
-  coord_flip(ylim = c(-0.5, 0.5)) +
+  coord_flip(ylim = c(-0.2, 0.2)) +
   labs(x = "",
-       y = "", title = 'IC da Diferença Epsilon-greedy - Dfs') +
+       y = "", title = 'Diferença Epsilon-greedy - Dfs') +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray")) +
   geom_hline(yintercept = 0, color="#B2B0AF",)
 
 grid.arrange(p1.recall.e_greedy.dfs, p2.recall.e_greedy.dfs, nrow = 1)
 
+ggsave('exp01-ic-e-greedy-dfs.png')
+
 ```
 
-A partir dos intervalos de confiança da mediana e da diferença entre os algoritmos Epsilon-greedy e Dfs mostrados na Figura u, é possível observar que os intervalos para mediana do Recall contêm os valores da mediana dos dois algoritmo apresentados na amostra, estando entre 0.84 a 0.92 na Dfs e 0.88 a 0.92 no Epsilon-greedy. Sob esta pespectiva, é possível constatar uma discreta tendência das medianas a direita no Epsilon-greedy e a esquerda na Dfs. Além disso, baseado na diferença ***Epsilon-greedy-Dfs*** é possível verificar com 95% de confiança o sentido e a grandeza da diferença entre os algoritmos Epsilon greedy e Dfs em relação aos valores da mediana do Recall. As barras de erros do itervalo de confiança variam de -0.032 até 0.048, podendo assumir tanto valores positivos quanto negativos. Neste cenário, não é possível comprovar a existência de um desempenho superior no uso Epsilon-greedy na obtenção do Recall em comparação com a Dfs.
+A partir dos intervalos de confiança da mediana e da diferença entre os algoritmos Epsilon-greedy e Dfs mostrados na Figura u, é possível observar que os intervalos estão localizados entre 0.84 a 0.92 na Dfs e 0.88 a 0.92 no Epsilon-greedy. Além disso, baseado na diferença ***Epsilon-greedy-Dfs*** é possível verificar com 95% de confiança o sentido e a grandeza da diferença entre os algoritmos Epsilon greedy e Dfs em relação aos valores da mediana do Recall. As barras de erros do itervalo de confiança variam de -0.032 até 0.048, podendo assumir tanto valores positivos quanto negativos. Neste cenário, não é possível comprovar a existência de um desempenho superior no uso Epsilon-greedy na obtenção do Recall em comparação com a Dfs, devido ao pequeno intervalo e por ele conter o valor 0.
 
 
 #### IC Diferença Recall do Epsilon-greedy e Bfs
 
-De acordo com a Figura x, fica evidente a discreta variação (0.01) entre os resultados obtidos para Recall entre os agoritmos de busca. Sob esta pespectiva e considerando que o algoritmo Bfs é o algoritmo de busca base do crawler focado proposto neste trabalho, foram também comparados os algoritmos Epsilon-greedy e Bfs. Esta comparação foi realizada com crição de intervalos de confiança para mediana dos dois algoritmos e a diferença entre as medianas deles.
+De acordo com a Figura x, fica evidente a discreta variação (0.01) entre os resultados obtidos para Recall entre os agoritmos de busca. Sob esta pespectiva e considerando que o algoritmo Bfs é o algoritmo de busca base do crawler focado proposto neste trabalho, foram também comparados os algoritmos Epsilon-greedy e Bfs. Esta comparação foi realizada com crição a de intervalos de confiança para mediana dos dois algoritmos e a diferença entre as medianas deles.
 
 
 ```{r echo=FALSE}
@@ -393,8 +395,8 @@ p1.recall.e_greedy.bfs = ics.aproach_exp01.recall %>%
              ymin = conf.low,
              ymax = conf.high)) +
   geom_pointrange() +
-  ylim(0.7, 1) +
-  labs(x='Algoritmo', y="Recall", title="IC da Mediana do valor do Recall", color = "")  +
+  ylim(0.8, 1) +
+  labs(x='Algoritmo', y="Recall", title="", color = "")  +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   coord_flip() 
@@ -407,9 +409,9 @@ p2.recall.e_greedy.bfs = ci.dif.recall.greedy.bfs %>%
              ymax = conf.high)) +
   geom_pointrange() +
   geom_point(size = 3) + 
-  coord_flip(ylim = c(-0.5, 0.5)) +
+  coord_flip(ylim = c(-0.2, 0.2)) +
   labs(x = "",
-       y = "", title = 'IC da Diferença Epsilon-greedy - Bfs') +
+       y = "", title = 'Diferença Epsilon-greedy - Bfs') +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   geom_hline(yintercept = 0, color="#B2B0AF",)
@@ -417,16 +419,17 @@ p2.recall.e_greedy.bfs = ci.dif.recall.greedy.bfs %>%
 
 grid.arrange(p1.recall.e_greedy.bfs, p2.recall.e_greedy.bfs, nrow = 1)
 
+ggsave('exp01-ic-e-greedy-bfs.png')
+
 ```
 
-A partir dos intervalos de confiança da mediana e da diferença entre os algoritmos Epsilon-greedy e Bfs expostos na Figura p, é possível observar que os intervalos para mediana do Recall contêm os valores da mediana em ambos os algoritmos, estando entre 0.87 a 0.91 na Dfs e 0.88 a 0.92 no Epsilon-greedy. Sob esta pespectiva, é possível constatar uma discreta tendência das medianas a direita no Epsilon-greedy e a esquerda na Dfs. Além disso, baseado na diferença ***Epsilon-greedy-Bfs*** é possível verificar com 95% de confiança o sentido e a grandeza da diferença entre os algoritmos Epsilon greedy e Dfs em relação aos valores da mediana do Recall. As barras de erros do itervalo de confiança variam de -0.036 até 0.030, podendo assumir tanto valores positivos quanto negativos. Neste contexto, a variação é mínima podedendo ser desconsiderada na relação da diferença entre os valores da mediana do Recall no uso do Epsilon-greedy e Dfs. 
+A partir dos intervalos de confiança da mediana e da diferença entre os algoritmos Epsilon-greedy e Bfs para os valores do Recall expostos na Figura p, é identificado que as medianas apresentadas nos intervalos concentram-se entre 0.87 até 0.91 na Dfs e 0.88 até 0.92 no Epsilon-greedy. Além disso, baseado na diferença ***Epsilon-greedy-Bfs*** é possível verificar com 95% de confiança o sentido e a grandeza da diferença entre os algoritmos Epsilon greedy e Dfs em relação aos valores da mediana do Recall. As barras de erros do itervalo de confiança variam de -0.036 até 0.030, podendo assumir tanto valores positivos quanto negativos. Neste contexto, a variação é mínima podedendo ser desconsiderada na distinção entre os valores da mediana do Recall no uso do Epsilon-greedy e Dfs.
 
-De acordo com os intervalos de confiança apresentados na Figura u e p, ao criar intervalos de confiança entre Epsilon greedy e Dfs e Epsilon greedy e Bfs é plausível extender os resultados para a comparação entre os algoritmos Dfs e Bfs, devido a semelhança entre os resultados obtidos. Além disso, de acordo com os intervalos não foi possível confirmar nenhuma superioridade nos valores para a mediana do Recall durante as avaliações no uso destes algoritmos. 
+De acordo com os resultados mostrados para os intervalos de confiança apresentados na Figura u e p, é possível extender os resultados para a comparação entre os algoritmos Dfs e Bfs, devido a semelhança entre os resultados obtidos. Além disso, de acordo com os intervalos não foi possível confirmar a existência de uma superioridade nos valores para a mediana do Recall durante as avaliações no uso destes algoritmos. 
 
 ### Precisão das avaliações por algoritmo
 
 A Figura y exibe a distribuição e a mediana dos valores da Precisão das avaliações entre os diferentes algoritmos de buscas experimentados. 
-
 
 ```{r echo=FALSE}
 metricas_result_exp01 %>%
@@ -452,7 +455,7 @@ metricas_result_exp01 %>%
 ggsave('exp01-distribuition-precision.png')
 ```
 
-Com base na Figura y, constata-se que as faixas de valores da Precisão das avaliações entre os algoritmos são similares, variando entre 0.85 até 1. Ademais, os valores das medianas apresentaram pequenas mudanças nos mesmos, situados entre 0.95 (Epsilon-greedy e Dfs) e 0.96 (Bfs). Porém, esta variação, assim como nas medianas do Recall, é de apenas 0.01. Assim, para verificar avaliar as diferenças nestes valores foram criados itervalos de confiança para a mediana dos algoritmos de busca. 
+Com base na Figura y, constata-se que as faixas de valores da Precisão das avaliações entre os algoritmos são similares, variando entre 0.85 até 1. Ademais, os valores das medianas apresentaram pequenas mudanças nos mesmos, situados entre 0.95 (Epsilon-greedy e Dfs) e 0.96 (Bfs). Porém, esta variação, assim como nas medianas do Recall, é de apenas 0.01. Assim, para avaliar as diferenças nestes valores foram criados itervalos de confiança para a mediana dos algoritmos de busca. 
 
 #### Intervalos de Confiança da mediana de Precisão
 
@@ -500,7 +503,6 @@ ics.aproach_exp01.precision <- metricas_result_exp01 %>%
 #### IC Diferença Precisão do Bfs e Dfs
 
 
-
 ```{r echo=FALSE}
 set.seed(123)
 
@@ -540,8 +542,8 @@ p1.dif.preci.bfs.dfs = ics.aproach_exp01.precision %>%
              ymax = conf.high)) +
   geom_pointrange() +
   geom_point(aes(x=aproach, y=median_value), size=2) + 
-  ylim(0.7, 1) +
-  labs(x='Algoritmo', y="Precisão", title="IC da Mediana do valor da Precisão", color = "")  +
+  ylim(0.8, 1) +
+  labs(x='Algoritmo', y="Precisão", title="", color = "")  +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   coord_flip() 
@@ -554,19 +556,18 @@ p2.dif.preci.bfs.dfs = ci.dif.preci.bfs.dfs %>%
   geom_point(size = 2) + 
   coord_flip(ylim = c(-0.5, 0.5)) +
   labs(x = "",
-       y = "", title = 'IC da Diferença Bfs - Dfs') +
+       y = "", title = 'Diferença Bfs - Dfs') +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray")) +
   geom_hline(yintercept = 0, color="#B2B0AF",)
 
-
-
-
 grid.arrange(p1.dif.preci.bfs.dfs, p2.dif.preci.bfs.dfs, nrow = 1)
+
+ggsave('exp01-ic-prec-e-bfs-dfs.png')
+
 ```
 
-
-
+Por meio dos intervalos de confiança da mediana e da diferença para a Precisão dos algoritmos Bfs e Dfs apresentados na Figura t, é notado que os intervalos das medianas da Precisão estão em 0.94 a 0.95 na Dfs e 0.94 a 0.96 para a Bfs. Ademais, embasado na diferença ***Bfs - Dfs***  não é possível constatar pelo intervalo -0.036 a 0.042 a existência de uma diferença entre os algoritmos em relação aos valores da mediana da Precisão, devido ao intervalo ser pequeno e conter o valor 0.
 
 #### IC Diferença Precisão do Bfs e Epsilon-greedy
 
@@ -604,8 +605,8 @@ p1.dif.preci.greedy.bfs = ics.aproach_exp01.precision %>%
              ymax = conf.high)) +
   geom_pointrange() +
   geom_point(aes(x=aproach, y=median_value), size=2) + 
-  ylim(0.7, 1) +
-  labs(x='Algoritmo', y="Precisão", title="IC da Mediana do valor da Precisão", color = "")  +
+  ylim(0.8, 1) +
+  labs(x='Algoritmo', y="Precisão", title="", color = "")  +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   coord_flip() 
@@ -617,80 +618,31 @@ p2.dif.preci.greedy.bfs = ci.dif.preci.greedy.bfs %>%
              ymax = conf.high)) +
   geom_pointrange() +
   geom_point(size = 2) + 
-  coord_flip(ylim = c(-0.5, 0.5)) +
+  coord_flip(ylim = c(-0.2, 0.2)) +
   labs(x = "",
-       y = "", title = 'IC da Diferença Bfs - Epsilon-greedy') +
+       y = "", title = 'Diferença Bfs - Epsilon-greedy') +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   geom_hline(yintercept = 0, color="#B2B0AF",)
 
 
 grid.arrange(p1.dif.preci.greedy.bfs, p2.dif.preci.greedy.bfs, nrow = 1)
+ggsave('exp01-ic-prec-e-e-greedy-bfs.png')
 
 ```
 
-Sob a pespectiva dos valores de Recall e Precisão, é observado apenas uma discreta variância de 0.01 entre os algoritmos de busca.  Falar sobre o motivo  
+De acordo com a Figura v é notado que os intervalos das medianas da Precisão estão em 0.93 a 0.94 no Epsilon-greedy e 0.94 a 0.96 para a Bfs. Além disso, por meio do intervalo da diferença entre ***Bfs - Epsilon-greedy*** é observado que o mesmo contém 0 em sua faixa de valores e apresenta pequenos valore ficando entre -0.03 até 0.03. Assim, com aplicação dos intervalos com 95% de confiança, não foi possível indentificar uma clara diferença entre os valores obtidos para a mediana no uso dos algoritmos Bfs e Epsilon-greedy.
 
 
-### IC 
+#### Conclusões
 
+A partir dos resultados encontrados é percebido que não existe uma diferenciação clara nas medianas dos algoritmos em relação aos valores de Recall e Precisão. Assim, é possível que não exista diferença no uso do crawler com os algoritmos de busca experiementados em relação as estas métricas.
 
-```{r eval=FALSE, include=FALSE}
+Neste contexto, a discreta alteração nos resultados entre os algoritmos pode refletir a ocorrência de instabilidades no link de internet utilizado, no site de transparência ou no processamento das avaliações durante as execuções entre os distintos algoritmos, dado que todas as avaliações foram realizadas em tempo real e online, com o acesso as URLs oficiais dos portais de transparência. Além disso, a igualdade entre as métricas pode retratar a conversação na forma de identificar novos nós, baseando-se em palavras chaves relacionadas ao critério fiscal buscado. Desta forma, o crawler não alterou seu comportamento em relação a quais nós eram descobertos mas na maneira de pecorrer e selecionar cada um deles.
 
-#Calcula a media das posições escolhidas nas buscas.
-set.seed(123)
+## Como se comporta o crawler em relação a número de nós acessados considerando os diferentes algoritmos durante as avaliações (Eficiência)?
 
-f1_score_boot <- function (d, i) {
-    dt<-d[i,]
-    return(c(
-          median(dt$f1_score)
-    ))
-}
-
-create_ic.mun <- function(x, y) {
-  x <- last(x)
-  y <- last(y)
-  
-  df.boot.mun <- filter(metricas_result_exp01, aproach == x, municipio == y)
-  
-  bootstrap.aproach.mun <- boot(
-          data = df.boot.mun, 
-          statistic = f1_score_boot, 
-          R = 4000 )
-  
-  print(glimpse(bootstrap.aproach.mun))
-
-  
-  ci = tidy(bootstrap.aproach.mun, 
-          conf.level = .95,
-          conf.method = "bca",
-          conf.int = TRUE)
-  
-  print(glimpse(ci))
-  
-  return(ci)
-}
-
-
-boot.aproach_exp01.mun <- metricas_result_exp01 %>%
-  group_by(aproach, municipio) %>% 
-  summarise(
-     median_value = median(f1_score),
-     ci = create_ic.mun(aproach, municipio)
-  ) %>% 
-  unnest(ci)
-
-  
-boot.aproach_exp01.mun %>% 
-  ggplot() + 
-  geom_errorbar(aes(x = municipio, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
-  geom_point(aes(x=municipio, y=median_value), color='red', size=1) +
-  coord_flip() +
-  facet_grid(. ~aproach) 
-  
-
-```
-
+Para avaliar a perfomance do Crawler focado com o uso dos diferentes algoritmos, foi empregado o uso do número de nós acessados nas avaliações. Esta métrica foi escolhida em virtude de sua manutenção em relação a possíveis instabilidades ocorridas durante as avaliações, pois independentemente da avaliação o número de nós para finalizar uma avaliação devem possuir um valor similar na avaliação de um mesmo portal. Neste cenário, a Figura y mostra a distribuição a mediana do número de nós acessados nas avaliações entre os três algoritmos testados.
 
 
 ```{r echo=FALSE}
@@ -700,7 +652,7 @@ metricas_result_exp01 %>%
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 3,
+               binwidth = 2,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
@@ -809,7 +761,7 @@ p2.dif.median_num_access.greedy.bfs = ci.dif.median_num_access.bfs.e_greedy.gree
   geom_point(size = 2) + 
   coord_flip(ylim = c(-8, 8)) +
   labs(x = "",
-       y = "", title = 'Diferença') +
+       y = "", title = 'Diferença Bfs - Epsilon-greedy') +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   geom_hline(yintercept = 0, color="#B2B0AF",)
@@ -869,7 +821,7 @@ p2.dif.median_num_access.greedy.dfs = ci.dif.median_num_access.dfs.e_greedy.gree
   geom_point(size = 2) + 
   coord_flip(ylim = c(-8, 8)) +
   labs(x = "",
-       y = "", title = 'Diferença') +
+       y = "", title = 'Diferença Epsilon-greedy - Dfs') +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   geom_hline(yintercept = 0, color="#B2B0AF",)
@@ -929,7 +881,7 @@ p2.dif.median_num_access.bfs.dfs = ci.dif.median_num_access.dfs.bfs %>%
   geom_point(size = 2) + 
   coord_flip(ylim = c(-8, 8)) +
   labs(x = "",
-       y = "", title = 'Diferença') +
+       y = "", title = 'Diferença Bfs - Dfs') +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   geom_hline(yintercept = 0, color="#B2B0AF",)
