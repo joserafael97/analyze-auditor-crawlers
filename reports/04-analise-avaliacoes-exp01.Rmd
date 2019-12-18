@@ -671,7 +671,7 @@ Para validar essa análise, aplicamos intervalos de confiança com a utilizaçã
 
 ### Intervalos de confiança para Número de Nós acessados 
 
-Com base no objetivo de avaliar o algoritmo Epsilon-greedy em relação a algortimos clássicos no que se refere a busca por novas páginas no processo de crawling, foram criados intervalos de confiança para a mediana de nós acessados entre os critérios fiscais para os algoritmos Bfs que obteve melhor resultado e o Epsilon-greedy.  
+Com base no objetivo de avaliar o algoritmo Epsilon-greedy em relação a algoritmos clássicos no que se refere a busca por novas páginas no processo de crawling, foram criados intervalos de confiança para a mediana de nós acessados entre os critérios fiscais para os algoritmos Bfs que obteve melhor resultado e o Epsilon-greedy.  
 
 
 ```{r echo=FALSE}
@@ -774,6 +774,8 @@ p2.dif.median_num_access.greedy.bfs = ci.dif.median_num_access.bfs.e_greedy.gree
 grid.arrange(p1.dif.median_num_access.bfs.e_greedy, p2.dif.median_num_access.greedy.bfs, nrow = 1)
 
 ```
+
+
 
 #### IC Diferença Mediana do Número de nós do dfs e Epsilon-greedy
 
