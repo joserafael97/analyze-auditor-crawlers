@@ -160,6 +160,7 @@ metricas_result_exp01 <- sumarise_exp01 %>%
         max_duration = max(duration),
         max_durationMin = max(durationMin),
         median_num_access_node = median(contNodeNumberAccess),
+        mean_num_access_node = mean(contNodeNumberAccess),
         max_num_access_node = max(contNodeNumberAccess),
         all_access_node = sum(contNodeNumberAccess),
         combination = last(fornecedor),
@@ -642,12 +643,10 @@ Neste contexto, a discreta alteração nos resultados entre os algoritmos pode r
 
 ## Como se comporta o crawler em relação a número de nós acessados considerando os diferentes algoritmos durante as avaliações (Eficiência)?
 
-Para avaliar a perfomance do Crawler focado com o uso dos diferentes algoritmos, foi empregado o uso do número de nós acessados nas avaliações. Esta métrica foi escolhida em virtude de sua manutenção em relação a possíveis instabilidades ocorridas durante as avaliações, pois independentemente da avaliação o número de nós para finalizar uma avaliação devem possuir um valor similar na avaliação de um mesmo portal. Neste cenário, a Figura y mostra a distribuição a mediana do número de nós acessados nas avaliações entre os três algoritmos testados.
-
+Para avaliar a perfomance do Crawler focado com o uso dos diferentes algoritmos, foi empregado o uso a mediana do número de nós acessados entre os critérios fiscais pesquisados em cada avaliação. Esta métrica foi escolhida em virtude de sua maior estabilidade em relação a possíveis instabilidades ocorridas durante as avaliações, pois independentemente da duração da avaliação, o número de nós acessados deve permancer similar considerando um mesmo portal. Neste cenário, a Figura y mostra a distribuição da mediana do número de nós acessados entre os critérios fiscais nas avaliações entre os três algoritmos testados.
 
 ```{r echo=FALSE}
 metricas_result_exp01 %>%
-  group_by(aproach)  %>%
   ggplot(aes(x = reorder(aproach, +(median_num_access_node)), y = median_num_access_node)) + 
   geom_dotplot(aes(fill = aproach),
                color='white',
@@ -666,8 +665,13 @@ metricas_result_exp01 %>%
 ggsave('exp01-n-access-nodes.png')
 ```
 
+Conforme é exposto na Figura y, a maioria das avaliações possuem nós entre as faixas de valores de 4 a 60 nós. No entanto, existem algumas exeções com avaliações de Itabaiana para os algoritmos de Epsilon-greedy e Dfs, com os valores das medianas de nós acessados entre as faixas de 76 a 90. Além disso, sob este contexto, é detectado também algumas medianas de nós acessados pertecentes a avaliações de Bayeux nos algoritmos Dfs e Bfs que destoam da franção principal das avaliação, com mediana de nós acessados em respectivamente 68 e 108. Isto pode ter ocorrido devido a oscilações na internet ou no próprio site de transparência que possam ter afetado tais avaliações. Esta afirmação embase-se na não recorrência deste efeito dentre as demais avaliações para o mesmo município. Ademais, é possível constatar em relação ao valor da mediana da distribuição que o algoritmo Bfs apresentou o melhor resultado com menos nós acessados seguindo pelo algoritmo com a mediana de 14 nós acessados Epsilon-greedy (16) e Dfs (18).
+
+Para validar essa análise, aplicamos intervalos de confiança com a utilização de bootstraps (4000).
 
 ### Intervalos de confiança para Número de Nós acessados 
+
+Com base no objetivo de avaliar o algoritmo Epsilon-greedy em relação a algortimos clássicos no que se refere a busca por novas páginas no processo de crawling, foram criados intervalos de confiança para a mediana de nós acessados entre os critérios fiscais para os algoritmos Bfs que obteve melhor resultado e o Epsilon-greedy.  
 
 
 ```{r echo=FALSE}

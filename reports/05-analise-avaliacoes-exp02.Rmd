@@ -361,7 +361,7 @@ metricas_result_exp02 %>%
 ```{r}
 metricas_result_exp02 %>%
   group_by(aproach)  %>%
-  ggplot(aes(x = reorder(aproach, +(max_durationMin)), y = max_durationMin)) + 
+  ggplot(aes(x = reorder(aproach, -(max_durationMin)), y = max_durationMin)) + 
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
