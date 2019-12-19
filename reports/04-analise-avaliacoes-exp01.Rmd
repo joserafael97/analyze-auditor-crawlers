@@ -750,7 +750,7 @@ p1.dif.median_num_access.bfs.e_greedy= ics.aproach_exp01.median_num_access_node 
              ymin = conf.low,
              ymax = conf.high)) +
   geom_pointrange() +
-  ylim(8, 30) +
+  ylim(10, 25) +
   labs(x='Algoritmo', y="Número de Nós Acessados", title="", color = "")  +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
@@ -775,6 +775,9 @@ grid.arrange(p1.dif.median_num_access.bfs.e_greedy, p2.dif.median_num_access.gre
 
 ```
 
+
+
+De acordo com a Figura l é observado que os intervalos das medianas do número de nós acessados estão entre o limites da mediana de nós acessados de 14 a 19 no Epsilon-greedy e de 12 a 16 na Bfs. Ademais, por meio do intervalo da diferença entre ***Bfs - Epsilon-greedy*** é possível constatar que pode existir uma redução de até 5 nós na mediana do número de nós acessados nas avaliações com uso da Bfs ou mesmo que está diferença seja moderada ou inexistente. 
 
 
 #### IC Diferença Mediana do Número de nós do dfs e Epsilon-greedy
@@ -812,7 +815,7 @@ p1.dif.median_num_access.dfs.e_greedy= ics.aproach_exp01.median_num_access_node 
              ymin = conf.low,
              ymax = conf.high)) +
   geom_pointrange() +
-  ylim(8, 30) +
+  ylim(10, 25) +
   labs(x='Algoritmo', y="Número de Nós Acessados", title="", color = "")  +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
@@ -837,9 +840,11 @@ grid.arrange(p1.dif.median_num_access.dfs.e_greedy, p2.dif.median_num_access.gre
 
 ```
 
+Conforme é mostrado na Figura h, é notado a que os intervalos de confiança das medianas do número de nós acessados encontram-se entre 15 a 19 na Dfs eentre 14 a 19 no Epilson-greedy. No mais, por meio do intervalo de confiança da diferença entre ***Epsilon-gredy - Dfs*** é possível identificar que pode existir uma diferença positiva de até 5 nós a menos nos resultados na mediana do número de nós acessados no uso do algoritmo Epsilon-greedy em comparação a Dfs. Porém pode acontecer apenas uma moderada ou inesxistente diferença entre eles ou mesmo esta diferença ser negativa em relação a escolha do Epsilon-greedy.
+
 #### IC Diferença Mediana do Número de nós do dfs e Epsilon-greedy
 
-
+ 
 ```{r echo=FALSE}
 
 diff_median_num_access.bfs.dfs <- function (d, i) {
