@@ -42,7 +42,7 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ## Removendo avaliações que não pertecem ao experimento 02
 ```{r}
 resultados_avaliacoes_exp02 <- resultados_avaliacoes_exp02 %>% 
-  filter(tipo_exp == 'less_itens' & (municipio != 'Curral de Cima' & municipio != 'todo'))
+  filter(tipo_exp == 'less_itens' & (municipio != 'Curral de Cima' & aproach != 'Dfs'))
 
 ```
 
@@ -163,31 +163,6 @@ metricas_result_exp02 %>%
     coord_flip()
 ```
 
-## Número de Avaliações por abordagem
-
-```{r}
-metricas_result_exp02 %>%
-  group_by(municipio) %>%
-  summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy'), 
-              bandit_bfs = sum(aproach == 'Epsilon-greedy + Bfs')) %>%
-  arrange(desc(dfs)) %>%
-  datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
-```
-
-## Todas as Avaliações
-
-```{r}
-metricas_result_exp02 %>%
-    select(municipio, aproach, date, recall, precision, f1_score) %>%
-    arrange(desc(recall)) %>% 
-    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
-```
-
-```{r}
-
-
-```
-
 
 ## Recall 
 
@@ -198,7 +173,7 @@ metricas_result_exp02 %>%
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.015,
+               binwidth = 0.00911,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
@@ -209,8 +184,206 @@ metricas_result_exp02 %>%
   guides(fill=guide_legend(title="Algoritmo"))  + 
   theme(legend.position = "top")
 
-
 ``` 
+
+
+#### Intervalos de Confiança da mediana do Recall
+
+
+
+```{r echo=FALSE}
+#Calcula a media das posições escolhidas nas buscas.
+set.seed(123)
+
+recall_boot <- function (d, i) {
+    dt<-d[i,]
+    return(c(
+          median(dt$recall)
+    ))
+}
+
+create_ic.recall <- function(x) {
+  x <- last(x)
+  df.boot <- filter(metricas_result_exp02, aproach == x)
+  
+  bootstrap.aproach <- boot(
+          data = df.boot, 
+          statistic = recall_boot, 
+          R = 4000 )
+  
+  ci = tidy(bootstrap.aproach, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+  
+  print(glimpse(ci))
+  
+  return(ci)
+}
+
+
+ics.aproach_exp02.recall <- metricas_result_exp02 %>%
+  group_by(aproach) %>% 
+   summarise(
+     median_value = median(recall),
+     ci = list(create_ic.recall(aproach))
+  ) %>% 
+  unnest(ci) 
+
+ics.aproach_exp02.recall %>% 
+  ggplot(aes(x = aproach, y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  ylim(0.8, 1) +
+  labs(x='Algoritmo', y="Recall", title="", color = "")  +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  coord_flip() 
+
+
+```
+
+#### IC Diferença do Recall entre Epsilon-greedy + Bfs e Epsilon-greedy
+
+```{r echo=FALSE}
+# IC entre BFs e E-greedy
+
+diff_mediana_recall.e_greedy_bfs.e_greedy <- function (d, i) {
+
+  grupo = metricas_result_exp02 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(recall))
+  
+  e_greedy_bfs = grupo %>% filter(aproach ==  "Epsilon-greedy + Bfs") %>% pull(median_value_test)
+  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  
+  return(e_greedy_bfs-e_greedy)
+}
+
+booted.dif.recall.1 <- boot(data = metricas_result_exp02, 
+               statistic = diff_mediana_recall.e_greedy_bfs.e_greedy, 
+               R = 4000)
+
+ci.dif.recall.greedy_bfs.e_greedy = tidy(booted.dif.recall.1, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.recall.greedy_bfs.e_greedy)
+
+ci.dif.recall.greedy_bfs.e_greedy %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 3) + 
+  coord_flip(ylim = c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "", title = 'Diferença (Epsilon-greedy + Bfs) - Epsilon-greedy') +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = 0, color="#B2B0AF",)
+
+
+ggsave('exp01-ic-e-greedy-bfs.e_greedy.png')
+
+```
+
+#### IC Diferença do Recall entre Epsilon-greedy + Bfs e Bfs
+
+```{r echo=FALSE}
+# IC entre BFs e E-greedy
+
+diff_mediana_recall.e_greedy_bfs.bfs <- function (d, i) {
+
+  grupo = metricas_result_exp02 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(recall))
+  
+  e_greedy_bfs = grupo %>% filter(aproach ==  "Epsilon-greedy + Bfs") %>% pull(median_value_test)
+  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  
+  return(e_greedy_bfs-e_greedy)
+}
+
+booted.dif.recall.2 <- boot(data = metricas_result_exp02, 
+               statistic = diff_mediana_recall.e_greedy_bfs.bfs, 
+               R = 4000)
+
+ci.dif.recall.greedy_bfs.bfs = tidy(booted.dif.recall.2, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.recall.greedy_bfs.bfs)
+
+ci.dif.recall.greedy_bfs.bfs %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 3) + 
+  coord_flip(ylim = c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "", title = 'Diferença (Epsilon-greedy + Bfs) - Bfs') +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = 0, color="#B2B0AF",)
+
+
+ggsave('exp01-ic-e-greedy_bfs.bfs.png')
+
+```
+
+#### IC Diferença do Recall entre Epsilon-greedy + Bfs e Bfs
+
+```{r echo=FALSE}
+# IC entre BFs e E-greedy
+
+diff_mediana_recall.e_greedy.bfs <- function (d, i) {
+
+  grupo = metricas_result_exp02 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(recall))
+  
+  e_greedy_bfs = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
+  
+  return(e_greedy_bfs-bfs)
+}
+
+booted.dif.recall.3 <- boot(data = metricas_result_exp02, 
+               statistic = diff_mediana_recall.e_greedy.bfs, 
+               R = 4000)
+
+ci.dif.recall.e_greedy.bfs = tidy(booted.dif.recall.3, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.recall.e_greedy.bfs)
+
+ci.dif.recall.e_greedy.bfs %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 3) + 
+  coord_flip(ylim = c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "", title = 'Diferença Epsilon-greedy - Bfs') +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = 0, color="#B2B0AF",)
+
+
+ggsave('exp01-ic-e-greedy-bfs.png')
+
+```
 
 ## Precision 
 
@@ -221,7 +394,7 @@ metricas_result_exp02 %>%
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 0.0075,
+               binwidth = 0.00615,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
@@ -232,60 +405,10 @@ metricas_result_exp02 %>%
   guides(fill=guide_legend(title="Algoritmo")) + 
   theme(legend.position = "top")
 
-  
-
 ``` 
 
-## Intervalo de Confiança da Mediana encontrada do F1 Score para cada Abordagem
+#### Intervalos de Confiança da mediana da Precisão
 
-
-```{r}
-#Calcula a media das posições escolhidas nas buscas.
-set.seed(123)
-
-recall_boot.exp02 <- function (d, i) {
-    dt<-d[i,]
-    return(c(
-          median(dt$recall)
-    ))
-}
-
-create_ic <- function(x) {
-  x <- last(x)
-  df.boot <- filter(metricas_result_exp02, aproach == x)
-  
-  bootstrap.aproach.exp02 <- boot(
-          data = df.boot, 
-          statistic = recall_boot.exp02, 
-          R = 4000 )
-  
-  ci.exp2 = tidy(bootstrap.aproach.exp02, 
-          conf.level = .95,
-          conf.method = "bca",
-          conf.int = TRUE)
-  
-  print(glimpse(ci.exp2))
-  
-  return(ci.exp2)
-}
-
-
-ics.aproach_exp02 <- metricas_result_exp02 %>%
-  group_by(aproach) %>% 
-   summarise(
-     median_value = median(recall),
-     ci = list(create_ic(aproach))
-  ) %>% 
-  unnest(ci) 
-  
-ics.aproach_exp02 %>%  
-  ggplot() + 
-  geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
-  geom_point(aes(x=aproach, y=median_value), color='#f39422', size=1.5) + 
-  ylim(0.5, 1) +
-  labs(y='Recall', x='Algoritmo', title="") 
-
-```
 
 ```{r}
 #Calcula a media das posições escolhidas nas buscas.
@@ -318,217 +441,313 @@ create_ic.exp02.precision <- function(x) {
 }
 
 
-ics.aproach_exp02 <- metricas_result_exp02 %>%
+ics.aproach_exp02.precision <- metricas_result_exp02 %>%
   group_by(aproach) %>% 
    summarise(
      median_value = median(precision),
      ci = list(create_ic.exp02.precision(aproach))
   ) %>% 
   unnest(ci) 
+
+ics.aproach_exp02.precision %>% 
+  ggplot(aes(x = aproach, y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(aes(x=aproach, y=median_value), size=2) + 
+  ylim(0.8, 1) +
+  labs(x='Algoritmo', y="Precisão", title="", color = "")  +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  coord_flip() 
+
+
+```
+
+### Diferença entre Epilon-greedy + Bfs e Epsilon-greedy
+
+```{r echo=FALSE}
+# IC entre BFs e E-greedy
+
+diff_mediana_precision.e_greedy_bfs.e_greedy <- function (d, i) {
+
+  grupo = metricas_result_exp02 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(precision))
   
-ics.aproach_exp02 %>%  
-  ggplot() + 
-  geom_errorbar(aes(x = aproach, y = statistic, ymin = conf.low, ymax = conf.high), width = 0.05) +
-  geom_point(aes(x=aproach, y=median_value), color='#f39422', size=1.5) + 
-  ylim(0.5, 1) +
-  labs(y='Precisão', x='Algoritmo', title="") 
+  e_greedy_bfs = grupo %>% filter(aproach ==  "Epsilon-greedy + Bfs") %>% pull(median_value_test)
+  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  
+  return(e_greedy_bfs - e_greedy)
+}
+
+booted.dif.preci.e_greedy_bfs.e_greedy <- boot(data = metricas_result_exp02, 
+               statistic = diff_mediana_precision.e_greedy_bfs.e_greedy, 
+               R = 4000)
+
+ci.dif.preci.e_greedy_bfs.e_greedy = tidy(booted.dif.preci.e_greedy_bfs.e_greedy, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.preci.e_greedy_bfs.e_greedy)
+  
+ci.dif.preci.e_greedy_bfs.e_greedy %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 2) + 
+  coord_flip(ylim = c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "", title = 'Diferença (Epilon-greedy + Bfs) - Epsilon-greedy') +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = 0, color="#B2B0AF",)
+
+
+ggsave('exp01-ic-prec-e-e-greedy-bfs.png')
+
 ```
 
+### Diferença entre Epilon-greedy + Bfs e Bfs
 
-## F1 Score por cada Município da Amostra 
+```{r echo=FALSE}
+# IC entre BFs e E-greedy
+
+diff_mediana_precision.e_greedy_bfs.bfs <- function (d, i) {
+
+  grupo = metricas_result_exp02 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(precision))
+  
+  e_greedy_bfs = grupo %>% filter(aproach ==  "Epsilon-greedy + Bfs") %>% pull(median_value_test)
+  bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
+  
+  return(e_greedy_bfs - bfs)
+}
+
+booted.dif.preci.e_greedy_bfs.bfs <- boot(data = metricas_result_exp02, 
+               statistic = diff_mediana_precision.e_greedy_bfs.bfs, 
+               R = 4000)
+
+ci.dif.preci.e_greedy_bfs.bfs = tidy(booted.dif.preci.e_greedy_bfs.bfs, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.preci.e_greedy_bfs.bfs)
+  
+ci.dif.preci.e_greedy_bfs.bfs %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 2) + 
+  coord_flip(ylim = c(-0.2, 0.2)) +
+  labs(x = "",
+       y = "", title = 'Diferença (Epilon-greedy + Bfs) - Bfs') +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = 0, color="#B2B0AF",)
 
 
-```{r}
-metricas_result_exp02 %>% 
-  group_by(municipio, aproach) %>% 
-  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score), dif = max_value - min_value) %>% 
-  ggplot(aes(y=reorder(municipio, dif))) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=2,
-                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
-  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
-  geom_point(aes(x= median_value, color='#f39422'), size=2, alpha= 0.8, shape=108) +
-  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='F1 Score', y=NULL, title="") +
-  facet_grid(.~ aproach) + 
-  theme(legend.position = "top")
+ggsave('exp01-ic-prec-e-e-greedy-bfs.png')
+
 ```
 
+## Mediana do número de nós Acessados  
 
-## Tempo de Duração  
 
 ```{r}
 metricas_result_exp02 %>%
-  group_by(aproach)  %>%
-  ggplot(aes(x = reorder(aproach, -(max_durationMin)), y = max_durationMin)) + 
+  ggplot(aes(x = reorder(aproach, +median_num_access_node), y = median_num_access_node)) + 
   geom_dotplot(aes(fill = aproach),
                color='white',
                binaxis = "y", 
-               binwidth = 22,
+               binwidth = 2.5,
                stackdir = "center") +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
                  geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
   scale_linetype_manual("", values=c("median"="x")) +
   scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
   scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
-  labs(x='Algoritmo', y="Duração (Min)", title="", color = "") + 
+  labs(x='Algoritmo', y="Mediana do Número de Nós Acessados", title="", color = "") + 
   guides(fill=guide_legend(title="Algoritmo")) + 
   theme(legend.position = "top")
 
 ```
 
-## Nós Acessados  
+#### Intervalos de Confiança da mediana do número de nós entre os algoritmos
 
+```{r echo=FALSE}
+#Calcula a media das posições escolhidas nas buscas.
+set.seed(123)
+
+median_num_access_node_boot <- function (d, i) {
+    dt<-d[i,]
+    return(c(
+          median(dt$median_num_access_node)
+    ))
+}
+
+create_ic_median_num_access_node <- function(x) {
+  x <- last(x)
+  df.boot <- filter(metricas_result_exp02, aproach == x)
+  
+  bootstrap.aproach.median_num_access_node <- boot(
+          data = df.boot, 
+          statistic = median_num_access_node_boot, 
+          R = 4000 )
+  
+  ci = tidy(bootstrap.aproach.median_num_access_node, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+  
+  print(glimpse(ci))
+  
+  return(ci)
+}
+
+
+ics.aproach_exp02.median_num_access_node <- metricas_result_exp02 %>%
+  group_by(aproach) %>% 
+   summarise(
+     median_value = median(median_num_access_node),
+     ci = list(create_ic_median_num_access_node(aproach))
+  ) %>% 
+  unnest(ci) 
+
+
+ics.aproach_exp02.median_num_access_node %>% 
+  ggplot(aes(x = aproach, y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(aes(x=aproach, y=median_value), size=2) + 
+  ylim(10, 25) +
+  labs(x='Algoritmo', y="Mediana do número de nós acessados", title="", color = "")  +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  coord_flip() 
+
+```
+
+### Diferença entre Epilon-greedy + Bfs e Bfs
+
+```{r echo=FALSE}
+# IC entre BFs e E-greedy
+
+diff_mediana_precision.e_greedy_bfs.bfs <- function (d, i) {
+
+  grupo = metricas_result_exp02 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(median_num_access_node))
+  
+  e_greedy_bfs = grupo %>% filter(aproach ==  "Epsilon-greedy + Bfs") %>% pull(median_value_test)
+  bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
+  
+  return(e_greedy_bfs - bfs)
+}
+
+booted.dif.preci.e_greedy_bfs.bfs <- boot(data = metricas_result_exp02, 
+               statistic = diff_mediana_precision.e_greedy_bfs.bfs, 
+               R = 4000)
+
+ci.dif.preci.e_greedy_bfs.bfs = tidy(booted.dif.preci.e_greedy_bfs.bfs, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.preci.e_greedy_bfs.bfs)
+  
+ci.dif.preci.e_greedy_bfs.bfs %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 2) + 
+  coord_flip(ylim = c(-8, 8)) +
+  labs(x = "",
+       y = "", title = 'Diferença (Epilon-greedy + Bfs) - Bfs') +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = 0, color="#B2B0AF",)
+
+
+ggsave('exp01-ic-prec-e-nos-greedy-bfs.png')
+
+```
+
+
+### Diferença entre Epilon-greedy + Bfs e Epsilon-greedy
+
+```{r echo=FALSE}
+# IC entre BFs e E-greedy
+
+diff_mediana_precision.e_greedy_bfs.e_greedy <- function (d, i) {
+
+  grupo = metricas_result_exp02 %>% 
+    slice(i) %>% 
+    group_by(aproach) %>% 
+    summarise(median_value_test = median(median_num_access_node))
+  
+  e_greedy_bfs = grupo %>% filter(aproach ==  "Epsilon-greedy + Bfs") %>% pull(median_value_test)
+  e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
+  
+  return(e_greedy_bfs - e_greedy)
+}
+
+booted.dif.preci.e_greedy_bfs.e_greedy <- boot(data = metricas_result_exp02, 
+               statistic = diff_mediana_precision.e_greedy_bfs.e_greedy, 
+               R = 4000)
+
+ci.dif.preci.e_greedy_bfs.e_greedy = tidy(booted.dif.preci.e_greedy_bfs.e_greedy, 
+          conf.level = .95,
+          conf.method = "bca",
+          conf.int = TRUE)
+
+glimpse(ci.dif.preci.e_greedy_bfs.e_greedy)
+  
+ci.dif.preci.e_greedy_bfs.e_greedy %>% 
+  ggplot(aes(x = "", y = statistic,
+             ymin = conf.low,
+             ymax = conf.high)) +
+  geom_pointrange() +
+  geom_point(size = 2) + 
+  coord_flip(ylim = c(-8, 8)) +
+  labs(x = "",
+       y = "", title = 'Diferença (Epilon-greedy + Bfs) - Epsilon-greedy') +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
+  geom_hline(yintercept = 0, color="#B2B0AF",)
+
+
+ggsave('exp01-ic-prec-e-e-greedy-bfs.png')
+
+```
+
+
+## Número de Avaliações por abordagem
 
 ```{r}
 metricas_result_exp02 %>%
-  group_by(aproach)  %>%
-  ggplot(aes(x = reorder(aproach, +(max_num_access_node)), y = max_num_access_node)) + 
-  geom_dotplot(aes(fill = aproach),
-               color='white',
-               binaxis = "y", 
-               binwidth = 5,
-               stackdir = "center") +
-  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
-                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
-  scale_linetype_manual("", values=c("median"="x")) +
-  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
-  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
-  labs(x='Algoritmo', y="Número de Nós Acessados", title="", color = "") + 
-  guides(fill=guide_legend(title="Algoritmo")) + 
-  theme(legend.position = "top")
-
+  group_by(municipio) %>%
+  summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy'), 
+              bandit_bfs = sum(aproach == 'Epsilon-greedy + Bfs')) %>%
+  arrange(desc(dfs)) %>%
+  datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
 
-
-## f1 Score por combinação
+## Todas as Avaliações
 
 ```{r}
-metricas_result_exp02 %>% 
-  group_by(combination, aproach) %>% 
-  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score), dif = max_value - min_value) %>% 
-  ggplot(aes(y=reorder(combination, dif))) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
-                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
-  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
-  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='F1 Score', y=NULL, title="") +
-  facet_grid(.~ aproach) + 
-  theme(legend.position = "top")
-
+metricas_result_exp02 %>%
+    select(municipio, aproach, date, recall, precision, f1_score) %>%
+    arrange(desc(recall)) %>% 
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
 ```
-
-## Número de nós acessados por combinação
-
-```{r}
-
-metricas_result_exp02 %>% 
-  group_by(combination, aproach) %>% 
-  summarise(max_value = max(max_num_access_node), min_value = min(max_num_access_node), median_value=median(max_num_access_node), dif = max_value - min_value) %>% 
-  ggplot(aes(y=reorder(combination, dif))) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
-                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
-  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
-  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='Número de Nós Acessados', y=NULL, title="") +
-  facet_grid(.~ aproach) + 
-  theme(legend.position = "top")
-```
-
-## Duração das avaliações por combinações
-
-```{r}
-metricas_result_exp02 %>% 
-  group_by(combination, aproach) %>% 
-  summarise(max_value = max(max_durationMin), min_value = min(max_durationMin), median_value=median(max_durationMin)) %>% 
-  ggplot(aes(y=combination)) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
-                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
-  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
-  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='Duração (Min)', y=NULL, title="") +
-  facet_grid(.~ aproach) + 
-  theme(legend.position = "top")
-```
-
-```{r}
-sumarise_exp02 %>% 
-  group_by(municipio, criterio, aproach, date) %>% 
-    summarise(
-        total_itens = n(),
-        tp_total = sum(tp), 
-        fn_total = sum(fn),
-        fp_total = sum(fp),
-        
-        #cálculo das métricas 
-        recall = tp_total/(tp_total + fn_total),
-        precision =  tp_total/(tp_total + fp_total),
-        f1_score = (2*(recall*precision))/(recall+precision),
-        
-        #tempo das avaliações
-        median_duration_min = median(durationMin),
-        median_duration = median(duration),
-        max_duration = max(duration),
-        max_durationMin = max(durationMin),
-        median_num_access_node = median(contNodeNumberAccess),
-        max_num_access_node = max(contNodeNumberAccess),
-        all_access_node = sum(contNodeNumberAccess),
-        combination = last(fornecedor),
-        tipo_exp = last(tipo_exp)
-    ) %>%
-  filter(total_itens == tp_total) %>%
-  group_by(criterio) %>%
-  summarise(n = n()) %>%
-  arrange(desc(n)) 
-
-
-
-sumarise_exp02 %>% 
-  filter(criterio == 'Despesa Extra Orçamentária') %>%
-  group_by(municipio, criterio, aproach, date) %>% 
-    summarise(
-        total_itens = n(),
-        tp_total = sum(tp), 
-        fn_total = sum(fn),
-        fp_total = sum(fp),
-        
-        #cálculo das métricas 
-        recall = tp_total/(tp_total + fn_total),
-        precision =  tp_total/(tp_total + fp_total),
-        f1_score = (2*(recall*precision))/(recall+precision),
-        
-        #tempo das avaliações
-        median_duration_min = median(durationMin),
-        median_duration = median(duration),
-        max_duration = max(duration),
-        max_durationMin = max(durationMin),
-        median_num_access_node = median(contNodeNumberAccess),
-        max_num_access_node = max(contNodeNumberAccess),
-        all_access_node = sum(contNodeNumberAccess),
-        combination = last(fornecedor),
-        tipo_exp = last(tipo_exp)
-    ) %>%
-  filter(total_itens == tp_total)  %>%
-  ggplot(aes(x = reorder(aproach, -(max_num_access_node)), y = max_num_access_node)) + 
-  geom_point() +
-  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
-                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
-  scale_linetype_manual("", values=c("median"="x")) +
-  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
-  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
-  labs(x='Algoritmo', y="Nº de Nós Acessados", title="", color = "") + 
-  guides(fill=guide_legend(title="Algoritmo")) + 
-  theme(legend.position = "top")
-```
-
-

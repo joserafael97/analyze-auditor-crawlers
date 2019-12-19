@@ -43,8 +43,6 @@ Neste experimento foi avaliado o desempenho do crawler focado na avaliação da 
 1. Como se comporta o crawler em relação ao Recall e Precisão considerando os diferentes algoritmos durante as avaliações de transparência (Eficácia)?
 2. Como se comporta o crawler em relação a número de nós acessados considerando os diferentes algoritmos durante as avaliações (Eficiência)?
 3. Como é a estabilidade do crawler considerando cada um dos algoritmos e as combinação de portal de transparência?
-4. Como se comporta a variação do crawler considerando os diferentes algoritmos e as combinações de transparência?
-
 
 Para responder essas perguntas foram utilizadas as seguintes variáveis: 
 
@@ -514,7 +512,7 @@ diff_mediana_precision.bfs.dfs <- function (d, i) {
   grupo = metricas_result_exp01 %>% 
     slice(i) %>% 
     group_by(aproach) %>% 
-    summarise(median_value_test = median(recall))
+    summarise(median_value_test = median(precision))
   
   bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
   dfs = grupo %>% filter(aproach ==  "Dfs") %>% pull(median_value_test)
@@ -580,7 +578,7 @@ diff_mediana_precision.e_greedy.bfs <- function (d, i) {
   grupo = metricas_result_exp01 %>% 
     slice(i) %>% 
     group_by(aproach) %>% 
-    summarise(median_value_test = median(recall))
+    summarise(median_value_test = median(precision))
   
   e_greedy = grupo %>% filter(aproach ==  "Epsilon-greedy") %>% pull(median_value_test)
   bfs = grupo %>% filter(aproach ==  "Bfs") %>% pull(median_value_test)
@@ -751,7 +749,7 @@ p1.dif.median_num_access.bfs.e_greedy= ics.aproach_exp01.median_num_access_node 
              ymax = conf.high)) +
   geom_pointrange() +
   ylim(10, 25) +
-  labs(x='Algoritmo', y="Número de Nós Acessados", title="", color = "")  +
+  labs(x='Algoritmo', y="Mediana do Número de Nós Acessados", title="", color = "")  +
   theme_minimal() +
   theme(plot.title = element_text(hjust = .5), plot.subtitle = element_text(hjust = .5, color = "gray40")) +
   coord_flip() 
@@ -902,14 +900,23 @@ grid.arrange(p1.dif.median_num_access.dfs.bfs, p2.dif.median_num_access.bfs.dfs,
 
 ```
 
-## F1 Score por cada Município da Amostra 
+Como foi percebido anteriormente, é possível que o crawler usando o algoritmo Bfs se sobressaia em relação aos demais, foi comparado também os algoritmos Bfs e Dfs. Neste sentido, a Figura k apresenta os intervalos de confianaça para a mediana do número de acessos de nós entre os algoritmos e a diferença entre eles.
+
+De acordo com os intervalos de confiança mostrados na Figura k os intevalos concencetram-se em 12 até 16 na Bfs e 15 até 19 na Dfs. Além disso, baseando-se na diferença ***Bfs - Dfs*** apresentando o itervalo -6 a -0.5, é constatado a existência de uma possível superioridade no desempenho do crawler focado em relação a mediana do número de nós acessados entre os critérios fiscais em até 6 nós no uso da Bfs em comparação a Dfs. No entanto, é possível que esta diferença seja discreta, sendo até mesmo imperceptível.
+
+
+## Como é a estabilidade do crawler considerando cada um dos algoritmos e as combinação de portal de transparência?
+
+Para tentar verificar a estabilidade das avaliações no uso dos diferentes algoritmos foi utilizado a variáveis f1-score e a mediana de número de nós acessados a nível de município e combinações de portais.
+
+### F1 Score e Mediana do número de nós acessados por cada Município da Amostra 
 
 
 ```{r echo=FALSE}
 metricas_result_exp01 %>% 
   group_by(municipio, aproach) %>% 
-  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
-  ggplot(aes(y=municipio)) + 
+  summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score), dif = max_value - min_value) %>% 
+  ggplot(aes(y=reorder(municipio, dif))) + 
   geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
   geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
   geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=2,
@@ -925,7 +932,28 @@ ggsave('exp01-f1score-by_municipios.png')
 
 ```
 
-## f1 Score por combinação
+
+```{r echo=FALSE}
+metricas_result_exp01 %>% 
+  group_by(municipio, aproach) %>% 
+  summarise(max_value = max(median_num_access_node), min_value = min(median_num_access_node), median_value=median(median_num_access_node), dif = max_value - min_value) %>% 
+  ggplot(aes(y=reorder(municipio, dif))) + 
+  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
+  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
+  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=2,
+                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
+  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
+  geom_point(aes(x= median_value, color='#f39422'), size=2, alpha= 0.8, shape=108) +
+  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
+  labs(x='Mediana do número de nós acessados', y=NULL, title="") +
+  facet_grid(.~ aproach)  + 
+  theme(legend.position = "top")
+
+ggsave('exp01-numero-nodes-acessados-by_municipios.png')
+
+```
+
+### F1 Score e Mediana do número de nós acessados por cada Combinação de portal da Amostra 
 
 ```{r echo=FALSE}
 
@@ -948,13 +976,12 @@ ggsave('exp01-f1score-by_combinations.png')
 
 ```
 
-## Número de nós acessados por combinação
 
 ```{r echo=FALSE}
 
 metricas_result_exp01 %>% 
   group_by(combination, aproach) %>% 
-  summarise(max_value = max(max_num_access_node), min_value = min(max_num_access_node), median_value=median(max_num_access_node), dif = max_value-min_value) %>% 
+  summarise(max_value = max(median_num_access_node), min_value = min(median_num_access_node), median_value=median(median_num_access_node), dif = max_value-min_value) %>% 
   ggplot(aes(y=reorder(combination, dif))) + 
   geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
   geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
@@ -971,27 +998,6 @@ ggsave('exp01-num_nodes_by_combinations.png')
 
 ```
 
-## Duração das avaliações por combinações
-
-```{r echo=FALSE}
-metricas_result_exp01 %>% 
-  group_by(combination, aproach) %>% 
-  summarise(max_value = max(max_durationMin), min_value = min(max_durationMin), median_value=median(max_durationMin), dif = max_value - min_value) %>% 
-  ggplot(aes(y=reorder(combination, dif))) + 
-  geom_point(aes(x=min_value, color='#293a80'), size=1, shape=108) +
-  geom_point(aes(x= max_value, color='#537ec5'), size=1, shape=108)  +
-  geom_dumbbell(color="#e3e2e1", aes(x = min_value, xend = max_value), colour_x = "#293a80", colour_xend = "#537ec5", size=3.1,
-                dot_guide=TRUE, dot_guide_size=0.25, shape=108) + 
-  #geom_point(aes(x= median_value, color='#f39422'), size=6, shape=108) +
-  geom_point(aes(x= median_value, color='#f39422'), size=3, alpha= 0.8, shape=108) +
-  scale_color_manual(name = "", values = c("#293a80", "#537ec5", "#f39422"), labels = c("Mínimo", "Máximo", "Mediana")) +
-  labs(x='Duração (Min)', y=NULL, title="") +
-  facet_grid(.~ aproach) + 
-  theme(legend.position = "top")
-
-ggsave('exp01-duration_nodes_by_combinations.png')
-
-```
 
 ## Número de Avaliações por abordagem
 
