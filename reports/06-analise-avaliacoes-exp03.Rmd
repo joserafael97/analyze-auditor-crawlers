@@ -25,7 +25,7 @@ theme_set(theme_bw())
 
 ## Lendo os dados
 
-```{r read}
+```{r read, echo=FALSE}
 resultados_avaliacoes_exp03 = read_avaliacoes_exp03()
 resultados_avaliacoes_exp03[is.na(resultados_avaliacoes_exp03)] <- ""
 
@@ -36,7 +36,7 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ```
 
 ## Removendo avaliações que não pertecem ao experimento 02
-```{r}
+```{r echo=FALSE}
 resultados_avaliacoes_exp03 <- resultados_avaliacoes_exp03 %>% 
   filter(tipo_exp == 'less_itens' & (municipio != 'Curral de Cima' & municipio != 'todo'))
 
@@ -46,7 +46,7 @@ resultados_avaliacoes_exp03 <- resultados_avaliacoes_exp03 %>%
 
 ## Adicionando combinação encontrada em cada município no gabarito
 
-```{r}
+```{r echo=FALSE}
 empresas_portais <- empresas_portais %>% 
     select(municipio, fornecedor)
 
@@ -56,14 +56,14 @@ gararito<-left_join(gararito, empresas_portais, by=c("municipio"))
 
 ## Juntando Avaliações e Gabaritos
 
-```{r}
+```{r echo=FALSE}
 # concatena os dois csv o do gabarito e avaliações do crawler
 data<-left_join(resultados_avaliacoes_exp03, gararito, by=c("municipio", "item", "criterio"))
 ```
 
 ## Sumarizando as avaliações
 
-```{r}
+```{r echo=FALSE}
 sumarise_exp03 <- data %>% 
     group_by(id, municipio, criterio, item, aproach, date) %>% 
     mutate(
@@ -87,7 +87,7 @@ head(sumarise_exp03)
 
 ## Quantificando métricas
 
-```{r}
+```{r echo=FALSE}
 
 metricas_result_exp03 <- sumarise_exp03 %>% 
     #filter(!is.na(aproach )) %>% 
@@ -129,7 +129,7 @@ metricas_result_exp03 %>%
 
 ## Remoção de avaliações que não possuem maior 
 
-```{r eval=FALSE, include=FALSE}
+```{r echo=FALSE}
 metricas_result_exp03 <- metricas_result_exp03 %>%
   group_by(municipio, aproach) %>%
   mutate(variance_recall = sd(recall), recall_median = median(recall)) %>%
@@ -145,7 +145,7 @@ metricas_result_exp03 <- metricas_result_exp03 %>%
 
 ## Avaliações por abordagem
 
-```{r}
+```{r echo=FALSE}
 
 
 metricas_result_exp03 %>%
@@ -159,34 +159,12 @@ metricas_result_exp03 %>%
     coord_flip()
 ```
 
-## Número de Avaliações por abordagem
 
-```{r}
-metricas_result_exp03 %>%
-    group_by(municipio) %>%
-    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
-    arrange(desc(dfs)) %>%
-    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
-```
-
-## Todas as Avaliações
-
-```{r}
-metricas_result_exp03 %>%
-    select(municipio, aproach, date, recall, precision, f1_score) %>%
-    arrange(desc(recall)) %>% 
-    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
-```
-
-```{r}
-
-
-```
 
 
 ## Recall 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp03 %>%
   group_by(aproach)  %>%
   ggplot(aes(x = reorder(aproach, -(recall)), y = recall)) + 
@@ -209,7 +187,7 @@ metricas_result_exp03 %>%
 
 ## Precision 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp03 %>%
   group_by(aproach)  %>%
   ggplot(aes(x = reorder(aproach, -(precision)), y = precision)) + 
@@ -231,7 +209,33 @@ metricas_result_exp03 %>%
 
 ``` 
 
-## Intervalo de Confiança da Mediana encontrada do F1 Score para cada Abordagem
+
+
+
+
+
+## Nós Acessados  
+
+
+```{r echo=FALSE}
+metricas_result_exp03 %>%
+  group_by(aproach)  %>%
+  ggplot(aes(x = reorder(aproach, +(med)), y = max_num_access_node)) + 
+  geom_dotplot(aes(fill = aproach),
+               color='white',
+               binaxis = "y", 
+               binwidth = 8,
+               stackdir = "center") +
+  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
+                 geom = "crossbar", width = 0.3, alpha=0.3,aes(colour='Mediana'), ) +
+  scale_linetype_manual("", values=c("median"="x")) +
+  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
+  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
+  labs(x='Algoritmo', y="Número de Nós Acessados", title="", color = "") + 
+  guides(fill=guide_legend(title="Algoritmo")) + 
+  theme(legend.position = "bottom")
+
+```
 
 
 ```{r eval=FALSE, warning=TRUE, include=FALSE}
@@ -282,6 +286,8 @@ ics.aproach_exp03 %>%
 
 ```
 
+### IC 
+
 ```{r eval=FALSE, include=FALSE}
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
@@ -329,11 +335,10 @@ ics.aproach_exp03 %>%
   labs(y='Precisão', x='Algoritmo', title="") 
 ```
 
-
 ## F1 Score por cada Município da Amostra 
 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp03 %>% 
   group_by(municipio, aproach) %>% 
   summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
@@ -349,56 +354,9 @@ metricas_result_exp03 %>%
   facet_grid(.~ aproach)
 ```
 
-
-## Tempo de Duração  
-
-```{r}
-metricas_result_exp03 %>%
-  group_by(aproach)  %>%
-  ggplot(aes(x = reorder(aproach, +(max_durationMin)), y = max_durationMin)) + 
-  geom_dotplot(aes(fill = aproach),
-               color='white',
-               binaxis = "y", 
-               binwidth = 22,
-               stackdir = "center") +
-  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
-                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
-  scale_linetype_manual("", values=c("median"="x")) +
-  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
-  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
-  labs(x='Algoritmo', y="Duração (Min)", title="", color = "") + 
-  guides(fill=guide_legend(title="Algoritmo")) + 
-  theme(legend.position = "bottom")
-
-```
-
-## Nós Acessados  
-
-
-```{r}
-metricas_result_exp03 %>%
-  group_by(aproach)  %>%
-  ggplot(aes(x = reorder(aproach, +(max_num_access_node)), y = max_num_access_node)) + 
-  geom_dotplot(aes(fill = aproach),
-               color='white',
-               binaxis = "y", 
-               binwidth = 5,
-               stackdir = "center") +
-  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median,
-                 geom = "crossbar", width = 0.5, alpha=0.3,aes(colour='Mediana'), ) +
-  scale_linetype_manual("", values=c("median"="x")) +
-  scale_fill_manual(values=c("#999999", "#f39422", "#537ec5", '#293a80')) +
-  scale_colour_manual(values=c("black", "black", "#56B4E9", '#293a80')) +
-  labs(x='Algoritmo', y="Número de Nós Acessados", title="", color = "") + 
-  guides(fill=guide_legend(title="Algoritmo")) + 
-  theme(legend.position = "bottom")
-
-```
-
-
 ## f1 Score por combinação
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp03 %>% 
   group_by(combination, aproach) %>% 
   summarise(max_value = max(f1_score), min_value = min(f1_score), median_value=median(f1_score)) %>% 
@@ -417,7 +375,7 @@ metricas_result_exp03 %>%
 
 ## Número de nós acessados por combinação
 
-```{r}
+```{r echo=FALSE}
 
 metricas_result_exp03 %>% 
   group_by(combination, aproach) %>% 
@@ -436,7 +394,7 @@ metricas_result_exp03 %>%
 
 ## Duração das avaliações por combinações
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp03 %>% 
   group_by(combination, aproach) %>% 
   summarise(max_value = max(max_durationMin), min_value = min(max_durationMin), median_value=median(max_durationMin)) %>% 
@@ -453,3 +411,21 @@ metricas_result_exp03 %>%
 ```
 
 
+## Número de Avaliações por abordagem
+
+```{r echo=FALSE}
+metricas_result_exp03 %>%
+    group_by(municipio) %>%
+    summarise(bfs = sum(aproach == 'bfs'), dfs = sum(aproach == 'dfs'), bandit = sum(aproach == 'bandit')) %>%
+    arrange(desc(dfs)) %>%
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
+```
+
+## Todas as Avaliações
+
+```{r echo=FALSE}
+metricas_result_exp03 %>%
+    select(municipio, aproach, date, recall, precision, f1_score) %>%
+    arrange(desc(recall)) %>% 
+    datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
+```

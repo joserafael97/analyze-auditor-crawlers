@@ -40,7 +40,7 @@ empresas_portais <- readr::read_csv(here::here("data/empresas_portais.csv"))
 ```
 
 ## Removendo avaliações que não pertecem ao experimento 02
-```{r}
+```{r echo=FALSE}
 resultados_avaliacoes_exp02 <- resultados_avaliacoes_exp02 %>% 
   filter(tipo_exp == 'less_itens' & (municipio != 'Curral de Cima' & aproach != 'Dfs'))
 
@@ -50,7 +50,7 @@ resultados_avaliacoes_exp02 <- resultados_avaliacoes_exp02 %>%
 
 ## Adicionando combinação encontrada em cada município no gabarito
 
-```{r}
+```{r echo=FALSE}
 empresas_portais <- empresas_portais %>% 
     select(municipio, fornecedor)
 
@@ -60,14 +60,15 @@ gararito<-left_join(gararito, empresas_portais, by=c("municipio"))
 
 ## Juntando Avaliações e Gabaritos
 
-```{r}
+```{r echo=FALSE}
 # concatena os dois csv o do gabarito e avaliações do crawler
 data<-left_join(resultados_avaliacoes_exp02, gararito, by=c("municipio", "item", "criterio"))
 ```
 
 ## Sumarizando as avaliações
 
-```{r}
+```{r echo=FALSE}
+
 sumarise_exp02 <- data %>% 
     group_by(id, municipio, criterio, item, aproach, date) %>% 
     mutate(
@@ -91,7 +92,7 @@ head(sumarise_exp02)
 
 ## Quantificando métricas
 
-```{r}
+```{r echo=FALSE}
 
 metricas_result_exp02 <- sumarise_exp02 %>% 
     #filter(!is.na(aproach )) %>% 
@@ -133,7 +134,7 @@ metricas_result_exp02 %>%
 
 ## Remoção de avaliações que não possuem maior 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp02 <- metricas_result_exp02 %>%
   group_by(municipio, aproach) %>%
   mutate(variance_recall = sd(recall), recall_median = median(recall)) %>%
@@ -149,8 +150,7 @@ metricas_result_exp02 <- metricas_result_exp02 %>%
 
 ## Avaliações por abordagem
 
-```{r}
-
+```{r echo=FALSE}
 
 metricas_result_exp02 %>%
     group_by(aproach) %>% 
@@ -166,7 +166,7 @@ metricas_result_exp02 %>%
 
 ## Recall 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp02 %>%
   group_by(aproach)  %>%
   ggplot(aes(x = reorder(aproach, -(recall)), y = recall)) + 
@@ -387,7 +387,7 @@ ggsave('exp01-ic-e-greedy-bfs.png')
 
 ## Precision 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp02 %>%
   group_by(aproach)  %>%
   ggplot(aes(x = reorder(aproach, -(precision)), y = precision)) + 
@@ -410,7 +410,7 @@ metricas_result_exp02 %>%
 #### Intervalos de Confiança da mediana da Precisão
 
 
-```{r}
+```{r echo=FALSE}
 #Calcula a media das posições escolhidas nas buscas.
 set.seed(123)
 
@@ -561,7 +561,7 @@ ggsave('exp01-ic-prec-e-e-greedy-bfs.png')
 ## Mediana do número de nós Acessados  
 
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp02 %>%
   ggplot(aes(x = reorder(aproach, +median_num_access_node), y = median_num_access_node)) + 
   geom_dotplot(aes(fill = aproach),
@@ -732,20 +732,10 @@ ggsave('exp01-ic-prec-e-e-greedy-bfs.png')
 ```
 
 
-## Número de Avaliações por abordagem
-
-```{r}
-metricas_result_exp02 %>%
-  group_by(municipio) %>%
-  summarise(bfs = sum(aproach == 'Bfs'), dfs = sum(aproach == 'Dfs'), bandit = sum(aproach == 'Epsilon-greedy'), 
-              bandit_bfs = sum(aproach == 'Epsilon-greedy + Bfs')) %>%
-  arrange(desc(dfs)) %>%
-  datatable(options = list(pageLength = 10),  rownames = FALSE, class = 'cell-border stripe')
-```
 
 ## Todas as Avaliações
 
-```{r}
+```{r echo=FALSE}
 metricas_result_exp02 %>%
     select(municipio, aproach, date, recall, precision, f1_score) %>%
     arrange(desc(recall)) %>% 
